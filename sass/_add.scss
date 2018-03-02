@@ -1,0 +1,46 @@
+
+/****适应小电脑样式****/
+@media screen and (min-width: 1360px) and (max-width: 1400px){ 
+#Advantages {
+    padding: 2.5em 0;
+}
+#b2b{
+    padding-top: 4.5em;
+}
+#bigData {
+    padding: 0em 0;
+}
+#bigData .bigDatabox {
+    padding: 0vw 0;
+}
+#lotteryPage01{
+    padding: 0em 0;
+    height: 103vh;
+}    
+#lotteryPage02 {
+    padding: 3em 0;
+    height: 105vh;
+}
+
+#casePage02 .caseAchievement {
+    width: 42%;
+    height: 38%;
+}
+#casePage03 {
+    padding: 1.5em 0;
+    height: 115vh;
+}
+#mobilePage01 {
+    padding: 0.2em 0;
+}
+#cooperationPage01 {
+    padding: 2.5em 0;
+}
+#cooperationPage02 {
+    padding: 2.5em 6.5em;
+}
+#cooperationPage03 {
+    padding: 0em 6.5em;
+    height: 115vh;
+}
+}

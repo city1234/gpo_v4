@@ -22,6 +22,8 @@ $(document).ready(function () {
     if (agent.match("android") || agent.match("iphone") || agent.match("ipad")) { } else {
         nice = $("html").niceScroll({ scrollspeed: 51, mousescrollstep: 45, cursorwidth: "5px", cursorcolor: "#222", cursorborder: "0px solid #fff" });
     };
+    $('.navbar').load('common.html .container');
+    //$('#alertbox .alertcontent').load('common.html .alertcontent');
 });
 
 $(document).ready(function() {
@@ -43,3 +45,21 @@ $(document).ready(function() {
 
 });
 new WOW().init();
+
+function addCookie(sName,sValue,day) {
+    var expireDate = null;
+    if(day){
+        var expireDate = new Date();
+        expireDate.setDate(expireDate.getDate()+day);
+    }
+    document.cookie = sName + "=" +escape(sValue) + ((expireDate == null) ?
+            "" : ";expires=" + expireDate.toGMTString())+";path=/";
+}
+
+function getCookies(name) {
+    var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+    if(arr=document.cookie.match(reg)){
+        return unescape(arr[2]);
+    }
+    return null;
+} 

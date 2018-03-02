@@ -9,7 +9,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/colorbox.css">
+	<link rel="stylesheet" href="css/colorbox.css">
     <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 <style>
@@ -17,33 +17,7 @@
 </style>
 
 <body>
-    <div id="alerthind">
-        <div id="alertbox" class="newsalert">
-            <div class="alertcontent">
-                <img class="alertbannerimg" src="images/activebanner/infbanner.jpg" alt="">
-                <div class="title">2018新春特惠活动</div>
-                <div class="titleline"></div>
-                <div class="time">活动更新日期:2018/1/30</div>
-                <div class="txt">
-                    东方包网平台为答谢各位新老客户多年的支持与厚爱在春节来临之际特别推出新春特惠活动，凡此活动期间在我司开设游戏网站
-                    <span class="redtxt">开版费！服务费！费用统统全免！活动时间2018年2月1日至3月31日名额仅限88名、开完即止</span>。
-                    <br/> 2018年系统
-                    <span class="underline">全新升级</span>接入热门游戏
-                    <span class="underline">PRG电子</span>、
-                    <span class="underline">VG棋牌</span>、
-                    <span class="underline">CMD体育</span>、现火爆内测中、更多热门游戏正在接入中……敬请期待！ 高效稳定的系统！亲切优惠的价格！结合最新最火爆的游戏，专业打造只属于您的游戏平台，心动不如马上行动！详情咨询官方客服人员！
-                    <br/>
-                    <br/>东方平台官网：
-                    <a href="www.og-bwt.com" target="_blank">www.og-bwt.com</a>&nbsp;&nbsp;
-                    <a href="www.op88888.com" target="_blank">www.op88888.com</a>&nbsp;&nbsp;&nbsp; 官方客服：QQ:2158999999 &nbsp;&nbsp;电话：0063-9157165666
-                    <br/>
-                    <br/>
-                    <br/> 东方平台全体员工祝您新的一年生意兴隆！财源广进！兴旺发达！
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="wow fadeIn navbar navbar-custom navbar-default navbar-fixed-top" role="navigation" data-wow-delay="0.2s">
+    <div class="fadeIn navbar navbar-custom navbar-default navbar-fixed-top" role="navigation" data-wow-delay="0.2s">
         <div class="container">
             <div class="navbar-header">
                 <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
@@ -80,7 +54,7 @@
                         <a href="culture.html">企业文化</a>
                     </li>
                     <li>
-                        <a href="#">试玩体验</a>
+                        <a href="http://a888.try1024.com" target="_blank">试玩体验</a>
                     </li>
                     <li>
                         <a href="mobile.html">手机投注</a>
@@ -106,6 +80,7 @@
                 <div class="col-md-12 newsBigBanner" data-wow-delay="0.2s">
                     <h3>新产品预告</h3>
                     <div id="fade" class="Newsoverlay" onclick="if (!Newsmodal) HideLightBox(); return false;"></div>
+                    <!--
                     <div id="Newsbox" class="Newscontent">
                         <div class="close" onclick="HideLightBox(); return false;">X</div>
                         <div class="col-lg-6">
@@ -121,71 +96,80 @@
                             <p>BBIN提供扎实深厚亚洲经验，双赢多元服务方案，与业界先进交流，共同激发产业动能。 展位主观觉以朱红阶梯勾勒金色水墨笔刷突显品牌气势及亚洲领头地位 2018年2月6-8日伦敦Excel会展中心 摊位＃N7-350敬请详谈</p>
                         </div>
                     </div>
-                    <div id="NewsLightBox">
-                        <div id="lightboxspan"  class="alertinfbox">
-                            <img class="img-responsive" src="images/newsBigBanner.png" alt="">
-                            <div class="newsText">
-                                <div class="row">
-                                    <div class="col-sm-8">【XXXXX项目】XXX项目升级啦详戳图片GO！！</div>
-                                    <div class="col-sm-4 text-right date">2017/12/12上线</div>
+                    -->
+                    <div id="alerthind">
+                        <div id="alertbox" class="newsalert">
+                            <div class="alertcontent" v-for="(news,index) in newss" v-if="intopagevif(index)">
+                                <img class="alertbannerimg" :src="news.bannerimg">
+                                <div class="title">{{news.name}}</div>
+                                <div class="titleline"></div>
+                                <div class="time">{{news.time}}</div>
+                                <div class="txt" v-html="news.containtext">
                                 </div>
-
                             </div>
                         </div>
                     </div>
+                    <div id="NewsLightBox" v-for="(news,index) in newss">
+                        <!-- <div id="lightboxspan" onclick="ShowLightBox('Newsbox'); return false;"> -->
+                        <a @click="clickindex(index)" :href="news.link" :target="clicktoopen(index)" :class="{alertinfbox:news.clickto}">
+                            <div id="lightboxspan">
+                                <img class="img-responsive" :src="news.bannerimg">
+                                <div class="newsText">
+                                    <div class="row">
+                                        <div class="col-sm-8">{{news.name}}</div>
+                                        <div class="col-sm-4 text-right date">{{news.time}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        
+                    </div>
                 </div>
+                <!--
                 <div class="col-md-12">
                     <h3>往期回顾</h3>
                     <div class="newsBanner">
                         <div class="row">
-                            <div class="wow fadeInDown col-sm-4" data-wow-delay="0.4s">
-                                <div class="bannerItem">
-                                    <img class="img-responsive" src="images/newsBanner01.png" alt="">
-                                    <div class="newsText">
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <div class="title">
-                                                    【XXX项目】XXX项目升级啦详戳图片GO！！
+                            <a class="alertinfbox">
+                                <div class="wow fadeInDown col-sm-4" data-wow-delay="0.4s">
+                                    <div class="bannerItem">
+                                        <img class="img-responsive" src="images/newsBanner.png" alt="">
+                                        <div class="newsText">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <div class="title">
+                                                        【XXX项目】XXX项目升级啦详戳图片GO！！
+                                                    </div>
                                                 </div>
+                                                <div class="col-sm-6 text-right date">2017/12/12上线</div>
                                             </div>
-                                            <div class="col-sm-6 text-right date">2017/12/12上线</div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="wow fadeInDown col-sm-4" data-wow-delay="0.4s">
-                                <div class="bannerItem">
-                                    <img class="img-responsive" src="images/newsBanner02.png" alt="">
-                                    <div class="newsText">
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <div class="title">
-                                                    【XXX项目】XXX项目升级啦详戳图片GO！！
+                            </a>
+                            <a class="alertinfbox">
+                                <div class="wow fadeInDown col-sm-4" data-wow-delay="0.4s">
+                                    <div class="bannerItem">
+                                        <div class="bannerItem_imgout" style="background-image: url('images/newsBanner01.png');" >
+                                            <img class="img-responsive" src="images/newsBanner.png" alt="">
+                                        </div>
+                                        <div class="newsText">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <div class="title">
+                                                        【XXX项目】XXX项目升级啦详戳图片GO！！
+                                                    </div>
                                                 </div>
+                                                <div class="col-sm-6 text-right date">2017/12/12上线</div>
                                             </div>
-                                            <div class="col-sm-6 text-right date">2017/12/12上线</div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="wow fadeInDown col-sm-4" data-wow-delay="0.4s">
-                                <div class="bannerItem">
-                                    <img class="img-responsive" src="images/newsBanner03.png" alt="">
-                                    <div class="newsText">
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <div class="title">
-                                                    【XXX项目】XXX项目升级啦详戳图片GO！！
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 text-right date">2017/12/12上线</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
+            -->
             </div>
         </div>
     </section>
@@ -197,7 +181,8 @@
             <div class="col-lg-6 text-right">
                 <div class="QQ">
                     <span class="icon-qq-icon"> </span>
-                    <span>2158999999</span>
+                    <span class="icon-qq-num" 
+                        onclick="window.open('http://wpa.qq.com/msgrd?v=3&uin=2158999999&site=qq&menu=yes','_blank')">2158999999</span>
                 </div>
                 <div class="email">
                     <span class="icon-mail"> </span>
@@ -218,6 +203,8 @@
 <script src="js/jquery.nicescroll.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/jquery.colorbox.js"></script>
+<script src="js/vue.js "></script>
+<script src="js/data.js "></script>
 <script src="js/script.js"></script>
 <script>
     var newsBanner;
@@ -240,18 +227,28 @@
             newsBanner = '';
         }
     }
-
+    /*$(function(){
+    	if(!getCookies("cancelAlert2")){
+    	 initoutalertbox_fn0();
+    	 addCookie("cancelAlert2","1",1);
+       }
+    })*/
+    
     $(".alertinfbox").click(function () {
-            var alertboxw = $(window).width();
-            if (alertboxw > 1200) { alertboxw = 1200; }
-            var $form = $("#alertbox");
-            $.colorbox({
-                //iframe: true,
-                inline: true,
-                href: $form,
-                width: alertboxw, //燈箱中間區塊的寬度
-            });
+    	initoutalertbox_fn0();
+    });
+    
+    function initoutalertbox_fn0(){
+        var alertboxw = $(window).width();
+        if (alertboxw > 1200) { alertboxw = 1200; }
+        var $form = $("#alertbox");
+        $.colorbox({
+            //iframe: true,
+            inline: true,
+            href: $form,
+            width: alertboxw, //燈箱中間區塊的寬度
         });
+    } 	
 </script>
 
 </html>
