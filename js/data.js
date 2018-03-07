@@ -4,6 +4,8 @@ var vm = new Vue({
     data: {
         //首页跳窗是第几个公告从0开始
         showpage: 0,
+        //新闻新产品预告数量
+        newnews: 2,
         newss: [
             {
                 //是否首页展示

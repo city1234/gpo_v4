@@ -109,11 +109,13 @@
                             </div>
                         </div>
                     </div>
-                    <div id="NewsLightBox" v-for="(news,index) in newss">
+                    <div id="NewsLightBox" v-for="(news,index) in newss.slice(0, newnews)">
                         <!-- <div id="lightboxspan" onclick="ShowLightBox('Newsbox'); return false;"> -->
                         <a @click="clickindex(index)" :href="news.link" :target="clicktoopen(index)" :class="{alertinfbox:news.clickto}">
                             <div id="lightboxspan">
-                                <img class="img-responsive" :src="news.bannerimg">
+                                <div class="lightboxspanimg">
+                                    <img class="img-responsive" :src="news.bannerimg">
+                                </div>
                                 <div class="newsText">
                                     <div class="row">
                                         <div class="col-sm-8">{{news.name}}</div>
@@ -122,54 +124,37 @@
                                 </div>
                             </div>
                         </a>
-                        
                     </div>
                 </div>
-                <!--
+                
                 <div class="col-md-12">
                     <h3>往期回顾</h3>
                     <div class="newsBanner">
                         <div class="row">
-                            <a class="alertinfbox">
-                                <div class="wow fadeInDown col-sm-4" data-wow-delay="0.4s">
-                                    <div class="bannerItem">
-                                        <img class="img-responsive" src="images/newsBanner.png" alt="">
-                                        <div class="newsText">
-                                            <div class="row">
-                                                <div class="col-sm-6">
-                                                    <div class="title">
-                                                        【XXX项目】XXX项目升级啦详戳图片GO！！
+                            <div class="innewsBanner" v-for="(news,index) in newss.slice(newnews)">
+                                <a @click="clickindex(index)" :href="news.link" :target="clicktoopen(index)" :class="{alertinfbox:news.clickto}">
+                                    <div class="wow fadeInDown col-sm-4" data-wow-delay="0.4s">
+                                        <div class="bannerItem">
+                                            <div class="bannerItem_imgout" :style="'background-image: url(' + news.bannerimg + ');'">
+                                                <img class="img-responsive" src="images/newsBanner.png" alt="">
+                                            </div>
+                                            <div class="newsText">
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <div class="title">
+                                                            {{news.name}}
+                                                        </div>
                                                     </div>
+                                                    <div class="col-sm-6 text-right date">{{news.time}}</div>
                                                 </div>
-                                                <div class="col-sm-6 text-right date">2017/12/12上线</div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
-                            <a class="alertinfbox">
-                                <div class="wow fadeInDown col-sm-4" data-wow-delay="0.4s">
-                                    <div class="bannerItem">
-                                        <div class="bannerItem_imgout" style="background-image: url('images/newsBanner01.png');" >
-                                            <img class="img-responsive" src="images/newsBanner.png" alt="">
-                                        </div>
-                                        <div class="newsText">
-                                            <div class="row">
-                                                <div class="col-sm-6">
-                                                    <div class="title">
-                                                        【XXX项目】XXX项目升级啦详戳图片GO！！
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6 text-right date">2017/12/12上线</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            -->
             </div>
         </div>
     </section>
