@@ -9,7 +9,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/colorbox.css">
+    <link rel="stylesheet" href="css/colorbox.css">
     <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 <style>
@@ -126,14 +126,14 @@
                         </a>
                     </div>
                 </div>
-                
+
                 <div class="col-md-12">
                     <h3>往期回顾</h3>
                     <div class="newsBanner">
                         <div class="row">
                             <div class="innewsBanner" v-for="(news,index) in newss.slice(newnews)">
                                 <a @click="clickindex(index)" :href="news.link" :target="clicktoopen(index)" :class="{alertinfbox:news.clickto}">
-                                    <div class="wow fadeInDown col-sm-4" data-wow-delay="0.4s">
+                                    <div class="wow fadeInDown col-sm-12" data-wow-delay="0.4s">
                                         <div class="bannerItem">
                                             <div class="bannerItem_imgout" :style="'background-image: url(' + news.bannerimg + ');'">
                                                 <img class="img-responsive" src="images/newsBanner.png" alt="">
@@ -166,8 +166,7 @@
             <div class="col-lg-6 text-right">
                 <div class="QQ">
                     <span class="icon-qq-icon"> </span>
-                    <span class="icon-qq-num" 
-                        onclick="window.open('http://wpa.qq.com/msgrd?v=3&uin=2158999999&site=qq&menu=yes','_blank')">2158999999</span>
+                    <span class="icon-qq-num" onclick="window.open('http://wpa.qq.com/msgrd?v=3&uin=2158999999&site=qq&menu=yes','_blank')">2158999999</span>
                 </div>
                 <div class="email">
                     <span class="icon-mail"> </span>
@@ -218,14 +217,16 @@
     	 addCookie("cancelAlert2","1",1);
        }
     })*/
-    
-    $(".alertinfbox").click(function () {
-    	initoutalertbox_fn0();
+
+    $(".alertinfbox").click(function() {
+        initoutalertbox_fn0();
     });
-    
-    function initoutalertbox_fn0(){
+
+    function initoutalertbox_fn0() {
         var alertboxw = $(window).width();
-        if (alertboxw > 1200) { alertboxw = 1200; }
+        if (alertboxw > 1200) {
+            alertboxw = 1200;
+        }
         var $form = $("#alertbox");
         $.colorbox({
             //iframe: true,
@@ -233,7 +234,7 @@
             href: $form,
             width: alertboxw, //燈箱中間區塊的寬度
         });
-    } 	
+    }
 </script>
 
 </html>
