@@ -1434,7 +1434,10 @@
     .bannerItem
         .bannerItem_imgout
             background-size: cover
-            background-position: top center
+            background-position: center center
+            img 
+                +breakpoint(mobile)
+                    max-width: 80%
     .newsBigBanner,.newsBanner
         margin: 2.4em 0
     .innewsBanner
@@ -1473,7 +1476,7 @@
             padding: 12px
             font-size: 1.2em
             text-align: left
-    .col-sm-4
+    .col-sm-12
         +breakpoint(mobile)
             margin-top: 20px
         .bannerItem
@@ -1490,9 +1493,10 @@
                 overflow: hidden
                 text-overflow: ellipsis
                 white-space: nowrap
-                width: 200px
+                text-align: left
+                // width: 200px
                 +breakpoint(pc)
-                    width: 150px             
+                    // width: 150px             
     .date 
         font-size: 0.9em
         color: #666
