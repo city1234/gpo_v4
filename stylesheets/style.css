@@ -3686,38 +3686,54 @@ footer .col-lg-6 p {
 /* line 1435, ../sass/style.sass */
 #newsPage01 .bannerItem .bannerItem_imgout {
   background-size: cover;
-  background-position: center center;
+  background-position: center;
 }
-@media only screen and (max-width: 425px) {
-  /* line 1438, ../sass/style.sass */
-  #newsPage01 .bannerItem .bannerItem_imgout img {
-    max-width: 80%;
-  }
-}
-/* line 1441, ../sass/style.sass */
+/* line 1440, ../sass/style.sass */
 #newsPage01 .newsBigBanner, #newsPage01 .newsBanner {
   margin: 2.4em 0;
 }
-/* line 1443, ../sass/style.sass */
+/* line 1442, ../sass/style.sass */
+#newsPage01 .newsBigBanner .slick-dots, #newsPage01 .newsBanner .slick-dots {
+  bottom: -25px;
+}
+/* line 1444, ../sass/style.sass */
+#newsPage01 .newsBigBanner .slick-slide, #newsPage01 .newsBanner .slick-slide {
+  margin: 20px 0;
+}
+/* line 1446, ../sass/style.sass */
 #newsPage01 .innewsBanner {
   margin-top: 10px;
 }
-/* line 1445, ../sass/style.sass */
+/* line 1448, ../sass/style.sass */
+#newsPage01 .innewsBanner .bannerboxstyle_one {
+  width: 100%;
+}
+/* line 1450, ../sass/style.sass */
+#newsPage01 .innewsBanner .bannerboxstyle_two {
+  width: 50%;
+}
+@media only screen and (max-width: 768px) {
+  /* line 1450, ../sass/style.sass */
+  #newsPage01 .innewsBanner .bannerboxstyle_two {
+    width: 100%;
+  }
+}
+/* line 1454, ../sass/style.sass */
 #newsPage01 h5 {
   color: #444;
 }
-/* line 1447, ../sass/style.sass */
+/* line 1456, ../sass/style.sass */
 #newsPage01 #NewsLightBox {
   border: 1px solid #444;
   margin-top: 30px;
   width: 100%;
   cursor: pointer;
 }
-/* line 1452, ../sass/style.sass */
+/* line 1461, ../sass/style.sass */
 #newsPage01 #NewsLightBox .lightboxspanimg {
   position: relative;
 }
-/* line 1454, ../sass/style.sass */
+/* line 1463, ../sass/style.sass */
 #newsPage01 #NewsLightBox .lightboxspanimg:after {
   position: absolute;
   content: "";
@@ -3729,11 +3745,11 @@ footer .col-lg-6 p {
   opacity: 0;
   transition: opacity 0.5s;
 }
-/* line 1466, ../sass/style.sass */
+/* line 1475, ../sass/style.sass */
 #newsPage01 #NewsLightBox:hover .lightboxspanimg:after {
   opacity: 0.2;
 }
-/* line 1468, ../sass/style.sass */
+/* line 1477, ../sass/style.sass */
 #newsPage01 #NewsLightBox img {
   margin: 0;
   padding: 0;
@@ -3741,7 +3757,7 @@ footer .col-lg-6 p {
   width: 100%;
   position: relative;
 }
-/* line 1474, ../sass/style.sass */
+/* line 1483, ../sass/style.sass */
 #newsPage01 #NewsLightBox .newsText {
   background: linear-gradient(to top, rgba(255, 255, 255, 0.7), white);
   padding: 12px;
@@ -3749,44 +3765,44 @@ footer .col-lg-6 p {
   text-align: left;
 }
 @media only screen and (max-width: 425px) {
-  /* line 1479, ../sass/style.sass */
-  #newsPage01 .col-sm-12 {
+  /* line 1488, ../sass/style.sass */
+  #newsPage01 .col-sm-4 {
     margin-top: 20px;
   }
 }
-/* line 1482, ../sass/style.sass */
-#newsPage01 .col-sm-12 .bannerItem {
+/* line 1491, ../sass/style.sass */
+#newsPage01 .col-sm-4 .bannerItem {
   border: 1px solid #000;
 }
-/* line 1484, ../sass/style.sass */
-#newsPage01 .col-sm-12 .newsText {
+/* line 1493, ../sass/style.sass */
+#newsPage01 .col-sm-4 .newsText {
   background: linear-gradient(to top, rgba(255, 255, 255, 0.7), white);
   padding: 12px;
   font-size: 1.2em;
 }
 @media only screen and (max-width: 768px) {
-  /* line 1484, ../sass/style.sass */
-  #newsPage01 .col-sm-12 .newsText {
+  /* line 1493, ../sass/style.sass */
+  #newsPage01 .col-sm-4 .newsText {
     padding: 8px;
   }
 }
-/* line 1490, ../sass/style.sass */
-#newsPage01 .col-sm-12 .newsText img {
+/* line 1500, ../sass/style.sass */
+#newsPage01 .col-sm-4 .newsText img {
   width: 100%;
 }
-/* line 1492, ../sass/style.sass */
-#newsPage01 .col-sm-12 .newsText .title {
+/* line 1502, ../sass/style.sass */
+#newsPage01 .col-sm-4 .newsText .title {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   text-align: left;
 }
-/* line 1500, ../sass/style.sass */
+/* line 1510, ../sass/style.sass */
 #newsPage01 .date {
   font-size: 0.9em;
   color: #666;
 }
-/* line 1503, ../sass/style.sass */
+/* line 1513, ../sass/style.sass */
 #newsPage01 .close {
   display: block;
   position: absolute;
@@ -3797,13 +3813,13 @@ footer .col-lg-6 p {
   color: #2c2c2c;
   font-size: 2.4em;
 }
-/* line 1512, ../sass/style.sass */
+/* line 1522, ../sass/style.sass */
 #newsPage01 .close:hover {
   color: #666;
   transition: all 0.5s;
   cursor: pointer;
 }
-/* line 1517, ../sass/style.sass */
+/* line 1527, ../sass/style.sass */
 #newsPage01 .Newsoverlay {
   display: none;
   position: fixed;
@@ -3815,7 +3831,7 @@ footer .col-lg-6 p {
   width: 100%;
   height: 100%;
 }
-/* line 1526, ../sass/style.sass */
+/* line 1536, ../sass/style.sass */
 #newsPage01 .Newscontent {
   display: none;
   position: fixed;
@@ -3831,22 +3847,22 @@ footer .col-lg-6 p {
   left: 50%;
 }
 @media only screen and (max-width: 425px) {
-  /* line 1526, ../sass/style.sass */
+  /* line 1536, ../sass/style.sass */
   #newsPage01 .Newscontent {
     width: 80%;
     padding: 16px 14px 10px;
   }
 }
-/* line 1542, ../sass/style.sass */
+/* line 1552, ../sass/style.sass */
 #newsPage01 .Newscontent h4 {
   font-size: 1.8em;
 }
-/* line 1544, ../sass/style.sass */
+/* line 1554, ../sass/style.sass */
 #newsPage01 .Newscontent hr {
   border-top: 1px solid #9b9999;
 }
 
-/* line 1547, ../sass/style.sass */
+/* line 1557, ../sass/style.sass */
 #caseVisual {
   background-image: url("../images/bgImage/caseVisual.png");
   background-repeat: no-repeat;
@@ -3854,14 +3870,14 @@ footer .col-lg-6 p {
   background-size: cover;
 }
 @media only screen and (max-width: 768px) {
-  /* line 1549, ../sass/style.sass */
+  /* line 1559, ../sass/style.sass */
   #caseVisual h1 {
     top: 40%;
     left: 0;
   }
 }
 
-/* line 1554, ../sass/style.sass */
+/* line 1564, ../sass/style.sass */
 #casePage01 {
   padding: 5em 0 7em;
   background-image: url("../images/bgImage/casePage01.png");
@@ -3870,32 +3886,32 @@ footer .col-lg-6 p {
   background-size: cover;
   overflow: hidden;
 }
-/* line 1558, ../sass/style.sass */
+/* line 1568, ../sass/style.sass */
 #casePage01 .slick-carousel {
   margin: 40px auto;
   width: 80%;
 }
 @media only screen and (max-width: 425px) {
-  /* line 1558, ../sass/style.sass */
+  /* line 1568, ../sass/style.sass */
   #casePage01 .slick-carousel {
     width: 90%;
   }
 }
-/* line 1563, ../sass/style.sass */
+/* line 1573, ../sass/style.sass */
 #casePage01 .slick-slide {
   margin: 20px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 1563, ../sass/style.sass */
+  /* line 1573, ../sass/style.sass */
   #casePage01 .slick-slide {
     margin: 10px;
   }
 }
-/* line 1567, ../sass/style.sass */
+/* line 1577, ../sass/style.sass */
 #casePage01 .slick-slide img {
   width: 100%;
 }
-/* line 1570, ../sass/style.sass */
+/* line 1580, ../sass/style.sass */
 #casePage01 .slick-next::before,
 #casePage01 .slick-prev::before {
   font-size: 40px;
@@ -3904,27 +3920,27 @@ footer .col-lg-6 p {
   width: 20px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 1570, ../sass/style.sass */
+  /* line 1580, ../sass/style.sass */
   #casePage01 .slick-next::before,
   #casePage01 .slick-prev::before {
     display: none;
   }
 }
-/* line 1578, ../sass/style.sass */
+/* line 1588, ../sass/style.sass */
 #casePage01 .slick-dots {
   bottom: -25px;
 }
-/* line 1580, ../sass/style.sass */
+/* line 1590, ../sass/style.sass */
 #casePage01 .slick-dots li button:before {
   color: #ccc;
   background: #444;
 }
-/* line 1584, ../sass/style.sass */
+/* line 1594, ../sass/style.sass */
 #casePage01 .slick-dots li.slick-active button:before {
   color: #eee;
 }
 
-/* line 1587, ../sass/style.sass */
+/* line 1597, ../sass/style.sass */
 #casePage02 {
   background-image: url("../images/bgImage/casePage02.png");
   background-repeat: no-repeat;
@@ -3932,7 +3948,7 @@ footer .col-lg-6 p {
   background-size: cover;
   position: relative;
 }
-/* line 1590, ../sass/style.sass */
+/* line 1600, ../sass/style.sass */
 #casePage02 .caseAchievement {
   text-align: left;
   position: absolute;
@@ -3944,14 +3960,14 @@ footer .col-lg-6 p {
   height: 32%;
 }
 @media only screen and (max-width: 1024px) {
-  /* line 1590, ../sass/style.sass */
+  /* line 1600, ../sass/style.sass */
   #casePage02 .caseAchievement {
     width: 40%;
     height: 35%;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 1590, ../sass/style.sass */
+  /* line 1600, ../sass/style.sass */
   #casePage02 .caseAchievement {
     position: static;
     margin: 0 auto;
@@ -3960,16 +3976,16 @@ footer .col-lg-6 p {
     height: 100%;
   }
 }
-/* line 1605, ../sass/style.sass */
+/* line 1615, ../sass/style.sass */
 #casePage02 .caseAchievement h3 {
   color: #ff6d00;
   margin-bottom: 0.8em;
 }
-/* line 1608, ../sass/style.sass */
+/* line 1618, ../sass/style.sass */
 #casePage02 .caseAchievement ol {
   padding-left: 20px;
 }
-/* line 1610, ../sass/style.sass */
+/* line 1620, ../sass/style.sass */
 #casePage02 .caseAchievement .goal {
   position: absolute;
   z-index: 2;
@@ -3982,7 +3998,7 @@ footer .col-lg-6 p {
   bottom: 5%;
 }
 @media only screen and (max-width: 768px) {
-  /* line 1610, ../sass/style.sass */
+  /* line 1620, ../sass/style.sass */
   #casePage02 .caseAchievement .goal {
     position: static;
     width: 100%;
@@ -3990,7 +4006,7 @@ footer .col-lg-6 p {
   }
 }
 
-/* line 1623, ../sass/style.sass */
+/* line 1633, ../sass/style.sass */
 #casePage03 {
   background-image: url("../images/bgImage/casePage03.png");
   background-repeat: no-repeat;
@@ -3998,92 +4014,92 @@ footer .col-lg-6 p {
   background-size: cover;
 }
 @media only screen and (max-width: 1440px) {
-  /* line 1623, ../sass/style.sass */
+  /* line 1633, ../sass/style.sass */
   #casePage03 {
     padding-top: 2em;
   }
 }
-/* line 1627, ../sass/style.sass */
+/* line 1637, ../sass/style.sass */
 #casePage03 h3 {
   margin-bottom: 32px;
   margin-top: 8px;
 }
-/* line 1630, ../sass/style.sass */
+/* line 1640, ../sass/style.sass */
 #casePage03 .col-sm-3 {
   padding: 0px 10px;
   margin-bottom: 50px;
 }
 @media only screen and (max-width: 1440px) {
-  /* line 1630, ../sass/style.sass */
+  /* line 1640, ../sass/style.sass */
   #casePage03 .col-sm-3 {
     margin-bottom: 20px;
   }
-  /* line 1635, ../sass/style.sass */
+  /* line 1645, ../sass/style.sass */
   #casePage03 .col-sm-3:nth-child(5), #casePage03 .col-sm-3:nth-child(6), #casePage03 .col-sm-3:nth-child(7), #casePage03 .col-sm-3:nth-child(8) {
     margin-bottom: 0;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 1630, ../sass/style.sass */
+  /* line 1640, ../sass/style.sass */
   #casePage03 .col-sm-3 {
     width: 100%;
     padding: 10px 20px;
     margin: 0;
   }
 }
-/* line 1641, ../sass/style.sass */
+/* line 1651, ../sass/style.sass */
 #casePage03 .col-sm-3 .img-frame {
   overflow: hidden;
   height: 160px;
   margin-bottom: 1em;
 }
 @media only screen and (max-width: 1024px) {
-  /* line 1641, ../sass/style.sass */
+  /* line 1651, ../sass/style.sass */
   #casePage03 .col-sm-3 .img-frame {
     height: 90px;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 1641, ../sass/style.sass */
+  /* line 1651, ../sass/style.sass */
   #casePage03 .col-sm-3 .img-frame {
     height: 20%;
   }
 }
 @media only screen and (max-width: 425px) {
-  /* line 1641, ../sass/style.sass */
+  /* line 1651, ../sass/style.sass */
   #casePage03 .col-sm-3 .img-frame {
     height: 20%;
   }
 }
-/* line 1652, ../sass/style.sass */
+/* line 1662, ../sass/style.sass */
 #casePage03 .col-sm-3 .img-frame img {
   vertical-align: top;
   width: 100%;
 }
 @media only screen and (max-width: 768px) {
-  /* line 1655, ../sass/style.sass */
+  /* line 1665, ../sass/style.sass */
   #casePage03 .col-sm-3 p {
     height: 100px;
   }
 }
 
-/* line 1658, ../sass/style.sass */
+/* line 1668, ../sass/style.sass */
 #mainVisual .modal-content {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* line 1661, ../sass/style.sass */
+/* line 1671, ../sass/style.sass */
 .modal-header .close {
   color: #fff !important;
   opacity: 0.5;
   transition: all 0.3s;
 }
-/* line 1665, ../sass/style.sass */
+/* line 1675, ../sass/style.sass */
 .modal-header .close:hover {
   opacity: 1;
 }
 
-/* line 1667, ../sass/style.sass */
+/* line 1677, ../sass/style.sass */
 .modal-dialog {
   width: auto;
   max-width: 1280px;

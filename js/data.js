@@ -6,6 +6,8 @@ var vm = new Vue({
         showpage: 0,
         //新闻新产品预告数量
         newnews: 2,
+        bannerstyle: 0,
+        slickstyle: false,
         newss: [
             {
                 //是否首页展示
@@ -89,6 +91,19 @@ var vm = new Vue({
         }
     },
     computed:{
-
+        bannerstyle_fn: function () {
+            bannerstyle = this.newss.length - this.newnews;
+            console.log(bannerstyle);
+            if (bannerstyle == 1) {
+                this.slickstyle = false;
+                return "bannerboxstyle_one";
+            } else if (bannerstyle == 2){
+                this.slickstyle = false;
+                return "bannerboxstyle_two";
+            } else if (bannerstyle > 2){
+                this.slickstyle = true;
+                return "bannerboxstyle_one";
+            }
+        }
     }
 });
