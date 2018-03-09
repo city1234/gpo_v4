@@ -1435,8 +1435,8 @@
         .bannerItem_imgout
             background-size: cover
             background-position: center
-            +breakpoint(mobile)
-                //max-width: 80%
+            img
+                max-width: 80%
     .newsBigBanner,.newsBanner
         margin: 2.4em 0
         .slick-dots
@@ -1490,6 +1490,22 @@
             margin-top: 20px
         .bannerItem
             border: 1px solid #000
+            .bannerItem_imgout
+                position: relative
+                &:after
+                    position: absolute
+                    content: ''
+                    width: 100%
+                    height: 100%
+                    top: 0
+                    left: 0
+                    background: #ffffff
+                    opacity: 0
+                    transition: opacity 0.5s 
+        &:hover
+            .bannerItem_imgout
+                &:after
+                    opacity: 0.2
         .newsText 
             background: linear-gradient(to top, rgba(255,255,255,0.7), rgba(255,255,255,1))
             padding: 12px

@@ -10,25 +10,6 @@ var vm = new Vue({
         slickstyle: false,
         newss: [
             {
-                //是否首页展示
-                istopbanner: true,
-                //是否有内页公告
-                clickto: false,
-                //点击连结
-                link: "luckyairship/index.html",
-                //首页大图2500*1080
-                mainbannerimg: "images/activebanner/mainbanner_01.jpg",
-                //公告内页小图1410*385
-                bannerimg: "images/activebanner/infbanner_01.jpg",
-                //公告名称(最好8个全形字以内)
-                name: "幸运相伴，让您梦想成真！",
-                //活动日期
-                time: "活动更新日期:2018/1/30",
-                //内容html
-                containtext: '\
-                    <div style="text-align:center;"><a href="luckyairship/index.html" target="_blank">前往活动连结</a></div>'
-            },
-            {
                 istopbanner: true,
                 clickto: true,
                 link: "javascript: void(0)",
@@ -53,6 +34,25 @@ var vm = new Vue({
                     <br />\
                     <br />\
                     <br /> 东方平台全体员工祝您新的一年生意兴隆！财源广进！兴旺发达！'
+            },
+            {
+                //是否首页展示
+                istopbanner: true,
+                //是否有内页公告
+                clickto: false,
+                //点击连结
+                link: "luckyairship/index.html",
+                //首页大图2500*1080
+                mainbannerimg: "images/activebanner/mainbanner_01.jpg",
+                //公告内页小图1410*385
+                bannerimg: "images/activebanner/infbanner_01.jpg",
+                //公告名称(最好8个全形字以内)
+                name: "幸运相伴，让您梦想成真！",
+                //活动日期
+                time: "活动更新日期:2018/1/30",
+                //内容html
+                containtext: '\
+                    <div style="text-align:center;"><a href="luckyairship/index.html" target="_blank">前往活动连结</a></div>'
             },
             {
                 istopbanner: false,
@@ -93,7 +93,6 @@ var vm = new Vue({
     computed:{
         bannerstyle_fn: function () {
             bannerstyle = this.newss.length - this.newnews;
-            console.log(bannerstyle);
             if (bannerstyle == 1) {
                 this.slickstyle = false;
                 return "bannerboxstyle_one";

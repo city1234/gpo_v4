@@ -133,29 +133,6 @@
                     <h3>往期回顾</h3>
                     <div class="newsBanner">
                         <div class="row" :class="{slicknews:slickstyle}">
-                            <!--
-                            <div class="innewsBanner" v-for="(news,index) in newss.slice(newnews)">
-                                <a @click="clickindex(index)" :href="news.link" :target="clicktoopen(index)" :class="{alertinfbox:news.clickto}">
-                                    <div class="wow fadeInDown col-sm-4" data-wow-delay="0.4s">
-                                        <div class="bannerItem">
-                                            <div class="bannerItem_imgout" :style="'background-image: url(' + news.bannerimg + ');'">
-                                                <img class="img-responsive" src="images/newsBanner.png" alt="">
-                                            </div>
-                                            <div class="newsText">
-                                                <div class="row">
-                                                    <div class="col-sm-6">
-                                                        <div class="title">
-                                                            {{news.name}}
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-sm-6 text-right date">{{news.time}}</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        -->
                             <div class="innewsBanner" v-for="(news,index) in newss.slice(newnews)">
                                 <a @click="clickindex(index)" :href="news.link" :target="clicktoopen(index)" :class="{alertinfbox:news.clickto}">
                                     <div class="wow fadeInDown col-sm-4":class="[bannerstyle_fn]" data-wow-delay="0.4s">
