@@ -134,7 +134,7 @@
                     <div class="newsBanner">
                         <div class="row" :class="{slicknews:slickstyle}">
                             <div class="innewsBanner" v-for="(news,index) in newss.slice(newnews)">
-                                <a @click="clickindex(index)" :href="news.link" :target="clicktoopen(index)" :class="{alertinfbox:news.clickto}">
+                                <a @click="clickindex(index+newnews)" :href="news.link" :target="clicktoopen(index+newnews)" :class="{alertinfbox:news.clickto}">
                                     <div class="wow fadeInDown col-sm-4":class="[bannerstyle_fn]" data-wow-delay="0.4s">
                                         <div class="bannerItem">
                                             <div class="bannerItem_imgout" :style="'background-image: url(' + news.bannerimg + ');'">
