@@ -83,7 +83,6 @@ var vm = new Vue({
             }
         },
         clicktoopen: function (index){
-            console.log(index);
             if (this.newss[index].clickto){
                 return "_self";
             }else{
