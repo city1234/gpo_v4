@@ -1693,3 +1693,146 @@
 .modal-dialog
     width: auto
     max-width: 1280px
+
+
+.airshipbox
+    background: url(../images/airship01.png) no-repeat, url(../images/imageSide/airshopSide.png) no-repeat
+    background-color: #fcf3db
+    background-position: left bottom ,right center
+    background-size: 25%,contain
+    color: #440202
+    font-size: 1.4em
+    position: relative
+    padding: 8% 8% 2%
+    line-height: 1.8
+   
+    +breakpoint(pc)
+        width: 100%
+    +breakpoint(pc)
+        background: none
+        background-color: #fcf3db
+    +breakpoint(pad)
+        font-size: 2.5vh
+    .airshipText
+        width: 30%
+        +breakpoint(pc) 
+            width: 100%
+    .marktip
+        font-size: 1.2em
+        font-weight: 600
+        font-style: italic
+        border-left: 10px solid #b90302
+        padding: 2px
+        padding-left: 12px
+        color: #b90302
+
+    .markLucky,.markAirship
+        font-family: "erasbolditc"
+        font-size: 80px
+        position: absolute
+        font-weight: 900
+        color: rgba(0,0,0,.06)
+        +breakpoint(pc)
+            font-size: 100px
+        +breakpoint(pad)
+            display: none
+            
+    .markLucky
+        +position(0%,20%)
+    .markAirship
+        +position(18%,28%)
+.airshipbox02,.airshipbox03
+    height: 50vh
+    line-height: 1.8
+    padding: 4%
+    padding-left: 12%
+    color: #fff
+    font-size: 1.4em  
+    font-weight: 350
+    +breakpoint(bigpc)
+        padding-top: 8%
+        padding-left: 6%
+    +breakpoint(pc)
+        padding-left: 5%
+        height: 40vh  
+    +breakpoint(pad)
+        padding-left: 12%  
+        font-size: 2.5vh  
+        height: auto
+    .marktip
+        font-size: 1.2em
+        font-weight: 550
+        margin-bottom: 5%
+        font-style: italic
+        border-left: 8px solid #fff
+        padding: 8px
+        padding-left: 12px
+        +breakpoint(bigpc)
+            margin-bottom: 10%
+        +breakpoint(pc)
+            margin-bottom: 12%
+        span 
+            font-size: 0.6em
+            font-weight: 350
+
+.airshipbox02
+    +bg('LuckyAirShip_01.png')
+
+.airshipbox03
+    +bg('LuckyAirShip_02.png')
+
+.btn-area
+    padding: 5vh 0
+    background-color: #001040
+    button
+        background: url(../images/icon/airshipLogo.png) no-repeat 10% center
+        background-size: 30%
+        margin: 0 auto
+        width: 28%
+        background-color: #47b1ad
+        box-shadow: -5px -15px 20px #1e837f inset
+        color: #fff
+        padding: 1.8vh
+        border-radius: 80px
+        +breakpoint(bigpc)
+            padding: 1.5vh
+            width: 32%
+        +breakpoint(pc)
+            width: 50%
+        +breakpoint(pad)
+            width: 80%
+        &:hover,&:focus 
+            transition: all 0.5s
+            color: #fff
+            opacity: 0.7
+        .btn-text 
+            margin-left: 12vw
+            +breakpoint(bigpc)
+                margin-left: 14vw
+            +breakpoint(pc)  
+                margin-left: 20vw
+            +breakpoint(pad) 
+                margin-left: 30vw
+        h4,p 
+            margin: 0
+            text-align: left
+            line-height: 1.4
+            text-shadow: 1px 2px 0px #1e837f
+        h4
+            font-size: 4.5vh
+            +breakpoint(bigpc)
+                font-size: 3.8vh
+            +breakpoint(mobile) 
+                font-size: 2.8vh
+            img 
+                width: 12%
+                margin-left: 0.5vh
+
+        p 
+            font-size: 2vh
+            letter-spacing: 1px
+            +breakpoint(pad) 
+                font-size: 2.5vh
+            +breakpoint(mobile) 
+                font-size: 1.8vh
+    
