@@ -1,16 +1,35 @@
 //資料架構
 var vm = new Vue({
-    el: '#mainbanner,#newsPage01',
+    el: '#mainbanner,#newsPage01,#airship',
     data: {
         //首页跳窗是第几个公告从0开始
         showpage: 0,
         //新闻新产品预告数量
-        newnews: 2,
+        newnews: 1,
         bannerstyle: 0,
         slickstyle: false,
         newss: [
             {
+                //是否首页展示
                 istopbanner: true,
+                //是否有内页公告
+                clickto: false,
+                //点击连结
+                link: "luckyairship/index.html",
+                //首页大图2500*1080
+                mainbannerimg: "images/activebanner/mainbanner_01.jpg",
+                //公告内页小图1410*385
+                bannerimg: "images/activebanner/infbanner_01.jpg",
+                //公告名称(最好8个全形字以内)
+                name: "幸运相伴，让您梦想成真！",
+                //活动日期
+                time: "即将上线",
+                //内容html
+                containtext: '\
+                    <div style="text-align:center;"><a href="luckyairship/index.html" target="_blank">前往活动连结</a></div>'
+            },
+            {
+                istopbanner: false,
                 clickto: true,
                 link: "javascript: void(0)",
                 mainbannerimg: "images/activebanner/mainbanner.jpg",
@@ -36,70 +55,58 @@ var vm = new Vue({
                     <br /> 东方平台全体员工祝您新的一年生意兴隆！财源广进！兴旺发达！'
             },
             {
-                //是否首页展示
-                istopbanner: true,
-                //是否有内页公告
-                clickto: false,
-                //点击连结
-                link: "luckyairship/index.html",
-                //首页大图2500*1080
-                mainbannerimg: "images/activebanner/mainbanner_01.jpg",
-                //公告内页小图1410*385
-                bannerimg: "images/activebanner/infbanner_01.jpg",
-                //公告名称(最好8个全形字以内)
-                name: "幸运相伴，让您梦想成真！",
-                //活动日期
-                time: "活动更新日期:2018/1/30",
-                //内容html
-                containtext: '\
-                    <div style="text-align:center;"><a href="luckyairship/index.html" target="_blank">前往活动连结</a></div>'
-            },
-            {
                 istopbanner: false,
                 clickto: false,
                 link: "v1.0/index.html",
                 mainbannerimg: "",
                 bannerimg: "images/newsBigBanner.png",
                 name: "【H5游戏主页改版】新架构，新体验，详戳图片！！",
-                time: "即将上线",
+                time: "更新日期：2018/01/30",
                 containtext: ''
             }
         ]
     },
     methods: {
-        clickindex: function (index) {
+        clickindex: function(index) {
             this.showpage = index;
             if (index == this.showpage) {
-                return true; 
+                return true;
             } else {
                 return false;
             }
         },
-        intopagevif: function (index){
-            if (index == this.showpage){
+        intopagevif: function(index) {
+            if (index == this.showpage) {
                 return true;
-            }else{
+            } else {
                 return false;
             }
         },
-        clicktoopen: function (index){
-            if (this.newss[index].clickto){
+        clicktoopen: function(index) {
+            if (this.newss[index].clickto) {
                 return "_self";
-            }else{
+            } else {
                 return "_blank";
             }
         }
     },
-    computed:{
-        bannerstyle_fn: function () {
+    computed: {
+        /*
+        cancelAlert_fn: function () {
+            if (this.upshowpage == false) {
+                return addCookie("cancelAlert", "1", 1);
+            }
+        },
+        */
+        bannerstyle_fn: function() {
             bannerstyle = this.newss.length - this.newnews;
             if (bannerstyle == 1) {
                 this.slickstyle = false;
                 return "bannerboxstyle_one";
-            } else if (bannerstyle == 2){
+            } else if (bannerstyle == 2) {
                 this.slickstyle = false;
                 return "bannerboxstyle_two";
-            } else if (bannerstyle > 2){
+            } else if (bannerstyle > 2) {
                 this.slickstyle = true;
                 return "bannerboxstyle_one";
             }
