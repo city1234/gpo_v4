@@ -176,7 +176,9 @@ white-space : nowrap;
                     cursor: pointer;
                     width: 40px;
                     height: 20px;
+                    background: #000;
                     &:before{
+                        position: relative;
                         line-height: 20px;
                         font-size: 20px;
                         color: #b6b6b6;
