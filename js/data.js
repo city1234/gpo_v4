@@ -2,31 +2,29 @@
 var vm = new Vue({
     el: '#mainbanner,#newsPage01,#airship',
     data: {
-        //首页跳窗是第几个公告从0开始
-        showpage: 0,
-        //新闻新产品预告数量
-        newnews: 1,
+        
+        outwindow: false,//是否跳窗
+        showpage: 0,//首页跳窗是第几个公告从0开始
+        newnews: 1,//新闻新产品预告数量****delete
+        /* */
+        totalnews:0,//资料总数
+        pagelistnum: 9, //每页显示条数
+        nowpage: 1, // 当前页数
+        /* */
         bannerstyle: 0,
         slickstyle: false,
         newss: [
             {
-                //是否首页展示
-                istopbanner: true,
-                //是否有内页公告
-                clickto: false,
-                //点击连结
-                link: "luckyairship/index.html",
-                //首页大图2500*1080
-                mainbannerimg: "images/activebanner/mainbanner_01.jpg",
-                //公告内页小图1410*385
-                bannerimg: "images/activebanner/infbanner_01.jpg",
-                //公告名称(最好8个全形字以内)
-                name: "幸运相伴，让您梦想成真！",
-                //活动日期
-                time: "即将上线",
-                //内容html
+                newstype: 1,//资讯类型 product>1,content>2,event>3,download>4
+                istopbanner: true,//是否首页展示
+                clickto: false,//是否有内页公告
+                link: "luckyairship/index.html",//点击连结,下载檔案
+                mainbannerimg: "images/activebanner/mainbanner_01.jpg",//首页大图2500*1080
+                bannerimg: "images/activebanner/infbanner_01.jpg",//公告内页小图1410*385
+                name: "幸运相伴，让您梦想成真！",//公告名称(最好8个全形字以内)
+                time: "即将上线",//活动日期
                 containtext: '\
-                    <div style="text-align:center;"><a href="luckyairship/index.html" target="_blank">前往活动连结</a></div>'
+                    <div style="text-align:center;"><a href="luckyairship/index.html" target="_blank">前往活动连结</a></div>'//内容html
             },
             {
                 istopbanner: false,
@@ -35,7 +33,7 @@ var vm = new Vue({
                 mainbannerimg: "images/activebanner/mainbanner.jpg",
                 bannerimg: "images/activebanner/infbanner.jpg",
                 name: "2018新春特惠活动",
-                time: "活动更新日期:2018/1/30",
+                time: "2018/1/30",
                 containtext: '\
                     东方包网平台为答谢各位新老客户多年的支持与厚爱在春节来临之际特别推出\
                     <span class= "redtxt" > 新春特惠活动</span>，凡此活动期间在我司开设游戏网站\
@@ -61,7 +59,87 @@ var vm = new Vue({
                 mainbannerimg: "",
                 bannerimg: "images/newsBigBanner.png",
                 name: "【H5游戏主页改版】新架构，新体验，详戳图片！！",
-                time: "更新日期：2018/01/30",
+                time: "2018/01/30",
+                containtext: ''
+            },
+            {
+                istopbanner: false,
+                clickto: false,
+                link: "v1.0/index.html",
+                mainbannerimg: "",
+                bannerimg: "images/newsBigBanner.png",
+                name: "【H5游戏主页改版】新架构，新体验，详戳图片！！",
+                time: "2018/01/30",
+                containtext: ''
+            },
+            {
+                istopbanner: false,
+                clickto: false,
+                link: "v1.0/index.html",
+                mainbannerimg: "",
+                bannerimg: "images/newsBigBanner.png",
+                name: "【H5游戏主页改版】新架构，新体验，详戳图片！！",
+                time: "2018/01/30",
+                containtext: ''
+            },
+            {
+                istopbanner: false,
+                clickto: false,
+                link: "v1.0/index.html",
+                mainbannerimg: "",
+                bannerimg: "images/newsBigBanner.png",
+                name: "【H5游戏主页改版】新架构，新体验，详戳图片！！",
+                time: "2018/01/30",
+                containtext: ''
+            },
+            {
+                istopbanner: false,
+                clickto: false,
+                link: "v1.0/index.html",
+                mainbannerimg: "",
+                bannerimg: "images/newsBigBanner.png",
+                name: "【H5游戏主页改版】新架构，新体验，详戳图片！！",
+                time: "2018/01/30",
+                containtext: ''
+            },
+            {
+                istopbanner: false,
+                clickto: false,
+                link: "v1.0/index.html",
+                mainbannerimg: "",
+                bannerimg: "images/newsBigBanner.png",
+                name: "【H5游戏主页改版】新架构，新体验，详戳图片！！",
+                time: "2018/01/30",
+                containtext: ''
+            },
+            {
+                istopbanner: false,
+                clickto: false,
+                link: "v1.0/index.html",
+                mainbannerimg: "",
+                bannerimg: "images/newsBigBanner.png",
+                name: "【H5游戏主页改版】新架构，新体验，详戳图片！！",
+                time: "2018/01/30",
+                containtext: ''
+            },
+            {
+                istopbanner: false,
+                clickto: false,
+                link: "v1.0/index.html",
+                mainbannerimg: "",
+                bannerimg: "images/newsBigBanner.png",
+                name: "【H5游戏主页改版】新架构，新体验，详戳图片！！",
+                time: "2018/01/30",
+                containtext: ''
+            },
+            {
+                istopbanner: false,
+                clickto: false,
+                link: "v1.0/index.html",
+                mainbannerimg: "",
+                bannerimg: "images/newsBigBanner.png",
+                name: "【H5游戏主页改版】新架构，新体验，详戳图片！！",
+                time: "2018/01/30",
                 containtext: ''
             }
         ]
@@ -91,13 +169,6 @@ var vm = new Vue({
         }
     },
     computed: {
-        /*
-        cancelAlert_fn: function () {
-            if (this.upshowpage == false) {
-                return addCookie("cancelAlert", "1", 1);
-            }
-        },
-        */
         bannerstyle_fn: function() {
             bannerstyle = this.newss.length - this.newnews;
             if (bannerstyle == 1) {
@@ -110,6 +181,34 @@ var vm = new Vue({
                 this.slickstyle = true;
                 return "bannerboxstyle_one";
             }
+        }
+    },
+    mounted: function () {
+        //设置cookie
+        Vue.prototype.setCookie = (c_name, value, expiredays) => {
+            var exdate = new Date();
+            exdate.setDate(exdate.getDate() + expiredays);
+            document.cookie = c_name + "=" + escape(value) + ((expiredays == null) ? "" : ";expires=" + exdate.toGMTString());
+        }
+        //获取cookie、
+        function getCookie(name) {
+            var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+            if (arr = document.cookie.match(reg))
+                return (arr[2]);
+            else
+                return null;
+        }
+        Vue.prototype.getCookie = getCookie;
+        //删除cookie
+        Vue.prototype.delCookie = (name) => {
+            var exp = new Date();
+            exp.setTime(exp.getTime() - 1);
+            var cval = getCookie(name);
+            if (cval != null)
+                document.cookie = name + "=" + cval + ";expires=" + exp.toGMTString();
+        }
+        if (!this.outwindow){
+            this.setCookie("cancelAlert", "1", 1);
         }
     }
 });

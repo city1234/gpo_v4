@@ -1414,7 +1414,7 @@
     +bg('newsVisual.png')
 
 #newsPage01 
-    +bg('newsPage01.png')
+    /*+bg('newsPage01.png')*/
     height: auto
     h3
         position: relative
@@ -1438,13 +1438,13 @@
             img
                 max-width: 80%
     .newsBigBanner,.newsBanner
-        margin: 2.4em 0
+        margin: 0 0
         .slick-dots
             bottom: -25px
         .slick-slide
             margin: 20px 0
     .innewsBanner
-        margin-top: 10px
+        margin-top: 20px
         .bannerboxstyle_one
             width: 100%
         .bannerboxstyle_two
@@ -1486,6 +1486,9 @@
             font-size: 1.2em
             text-align: left
     .col-sm-4
+        .bannerItem_imgout
+            max-height: 160px
+    .col-sm-4,.col-lg-12
         +breakpoint(mobile)
             margin-top: 20px
         .bannerItem
@@ -1705,7 +1708,6 @@
     position: relative
     padding: 8% 8% 2%
     line-height: 1.8
-   
     +breakpoint(pc)
         width: 100%
     +breakpoint(pc)
@@ -1780,59 +1782,3 @@
 
 .airshipbox03
     +bg('LuckyAirShip_02.png')
-
-.btn-area
-    padding: 5vh 0
-    background-color: #001040
-    button
-        background: url(../images/icon/airshipLogo.png) no-repeat 10% center
-        background-size: 30%
-        margin: 0 auto
-        width: 28%
-        background-color: #47b1ad
-        box-shadow: -5px -15px 20px #1e837f inset
-        color: #fff
-        padding: 1.8vh
-        border-radius: 80px
-        +breakpoint(bigpc)
-            padding: 1.5vh
-            width: 32%
-        +breakpoint(pc)
-            width: 50%
-        +breakpoint(pad)
-            width: 80%
-        &:hover,&:focus 
-            transition: all 0.5s
-            color: #fff
-            opacity: 0.7
-        .btn-text 
-            margin-left: 12vw
-            +breakpoint(bigpc)
-                margin-left: 14vw
-            +breakpoint(pc)  
-                margin-left: 20vw
-            +breakpoint(pad) 
-                margin-left: 30vw
-        h4,p 
-            margin: 0
-            text-align: left
-            line-height: 1.4
-            text-shadow: 1px 2px 0px #1e837f
-        h4
-            font-size: 4.5vh
-            +breakpoint(bigpc)
-                font-size: 3.8vh
-            +breakpoint(mobile) 
-                font-size: 2.8vh
-            img 
-                width: 12%
-                margin-left: 0.5vh
-
-        p 
-            font-size: 2vh
-            letter-spacing: 1px
-            +breakpoint(pad) 
-                font-size: 2.5vh
-            +breakpoint(mobile) 
-                font-size: 1.8vh
-    

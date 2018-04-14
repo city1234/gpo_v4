@@ -68,37 +68,30 @@
             </div>
         </div>
     </div>
-    <section class="wow fadeInDown visual" id="newsVisual">
-        <h1 class="wow fadeInDown" data-wow-delay="0.2s">Experience the latest</h1>
-        <h1 class="text wow fadeInDown" data-wow-delay="0.4s">Oriental product</h1>
-        <p class="text wow fadeInUp" data-wow-delay="0.6s">体验最新的东方产品</p>
-        <a class="scroll" href="#newsPage01">Scroll
-            <span class="arrow"></span>
-        </a>
-    </section>
     <section class="wow fadeInDown" id="newsPage01">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 newsBigBanner" data-wow-delay="0.2s">
-                    <h3>新产品预告</h3>
-                    <div id="fade" class="Newsoverlay" onclick="if (!Newsmodal) HideLightBox(); return false;"></div>
-                    <!--
-                    <div id="Newsbox" class="Newscontent">
-                        <div class="close" onclick="HideLightBox(); return false;">X</div>
-                        <div class="col-lg-6">
-                            <img class="img-responsive" src="images/newsBanner01.png" alt="">
+                    <div class="newstitle">
+                        <div class="title">资讯中心</div>
+                        <div class="rightlist">
+                            <div class="newsnavlist">
+                                <div>
+                                    <li class="active">产品<span>专栏</span></li>
+                                    <li>内容<span>发布</span></li>
+                                    <li>活动<span>专栏</span></li>
+                                    <li>下载<span>通道</span></li>
+                                </div>
+                            </div>
+                            <div class="newssearchbar icon-search">
+                                <div class="form-group">
+                                    <input type="search" class="form-control" id="search" placeholder="请输入关键字">
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-lg-6">
-                            <h4>稳健扎根推上颠峰</h4>
-                            <hr>
-                            <h5>英国ICE展会BBIN体现向上突破的品牌优势
-                                <span>12-262017</span>
-                            </h5>
-                            <p>BBIN提供扎实深厚亚洲经验，双赢多元服务方案，与业界先进交流，共同激发产业动能。 展位主观觉以朱红阶梯勾勒金色水墨笔刷突显品牌气势及亚洲领头地位 2018年2月6-8日伦敦Excel会展中心 摊位＃N7-350敬请详谈</p>
-                            <p>BBIN提供扎实深厚亚洲经验，双赢多元服务方案，与业界先进交流，共同激发产业动能。 展位主观觉以朱红阶梯勾勒金色水墨笔刷突显品牌气势及亚洲领头地位 2018年2月6-8日伦敦Excel会展中心 摊位＃N7-350敬请详谈</p>
-                        </div>
+                        
                     </div>
-                    -->
+                    <div id="fade" class="Newsoverlay" onclick="if (!Newsmodal) HideLightBox(); return false;"></div>
                     <div id="alerthind">
                         <div id="alertbox" class="newsalert">
                             <div class="alertcontent" v-for="(news,index) in newss" v-if="intopagevif(index)">
@@ -111,51 +104,257 @@
                             </div>
                         </div>
                     </div>
-                    <div id="NewsLightBox" v-for="(news,index) in newss.slice(0, newnews)">
-                        <!-- <div id="lightboxspan" onclick="ShowLightBox('Newsbox'); return false;"> -->
-                        <a @click="clickindex(index)" :href="news.link" :target="clicktoopen(index)" :class="{alertinfbox:news.clickto}">
-                            <div id="lightboxspan">
-                                <div class="lightboxspanimg">
-                                    <img class="img-responsive" :src="news.bannerimg">
-                                </div>
-                                <div class="newsText">
-                                    <div class="row">
-                                        <div class="col-sm-8">{{news.name}}</div>
-                                        <div class="col-sm-4 text-right date">{{news.time}}</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="col-md-12">
-                    <h3>往期回顾</h3>
-                    <div class="newsBanner">
-                        <div class="row" :class="{slicknews:slickstyle}">
-                            <div class="innewsBanner" v-for="(news,index) in newss.slice(newnews)">
-                                <a @click="clickindex(index+newnews)" :href="news.link" :target="clicktoopen(index+newnews)" :class="{alertinfbox:news.clickto}">
-                                    <div class="wow fadeInDown col-sm-4":class="[bannerstyle_fn]" data-wow-delay="0.4s">
-                                        <div class="bannerItem">
-                                            <div class="bannerItem_imgout" :style="'background-image: url(' + news.bannerimg + ');'">
-                                                <img class="img-responsive" src="images/newsBanner.png" alt="">
-                                            </div>
-                                            <div class="newsText">
-                                                <div class="row">
-                                                    <div class="col-sm-6">
-                                                        <div class="title">
-                                                            {{news.name}}
-                                                        </div>
+                    <!--productpage-->
+                    <div class="news_productpage">
+                        <div class="newsBanner">
+                            <div class="row">
+                                <div id="innewsBanner" v-for="(news,index) in newss.slice(0, newnews)">
+                                    <!-- <div id="lightboxspan" onclick="ShowLightBox('Newsbox'); return false;"> -->
+                                    <a @click="clickindex(index)" :href="news.link" :target="clicktoopen(index)" :class="{alertinfbox:news.clickto}">
+                                        <div class="wow fadeInDown col-lg-12 innewsBannerbox" data-wow-delay="0.4s">
+                                            <div class="bannerItem">
+                                                <div class="bannerItem_imgout" :style="'background-image: url(' + news.bannerimg + ');'">
+                                                    <img class="img-responsive" src="images/newsBanner.png" alt="">
+                                                </div>
+                                                <div class="newsText">
+                                                    <div class="row">
+                                                        <div class="title"><p>{{news.name}}</p></div>
+                                                        <div class="date">{{news.time}}</div>
                                                     </div>
-                                                    <div class="col-sm-6 text-right date">{{news.time}}</div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </a>
+                                    </a>
+                                </div>
                             </div>
                         </div>
+                        <div class="newsBanner">
+                            <div class="row">
+                                <div class="innewsBanner" v-for="(news,index) in newss.slice(newnews)">
+                                    <a @click="clickindex(index+newnews)" :href="news.link" :target="clicktoopen(index+newnews)" :class="{alertinfbox:news.clickto}">
+                                        <div class="wow fadeInDown col-sm-4 innewsBannerbox" data-wow-delay="0.4s">
+                                            <div class="bannerItem">
+                                                <div class="bannerItem_imgout" :style="'background-image: url(' + news.bannerimg + ');'">
+                                                    <img class="img-responsive" src="images/newsBanner.png" alt="">
+                                                </div>
+                                                <div class="newsText">
+                                                    <div class="row">
+                                                        <div class="title">
+                                                            <p>{{news.name}}</p>
+                                                        </div>
+                                                        <div class="date">{{news.time}}</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pagectrlbox">
+                            <li class="pagectrl tofirstpage icon-firstpage"></li>
+                            <li class="pagectrl prepage icon-prepage"></li>
+                            <li class="pagenum active">1</li>
+                            <li class="pagenum">2</li>
+                            <li class="pagenum">3</li>
+                            <li class="pagenum">4</li>
+                            <li class="pagenum">5</li>
+                            <li class="pagectrl nextpage icon-nextpage"></li>
+                            <li class="pagectrl tolastpage icon-lastpage"></li>
+                        </div>
                     </div>
+                    <!--productpage_end-->
+                    <!--contentpage-->
+                    <div class="news_productpage">
+                        <div class="newsBanner">
+                            <div class="row">
+                                <div id="innewsBanner" v-for="(news,index) in newss.slice(0, newnews)">
+                                    <!-- <div id="lightboxspan" onclick="ShowLightBox('Newsbox'); return false;"> -->
+                                    <a @click="clickindex(index)" :href="news.link" :target="clicktoopen(index)" :class="{alertinfbox:news.clickto}">
+                                        <div class="wow fadeInDown col-lg-12 innewsBannerbox" data-wow-delay="0.4s">
+                                            <div class="bannerItem">
+                                                <div class="bannerItem_imgout" :style="'background-image: url(' + news.bannerimg + ');'">
+                                                    <img class="img-responsive" src="images/newsBanner.png" alt="">
+                                                </div>
+                                                <div class="newsText">
+                                                    <div class="row">
+                                                        <div class="title">
+                                                            <p>{{news.name}}</p>
+                                                        </div>
+                                                        <div class="date">{{news.time}}</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="newsBanner">
+                            <div class="row">
+                                <div class="innewsBanner" v-for="(news,index) in newss.slice(newnews)">
+                                    <a @click="clickindex(index+newnews)" :href="news.link" :target="clicktoopen(index+newnews)" :class="{alertinfbox:news.clickto}">
+                                        <div class="wow fadeInDown col-sm-4 innewsBannerbox" data-wow-delay="0.4s">
+                                            <div class="bannerItem">
+                                                <div class="bannerItem_imgout" :style="'background-image: url(' + news.bannerimg + ');'">
+                                                    <img class="img-responsive" src="images/newsBanner.png" alt="">
+                                                </div>
+                                                <div class="newsText">
+                                                    <div class="row">
+                                                        <div class="title">
+                                                            <p>{{news.name}}</p>
+                                                        </div>
+                                                        <div class="date">{{news.time}}</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pagectrlbox">
+                            <li class="pagectrl tofirstpage icon-firstpage"></li>
+                            <li class="pagectrl prepage icon-prepage"></li>
+                            <li class="pagenum active">1</li>
+                            <li class="pagenum">2</li>
+                            <li class="pagenum">3</li>
+                            <li class="pagenum">4</li>
+                            <li class="pagenum">5</li>
+                            <li class="pagectrl nextpage icon-nextpage"></li>
+                            <li class="pagectrl tolastpage icon-lastpage"></li>
+                        </div>
+                    </div>
+                    <!--contentpage_end-->
+                    <!--contentpage-->
+                    <div class="news_productpage">
+                        <div class="newsBanner">
+                            <div class="row">
+                                <div id="innewsBanner" v-for="(news,index) in newss.slice(0, newnews)">
+                                    <!-- <div id="lightboxspan" onclick="ShowLightBox('Newsbox'); return false;"> -->
+                                    <a @click="clickindex(index)" :href="news.link" :target="clicktoopen(index)" :class="{alertinfbox:news.clickto}">
+                                        <div class="wow fadeInDown col-lg-12 innewsBannerbox" data-wow-delay="0.4s">
+                                            <div class="bannerItem">
+                                                <div class="bannerItem_imgout" :style="'background-image: url(' + news.bannerimg + ');'">
+                                                    <img class="img-responsive" src="images/newsBanner.png" alt="">
+                                                </div>
+                                                <div class="newsText">
+                                                    <div class="row">
+                                                        <div class="title">
+                                                            <p>{{news.name}}</p>
+                                                        </div>
+                                                        <div class="date">{{news.time}}</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="newsBanner">
+                            <div class="row">
+                                <div class="innewsBanner" v-for="(news,index) in newss.slice(newnews)">
+                                    <a @click="clickindex(index+newnews)" :href="news.link" :target="clicktoopen(index+newnews)" :class="{alertinfbox:news.clickto}">
+                                        <div class="wow fadeInDown col-sm-4 innewsBannerbox" data-wow-delay="0.4s">
+                                            <div class="bannerItem">
+                                                <div class="bannerItem_imgout" :style="'background-image: url(' + news.bannerimg + ');'">
+                                                    <img class="img-responsive" src="images/newsBanner.png" alt="">
+                                                </div>
+                                                <div class="newsText">
+                                                    <div class="row">
+                                                        <div class="title">
+                                                            <p>{{news.name}}</p>
+                                                        </div>
+                                                        <div class="date">{{news.time}}</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pagectrlbox">
+                            <li class="pagectrl tofirstpage icon-firstpage"></li>
+                            <li class="pagectrl prepage icon-prepage"></li>
+                            <li class="pagenum active">1</li>
+                            <li class="pagenum">2</li>
+                            <li class="pagenum">3</li>
+                            <li class="pagenum">4</li>
+                            <li class="pagenum">5</li>
+                            <li class="pagectrl nextpage icon-nextpage"></li>
+                            <li class="pagectrl tolastpage icon-lastpage"></li>
+                        </div>
+                    </div>
+                    <!--contentpage_end-->
+
+                    <!--contentpage-->
+                    <div class="news_productpage">
+                        <div class="newsBanner">
+                            <div class="row">
+                                <div id="innewsBanner" v-for="(news,index) in newss.slice(0, newnews)">
+                                    <!-- <div id="lightboxspan" onclick="ShowLightBox('Newsbox'); return false;"> -->
+                                    <a @click="clickindex(index)" :href="news.link" :target="clicktoopen(index)" :class="{alertinfbox:news.clickto}">
+                                        <div class="wow fadeInDown col-lg-12 innewsBannerbox" data-wow-delay="0.4s">
+                                            <div class="bannerItem">
+                                                <div class="bannerItem_imgout" :style="'background-image: url(' + news.bannerimg + ');'">
+                                                    <img class="img-responsive" src="images/newsBanner.png" alt="">
+                                                </div>
+                                                <div class="newsText">
+                                                    <div class="row">
+                                                        <div class="title">
+                                                            <p>{{news.name}}</p>
+                                                        </div>
+                                                        <div class="date">{{news.time}}</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="newsBanner">
+                            <div class="row">
+                                <div class="innewsBanner" v-for="(news,index) in newss.slice(newnews)">
+                                    <a @click="clickindex(index+newnews)" :href="news.link" :target="clicktoopen(index+newnews)" :class="{alertinfbox:news.clickto}">
+                                        <div class="wow fadeInDown col-sm-4 innewsBannerbox" data-wow-delay="0.4s">
+                                            <div class="bannerItem">
+                                                <div class="bannerItem_imgout" :style="'background-image: url(' + news.bannerimg + ');'">
+                                                    <img class="img-responsive" src="images/newsBanner.png" alt="">
+                                                </div>
+                                                <div class="newsText">
+                                                    <div class="row">
+                                                        <div class="title">
+                                                            <p>{{news.name}}</p>
+                                                        </div>
+                                                        <div class="date">{{news.time}}</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pagectrlbox">
+                            <li class="pagectrl tofirstpage icon-firstpage"></li>
+                            <li class="pagectrl prepage icon-prepage"></li>
+                            <li class="pagenum active">1</li>
+                            <li class="pagenum">2</li>
+                            <li class="pagenum">3</li>
+                            <li class="pagenum">4</li>
+                            <li class="pagenum">5</li>
+                            <li class="pagectrl nextpage icon-nextpage"></li>
+                            <li class="pagectrl tolastpage icon-lastpage"></li>
+                        </div>
+                    </div>
+                    <!--contentpage_end-->
+
+
+
+
                 </div>
             </div>
         </div>

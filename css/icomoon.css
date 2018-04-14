@@ -45,3 +45,18 @@
 .icon-keyboard_arrow_up:before {
   content: "\e900";
 }
+.icon-search:before {
+  content: "\e9c7";
+}
+.icon-firstpage:before {
+  content: "\e9c9";
+}
+.icon-lastpage:before {
+  content: "\e9c9";
+}
+.icon-prepage:before {
+  content: "\e9c8";
+}
+.icon-nextpage:before {
+  content: "\e9c8";
+}

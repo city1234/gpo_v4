@@ -44,6 +44,7 @@ $(document).ready(function() {
     });
 
 });
+$('.navbar').removeClass('wow');
 new WOW().init();
 
 function addCookie(sName,sValue,day) {
