@@ -348,6 +348,33 @@ white-space : nowrap;
 }
 
 @include range-width-in(0,768px){
+    .newsnavlist{
+        visibility: inherit !important;
+        z-index: 1000;
+        position: fixed;
+        right: 10px;
+        left: 10px;
+        background: #fff;
+        top: 58px;
+        width: calc(100% - 20px);
+        line-height: 50px;
+        height: 50px;
+        font-size: 16px;
+        border-bottom: 1px solid #bebebe;
+        float: none;
+        div{
+            width: 100%;
+            right: 0;
+            li{
+                display: inline-block;
+                float: none;
+                padding: 0 6%;
+                span{
+                    display: none;
+                }
+            }
+        }
+    }
     .newsBigBanner{
         .innewsBannerbox{
             margin-top: 0px!important;
@@ -359,6 +386,7 @@ white-space : nowrap;
             .rightlist{
                 width: 100%;
                 .newsnavlist{
+                    display: none;
                     visibility: inherit !important;
                     z-index: 1000;
                     position: fixed;
