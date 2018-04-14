@@ -165,7 +165,7 @@ white-space : nowrap;
                     @include css3(border-radius,20px);
                     padding-right: 50px;
                 }
-                .icon-search{
+                .possearchpic{
                     position: absolute;
                     z-index: 9;
                     margin-top: 7px;
@@ -177,11 +177,13 @@ white-space : nowrap;
                     width: 40px;
                     height: 20px;
                     background: #000;
-                    &:before{
-                        position: relative;
-                        line-height: 20px;
-                        font-size: 20px;
-                        color: #b6b6b6;
+                    .icon-search{
+                          &:before{
+                            position: relative;
+                            line-height: 20px;
+                            font-size: 20px;
+                            color: #b6b6b6;
+                        }  
                     }
                 }
                 
