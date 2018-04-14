@@ -858,7 +858,7 @@ footer .col-lg-6 p {
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
   border-radius: 20px;
-  margin-right: 50px;
+  padding-right: 50px;
 }
 /* line 228, ../sass/_add.scss */
 .newsBigBanner .newstitle .rightlist .newssearchbar:before {
@@ -868,7 +868,7 @@ footer .col-lg-6 p {
   font-size: 20px;
   margin-top: 7px;
   right: 0px;
-  padding-right: 25px;
+  margin-right: 25px;
   color: #b6b6b6;
   border-left: 1px solid #b6b6b6;
   padding-left: 25px;
