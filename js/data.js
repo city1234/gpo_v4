@@ -2,7 +2,6 @@
 var vm = new Vue({
     el: '#mainbanner,#newsPage01,#airship',
     data: {
-<<<<<<< HEAD
         
         outwindow: false,//是否跳窗
         showpage: 0,//首页跳窗是第几个公告从0开始
@@ -12,17 +11,10 @@ var vm = new Vue({
         pagelistnum: 9, //每页显示条数
         nowpage: 1, // 当前页数
         /* */
-=======
-        //首页跳窗是第几个公告从0开始
-        showpage: 0,
-        //新闻新产品预告数量
-        newnews: 1,
->>>>>>> 7acb63d312d85596372465846af6792fe9765d11
         bannerstyle: 0,
         slickstyle: false,
         newss: [
             {
-<<<<<<< HEAD
                 newstype: 1,//资讯类型 product>1,content>2,event>3,download>4
                 istopbanner: true,//是否首页展示
                 clickto: false,//是否有内页公告
@@ -33,25 +25,6 @@ var vm = new Vue({
                 time: "即将上线",//活动日期
                 containtext: '\
                     <div style="text-align:center;"><a href="luckyairship/index.html" target="_blank">前往活动连结</a></div>'//内容html
-=======
-                //是否首页展示
-                istopbanner: true,
-                //是否有内页公告
-                clickto: false,
-                //点击连结
-                link: "luckyairship/index.html",
-                //首页大图2500*1080
-                mainbannerimg: "images/activebanner/mainbanner_01.jpg",
-                //公告内页小图1410*385
-                bannerimg: "images/activebanner/infbanner_01.jpg",
-                //公告名称(最好8个全形字以内)
-                name: "幸运相伴，让您梦想成真！",
-                //活动日期
-                time: "即将上线",
-                //内容html
-                containtext: '\
-                    <div style="text-align:center;"><a href="luckyairship/index.html" target="_blank">前往活动连结</a></div>'
->>>>>>> 7acb63d312d85596372465846af6792fe9765d11
             },
             {
                 istopbanner: false,
@@ -80,7 +53,6 @@ var vm = new Vue({
                     <br /> 东方平台全体员工祝您新的一年生意兴隆！财源广进！兴旺发达！'
             },
             {
-<<<<<<< HEAD
                 istopbanner: false,
                 clickto: false,
                 link: "v1.0/index.html",
@@ -97,29 +69,6 @@ var vm = new Vue({
                 mainbannerimg: "",
                 bannerimg: "images/newsBigBanner.png",
                 name: "【H5游戏主页改版】新架构，新体验，详戳图片！！",
-                time: "2018/01/30",
-                containtext: ''
-            },
-            {
-                istopbanner: false,
-                clickto: false,
-                link: "v1.0/index.html",
-                mainbannerimg: "",
-                bannerimg: "images/newsBigBanner.png",
-                name: "【H5游戏主页改版】新架构，新体验，详戳图片！！",
-                time: "2018/01/30",
-                containtext: ''
-            },
-            {
-=======
->>>>>>> 7acb63d312d85596372465846af6792fe9765d11
-                istopbanner: false,
-                clickto: false,
-                link: "v1.0/index.html",
-                mainbannerimg: "",
-                bannerimg: "images/newsBigBanner.png",
-                name: "【H5游戏主页改版】新架构，新体验，详戳图片！！",
-<<<<<<< HEAD
                 time: "2018/01/30",
                 containtext: ''
             },
@@ -171,9 +120,26 @@ var vm = new Vue({
                 bannerimg: "images/newsBigBanner.png",
                 name: "【H5游戏主页改版】新架构，新体验，详戳图片！！",
                 time: "2018/01/30",
-=======
-                time: "更新日期：2018/01/30",
->>>>>>> 7acb63d312d85596372465846af6792fe9765d11
+                containtext: ''
+            },
+            {
+                istopbanner: false,
+                clickto: false,
+                link: "v1.0/index.html",
+                mainbannerimg: "",
+                bannerimg: "images/newsBigBanner.png",
+                name: "【H5游戏主页改版】新架构，新体验，详戳图片！！",
+                time: "2018/01/30",
+                containtext: ''
+            },
+            {
+                istopbanner: false,
+                clickto: false,
+                link: "v1.0/index.html",
+                mainbannerimg: "",
+                bannerimg: "images/newsBigBanner.png",
+                name: "【H5游戏主页改版】新架构，新体验，详戳图片！！",
+                time: "2018/01/30",
                 containtext: ''
             }
         ]
@@ -203,16 +169,6 @@ var vm = new Vue({
         }
     },
     computed: {
-<<<<<<< HEAD
-=======
-        /*
-        cancelAlert_fn: function () {
-            if (this.upshowpage == false) {
-                return addCookie("cancelAlert", "1", 1);
-            }
-        },
-        */
->>>>>>> 7acb63d312d85596372465846af6792fe9765d11
         bannerstyle_fn: function() {
             bannerstyle = this.newss.length - this.newnews;
             if (bannerstyle == 1) {
