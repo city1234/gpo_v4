@@ -147,7 +147,8 @@ white-space : nowrap;
         margin-top: 0!important;
     }
     .newstitle{
-        overflow: hidden;
+        //overflow: hidden;
+        padding-bottom: 100px;
         line-height: 100px;
         >*{
             float: left;
@@ -360,11 +361,13 @@ white-space : nowrap;
                 width: 100%;
                 .newsnavlist{
                     visibility: inherit !important;
-                    z-index: 9;
+                    z-index: 1000;
                     position: fixed;
+                    right: 10px;
+                    left: 10px;
                     background: #fff;
                     top: 58px;
-                    width: calc(100% - 30px);
+                    width: calc(100% - 20px);
                     line-height: 50px;
                     height: 50px;
                     font-size: 16px;
