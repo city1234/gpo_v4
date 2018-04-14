@@ -165,22 +165,24 @@ white-space : nowrap;
                     @include css3(border-radius,20px);
                     padding-right: 50px;
                 }
-                &:before{
-                    position: relative;
+                .icon-search{
+                    position: absolute;
                     z-index: 9;
-                    line-height: 20px;
-                    font-size: 20px;
                     margin-top: 7px;
                     right: 0px;
                     margin-right: 25px;
-                    color: #b6b6b6;
                     border-left: 1px solid #b6b6b6;
                     padding-left: 15px;
                     cursor: pointer;
                     width: 40px;
                     height: 20px;
-                    background: #222;
+                    &:before{
+                        line-height: 20px;
+                        font-size: 20px;
+                        color: #b6b6b6;
+                    }
                 }
+                
             }
 
         }
