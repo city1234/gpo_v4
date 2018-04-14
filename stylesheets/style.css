@@ -1012,8 +1012,8 @@ footer .col-lg-6 p {
   }
   /* line 361, ../sass/_add.scss */
   .newsBigBanner .newstitle .rightlist .newsnavlist {
+    visibility: inherit !important;
     z-index: 9;
-    position: relative;
     position: fixed;
     background: #fff;
     top: 58px;
@@ -1022,56 +1022,58 @@ footer .col-lg-6 p {
     height: 50px;
     font-size: 16px;
     border-bottom: 1px solid #bebebe;
+    float: none;
   }
-  /* line 372, ../sass/_add.scss */
+  /* line 373, ../sass/_add.scss */
   .newsBigBanner .newstitle .rightlist .newsnavlist div {
     width: 100%;
+    right: 0;
   }
-  /* line 374, ../sass/_add.scss */
+  /* line 376, ../sass/_add.scss */
   .newsBigBanner .newstitle .rightlist .newsnavlist div li {
     display: inline-block;
     float: none;
     padding: 0 6%;
   }
-  /* line 378, ../sass/_add.scss */
+  /* line 380, ../sass/_add.scss */
   .newsBigBanner .newstitle .rightlist .newsnavlist div li span {
     display: none;
   }
-  /* line 384, ../sass/_add.scss */
+  /* line 386, ../sass/_add.scss */
   .newsBigBanner .newstitle .rightlist .newssearchbar {
     width: 100%;
     margin-top: 40px;
   }
-  /* line 390, ../sass/_add.scss */
+  /* line 392, ../sass/_add.scss */
   .newsBigBanner .bannerItem {
     position: relative;
     overflow: hidden;
     border: 0px solid #000 !important;
   }
-  /* line 394, ../sass/_add.scss */
+  /* line 396, ../sass/_add.scss */
   .newsBigBanner .bannerItem > * {
     float: left;
   }
-  /* line 397, ../sass/_add.scss */
+  /* line 399, ../sass/_add.scss */
   .newsBigBanner .bannerItem .bannerItem_imgout {
     width: 30%;
   }
-  /* line 400, ../sass/_add.scss */
+  /* line 402, ../sass/_add.scss */
   .newsBigBanner .bannerItem .newsText {
     width: 70%;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
   }
-  /* line 404, ../sass/_add.scss */
+  /* line 406, ../sass/_add.scss */
   .newsBigBanner .bannerItem .newsText .row {
     padding-top: 0;
     padding-bottom: 0;
   }
-  /* line 407, ../sass/_add.scss */
+  /* line 409, ../sass/_add.scss */
   .newsBigBanner .bannerItem .newsText .row .title {
     max-width: 100% !important;
   }
-  /* line 410, ../sass/_add.scss */
+  /* line 412, ../sass/_add.scss */
   .newsBigBanner .bannerItem .newsText .row .date {
     position: absolute;
     right: 0;
@@ -1080,66 +1082,66 @@ footer .col-lg-6 p {
 }
 /****适应小电脑样式****/
 @media screen and (min-width: 1360px) and (max-width: 1400px) {
-  /* line 423, ../sass/_add.scss */
+  /* line 425, ../sass/_add.scss */
   #Advantages {
     padding: 2.5em 0;
   }
 
-  /* line 426, ../sass/_add.scss */
+  /* line 428, ../sass/_add.scss */
   #b2b {
     padding-top: 4.5em;
   }
 
-  /* line 429, ../sass/_add.scss */
+  /* line 431, ../sass/_add.scss */
   #bigData {
     padding: 0em 0;
   }
 
-  /* line 432, ../sass/_add.scss */
+  /* line 434, ../sass/_add.scss */
   #bigData .bigDatabox {
     padding: 0vw 0;
   }
 
-  /* line 435, ../sass/_add.scss */
+  /* line 437, ../sass/_add.scss */
   #lotteryPage01 {
     padding: 0em 0;
     height: 103vh;
   }
 
-  /* line 439, ../sass/_add.scss */
+  /* line 441, ../sass/_add.scss */
   #lotteryPage02 {
     padding: 3em 0;
     height: 105vh;
   }
 
-  /* line 444, ../sass/_add.scss */
+  /* line 446, ../sass/_add.scss */
   #casePage02 .caseAchievement {
     width: 42%;
     height: 38%;
   }
 
-  /* line 448, ../sass/_add.scss */
+  /* line 450, ../sass/_add.scss */
   #casePage03 {
     padding: 1.5em 0;
     height: 115vh;
   }
 
-  /* line 452, ../sass/_add.scss */
+  /* line 454, ../sass/_add.scss */
   #mobilePage01 {
     padding: 0.2em 0;
   }
 
-  /* line 455, ../sass/_add.scss */
+  /* line 457, ../sass/_add.scss */
   #cooperationPage01 {
     padding: 2.5em 0;
   }
 
-  /* line 458, ../sass/_add.scss */
+  /* line 460, ../sass/_add.scss */
   #cooperationPage02 {
     padding: 2.5em 6.5em;
   }
 
-  /* line 461, ../sass/_add.scss */
+  /* line 463, ../sass/_add.scss */
   #cooperationPage03 {
     padding: 0em 6.5em;
     height: 115vh;

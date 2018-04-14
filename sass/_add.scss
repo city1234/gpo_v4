@@ -359,8 +359,8 @@ white-space : nowrap;
             .rightlist{
                 width: 100%;
                 .newsnavlist{
+                    visibility: inherit !important;
                     z-index: 9;
-                    position: relative;
                     position: fixed;
                     background: #fff;
                     top: 58px;
@@ -369,8 +369,10 @@ white-space : nowrap;
                     height: 50px;
                     font-size: 16px;
                     border-bottom: 1px solid #bebebe;
+                    float: none;
                     div{
                         width: 100%;
+                        right: 0;
                         li{
                             display: inline-block;
                             float: none;
