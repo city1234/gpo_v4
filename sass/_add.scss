@@ -227,6 +227,7 @@ white-space : nowrap;
                 }
                 &:before{
                     position: absolute;
+                    z-index: 9;
                     line-height: 20px;
                     font-size: 20px;
                     margin-top: 7px;
@@ -315,7 +316,6 @@ white-space : nowrap;
                 overflow: hidden;
                 height: 50px;
                 padding: 12px;
-                position: relative;
                 @include range-width-in(0,768px){
                     height: auto;
                 }
@@ -333,6 +333,7 @@ white-space : nowrap;
                     @include range-width-in(0,768px){
                         width: 100%;
                         -webkit-line-clamp: 2;
+                        height: 45px;
                     }
                     p{
                         margin: 0!important;
