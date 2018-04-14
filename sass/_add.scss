@@ -166,6 +166,7 @@ white-space : nowrap;
                     padding-right: 50px;
                 }
                 &:before{
+                    content: "\e9c7";
                     position: absolute;
                     z-index: 9;
                     line-height: 20px;
