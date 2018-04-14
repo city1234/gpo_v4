@@ -176,7 +176,13 @@ white-space : nowrap;
                     cursor: pointer;
                     width: 40px;
                     height: 20px;
-                    background: #000;
+                    line-height: 20px!important;
+                    img{
+                        width: 20px;
+                        height: 20px;
+
+
+                    }
                     .icon-search{
                           &:before{
                             position: relative;
