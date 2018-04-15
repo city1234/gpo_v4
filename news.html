@@ -114,7 +114,7 @@
                         </div>
                     </div>
                     <!--productpage-->
-                    <div class="news_productpage">
+                    <div id="news_productpage">
                         <div class="newsBanner">
                             <div class="row">
                                 <div id="innewsBanner" v-for="(news,index) in newss.slice(0, newnews)">
@@ -174,14 +174,14 @@
                     </div>
                     <!--productpage_end-->
                     <!--contentpage-->
-                    <div class="news_contentpage">
+                    <div id="news_contentpage">
                         <div class="newsBanner">
                                 <div class="contentpage_contentlist_out" v-for="(news,index) in newss.slice(newnews)">
                                     <a @click="clickindex(index+newnews)" :href="news.link" :target="clicktoopen(index+newnews)" :class="{alertinfbox:news.clickto}">
                                         <div class="wow fadeInDown contentpage_contentlist_in" data-wow-delay="0.4s">
                                             <div class="contentpage_text">
                                                 <div class="newsText">
-                                                    <div class="title">
+                                                    <div class="title title_active">
                                                         <p>{{news.name}}</p>
                                                     </div>
                                                     <div class="newscontent"><p>{{news.containtext}}</p></div>
@@ -206,7 +206,7 @@
                     </div>
                     <!--contentpage_end-->
                     <!--eventpage-->
-                    <div class="news_eventpage">
+                    <div id="news_eventpage">
                         <div class="newsBanner">
                             <div class="row">
                                 <div id="innewsBanner" v-for="(news,index) in newss.slice(0, newnews)">
@@ -269,28 +269,27 @@
                     <!--eventpage_end-->
 
                     <!--downloadpage-->
-                    <div class="news_downloadpage">
+                    <div id="news_downloadpage">
                         <div class="newsBanner">
-                            <div class="row">
-                                <div class="innewsBanner" v-for="(news,index) in newss.slice(newnews)">
-                                    <a @click="clickindex(index+newnews)" :href="news.link" :target="clicktoopen(index+newnews)" :class="{alertinfbox:news.clickto}">
-                                        <div class="wow fadeInDown col-sm-4 innewsBannerbox" data-wow-delay="0.4s">
-                                            <div class="bannerItem">
-                                                <div class="bannerItem_imgout" :style="'background-image: url(' + news.bannerimg + ');'">
-                                                    <img class="img-responsive" src="images/newsBanner.png" alt="">
+                            <div class="contentpage_contentlist_out" v-for="(news,index) in newss.slice(newnews)">
+                                <a :href="news.bannerimg" target="_blank">
+                                    <div class="wow fadeInDown contentpage_contentlist_in" data-wow-delay="0.4s">
+                                        <div class="contentpage_text">
+                                            <div class="newsText">
+                                                <div class="newscontent">
+                                                    <p>{{news.containtext}}</p>
                                                 </div>
-                                                <div class="newsText">
-                                                    <div class="row">
-                                                        <div class="title">
-                                                            <p>{{news.name}}</p>
-                                                        </div>
-                                                        <div class="date">{{news.time}}</div>
-                                                    </div>
+                                                <div class="newstype">
+                                                    {{news.name}}
+                                                </div>
+                                                <div class="newsdownload">
+                                                    <div class="icon-download"></div>
                                                 </div>
                                             </div>
+                                            <div class="date">{{news.time}}</div>
                                         </div>
-                                    </a>
-                                </div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="pagectrlbox">
