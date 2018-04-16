@@ -371,11 +371,12 @@ white-space : nowrap;
             margin-top: 0px;
             @include css3(transition,all .3s ease);
             cursor: pointer;
+            a{
+                text-decoration: none;
+            }
             &:hover{
                 background: #f3f3f3;
-                a{
-                    text-decoration: none;
-                }
+                
                 .newscontent,.date,.newstype{
                     color: #4b81c4!important;
                 }
@@ -456,6 +457,7 @@ white-space : nowrap;
                                 line-height: 25px;
                                 max-width: 100%;
                                 padding-left: 0px;
+                                margin-top: 7px;
                             }
                         }
                         .date{
@@ -508,6 +510,11 @@ white-space : nowrap;
         @include range-width-in(0,768px){
             margin-top: -15px;
         }
+    }
+}
+@include range-width-in(769px){
+    .mb{
+        display: none;
     }
 }
 @include range-width-in(0,768px){

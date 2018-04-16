@@ -68,7 +68,7 @@
             </div>
         </div>
     </div>
-    <div class="newsnavlist">
+    <div class="newsnavlist mb">
         <div>
             <li class="active">产品<span>专栏</span></li>
             <li>内容<span>发布</span></li>
@@ -176,12 +176,12 @@
                     <!--contentpage-->
                     <div id="news_contentpage">
                         <div class="newsBanner">
-                                <div class="contentpage_contentlist_out" v-for="(news,index) in newss.slice(newnews)">
-                                    <a @click="clickindex(index+newnews)" :href="news.link" :target="clicktoopen(index+newnews)" :class="{alertinfbox:news.clickto}">
+                                <div class="contentpage_contentlist_out" v-for="(news,index) in newss">
+                                    <a @click="clickindex(index)" :href="news.link" :target="clicktoopen(index)" :class="{alertinfbox:news.clickto}">
                                         <div class="wow fadeInDown contentpage_contentlist_in" data-wow-delay="0.4s">
                                             <div class="contentpage_text">
                                                 <div class="newsText">
-                                                    <div class="title title_active">
+                                                    <div class="title" :class="{title_active:news.importanttag}">
                                                         <p>{{news.name}}</p>
                                                     </div>
                                                     <div class="newscontent"><p>{{news.containtext}}</p></div>
@@ -271,7 +271,7 @@
                     <!--downloadpage-->
                     <div id="news_downloadpage">
                         <div class="newsBanner">
-                            <div class="contentpage_contentlist_out" v-for="(news,index) in newss.slice(newnews)">
+                            <div class="contentpage_contentlist_out" v-for="(news,index) in newss">
                                 <a :href="news.bannerimg" target="_blank">
                                     <div class="wow fadeInDown contentpage_contentlist_in" data-wow-delay="0.4s">
                                         <div class="contentpage_text">

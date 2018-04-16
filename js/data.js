@@ -2,20 +2,38 @@
 var vm = new Vue({
     el: '#mainbanner,#newsPage01,#airship',
     data: {
-        
-        outwindow: false,//是否跳窗
+        outwindow: false,//首页是否跳窗
         showpage: 0,//首页跳窗是第几个公告从0开始
         newnews: 1,//新闻新产品预告数量****delete
-        /* */
-        totalnews:0,//资料总数
-        pagelistnum: 9, //每页显示条数
-        nowpage: 1, // 当前页数
-        /* */
         bannerstyle: 0,
         slickstyle: false,
+        nowlistpage: 0, //当前分页 product>0,content>1,event>2,download>3
+        page:[
+            {
+                totalnews:0,//资料总数
+                pagelistnum: 9, //每页显示条数
+                nowpage: 1, // 当前页数
+            },
+            {
+                totalnews: 0,//资料总数
+                pagelistnum: 9, //每页显示条数
+                nowpage: 1, // 当前页数
+            },
+            {
+                totalnews: 0,//资料总数
+                pagelistnum: 9, //每页显示条数
+                nowpage: 1, // 当前页数
+            },
+            {
+                totalnews: 0,//资料总数
+                pagelistnum: 9, //每页显示条数
+                nowpage: 1, // 当前页数
+            }
+        ],
         newss: [
             {
-                newstype: 1,//资讯类型 product>1,content>2,event>3,download>4
+                newstype: 0,//资讯子分页类型 product>0,content>1,event>2,download>3
+                importanttag: true,//content重点标签
                 istopbanner: true,//是否首页展示
                 clickto: false,//是否有内页公告
                 link: "luckyairship/index.html",//点击连结,下载檔案
