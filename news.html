@@ -68,15 +68,16 @@
             </div>
         </div>
     </div>
-    <div class="newsnavlist mb">
-        <div>
-            <li class="active">产品<span>专栏</span></li>
-            <li>内容<span>发布</span></li>
-            <li>活动<span>专栏</span></li>
-            <li>下载<span>通道</span></li>
-        </div>
-    </div>
+    
     <section class="wow fadeInDown" id="newsPage01">
+        <div class="newsnavlist mb">
+            <div>
+                <li class="active" @click="newsnavlist(0)">产品<span>专栏</span></li>
+                <li @click="newsnavlist(1)">内容<span>发布</span></li>
+                <li @click="newsnavlist(2)">活动<span>专栏</span></li>
+                <li @click="newsnavlist(3)">下载<span>通道</span></li>
+            </div>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-md-12 newsBigBanner" data-wow-delay="0.2s">
@@ -85,10 +86,10 @@
                         <div class="rightlist">
                             <div class="newsnavlist">
                                 <div>
-                                    <li class="active">产品<span>专栏</span></li>
-                                    <li>内容<span>发布</span></li>
-                                    <li>活动<span>专栏</span></li>
-                                    <li>下载<span>通道</span></li>
+                                    <li class="active" @click="newsnavlist(0)">产品<span>专栏</span></li>
+                                    <li @click="newsnavlist(1)">内容<span>发布</span></li>
+                                    <li @click="newsnavlist(2)">活动<span>专栏</span></li>
+                                    <li @click="newsnavlist(3)">下载<span>通道</span></li>
                                 </div>
                             </div>
                             <div class="newssearchbar">
@@ -114,7 +115,7 @@
                         </div>
                     </div>
                     <!--productpage-->
-                    <div id="news_productpage">
+                    <div id="news_productpage" v-if="nowlistpage==0">
                         <div class="newsBanner">
                             <div class="row">
                                 <div id="innewsBanner" v-for="(news,index) in newss.slice(0, newnews)">
@@ -174,7 +175,7 @@
                     </div>
                     <!--productpage_end-->
                     <!--contentpage-->
-                    <div id="news_contentpage">
+                    <div id="news_contentpage" v-if="nowlistpage==1">
                         <div class="newsBanner">
                                 <div class="contentpage_contentlist_out" v-for="(news,index) in newss">
                                     <a @click="clickindex(index)" :href="news.link" :target="clicktoopen(index)" :class="{alertinfbox:news.clickto}">
@@ -206,7 +207,7 @@
                     </div>
                     <!--contentpage_end-->
                     <!--eventpage-->
-                    <div id="news_eventpage">
+                    <div id="news_eventpage"  v-if="nowlistpage==2">
                         <div class="newsBanner">
                             <div class="row">
                                 <div id="innewsBanner" v-for="(news,index) in newss.slice(0, newnews)">
@@ -269,7 +270,7 @@
                     <!--eventpage_end-->
 
                     <!--downloadpage-->
-                    <div id="news_downloadpage">
+                    <div id="news_downloadpage"  v-if="nowlistpage==3">
                         <div class="newsBanner">
                             <div class="contentpage_contentlist_out" v-for="(news,index) in newss">
                                 <a :href="news.bannerimg" target="_blank">

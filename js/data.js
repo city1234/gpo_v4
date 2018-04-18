@@ -163,6 +163,11 @@ var vm = new Vue({
         ]
     },
     methods: {
+        newsnavlist: function(index){
+            this.nowlistpage = index;
+            //console.log(index);
+            $(".newsnavlist>div>li").eq(index).addClass("active");
+        },
         clickindex: function(index) {
             this.showpage = index;
             if (index == this.showpage) {
