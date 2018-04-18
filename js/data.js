@@ -1,48 +1,28 @@
 //資料架構
 var vm = new Vue({
-    el: '#mainbanner,#newsPage01,#airship',
+    el: '#mainbanner,#airship,#newsBigBanner',
     data: {
-        outwindow: false,//首页是否跳窗
-        showpage: 0,//首页跳窗是第几个公告从0开始
-        newnews: 1,//新闻新产品预告数量****delete
+        outwindow: false, //是否跳窗
+        showpage: 0, //首页跳窗是第几个公告从0开始
+        newnews: 1, //新闻新产品预告数量****delete
+        /* */
+        totalnews: 0, //资料总数
+        pagelistnum: 9, //每页显示条数
+        nowpage: 1, // 当前页数
+        /* */
         bannerstyle: 0,
         slickstyle: false,
-        nowlistpage: 0, //当前分页 product>0,content>1,event>2,download>3
-        page:[
-            {
-                totalnews:0,//资料总数
-                pagelistnum: 9, //每页显示条数
-                nowpage: 1, // 当前页数
-            },
-            {
-                totalnews: 0,//资料总数
-                pagelistnum: 9, //每页显示条数
-                nowpage: 1, // 当前页数
-            },
-            {
-                totalnews: 0,//资料总数
-                pagelistnum: 9, //每页显示条数
-                nowpage: 1, // 当前页数
-            },
-            {
-                totalnews: 0,//资料总数
-                pagelistnum: 9, //每页显示条数
-                nowpage: 1, // 当前页数
-            }
-        ],
-        newss: [
-            {
-                newstype: 0,//资讯子分页类型 product>0,content>1,event>2,download>3
-                importanttag: true,//content重点标签
-                istopbanner: true,//是否首页展示
-                clickto: false,//是否有内页公告
-                link: "luckyairship/index.html",//点击连结,下载檔案
-                mainbannerimg: "images/activebanner/mainbanner_01.jpg",//首页大图2500*1080
-                bannerimg: "images/activebanner/infbanner_01.jpg",//公告内页小图1410*385
-                name: "幸运相伴，让您梦想成真！",//公告名称(最好8个全形字以内)
-                time: "即将上线",//活动日期
+        newss: [{
+                newstype: 1, //资讯类型 product>1,content>2,event>3,download>4
+                istopbanner: true, //是否首页展示
+                clickto: false, //是否有内页公告
+                link: "luckyairship/index.html", //点击连结,下载檔案
+                mainbannerimg: "images/activebanner/mainbanner_01.jpg", //首页大图2500*1080
+                bannerimg: "images/activebanner/infbanner_01.jpg", //公告内页小图1410*385
+                name: "幸运相伴，让您梦想成真！", //公告名称(最好8个全形字以内)
+                time: "即将上线", //活动日期
                 containtext: '\
-                    <div style="text-align:center;"><a href="luckyairship/index.html" target="_blank">前往活动连结</a></div>'//内容html
+                    <div style="text-align:center;"><a href="luckyairship/index.html" target="_blank">前往活动连结</a></div>' //内容html
             },
             {
                 istopbanner: false,
@@ -160,8 +140,28 @@ var vm = new Vue({
                 time: "2018/01/30",
                 containtext: ''
             }
+        ],
+
+        activeTab: 1,
+        offsetRight: 0,
+        tabs: [{
+                id: 1,
+                name: '产品<span>专栏</span>',
+                content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut convallis vel leo facilisis aliquet. Nullam finibus enim vitae ex tincidunt interdum. Pellentesque non condimentum ante, vitae viverra nibh. Integer ultrices tortor eget massa convallis pulvinar. Nullam ipsum neque, luctus ut felis non, auctor pellentesque magna. Maecenas velit neque, blandit in pharetra in, rutrum at nunc. Vestibulum non finibus quam. Sed semper aliquam varius. Sed dictum eu risus sed ultrices.'
+            },
+            {
+                id: 2,
+                name: '内容<span>发布</span>',
+                content: 'Cras id felis eu nulla pulvinar aliquet a ac elit. Ut tincidunt nisl tempus mi fermentum cursus eget et nibh. Pellentesque fermentum tincidunt mi, in tempus odio malesuada non. Mauris sit amet efficitur felis. Duis vestibulum cursus quam vel condimentum. Aliquam at tellus blandit, sodales purus non, convallis arcu. Mauris convallis sed lorem et condimentum. Aliquam neque metus, sollicitudin a est vitae, convallis finibus risus. Vivamus pulvinar imperdiet malesuada. Donec iaculis eros et sapien accumsan tincidunt.'
+            },
+            {
+                id: 3,
+                name: '活动<span>专栏</span>',
+                content: 'Pellentesque ac metus odio. Nulla facilisi. Cras suscipit, tellus et vehicula faucibus, neque felis vestibulum nisi, eu consectetur ante metus eu ligula. Sed cursus posuere tellus eget tristique. Fusce venenatis ipsum nibh, hendrerit posuere massa ultrices quis. Donec interdum commodo ante id iaculis. Nulla semper nulla ut tristique vehicula. Sed porttitor justo massa, vitae consequat lectus viverra id.'
+            }
         ]
     },
+
     methods: {
         clickindex: function(index) {
             this.showpage = index;
@@ -184,6 +184,12 @@ var vm = new Vue({
             } else {
                 return "_blank";
             }
+        },
+        selectTab(id) {
+            let tabsList = this.$refs.tabsList
+            this.activeTab = id
+            this.offsetRight = tabsList.clientWidth * (id - 1)
+            tabsList.style.right = this.offsetRight + 'px'
         }
     },
     computed: {
@@ -201,14 +207,14 @@ var vm = new Vue({
             }
         }
     },
-    mounted: function () {
+    mounted: function() {
         //设置cookie
         Vue.prototype.setCookie = (c_name, value, expiredays) => {
-            var exdate = new Date();
-            exdate.setDate(exdate.getDate() + expiredays);
-            document.cookie = c_name + "=" + escape(value) + ((expiredays == null) ? "" : ";expires=" + exdate.toGMTString());
-        }
-        //获取cookie、
+                var exdate = new Date();
+                exdate.setDate(exdate.getDate() + expiredays);
+                document.cookie = c_name + "=" + escape(value) + ((expiredays == null) ? "" : ";expires=" + exdate.toGMTString());
+            }
+            //获取cookie、
         function getCookie(name) {
             var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
             if (arr = document.cookie.match(reg))
@@ -225,8 +231,10 @@ var vm = new Vue({
             if (cval != null)
                 document.cookie = name + "=" + cval + ";expires=" + exp.toGMTString();
         }
-        if (!this.outwindow){
+        if (!this.outwindow) {
             this.setCookie("cancelAlert", "1", 1);
         }
+        let tabsList = this.$refs.tabsList
+        tabsList.style.right = this.offsetRight + 'px'
     }
 });
