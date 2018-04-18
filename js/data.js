@@ -1,6 +1,6 @@
 //資料架構
 var vm = new Vue({
-    el: '#mainbanner,#newsPage01,#airship',
+    el: '#mainbanner,#newsPageout,#airship',
     data: {
         outwindow: false,//首页是否跳窗
         showpage: 0,//首页跳窗是第几个公告从0开始
@@ -8,6 +8,7 @@ var vm = new Vue({
         bannerstyle: 0,
         slickstyle: false,
         nowlistpage: 0, //当前分页 product>0,content>1,event>2,download>3
+        search: "",
         page:[
             {
                 totalnews:0,//资料总数
@@ -33,7 +34,7 @@ var vm = new Vue({
         newss: [
             {
                 newstype: 0,//资讯子分页类型 product>0,content>1,event>2,download>3
-                importanttag: true,//content重点标签
+                importanttag: true,//产品专栏活动专栏头版,content重点标签
                 istopbanner: true,//是否首页展示
                 clickto: false,//是否有内页公告
                 link: "luckyairship/index.html",//点击连结,下载檔案
@@ -45,6 +46,8 @@ var vm = new Vue({
                     <div style="text-align:center;"><a href="luckyairship/index.html" target="_blank">前往活动连结</a></div>'//内容html
             },
             {
+                newstype: 0,
+                importanttag: false,
                 istopbanner: false,
                 clickto: true,
                 link: "javascript: void(0)",
@@ -71,6 +74,8 @@ var vm = new Vue({
                     <br /> 东方平台全体员工祝您新的一年生意兴隆！财源广进！兴旺发达！'
             },
             {
+                newstype: 2,
+                importanttag: true,
                 istopbanner: false,
                 clickto: false,
                 link: "v1.0/index.html",
@@ -81,6 +86,56 @@ var vm = new Vue({
                 containtext: ''
             },
             {
+                newstype: 3,
+                importanttag: false,
+                istopbanner: false,
+                clickto: false,
+                link: "v1.0/index.html",
+                mainbannerimg: "",
+                bannerimg: "images/newsBigBanner.png",
+                name: "活动素材/轮播图",
+                time: "2018/01/30",
+                containtext: '【XXXXX项目】XXX项目升级啦，详戳图片，GO，内容区块可能延伸的范围，内容内容内容！！'
+            },
+            {
+                newstype: 1,
+                importanttag: true,
+                istopbanner: false,
+                clickto: false,
+                link: "v1.0/index.html",
+                mainbannerimg: "",
+                bannerimg: "images/newsBigBanner.png",
+                name: "【H7游戏主页改版】新架构，新体验，详戳图片！！",
+                time: "2018/01/30",
+                containtext: '【XXXXX项目】XXX项目升级啦，详戳图片，GO，内容区块可能延伸的范围，内容内容内容！！'
+            },
+            {
+                newstype: 1,
+                importanttag: false,
+                istopbanner: false,
+                clickto: false,
+                link: "v1.0/index.html",
+                mainbannerimg: "",
+                bannerimg: "images/newsBigBanner.png",
+                name: "【H7游戏主页改版】新架构，新体验，详戳图片！！",
+                time: "2018/01/30",
+                containtext: '【XXXXX项目】XXX项目升级啦，详戳图片，GO，内容区块可能延伸的范围，内容内容内容！！'
+            },
+            {
+                newstype: 2,
+                importanttag: false,
+                istopbanner: false,
+                clickto: false,
+                link: "v1.0/index.html",
+                mainbannerimg: "",
+                bannerimg: "images/newsBigBanner.png",
+                name: "【H9游戏主页改版】新架构，新体验，详戳图片！！",
+                time: "2018/01/30",
+                containtext: ''
+            },
+            {
+                newstype: 2,
+                importanttag: false,
                 istopbanner: false,
                 clickto: false,
                 link: "v1.0/index.html",
@@ -91,6 +146,8 @@ var vm = new Vue({
                 containtext: ''
             },
             {
+                newstype: 2,
+                importanttag: false,
                 istopbanner: false,
                 clickto: false,
                 link: "v1.0/index.html",
@@ -101,6 +158,8 @@ var vm = new Vue({
                 containtext: ''
             },
             {
+                newstype: 2,
+                importanttag: false,
                 istopbanner: false,
                 clickto: false,
                 link: "v1.0/index.html",
@@ -111,46 +170,8 @@ var vm = new Vue({
                 containtext: ''
             },
             {
-                istopbanner: false,
-                clickto: false,
-                link: "v1.0/index.html",
-                mainbannerimg: "",
-                bannerimg: "images/newsBigBanner.png",
-                name: "【H5游戏主页改版】新架构，新体验，详戳图片！！",
-                time: "2018/01/30",
-                containtext: ''
-            },
-            {
-                istopbanner: false,
-                clickto: false,
-                link: "v1.0/index.html",
-                mainbannerimg: "",
-                bannerimg: "images/newsBigBanner.png",
-                name: "【H5游戏主页改版】新架构，新体验，详戳图片！！",
-                time: "2018/01/30",
-                containtext: ''
-            },
-            {
-                istopbanner: false,
-                clickto: false,
-                link: "v1.0/index.html",
-                mainbannerimg: "",
-                bannerimg: "images/newsBigBanner.png",
-                name: "【H5游戏主页改版】新架构，新体验，详戳图片！！",
-                time: "2018/01/30",
-                containtext: ''
-            },
-            {
-                istopbanner: false,
-                clickto: false,
-                link: "v1.0/index.html",
-                mainbannerimg: "",
-                bannerimg: "images/newsBigBanner.png",
-                name: "【H5游戏主页改版】新架构，新体验，详戳图片！！",
-                time: "2018/01/30",
-                containtext: ''
-            },
-            {
+                newstype: 2,
+                importanttag: false,
                 istopbanner: false,
                 clickto: false,
                 link: "v1.0/index.html",
@@ -165,8 +186,14 @@ var vm = new Vue({
     methods: {
         newsnavlist: function(index){
             this.nowlistpage = index;
-            //console.log(index);
-            $(".newsnavlist>div>li").eq(index).addClass("active");
+            $(".newsnavlist>div>li").eq(index).addClass("active").siblings().removeClass("active");
+            $("#newsPage01 .newsnavlist>div>li").eq(index).addClass("active").siblings().removeClass("active");
+            $("html").getNiceScroll().resize();
+            $("html").getNiceScroll().remove();
+            var agent = navigator.userAgent.toLowerCase();
+            if (agent.match("android") || agent.match("iphone") || agent.match("ipad")) { } else {
+                nice = $("html").niceScroll({ scrollspeed: 51, mousescrollstep: 45, cursorwidth: "5px", cursorcolor: "#222", cursorborder: "0px solid #fff" });
+            };
         },
         clickindex: function(index) {
             this.showpage = index;
@@ -204,6 +231,18 @@ var vm = new Vue({
                 this.slickstyle = true;
                 return "bannerboxstyle_one";
             }
+        },
+        /*
+        filterlist: function (newss){
+            return this.newss.filter((news) => {
+                return news.name.match(this.search);
+            });
+        }
+        */
+        filterlist: function (newss){
+            return this.newss.filter((news) => {
+                return news.name.match(this.search);
+            });
         }
     },
     mounted: function () {
