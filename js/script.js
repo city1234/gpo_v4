@@ -64,9 +64,3 @@ function getCookies(name) {
     }
     return null;
 } 
-
-if ($(window).innerWidth() <= 769) {
-    $("body").addClass("sticky-header");
-} else {
-    $("body").removeClass("sticky-header");
-}
