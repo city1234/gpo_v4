@@ -165,6 +165,7 @@ white-space : nowrap;
                     @include css3(border-radius,20px);
                     padding-right: 50px;
                 }
+                input,input:focus,input:active{user-select: text;}
                 .possearchpic{
                     position: absolute;
                     z-index: 9;
