@@ -74,8 +74,8 @@ var vm = new Vue({
                     <br /> 东方平台全体员工祝您新的一年生意兴隆！财源广进！兴旺发达！'
             },
             {
-                newstype: 2,
-                importanttag: true,
+                newstype: 0,
+                importanttag: false,
                 istopbanner: false,
                 clickto: false,
                 link: "v1.0/index.html",
@@ -86,66 +86,19 @@ var vm = new Vue({
                 containtext: ''
             },
             {
-                newstype: 3,
+                newstype: 1,
                 importanttag: false,
                 istopbanner: false,
                 clickto: false,
-                link: "v1.0/index.html",
-                mainbannerimg: "",
-                bannerimg: "images/newsBigBanner.png",
-                name: "活动素材/轮播图",
-                time: "2018/01/30",
-                containtext: '【XXXXX项目】XXX项目升级啦，详戳图片，GO，内容区块可能延伸的范围，内容内容内容！！'
-            },
-            {
-                newstype: 1,
-                importanttag: true,
-                istopbanner: false,
-                clickto: true,
                 link: "javascript: void(0)",
                 mainbannerimg: "",
-                bannerimg: "",
-                name: "即将上线",
-                time: "2018/01/30",
-                containtexts: '【XXXXX项目】XXX项目升级啦，详戳图片，GO，内容区块可能延伸的范围，内容内容内容！！',
-                containtext: '\
-<table>\
-    <tr>\
-        <td>模块</td>\
-        <td>需求点描述</td>\
-        <td width="80">类型</td>\
-    </tr >\
-    <tr>\
-        <td>手机端H5增加手机游戏客户端下载</td>\
-        <td class="txtleft">1.发布内容发布内容发布内容发布内容发布内容 <br />\
-            2.发布内容发布内容发布内容发布内容发布内容发布内容发布内容发 布内容内容发布内容 <br />\
-            3.发布内容发布内容发布内容发布 <br />\
-            4.发布内容发布内容发布内容发布内容发</td>\
-        <td>新需求</td>\
-    </tr>\
-    <tr>\
-        <td>手机端H5增加手机游戏客户</td>\
-        <td class="txtleft">1.发布内容发布内容发布内容发布 <br />\
-            2.发布内容发布内容发布内容发布内容发布内容发布内容发布内容发 布内容内容发布内容 <br />\
-            3.发布内容发布内容发布内容发布内容发布内容内容发布内容<br /></td>\
-        <td>新需求</td>\
-    </tr>\
-    <tr>\
-        <td>手机端H5增加手戏客户</td>\
-        <td class="txtleft">1.发布内容发布内容发布内容发布 <br />\
-            2.发布内容发布内容发布内容发布内容发布内容发布内容发布内容发 布内容内容发布内容容发布内容容发布内容</td>\
-        <td>新需求</td>\
-    </tr>\
-    <tr>\
-        <td>手机端H5增加手机游戏客户端下载</td>\
-        <td class="txtleft">1.发布内容发布内容发布内容发布内容发布内容 <br />\
-            2.发布内容发布内容发布内容发布内容发布内容发布内容发布内容发 布内容内容发布内容 <br />\
-            3.发布内容发布内容发布内容发布 <br />\
-            4.发布内容发布内容发布内容发布内容发</td>\
-        <td>新需求</td>\
-    </tr>\
-</table >'
+                bannerimg: "无资料",
+                name: "无资料",
+                time: "无资料",
+                containtexts: "无资料",
+                containtext: "无资料"
             },
+            /*
             {
                 newstype: 1,
                 importanttag: false,
@@ -194,16 +147,136 @@ var vm = new Vue({
         <td>新需求</td>\
     </tr>\
 </table >'
+            },*/
+            {
+                newstype: 2,
+                importanttag: false,
+                istopbanner: false,
+                clickto: false,
+                link: "http://www.fishhuntergames.com/events/apr2018/",
+                mainbannerimg: "",
+                bannerimg: "http://www.fishhuntergames.com/events/apr2018/img/bg.jpg",
+                name: "宝箱宝宝大迁徙",
+                time: "2018/04/23",
+                containtext: '在打鱼过程中,宝箱宝宝不定时在游戏中出现。只需通过点击将其抓获，可获得丰富奖金。每次金额不确定，最高多达5000元。'
             },
             {
                 newstype: 2,
                 importanttag: false,
                 istopbanner: false,
                 clickto: false,
-                link: "v1.0/index.html",
+                link: "http://xingaming.com/event_standalone.html",
                 mainbannerimg: "",
-                bannerimg: "images/newsBigBanner.png",
-                name: "【H9游戏主页改版】新架构，新体验，详戳图片！！",
+                bannerimg: "http://xingaming.com/img/event-coinBattle/banner_1920x870_ZH.jpg",
+                name: "百万英雄金币王   通关翻倍天天赏",
+                time: "2018/04/18",
+                containtext: '金拉霸，猛龙传奇，金龙珠，XIN哥来了'
+            },
+            {
+                newstype: 2,
+                importanttag: false,
+                istopbanner: false,
+                clickto: false,
+                link: "http://yoplay.com/news/guessredpacket_apr18/",
+                mainbannerimg: "",
+                bannerimg: "http://yoplay.com/news/guessredpacket_apr18/img/banner.png",
+                name: "YOPLAY 猜红包活动，四月再次来袭",
+                time: "2018/04/11",
+                containtext: '全民猜红包，猜中就给你 '
+            },
+            {
+                newstype: 2,
+                importanttag: false,
+                istopbanner: false,
+                clickto: false,
+                link: "http://www.xingaming.com/zh_event.html",
+                mainbannerimg: "",
+                bannerimg: "http://www.xingaming.com/img/event-coinBattle/banner_1920x870_ZH.jpg",
+                name: "XIN哥來了",
+                time: "2018/03/26",
+                containtext: ''
+            },
+            {
+                newstype: 2,
+                importanttag: false,
+                istopbanner: false,
+                clickto: false,
+                link: "http://www.fishhuntergames.com/events/march2018/",
+                mainbannerimg: "",
+                bannerimg: "http://www.fishhuntergames.com/events/march2018/img/bg.jpg",
+                name: "礼金大派送",
+                time: "2018/03/20",
+                containtext: ''
+            },
+            {
+                newstype: 2,
+                importanttag: false,
+                istopbanner: false,
+                clickto: false,
+                link: "http://yoplay.com/news/guessredpacket/",
+                mainbannerimg: "",
+                bannerimg: "http://yoplay.com/news/guessredpacket/img/banner.jpg",
+                name: "猜红包活动",
+                time: "2018/03/07",
+                containtext: ''
+            },
+            {
+                newstype: 2,
+                importanttag: false,
+                istopbanner: false,
+                clickto: false,
+                link: "https://asia-gaming.net/events/aghero",
+                mainbannerimg: "",
+                bannerimg: "https://asia-gaming.net/events/aghero/images/png/banner.jpg",
+                name: "元宵节特别活动-AG百万英雄",
+                time: "2018/02/28",
+                containtext: ''
+            },
+            {
+                newstype: 2,
+                importanttag: false,
+                istopbanner: false,
+                clickto: false,
+                link: "xingaming.com/zh_event.html",
+                mainbannerimg: "",
+                bannerimg: "http://www.xingaming.com/img/event-coinBattle/banner_1920x870_ZH.jpg",
+                name: "让百万飞-抢金币",
+                time: "2018/02/12",
+                containtext: ''
+            },
+            {
+                newstype: 2,
+                importanttag: false,
+                istopbanner: false,
+                clickto: false,
+                link: "https://www.icetotallygaming.com/2018-exhibitor-list?&page=2&searchgroup=BDE66F20-exhibitors",
+                mainbannerimg: "",
+                bannerimg: "https://www.icelondon.uk.com/__media/website-slider-1900x620-alt.jpg",
+                name: "英国ICE展会",
+                time: "2018/02/06",
+                containtext: ''
+            },
+            {
+                newstype: 2,
+                importanttag: false,
+                istopbanner: false,
+                clickto: false,
+                link: "https://www.asia-gaming.com/events/mastertour",
+                mainbannerimg: "",
+                bannerimg: "https://www.asia-gaming.com/events/mastertour/images/index/index_s2b.png",
+                name: "AG賭神賽",
+                time: "2018/03/26",
+                containtext: ''
+            },
+            {
+                newstype: 2,
+                importanttag: false,
+                istopbanner: false,
+                clickto: false,
+                link: "http://www.fishhuntergames.com",
+                mainbannerimg: "",
+                bannerimg: "http://www.fishhuntergames.com/img/banner.png",
+                name: "2018大抽奖",
                 time: "2018/01/30",
                 containtext: ''
             },
@@ -212,48 +285,24 @@ var vm = new Vue({
                 importanttag: false,
                 istopbanner: false,
                 clickto: false,
-                link: "v1.0/index.html",
+                link: "http://www.xingaming.com",
                 mainbannerimg: "",
-                bannerimg: "images/newsBigBanner.png",
-                name: "【H5游戏主页改版】新架构，新体验，详戳图片！！",
+                bannerimg: "http://www.xingaming.com/img/event-coinBattle/banner_1920x870_ZH.jpg",
+                name: "XIN哥超给力，再送多个￥8888-抢金币",
                 time: "2018/01/30",
                 containtext: ''
             },
             {
-                newstype: 2,
+                newstype: 3,
                 importanttag: false,
                 istopbanner: false,
                 clickto: false,
-                link: "v1.0/index.html",
+                link: "javascript: void(0)",
                 mainbannerimg: "",
-                bannerimg: "images/newsBigBanner.png",
-                name: "【H5游戏主页改版】新架构，新体验，详戳图片！！",
-                time: "2018/01/30",
-                containtext: ''
-            },
-            {
-                newstype: 2,
-                importanttag: false,
-                istopbanner: false,
-                clickto: false,
-                link: "v1.0/index.html",
-                mainbannerimg: "",
-                bannerimg: "images/newsBigBanner.png",
-                name: "【H5游戏主页改版】新架构，新体验，详戳图片！！",
-                time: "2018/01/30",
-                containtext: ''
-            },
-            {
-                newstype: 2,
-                importanttag: false,
-                istopbanner: false,
-                clickto: false,
-                link: "v1.0/index.html",
-                mainbannerimg: "",
-                bannerimg: "images/newsBigBanner.png",
-                name: "【H5游戏主页改版】新架构，新体验，详戳图片！！",
-                time: "2018/01/30",
-                containtext: ''
+                bannerimg: "",
+                name: "活动素材/轮播图",
+                time: "无资料",
+                containtext: '无资料'
             }
         ]
     },
