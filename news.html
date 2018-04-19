@@ -114,12 +114,23 @@
                                     </div>
                                 </div>
                             </div>
+                            <div id="alertbox1" class="newsalert">
+                                <div class="alertcontent" v-for="(news,index) in newss" v-if="intopagevif(index)">
+                                    <div class="newsconttitlebox">
+                                        <div class="title"  :class="{title_active:news.importanttag}">{{news.name}}</div>
+                                        <div class="time">{{news.time}}</div>
+                                    </div>
+                                    <div class="txtmain">{{news.containtexts}}</div>
+                                    <div class="txt" v-html="news.containtext">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <!--productpage-->
-                        <div id="news_productpage" v-if="nowlistpage==0">
+                        <div id="news_productpage" v-show="nowlistpage==0">
                             <div class="newsBanner">
                                 <div class="row">
-                                    <div id="innewsBanner" v-for="(news,index) in newss" v-show="news.importanttag" v-if="news.newstype==nowlistpage">
+                                    <div id="innewsBanner" v-for="(news,index) in newss" v-show="news.importanttag&news.newstype==nowlistpage">
                                         <!-- <div id="lightboxspan" onclick="ShowLightBox('Newsbox'); return false;"> -->
                                         <a @click="clickindex(index)" :href="news.link" :target="clicktoopen(index)" :class="{alertinfbox:news.clickto}">
                                             <div class="wow fadeInDown col-lg-12 innewsBannerbox" data-wow-delay="0.4s">
@@ -141,7 +152,7 @@
                             </div>
                             <div class="newsBanner">
                                 <div class="row">
-                                    <div class="innewsBanner" v-for="(news,index) in filterlist" v-show="!news.importanttag" v-if="news.newstype==nowlistpage">
+                                    <div class="innewsBanner" v-for="(news,index) in filterlist" v-show="!news.importanttag&news.newstype==nowlistpage">
                                         <a @click="clickindex(index)" :href="news.link" :target="clicktoopen(index)" :class="{alertinfbox:news.clickto}">
                                             <div class="wow fadeInDown col-sm-4 innewsBannerbox" data-wow-delay="0.4s">
                                                 <div class="bannerItem">
@@ -176,17 +187,17 @@
                         </div>
                         <!--productpage_end-->
                         <!--contentpage-->
-                        <div id="news_contentpage" v-if="nowlistpage==1">
+                        <div id="news_contentpage" v-show="nowlistpage==1">
                             <div class="newsBanner">
-                                <div class="contentpage_contentlist_out" v-for="(news,index) in filterlist"  v-if="news.newstype==nowlistpage">
-                                    <a @click="clickindex(index)" :href="news.link" :target="clicktoopen(index)" :class="{alertinfbox:news.clickto}">
+                                <div class="contentpage_contentlist_out" v-for="(news,index) in filterlist"  v-show="news.newstype==nowlistpage">
+                                    <a @click="clickindex(index)" :href="news.link" :target="clicktoopen(index)" :class="{alertinfbox1:news.clickto}">
                                         <div class="wow fadeInDown contentpage_contentlist_in" data-wow-delay="0.4s">
                                             <div class="contentpage_text">
                                                 <div class="newsText">
                                                     <div class="title" :class="{title_active:news.importanttag}">
                                                         <p>{{news.name}}</p>
                                                     </div>
-                                                    <div class="newscontent"><p>{{news.containtext}}</p></div>
+                                                    <div class="newscontent"><p>{{news.containtexts}}</p></div>
                                                     <div class="date">{{news.time}}</div>
                                                 </div>
                                             </div>
@@ -208,10 +219,10 @@
                         </div>
                         <!--contentpage_end-->
                         <!--eventpage-->
-                        <div id="news_eventpage"  v-if="nowlistpage==2">
+                        <div id="news_eventpage"  v-show="nowlistpage==2">
                             <div class="newsBanner">
                                 <div class="row">
-                                    <div id="innewsBanner" v-for="(news,index) in newss" v-show="news.importanttag" v-if="news.newstype==nowlistpage">
+                                    <div id="innewsBanner" v-for="(news,index) in newss" v-show="news.importanttag&news.newstype==nowlistpage">
                                         <!-- <div id="lightboxspan" onclick="ShowLightBox('Newsbox'); return false;"> -->
                                         <a @click="clickindex(index)" :href="news.link" :target="clicktoopen(index)" :class="{alertinfbox:news.clickto}">
                                             <div class="wow fadeInDown col-lg-12 innewsBannerbox" data-wow-delay="0.4s">
@@ -235,7 +246,7 @@
                             </div>
                             <div class="newsBanner">
                                 <div class="row">
-                                    <div class="innewsBanner" v-for="(news,index) in filterlist" v-show="!news.importanttag" v-if="news.newstype==nowlistpage">
+                                    <div class="innewsBanner" v-for="(news,index) in filterlist" v-show="!news.importanttag&news.newstype==nowlistpage">
                                         <a @click="clickindex(index)" :href="news.link" :target="clicktoopen(index)" :class="{alertinfbox:news.clickto}">
                                             <div class="wow fadeInDown col-sm-4 innewsBannerbox" data-wow-delay="0.4s">
                                                 <div class="bannerItem">
@@ -271,9 +282,9 @@
                         <!--eventpage_end-->
 
                         <!--downloadpage-->
-                        <div id="news_downloadpage"  v-if="nowlistpage==3">
+                        <div id="news_downloadpage"  v-show="nowlistpage==3">
                             <div class="newsBanner">
-                                <div class="contentpage_contentlist_out" v-for="(news,index) in newss"  v-if="news.newstype==nowlistpage">
+                                <div class="contentpage_contentlist_out" v-for="(news,index) in newss"  v-show="news.newstype==nowlistpage">
                                     <a :href="news.bannerimg" target="_blank">
                                         <div class="wow fadeInDown contentpage_contentlist_in" data-wow-delay="0.4s">
                                             <div class="contentpage_text">
@@ -381,6 +392,9 @@
     $(".alertinfbox").click(function () {
     	initoutalertbox_fn0();
     });
+    $(".alertinfbox1").click(function () {
+        initoutalertbox_fn1();
+    });
     
     function initoutalertbox_fn0(){
         var alertboxw = $(window).width();
@@ -393,6 +407,17 @@
             width: alertboxw, //燈箱中間區塊的寬度
         });
     }
+    function initoutalertbox_fn1() {
+            var alertboxw = $(window).width();
+            if (alertboxw > 1200) { alertboxw = 1200; }
+            var $form = $("#alertbox1");
+            $.colorbox({
+                //iframe: true,
+                inline: true,
+                href: $form,
+                width: alertboxw, //燈箱中間區塊的寬度
+            });
+        }
     $('.slicknews').slick({
             infinite: true,
             slidesToShow: 3,

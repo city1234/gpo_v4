@@ -34,13 +34,13 @@ var vm = new Vue({
         newss: [
             {
                 newstype: 0,//资讯子分页类型 product>0,content>1,event>2,download>3
-                importanttag: true,//产品专栏活动专栏头版,content重点标签
+                importanttag: true,//产品专栏活动专栏头版,内容发布重点标签
                 istopbanner: true,//是否首页展示
-                clickto: false,//是否有内页公告
+                clickto: false,//是否有内页跳窗公告
                 link: "luckyairship/index.html",//点击连结,下载檔案
                 mainbannerimg: "images/activebanner/mainbanner_01.jpg",//首页大图2500*1080
                 bannerimg: "images/activebanner/infbanner_01.jpg",//公告内页小图1410*385
-                name: "幸运相伴，让您梦想成真！",//公告名称(最好8个全形字以内)
+                name: "幸运相伴，让您梦想成真！",//公告名称(最好8个全形字以内),download活动素材/轮播图
                 time: "即将上线",//活动日期
                 containtext: '\
                     <div style="text-align:center;"><a href="luckyairship/index.html" target="_blank">前往活动连结</a></div>'//内容html
@@ -101,25 +101,99 @@ var vm = new Vue({
                 newstype: 1,
                 importanttag: true,
                 istopbanner: false,
-                clickto: false,
-                link: "v1.0/index.html",
+                clickto: true,
+                link: "javascript: void(0)",
                 mainbannerimg: "",
-                bannerimg: "images/newsBigBanner.png",
-                name: "【H7游戏主页改版】新架构，新体验，详戳图片！！",
+                bannerimg: "",
+                name: "即将上线",
                 time: "2018/01/30",
-                containtext: '【XXXXX项目】XXX项目升级啦，详戳图片，GO，内容区块可能延伸的范围，内容内容内容！！'
+                containtexts: '【XXXXX项目】XXX项目升级啦，详戳图片，GO，内容区块可能延伸的范围，内容内容内容！！',
+                containtext: '\
+<table>\
+    <tr>\
+        <td>模块</td>\
+        <td>需求点描述</td>\
+        <td width="80">类型</td>\
+    </tr >\
+    <tr>\
+        <td>手机端H5增加手机游戏客户端下载</td>\
+        <td class="txtleft">1.发布内容发布内容发布内容发布内容发布内容 <br />\
+            2.发布内容发布内容发布内容发布内容发布内容发布内容发布内容发 布内容内容发布内容 <br />\
+            3.发布内容发布内容发布内容发布 <br />\
+            4.发布内容发布内容发布内容发布内容发</td>\
+        <td>新需求</td>\
+    </tr>\
+    <tr>\
+        <td>手机端H5增加手机游戏客户</td>\
+        <td class="txtleft">1.发布内容发布内容发布内容发布 <br />\
+            2.发布内容发布内容发布内容发布内容发布内容发布内容发布内容发 布内容内容发布内容 <br />\
+            3.发布内容发布内容发布内容发布内容发布内容内容发布内容<br /></td>\
+        <td>新需求</td>\
+    </tr>\
+    <tr>\
+        <td>手机端H5增加手戏客户</td>\
+        <td class="txtleft">1.发布内容发布内容发布内容发布 <br />\
+            2.发布内容发布内容发布内容发布内容发布内容发布内容发布内容发 布内容内容发布内容容发布内容容发布内容</td>\
+        <td>新需求</td>\
+    </tr>\
+    <tr>\
+        <td>手机端H5增加手机游戏客户端下载</td>\
+        <td class="txtleft">1.发布内容发布内容发布内容发布内容发布内容 <br />\
+            2.发布内容发布内容发布内容发布内容发布内容发布内容发布内容发 布内容内容发布内容 <br />\
+            3.发布内容发布内容发布内容发布 <br />\
+            4.发布内容发布内容发布内容发布内容发</td>\
+        <td>新需求</td>\
+    </tr>\
+</table >'
             },
             {
                 newstype: 1,
                 importanttag: false,
                 istopbanner: false,
-                clickto: false,
-                link: "v1.0/index.html",
+                clickto: true,
+                link: "javascript: void(0)",
                 mainbannerimg: "",
-                bannerimg: "images/newsBigBanner.png",
-                name: "【H7游戏主页改版】新架构，新体验，详戳图片！！",
+                bannerimg: "",
+                name: "V2.5彩票系统",
                 time: "2018/01/30",
-                containtext: '【XXXXX项目】XXX项目升级啦，详戳图片，GO，内容区块可能延伸的范围，内容内容内容！！'
+                containtexts: '【XXXXX项目】XXX项目升级啦，详戳图片，GO，内容区块可能延伸的范围，内容内容内容！！',
+                containtext: '\
+<table>\
+    <tr>\
+        <td>模块</td>\
+        <td>需求点描述</td>\
+        <td width="80">类型</td>\
+    </tr >\
+    <tr>\
+        <td>手机端H5增加手机游戏客户端下载</td>\
+        <td class="txtleft">1.发布内容发布内容发布内容发布内容发布内容 <br />\
+            2.发布内容发布内容发布内容发布内容发布内容发布内容发布内容发 布内容内容发布内容 <br />\
+            3.发布内容发布内容发布内容发布 <br />\
+            4.发布内容发布内容发布内容发布内容发</td>\
+        <td>新需求</td>\
+    </tr>\
+    <tr>\
+        <td>手机端H5增加手机游戏客户</td>\
+        <td class="txtleft">1.发布内容发布内容发布内容发布 <br />\
+            2.发布内容发布内容发布内容发布内容发布内容发布内容发布内容发 布内容内容发布内容 <br />\
+            3.发布内容发布内容发布内容发布内容发布内容内容发布内容<br /></td>\
+        <td>新需求</td>\
+    </tr>\
+    <tr>\
+        <td>手机端H5增加手戏客户</td>\
+        <td class="txtleft">1.发布内容发布内容发布内容发布 <br />\
+            2.发布内容发布内容发布内容发布内容发布内容发布内容发布内容发 布内容内容发布内容容发布内容容发布内容</td>\
+        <td>新需求</td>\
+    </tr>\
+    <tr>\
+        <td>手机端H5增加手机游戏客户端下载</td>\
+        <td class="txtleft">1.发布内容发布内容发布内容发布内容发布内容 <br />\
+            2.发布内容发布内容发布内容发布内容发布内容发布内容发布内容发 布内容内容发布内容 <br />\
+            3.发布内容发布内容发布内容发布 <br />\
+            4.发布内容发布内容发布内容发布内容发</td>\
+        <td>新需求</td>\
+    </tr>\
+</table >'
             },
             {
                 newstype: 2,

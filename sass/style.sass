@@ -6,7 +6,7 @@
     display: none
 .alertinfbox
     cursor: pointer
-#alertbox
+#alertbox,#alertbox1
     padding: 0
     color: #222222
     span.redtxt
@@ -36,6 +36,26 @@
         width: 80%
         margin: 15px auto
         padding-bottom: 80px
+        color: #888888
+        table
+            margin: 0 auto
+            width: 100%
+            tr
+                &:nth-child(1) 
+                    background-color: #888888
+                    color: #fff
+                td
+                    border: 1px solid #888888
+                    text-align: center
+                    padding: 10px 5px
+        .txtleft
+            text-align: left
+    .txtmain
+        font-size: 16px
+        font-weight: 900
+        width: 80%
+        margin: 0 auto
+        margin-top: 10px
     .alertbannerimg
         width: 100%
     .alertcontent
@@ -70,6 +90,30 @@
             &:hover
                 background: #ffffff
                 color: #000
+#alertbox1
+    .newsconttitlebox
+        width: 80%
+        margin: 0 auto
+        position: relative
+        .title
+            margin-top: 20px
+            text-align: left
+            line-height: 30px
+            max-width: 200px
+            height: 40px
+            background: #4b81c4
+            color: #fff
+            font-size: 18px
+            padding: 5px 25px
+            text-align: center
+            font-weight: 900
+            display: inline-block
+        .time
+            position: absolute
+            right: 0
+            bottom: 0
+        .title_active
+            background: #ff7e00!important
 .newsalert
     .alertcontent
         height: 85vh!important
