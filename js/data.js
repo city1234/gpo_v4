@@ -54,7 +54,7 @@ var vm = new Vue({
                 mainbannerimg: "images/activebanner/mainbanner.jpg",
                 bannerimg: "images/activebanner/infbanner.jpg",
                 name: "2018新春特惠活动",
-                time: "2018/1/30",
+                time: "2018/01/30",
                 containtext: '\
                     东方包网平台为答谢各位新老客户多年的支持与厚爱在春节来临之际特别推出\
                     <span class= "redtxt" > 新春特惠活动</span>，凡此活动期间在我司开设游戏网站\
@@ -148,6 +148,39 @@ var vm = new Vue({
     </tr>\
 </table >'
             },*/
+            {
+                newstype: 2,
+                importanttag: true,
+                istopbanner: false,
+                clickto: true,
+                link: "javascript: void(0)",
+                mainbannerimg: "images/activebanner/mainbanner_pp.jpg",
+                bannerimg: "images/activebanner/infbanner_pp.jpg",
+                name: "过关斩将锦标赛",
+                time: "2018/04/05",
+                containtext: '\
+                    <div style="max-width:800px;margin:0 auto;"><div align="center">过关斩将锦标赛，50万谁与争锋 每周奖金池高达88,000元</div>\
+                    <br/>Dates:\
+                    <br/>锦标赛1：2018年4月5日至2018年4月8日\
+                    <br/>锦标赛2：2018年4月12日至2018年4月15日\
+                    <br/>锦标赛3：2018年4月19日至2018年4月22日\
+                    <br/>锦标赛4：2018年4月26日至2018年4月29日\
+                    <br/>锦标赛5：2018年5月3日至2018年5月6日\
+                    <br/>锦标赛6：2018年5月10日至2018年5月13日\
+                    <br/><br/>机制：旋转次数\
+                    <br/>最低下注：0.30美元（1.90人民币）\
+                    <br/>符合条件的游戏：所有PP老虎机，但不包括：888 Gold、 Diamonds are Forever 3 Lines、 Irish Charms、 Money Roll、Queen of Gold、桌面游戏(Table games)和其他游戏(Other games) 。\
+                    <br/>* 有关包含所有符合条件的游戏的详细列表，请联系您的客户经理\
+                    <br/>每周奖池：超过<span class= "redtxt" >88.800元</span>人民币\
+                    <br/><div class="txtcenter"><div class="inpagebtn">每周排行榜点击这里</div></div>\
+                    <br/>奖金池累计总奖金超过<span class= "redtxt" >50万</span>人民币\
+                    <br/><br/><br/>运营商有责任确保我们的产品和服务符合他们国家的适用法律。\
+                    <br/>现金奖励不能有任何投注要求。如果玩家希望提款，他们可以立即提款。\
+                    <br/>需要选择加入。如果您希望参加促销活动，请在4月4日周三前与您的客户经理联系。\
+                    <br/>必须在网站，通讯和其他媒体（包括社交媒体）上使用过关斩将锦标赛专用促销包的元素。\
+                    <br/>为了符合网络推广资格，参赛游戏必须在突出的大厅位置展示。\
+                    <br/>PP保留随时修改，暂停或取消促销的权利。</div>'
+            },
             {
                 newstype: 2,
                 importanttag: false,
