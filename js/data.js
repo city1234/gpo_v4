@@ -260,6 +260,7 @@ var vm = new Vue({
     methods: {
         newsnavlist: function(index){
             this.nowlistpage = index;
+            this.search = "";
             $(".newsnavlist>div>li").eq(index).addClass("active").siblings().removeClass("active");
             $("#newsPage01 .newsnavlist>div>li").eq(index).addClass("active").siblings().removeClass("active");
             $("html").getNiceScroll().resize();
