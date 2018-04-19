@@ -4317,7 +4317,7 @@ footer .col-lg-6 p {
   /*+bg('newsPage01.png') */
   height: auto;
   padding-top: 6em;
-  min-height: calc(100vh - 120px);
+  min-height: calc(100vh - 80px);
 }
 /* line 1465, ../sass/style.sass */
 #newsPage01 h3 {
