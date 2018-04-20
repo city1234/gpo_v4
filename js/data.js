@@ -2,48 +2,46 @@
 var vm = new Vue({
     el: '#mainbanner,#newsPageout,#airship',
     data: {
-        outwindow: false,//首页是否跳窗
-        showpage: 0,//首页跳窗是第几个公告从0开始
-        newnews: 1,//新闻新产品预告数量****delete
+        outwindow: false, //首页是否跳窗
+        showpage: 0, //首页跳窗是第几个公告从0开始
+        newnews: 1, //新闻新产品预告数量****delete
         bannerstyle: 0,
         slickstyle: false,
         nowlistpage: 0, //当前分页 product>0,content>1,event>2,download>3
         search: "",
-        page:[
-            {
-                totalnews:0,//资料总数
+        page: [{
+                totalnews: 0, //资料总数
                 pagelistnum: 9, //每页显示条数
                 nowpage: 1, // 当前页数
             },
             {
-                totalnews: 0,//资料总数
+                totalnews: 0, //资料总数
                 pagelistnum: 9, //每页显示条数
                 nowpage: 1, // 当前页数
             },
             {
-                totalnews: 0,//资料总数
+                totalnews: 0, //资料总数
                 pagelistnum: 9, //每页显示条数
                 nowpage: 1, // 当前页数
             },
             {
-                totalnews: 0,//资料总数
+                totalnews: 0, //资料总数
                 pagelistnum: 9, //每页显示条数
                 nowpage: 1, // 当前页数
             }
         ],
-        newss: [
-            {
-                newstype: 0,//资讯子分页类型 product>0,content>1,event>2,download>3
-                importanttag: true,//产品专栏活动专栏头版,内容发布重点标签
-                istopbanner: true,//是否首页展示
-                clickto: false,//是否有内页跳窗公告
-                link: "luckyairship/index.html",//点击连结,下载檔案
-                mainbannerimg: "images/activebanner/mainbanner_01.jpg",//首页大图2500*1080
-                bannerimg: "images/activebanner/infbanner_01.jpg",//公告内页小图1410*385
-                name: "幸运相伴，让您梦想成真！",//公告名称(最好8个全形字以内),download活动素材/轮播图
-                time: "即将上线",//活动日期
+        newss: [{
+                newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
+                importanttag: true, //产品专栏活动专栏头版,内容发布重点标签
+                istopbanner: true, //是否首页展示
+                clickto: false, //是否有内页跳窗公告
+                link: "luckyairship/index.html", //点击连结,下载檔案
+                mainbannerimg: "images/activebanner/mainbanner_01.jpg", //首页大图2500*1080
+                bannerimg: "images/activebanner/infbanner_01.jpg", //公告内页小图1410*385
+                name: "幸运相伴，让您梦想成真！", //公告名称(最好8个全形字以内),download活动素材/轮播图
+                time: "即将上线", //活动日期
                 containtext: '\
-                    <div style="text-align:center;"><a href="luckyairship/index.html" target="_blank">前往活动连结</a></div>'//内容html
+                    <div style="text-align:center;"><a href="luckyairship/index.html" target="_blank">前往活动连结</a></div>' //内容html
             },
             {
                 newstype: 0,
@@ -85,20 +83,19 @@ var vm = new Vue({
                 time: "2018/01/30",
                 containtext: ''
             },
-            {
-                newstype: 1,
-                importanttag: false,
-                istopbanner: false,
-                clickto: false,
-                link: "javascript: void(0)",
-                mainbannerimg: "",
-                bannerimg: "无资料",
-                name: "无资料",
-                time: "无资料",
-                containtexts: "无资料",
-                containtext: "无资料"
-            },
-            /*
+            // {
+            //     newstype: 1,
+            //     importanttag: false,
+            //     istopbanner: false,
+            //     clickto: false,
+            //     link: "javascript: void(0)",
+            //     mainbannerimg: "",
+            //     bannerimg: "无资料",
+            //     name: "无资料",
+            //     time: "无资料",
+            //     containtexts: "无资料",
+            //     containtext: "无资料"
+            // },
             {
                 newstype: 1,
                 importanttag: false,
@@ -107,47 +104,66 @@ var vm = new Vue({
                 link: "javascript: void(0)",
                 mainbannerimg: "",
                 bannerimg: "",
-                name: "V2.5彩票系统",
-                time: "2018/01/30",
-                containtexts: '【XXXXX项目】XXX项目升级啦，详戳图片，GO，内容区块可能延伸的范围，内容内容内容！！',
+                name: "1.2.3版本功能说明",
+                time: "2018/5/16",
+                containtexts: '维护公告内容',
                 containtext: '\
-<table>\
-    <tr>\
-        <td>模块</td>\
-        <td>需求点描述</td>\
-        <td width="80">类型</td>\
-    </tr >\
-    <tr>\
-        <td>手机端H5增加手机游戏客户端下载</td>\
-        <td class="txtleft">1.发布内容发布内容发布内容发布内容发布内容 <br />\
-            2.发布内容发布内容发布内容发布内容发布内容发布内容发布内容发 布内容内容发布内容 <br />\
-            3.发布内容发布内容发布内容发布 <br />\
-            4.发布内容发布内容发布内容发布内容发</td>\
-        <td>新需求</td>\
-    </tr>\
-    <tr>\
-        <td>手机端H5增加手机游戏客户</td>\
-        <td class="txtleft">1.发布内容发布内容发布内容发布 <br />\
-            2.发布内容发布内容发布内容发布内容发布内容发布内容发布内容发 布内容内容发布内容 <br />\
-            3.发布内容发布内容发布内容发布内容发布内容内容发布内容<br /></td>\
-        <td>新需求</td>\
-    </tr>\
-    <tr>\
-        <td>手机端H5增加手戏客户</td>\
-        <td class="txtleft">1.发布内容发布内容发布内容发布 <br />\
-            2.发布内容发布内容发布内容发布内容发布内容发布内容发布内容发 布内容内容发布内容容发布内容容发布内容</td>\
-        <td>新需求</td>\
-    </tr>\
-    <tr>\
-        <td>手机端H5增加手机游戏客户端下载</td>\
-        <td class="txtleft">1.发布内容发布内容发布内容发布内容发布内容 <br />\
-            2.发布内容发布内容发布内容发布内容发布内容发布内容发布内容发 布内容内容发布内容 <br />\
-            3.发布内容发布内容发布内容发布 <br />\
-            4.发布内容发布内容发布内容发布内容发</td>\
-        <td>新需求</td>\
-    </tr>\
-</table >'
-            },*/
+ <table>\
+     <tr>\
+         <td>标题</td>\
+         <td>内容描述</td>\
+         <td width="80">日期</td>\
+     </tr >\
+     <tr>\
+         <td>提款次数优化</td>\
+         <td class="txtleft">1.	会员的提款次数数据拆分为前端提款和人工提款 <br />\
+             2.	历史数据中的人工提出不拆分，归为提款次数中，只在上线后开始拆分 <br />\
+             3.	人工提出次数只包含人工提出项目中重复出款和手动申请出款次数 <br />\
+             </td>\
+         <td>2018/5/16</td>\
+     </tr>\
+     <tr>\
+         <td>忘记密码界面增加在线客服</td>\
+         <td class="txtleft">1.	在忘记密码页面增加在线客服，点击可跳转在线客服聊天窗口 <br />\
+           </td>\
+         <td>2018/5/16</td>\
+     </tr>\
+     <tr>\
+         <td>验证码更改</td>\
+          <td class="txtleft">1.后台新增三种验证码，可满足客户对不同验证的需求，三种验证码分别是：<br />\
+            <li style="list-style-type:lower-alpha;padding-left: 10px;">简单验证码，就是原来的验证码不做改变 </li>\
+            <li style="list-style-type:lower-alpha;padding-left: 10px;">混合验证码，数子字母组合或者纯字母的验证码</li>\
+            <li style="list-style-type:lower-alpha;padding-left: 10px;">逻辑验证码，10以内的整数加减法</li>\
+            2.后台仅能选择开启其中一种模式，默认情况下开启数字验证码</td>\
+            <td>2018/5/16</td>\
+     </tr>\
+     <tr>\
+         <td>微信支付宝支持银行卡转账</td>\
+         <td class="txtleft">1.	线下微信、支付宝均支持银行卡转账，新增账号增加“方式二”，账号和卡号都填写了，新增成功的在停用区产生2条数据，一条是账号，一条是卡号</td>\
+         <td>2018/5/16</td>\
+     </tr>\
+     <tr>\
+         <td>H5增加手机游戏客户端下载</td>\
+         <td class="txtleft">1.	在右侧导航栏增加游戏客户端的入口，可以针对PT、MG、AG的游戏进行下载 <br />\
+             2.	会员有额度转换或者登入过PT、MG游戏，就可以查看密码 <br />\
+            </td>\
+         <td>2018/5/16</td>\
+     </tr>\
+     <tr>\
+         <td>提款页面优化</td>\
+         <td class="txtleft">1.	针对提款界面的银行卡与账号显示进行优化调整，会员可以看到完整的银行卡名称与银行卡账号</td>\
+         <td>2018/5/16</td>\
+     </tr>\
+     <tr>\
+         <td>出入款记录权限</td>\
+         <td class="txtleft">1.  出款记录：只读权限（只能查看出款记录）；操作权限：快速出款、确定（稽核）、取消、拒绝 <br />\
+             2.  入款记录：只读权限（只能查看入款记录）；操作权限：确定、取消 <br />\
+            <br />\
+            </td>\
+         <td>2018/5/16</td>\
+     </tr>\
+  </table >'
+            },
             {
                 newstype: 2,
                 importanttag: true,
@@ -292,7 +308,7 @@ var vm = new Vue({
         ]
     },
     methods: {
-        newsnavlist: function(index){
+        newsnavlist: function(index) {
             this.nowlistpage = index;
             this.search = "";
             $(".newsnavlist>div>li").eq(index).addClass("active").siblings().removeClass("active");
@@ -300,7 +316,7 @@ var vm = new Vue({
             $("html").getNiceScroll().resize();
             $("html").getNiceScroll().remove();
             var agent = navigator.userAgent.toLowerCase();
-            if (agent.match("android") || agent.match("iphone") || agent.match("ipad")) { } else {
+            if (agent.match("android") || agent.match("iphone") || agent.match("ipad")) {} else {
                 nice = $("html").niceScroll({ scrollspeed: 51, mousescrollstep: 45, cursorwidth: "5px", cursorcolor: "#222", cursorborder: "0px solid #fff" });
             };
         },
@@ -348,20 +364,20 @@ var vm = new Vue({
             });
         }
         */
-        filterlist: function (newss){
+        filterlist: function(newss) {
             return this.newss.filter((news) => {
                 return news.name.match(this.search);
             });
         }
     },
-    mounted: function () {
+    mounted: function() {
         //设置cookie
         Vue.prototype.setCookie = (c_name, value, expiredays) => {
-            var exdate = new Date();
-            exdate.setDate(exdate.getDate() + expiredays);
-            document.cookie = c_name + "=" + escape(value) + ((expiredays == null) ? "" : ";expires=" + exdate.toGMTString());
-        }
-        //获取cookie、
+                var exdate = new Date();
+                exdate.setDate(exdate.getDate() + expiredays);
+                document.cookie = c_name + "=" + escape(value) + ((expiredays == null) ? "" : ";expires=" + exdate.toGMTString());
+            }
+            //获取cookie、
         function getCookie(name) {
             var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
             if (arr = document.cookie.match(reg))
@@ -378,7 +394,7 @@ var vm = new Vue({
             if (cval != null)
                 document.cookie = name + "=" + cval + ";expires=" + exp.toGMTString();
         }
-        if (!this.outwindow){
+        if (!this.outwindow) {
             this.setCookie("cancelAlert", "1", 1);
         }
     }
