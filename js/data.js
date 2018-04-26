@@ -120,7 +120,7 @@ var vm = new Vue({
                     <tr>\
                         <td>标题</td>\
                         <td>内容描述</td>\
-                        <td width="80">日期</td>\
+                        <td class="datembnone" width="80">日期</td>\
                     </tr >\
                     <tr>\
                         <td>统计报表_彩种报表<新增></td>\
@@ -128,7 +128,7 @@ var vm = new Vue({
                             2.	报表数据按照彩种分类 <br />\
                             3.	报表数据按要求展示 <br />\
                             </td>\
-                        <td>2018/5/9</td>\
+                        <td class="datembnone">2018/5/9</td>\
                     </tr>\
                     <tr>\
                         <td>第三方接入<新增></td>\
@@ -138,7 +138,7 @@ var vm = new Vue({
                             <li style="list-style-type:lower-alpha;padding-left: 10px;">采集数据的即时性</li>\
                             <li style="list-style-type:lower-alpha;padding-left: 10px;">报表查询的准确性</li>\
                         </td>\
-                        <td>2018/5/9</td>\
+                        <td class="datembnone">2018/5/9</td>\
                     </tr>\
                     <tr>\
                         <td>报表优化</td>\
@@ -149,7 +149,7 @@ var vm = new Vue({
                         4.	优化统计中，BB和MG平台分为小平台展示<br />\
                         5.	退佣统计中，代理佣金设定、退佣统计、退佣查询页面优化<br />\
                         </td>\
-                        <td>2018/5/9</td>\
+                        <td class="datembnone">2018/5/9</td>\
                     </tr>\
                     <tr>\
                         <td>AG返水拆分</td>\
@@ -163,7 +163,7 @@ var vm = new Vue({
                             7.	退佣统计中，代理佣金设定、退佣统计、退佣查询、有效会员列表需要分开展示AG三个数据<br />\
                             8.	报表查询中，报表和会员报表需要分开展示AG三个数据<br />\
                         </td>\
-                        <td>2018/5/9</td>\
+                        <td class="datembnone">2018/5/9</td>\
                     </tr>\
                     <tr>\
                         <td>会员中心，投注记录页面优化</td>\
@@ -176,7 +176,7 @@ var vm = new Vue({
                             <li style="list-style-type:lower-alpha;padding-left: 10px;">非美东时间平台时间按照第三方时间展示，需要有温馨提示</li>\
                             <li style="list-style-type:lower-alpha;padding-left: 10px;">彩票和体育可以查询到注单详情，第三方暂不支持</li>\
                         </td>\
-                        <td>2018/5/9</td>\
+                        <td class="datembnone">2018/5/9</td>\
                     </tr>\
                     <tr>\
                         <td>存款优惠和汇款优惠限额控制</td>\
@@ -185,7 +185,7 @@ var vm = new Vue({
                             2.	公共信息页面右下角点击代理公告信息，可以跳转到代理公告信息页面<br / >\
                             3.	添加代理公告信息权限，所有层级都有此权限，默认都开启<br / >\
                         </td>\
-                        <td>2018/5/9</td>\
+                        <td class="datembnone">2018/5/9</td>\
                     </tr>\
                     <tr>\
                         <td>增加在线人数权限设置</td>\
@@ -194,7 +194,7 @@ var vm = new Vue({
                             2.	后台大股东、子账号在线人数”权限默认为勾选状态，股东、总代、代理账号在线人数”权限默认为不勾选状态 <br />\
                             3.	“踢出”“锁定””解锁”“停用”的按钮显示，根据勾选的情况对应显示 <br />\
                             </td>\
-                        <td>2018/5/9</td>\
+                        <td class="datembnone">2018/5/9</td>\
                     </tr>\
                     <tr>\
                         <td>后台添加代理公告信息</td>\
@@ -203,7 +203,7 @@ var vm = new Vue({
                             2.	公共信息页面右下角点击代理公告信息，可以跳转到代理公告信息页面<br />\
                             3.	添加代理公告信息权限，所有层级都有此权限，默认都开启<br />\
                             </td>\
-                        <td>2018/5/9</td>\
+                        <td class="datembnone">2018/5/9</td>\
                     </tr>\
                     <tr>\
                         <td>网站咨询系统</td>\
@@ -214,7 +214,7 @@ var vm = new Vue({
                             4.	图库的组别在已有图片的情况下，不可进行删除<br />\
                             5.	具体到各栏目设置页面时，能够根据组别进行图片的选择 <br />\
                         </td>\
-                        <td>2018/5/9</td>\
+                        <td class="datembnone">2018/5/9</td>\
                     </tr>\
                 </table >'
             },
@@ -236,7 +236,7 @@ var vm = new Vue({
                     <tr>\
                         <td>标题</td>\
                         <td>内容描述</td>\
-                        <td width="80">日期</td>\
+                        <td class="datembnone" width="80">日期</td>\
                     </tr >\
                     <tr>\
                         <td>提款次数优化</td>\
@@ -244,13 +244,13 @@ var vm = new Vue({
                             2.	历史数据中的人工提出不拆分，归为提款次数中，只在上线后开始拆分 <br />\
                             3.	人工提出次数只包含人工提出项目中重复出款和手动申请出款次数 <br />\
                             </td>\
-                        <td>2018/4/16</td>\
+                        <td class="datembnone">2018/4/16</td>\
                     </tr>\
                     <tr>\
                         <td>忘记密码界面增加在线客服</td>\
                         <td class="txtleft">1.	在忘记密码页面增加在线客服，点击可跳转在线客服聊天窗口 <br />\
                         </td>\
-                        <td>2018/4/16</td>\
+                        <td class="datembnone">2018/4/16</td>\
                     </tr>\
                     <tr>\
                         <td>验证码更改</td>\
@@ -259,24 +259,24 @@ var vm = new Vue({
                             <li style="list-style-type:lower-alpha;padding-left: 10px;">混合验证码，数子字母组合或者纯字母的验证码</li>\
                             <li style="list-style-type:lower-alpha;padding-left: 10px;">逻辑验证码，10以内的整数加减法</li>\
                             2.后台仅能选择开启其中一种模式，默认情况下开启数字验证码</td>\
-                            <td>2018/4/16</td>\
+                            <td class="datembnone">2018/4/16</td>\
                     </tr>\
                     <tr>\
                         <td>微信支付宝支持银行卡转账</td>\
                         <td class="txtleft">1.	线下微信、支付宝均支持银行卡转账，新增账号增加“方式二”，账号和卡号都填写了，新增成功的在停用区产生2条数据，一条是账号，一条是卡号</td>\
-                        <td>2018/4/16</td>\
+                        <td class="datembnone">2018/4/16</td>\
                     </tr>\
                     <tr>\
                         <td>H5增加手机游戏客户端下载</td>\
                         <td class="txtleft">1.	在右侧导航栏增加游戏客户端的入口，可以针对PT、MG、AG的游戏进行下载 <br />\
                             2.	会员有额度转换或者登入过PT、MG游戏，就可以查看密码 <br />\
                             </td>\
-                        <td>2018/4/16</td>\
+                        <td class="datembnone">2018/4/16</td>\
                     </tr>\
                     <tr>\
                         <td>提款页面优化</td>\
                         <td class="txtleft">1.	针对提款界面的银行卡与账号显示进行优化调整，会员可以看到完整的银行卡名称与银行卡账号</td>\
-                        <td>2018/4/16</td>\
+                        <td class="datembnone">2018/4/16</td>\
                     </tr>\
                     <tr>\
                         <td>出入款记录权限</td>\
@@ -284,7 +284,7 @@ var vm = new Vue({
                             2.  入款记录：只读权限（只能查看入款记录）；操作权限：确定、取消 <br />\
                             <br />\
                             </td>\
-                        <td>2018/4/16</td>\
+                        <td class="datembnone">2018/4/16</td>\
                     </tr>\
                 </table >'
             },
@@ -510,7 +510,8 @@ var vm = new Vue({
         */
         filterlist: function(newss) {
             return this.newss.filter((news) => {
-                return news.name.match(this.search);
+                let searchtxt = news.name + news.containtexts;
+                return searchtxt.match(this.search);
             });
         }
     },
