@@ -230,7 +230,7 @@ footer{
             width: 20%;
             text-align: left;
             font-weight: 900;
-            border-left: 5px solid #ff6d00;
+            border-left: 4px solid #ff6d00;
             line-height: 30px;
             margin-top: 35px;
             padding-left: 12px;
@@ -242,6 +242,14 @@ footer{
             margin-bottom: 20px;
             .bannerItem{
                 border: 0px solid #000!important; 
+            }
+            .bannerItem_imgout{
+                @include css3(transition,all .2s ease);
+            }
+            &:hover{
+                .bannerItem_imgout{
+                    @include css3(transform,scale(1.1));
+                }
             }
         }
     }
@@ -293,7 +301,7 @@ footer{
     .bannerItem_imgout{
         background-size: cover;
         background-position: center;
-        @include css3(border-radius,5px);
+        @include css3(border-radius,4px);
         img{
             height: 320px;
             @include range-width-in(0,768px){
@@ -360,7 +368,7 @@ footer{
     .prepage{
         width: 10%;
         font-size: 25px;
-        text-align: left; 
+        text-align: center; 
         vertical-align: middle;
         padding-top: 15px;
         cursor: pointer;
@@ -426,14 +434,18 @@ footer{
             display: inline;
             list-style: none;
             padding: 5px 15px;
+            margin: 0 15px;
             color:  #4a4a4a;
             cursor: pointer;
-            @include css3(transition,all .3s ease);
             @include css3(border-radius,20px);
-            font-size: 18px;
+            @include css3(transition,all .3s ease);
+            font-size: 17px;
             &:hover{
                 color:  #ff730b;
                 background: #f6f6f6;
+            }
+            @include range-width-in(0,768px){
+                margin: 0; 
             }
         }
         .active{
@@ -443,7 +455,7 @@ footer{
         }
     }
 }
-#news_productpage{
+#news_productpage ,#news_eventpage{
     .bannerItem{
         .downloadlink{
             text-decoration: none;
@@ -530,7 +542,6 @@ footer{
                         display: -ms-flexbox;
                         display: flex;
                         font-size: 16px;
-                        font-weight: 900;
                         position: relative;
                         padding: 30px 20px;
                         @include range-width-in(0,768px){
@@ -766,6 +777,7 @@ footer{
                     padding: 10px 15px;
                     .title{
                         max-width: 100%!important;
+                        padding-right: 50px;
                     }
                 }
             }

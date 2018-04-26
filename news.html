@@ -78,7 +78,7 @@
                 <li class="icon-search searchbtn_mb"></li>
             </div>
             <div class="searchbox_mb searchactive">
-                <div class="prepage"><i class="icon-prepage"></i></div>
+                <div class="prepage"><i class="icon-arrow-right"></i></div>
                 <div class="newssearchbar">
                     <div class="possearchpic">
                         <img src="images/search_icon.png">
@@ -178,6 +178,12 @@
                                                             </div>
                                                             <div class="date">{{news.time}}</div>
                                                         </div>
+                                                        <a :href="news.downloadlink" target="_blank" v-if="news.downloadbtn" class="downloadlink">
+                                                            <div class="download">
+                                                                <i class="icon-download"></i>
+                                                                <div class="downloadtxt">素材下载</div>
+                                                            </div>
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -251,6 +257,12 @@
                                                             </div>
                                                             <div class="date">{{news.time}}</div>
                                                         </div>
+                                                        <a :href="news.downloadlink" target="_blank" v-if="news.downloadbtn" class="downloadlink">
+                                                            <div class="download">
+                                                                <i class="icon-download"></i>
+                                                                <div class="downloadtxt">素材下载</div>
+                                                            </div>
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -274,6 +286,12 @@
                                                             </div>
                                                             <div class="date">{{news.time}}</div>
                                                         </div>
+                                                        <a :href="news.downloadlink" target="_blank" v-if="news.downloadbtn" class="downloadlink">
+                                                            <div class="download">
+                                                                <i class="icon-download"></i>
+                                                                <div class="downloadtxt">素材下载</div>
+                                                            </div>
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
