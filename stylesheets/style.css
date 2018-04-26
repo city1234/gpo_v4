@@ -1545,34 +1545,39 @@ footer .icon-mail:before {
     cursor: pointer;
   }
   /* line 732, ../sass/_add.scss */
+  .newsnavlist .newsnavlistul .searchbtn_mb img {
+    width: 20px;
+    vertical-align: -3px;
+  }
+  /* line 736, ../sass/_add.scss */
   .newsnavlist .newsnavlistul .searchbtn_mb:hover {
     background: none;
   }
 
-  /* line 741, ../sass/_add.scss */
+  /* line 745, ../sass/_add.scss */
   .newsBigBanner .innewsBannerbox {
     margin-top: 0px !important;
     margin-bottom: 10px !important;
   }
-  /* line 746, ../sass/_add.scss */
+  /* line 750, ../sass/_add.scss */
   .newsBigBanner .newstitle .title {
     display: none;
   }
-  /* line 749, ../sass/_add.scss */
+  /* line 753, ../sass/_add.scss */
   .newsBigBanner .newstitle .rightlist {
     width: 100%;
   }
-  /* line 751, ../sass/_add.scss */
+  /* line 755, ../sass/_add.scss */
   .newsBigBanner .newstitle .rightlist .newsnavlist {
     display: none;
   }
-  /* line 754, ../sass/_add.scss */
+  /* line 758, ../sass/_add.scss */
   .newsBigBanner .newstitle .rightlist .newssearchbar {
     display: none;
     width: 100%;
     margin-top: 40px;
   }
-  /* line 761, ../sass/_add.scss */
+  /* line 765, ../sass/_add.scss */
   .newsBigBanner .bannerItem {
     position: relative;
     overflow: hidden;
@@ -1583,7 +1588,7 @@ footer .icon-mail:before {
     -o-border-radius: 5px;
     border-radius: 5px;
   }
-  /* line 766, ../sass/_add.scss */
+  /* line 770, ../sass/_add.scss */
   .newsBigBanner .bannerItem .bannerItem_imgout {
     -webkit-border-radius: 5px 5px 0 0;
     -moz-border-radius: 5px 5px 0 0;
@@ -1591,107 +1596,107 @@ footer .icon-mail:before {
     -o-border-radius: 5px 5px 0 0;
     border-radius: 5px 5px 0 0;
   }
-  /* line 769, ../sass/_add.scss */
+  /* line 773, ../sass/_add.scss */
   .newsBigBanner .bannerItem .newsText {
     width: 100%;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
     position: relative;
   }
-  /* line 774, ../sass/_add.scss */
+  /* line 778, ../sass/_add.scss */
   .newsBigBanner .bannerItem .newsText .row {
     padding-top: 0;
     padding-bottom: 0;
     padding: 10px 15px;
   }
-  /* line 778, ../sass/_add.scss */
+  /* line 782, ../sass/_add.scss */
   .newsBigBanner .bannerItem .newsText .row .title {
     max-width: 100% !important;
     padding-right: 50px;
   }
 
-  /* line 786, ../sass/_add.scss */
+  /* line 790, ../sass/_add.scss */
   footer {
     background: #fff;
   }
-  /* line 788, ../sass/_add.scss */
+  /* line 792, ../sass/_add.scss */
   footer .footerlogo {
     display: inherit;
     text-align: center;
     width: 50%;
     margin: 0 auto;
   }
-  /* line 793, ../sass/_add.scss */
+  /* line 797, ../sass/_add.scss */
   footer .footerlogo img {
     width: 100%;
   }
-  /* line 798, ../sass/_add.scss */
+  /* line 802, ../sass/_add.scss */
   footer .col-lg-6 p {
     font-size: 10px;
   }
 }
 /****适应小电脑样式****/
 @media screen and (min-width: 1360px) and (max-width: 1400px) {
-  /* line 807, ../sass/_add.scss */
+  /* line 811, ../sass/_add.scss */
   #Advantages {
     padding: 2.5em 0;
   }
 
-  /* line 810, ../sass/_add.scss */
+  /* line 814, ../sass/_add.scss */
   #b2b {
     padding-top: 4.5em;
   }
 
-  /* line 813, ../sass/_add.scss */
+  /* line 817, ../sass/_add.scss */
   #bigData {
     padding: 0em 0;
   }
 
-  /* line 816, ../sass/_add.scss */
+  /* line 820, ../sass/_add.scss */
   #bigData .bigDatabox {
     padding: 0vw 0;
   }
 
-  /* line 819, ../sass/_add.scss */
+  /* line 823, ../sass/_add.scss */
   #lotteryPage01 {
     padding: 0em 0;
     height: 103vh;
   }
 
-  /* line 823, ../sass/_add.scss */
+  /* line 827, ../sass/_add.scss */
   #lotteryPage02 {
     padding: 3em 0;
     height: 105vh;
   }
 
-  /* line 828, ../sass/_add.scss */
+  /* line 832, ../sass/_add.scss */
   #casePage02 .caseAchievement {
     width: 42%;
     height: 38%;
   }
 
-  /* line 832, ../sass/_add.scss */
+  /* line 836, ../sass/_add.scss */
   #casePage03 {
     padding: 1.5em 0;
     height: 115vh;
   }
 
-  /* line 836, ../sass/_add.scss */
+  /* line 840, ../sass/_add.scss */
   #mobilePage01 {
     padding: 0.2em 0;
   }
 
-  /* line 839, ../sass/_add.scss */
+  /* line 843, ../sass/_add.scss */
   #cooperationPage01 {
     padding: 2.5em 0;
   }
 
-  /* line 842, ../sass/_add.scss */
+  /* line 846, ../sass/_add.scss */
   #cooperationPage02 {
     padding: 2.5em 6.5em;
   }
 
-  /* line 845, ../sass/_add.scss */
+  /* line 849, ../sass/_add.scss */
   #cooperationPage03 {
     padding: 0em 6.5em;
     height: 115vh;
