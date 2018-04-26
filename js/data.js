@@ -104,7 +104,123 @@ var vm = new Vue({
             // },
             {
                 newstype: 1,
-                importanttag: false,
+                importanttag: true,
+                istopbanner: false,
+                clickto: true,
+                link: "javascript: void(0)",
+                downloadbtn: false,
+                downloadlink: "images/activebanner/mainbanner_01.jpg",
+                mainbannerimg: "",
+                bannerimg: "",
+                name: "1.2.4版本功能说明",
+                time: "2018/4/30",
+                containtexts: '维护公告内容',
+                containtext: '\
+                <table>\
+                    <tr>\
+                        <td>标题</td>\
+                        <td>内容描述</td>\
+                        <td width="80">日期</td>\
+                    </tr >\
+                    <tr>\
+                        <td>统计报表_彩种报表<新增></td>\
+                        <td class="txtleft">1.	代理后台、报表查询-新增彩种报表 <br />\
+                            2.	报表数据按照彩种分类 <br />\
+                            3.	报表数据按要求展示 <br />\
+                            </td>\
+                        <td>2018/5/9</td>\
+                    </tr>\
+                    <tr>\
+                        <td>第三方接入<新增></td>\
+                        <td class="txtleft">1.	VGS视讯和CQ9电子的接入：<br />\
+                            <li style="list-style-type:lower-alpha;padding-left: 10px;">在代理后台、前端需要能查询到此平台并有数据的展示 </li>\
+                            <li style="list-style-type:lower-alpha;padding-left: 10px;">保证游戏主页跳转第三方能够正常</li>\
+                            <li style="list-style-type:lower-alpha;padding-left: 10px;">采集数据的即时性</li>\
+                            <li style="list-style-type:lower-alpha;padding-left: 10px;">报表查询的准确性</li>\
+                        </td>\
+                        <td>2018/5/9</td>\
+                    </tr>\
+                    <tr>\
+                        <td>报表优化</td>\
+                        <td class="txtleft">\
+                        1.	报表中去除各层级交收额度<br />\
+                        2.	去除会员报表查询结果中的全部栏位<br />\
+                        3.	优惠活动中，优化查询页面优化<br />\
+                        4.	优化统计中，BB和MG平台分为小平台展示<br />\
+                        5.	退佣统计中，代理佣金设定、退佣统计、退佣查询页面优化<br />\
+                        </td>\
+                        <td>2018/5/9</td>\
+                    </tr>\
+                    <tr>\
+                        <td>AG返水拆分</td>\
+                        <td class="txtleft">\
+                            1.	新线上付款设定可分别针对视讯、捕鱼和电子做设置<br />\
+                            2.	出入款记录，稽核页面需要分开展示AG三个数据<br />\
+                            3.	子线金系统返水冲销详情需要分开展示AG三个数据<br />\
+                            4.	取款稽核和即时稽核查询需要分开展示AG三个数据<br />\
+                            5.	出入款总账中，返水和冲销需要分开展示AG三个数据<br />\
+                            6.	优惠活动中，返水优惠设定、优惠统计、优惠查询需要分开展示AG三个数据<br />\
+                            7.	退佣统计中，代理佣金设定、退佣统计、退佣查询、有效会员列表需要分开展示AG三个数据<br />\
+                            8.	报表查询中，报表和会员报表需要分开展示AG三个数据<br />\
+                        </td>\
+                        <td>2018/5/9</td>\
+                    </tr>\
+                    <tr>\
+                        <td>会员中心，投注记录页面优化</td>\
+                        <td class="txtleft">\
+                        1.	前端（PC/H5）：<br / >\
+                            <li style="list-style-type:lower-alpha;padding-left: 10px;">PC端会员中心，我的账户、投注记录、往来记录需要分开展示AG三个数据</li>\
+                            <li style="list-style-type:lower-alpha;padding-left: 10px;">手机端投注记录和往来记录需要分开展示AG三个数据</li>\
+                        2.	手机端：<br />\
+                            <li style="list-style-type:lower-alpha;padding-left: 10px;">投注记录按照最新样式，可以选择单一平台和七天的时间内进行查询相对应的注单内容</li>\
+                            <li style="list-style-type:lower-alpha;padding-left: 10px;">非美东时间平台时间按照第三方时间展示，需要有温馨提示</li>\
+                            <li style="list-style-type:lower-alpha;padding-left: 10px;">彩票和体育可以查询到注单详情，第三方暂不支持</li>\
+                        </td>\
+                        <td>2018/5/9</td>\
+                    </tr>\
+                    <tr>\
+                        <td>存款优惠和汇款优惠限额控制</td>\
+                        <td class="txtleft"><br / >\
+                            1.	代理后台，代理后台-公告 / 讯息添加代理公告信息，可以查看历史代理公告信息、当前代理公告信息<br / >\
+                            2.	公共信息页面右下角点击代理公告信息，可以跳转到代理公告信息页面<br / >\
+                            3.	添加代理公告信息权限，所有层级都有此权限，默认都开启<br / >\
+                        </td>\
+                        <td>2018/5/9</td>\
+                    </tr>\
+                    <tr>\
+                        <td>增加在线人数权限设置</td>\
+                        <td class="txtleft">\
+                            1.	大大股东、大股东、股东、总代、代理的【权限控制】，增加“在线人数”子权限，与子权限下级权限的“踢出”“锁定””解锁”“停用”<br />\
+                            2.	后台大股东、子账号在线人数”权限默认为勾选状态，股东、总代、代理账号在线人数”权限默认为不勾选状态 <br />\
+                            3.	“踢出”“锁定””解锁”“停用”的按钮显示，根据勾选的情况对应显示 <br />\
+                            </td>\
+                        <td>2018/5/9</td>\
+                    </tr>\
+                    <tr>\
+                        <td>后台添加代理公告信息</td>\
+                        <td class="txtleft">\
+                            1.	代理后台 - 公告 / 讯息添加代理公告信息，可以查看历史代理公告信息、当前代理公告信息<br />\
+                            2.	公共信息页面右下角点击代理公告信息，可以跳转到代理公告信息页面<br />\
+                            3.	添加代理公告信息权限，所有层级都有此权限，默认都开启<br />\
+                            </td>\
+                        <td>2018/5/9</td>\
+                    </tr>\
+                    <tr>\
+                        <td>网站咨询系统</td>\
+                        <td class="txtleft">\
+                            1.	编辑组别与删除组别能够正常使用 <br />\
+                            2.	图片上传浏览功能不能够破图 <br />\
+                            3.	子账号权限上线时为全部勾选状态 <br />\
+                            4.	图库的组别在已有图片的情况下，不可进行删除<br />\
+                            5.	具体到各栏目设置页面时，能够根据组别进行图片的选择 <br />\
+                        </td>\
+                        <td>2018/5/9</td>\
+                    </tr>\
+                </table >'
+            },
+            {
+                newstype: 1,
+                importanttag: true,
                 istopbanner: false,
                 clickto: true,
                 link: "javascript: void(0)",
@@ -113,7 +229,7 @@ var vm = new Vue({
                 mainbannerimg: "",
                 bannerimg: "",
                 name: "1.2.3版本功能说明",
-                time: "2018/5/16",
+                time: "2018/4/16",
                 containtexts: '维护公告内容',
                 containtext: '\
                 <table>\
@@ -128,13 +244,13 @@ var vm = new Vue({
                             2.	历史数据中的人工提出不拆分，归为提款次数中，只在上线后开始拆分 <br />\
                             3.	人工提出次数只包含人工提出项目中重复出款和手动申请出款次数 <br />\
                             </td>\
-                        <td>2018/5/16</td>\
+                        <td>2018/4/16</td>\
                     </tr>\
                     <tr>\
                         <td>忘记密码界面增加在线客服</td>\
                         <td class="txtleft">1.	在忘记密码页面增加在线客服，点击可跳转在线客服聊天窗口 <br />\
                         </td>\
-                        <td>2018/5/16</td>\
+                        <td>2018/4/16</td>\
                     </tr>\
                     <tr>\
                         <td>验证码更改</td>\
@@ -143,24 +259,24 @@ var vm = new Vue({
                             <li style="list-style-type:lower-alpha;padding-left: 10px;">混合验证码，数子字母组合或者纯字母的验证码</li>\
                             <li style="list-style-type:lower-alpha;padding-left: 10px;">逻辑验证码，10以内的整数加减法</li>\
                             2.后台仅能选择开启其中一种模式，默认情况下开启数字验证码</td>\
-                            <td>2018/5/16</td>\
+                            <td>2018/4/16</td>\
                     </tr>\
                     <tr>\
                         <td>微信支付宝支持银行卡转账</td>\
                         <td class="txtleft">1.	线下微信、支付宝均支持银行卡转账，新增账号增加“方式二”，账号和卡号都填写了，新增成功的在停用区产生2条数据，一条是账号，一条是卡号</td>\
-                        <td>2018/5/16</td>\
+                        <td>2018/4/16</td>\
                     </tr>\
                     <tr>\
                         <td>H5增加手机游戏客户端下载</td>\
                         <td class="txtleft">1.	在右侧导航栏增加游戏客户端的入口，可以针对PT、MG、AG的游戏进行下载 <br />\
                             2.	会员有额度转换或者登入过PT、MG游戏，就可以查看密码 <br />\
                             </td>\
-                        <td>2018/5/16</td>\
+                        <td>2018/4/16</td>\
                     </tr>\
                     <tr>\
                         <td>提款页面优化</td>\
                         <td class="txtleft">1.	针对提款界面的银行卡与账号显示进行优化调整，会员可以看到完整的银行卡名称与银行卡账号</td>\
-                        <td>2018/5/16</td>\
+                        <td>2018/4/16</td>\
                     </tr>\
                     <tr>\
                         <td>出入款记录权限</td>\
@@ -168,7 +284,7 @@ var vm = new Vue({
                             2.  入款记录：只读权限（只能查看入款记录）；操作权限：确定、取消 <br />\
                             <br />\
                             </td>\
-                        <td>2018/5/16</td>\
+                        <td>2018/4/16</td>\
                     </tr>\
                 </table >'
             },
