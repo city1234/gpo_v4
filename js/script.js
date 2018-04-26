@@ -23,6 +23,7 @@ $(document).ready(function () {
         nice = $("html").niceScroll({ scrollspeed: 51, mousescrollstep: 45, cursorwidth: "5px", cursorcolor: "#222", cursorborder: "0px solid #fff" });
     };
     $('.navbar').load('common.html .container');
+    $('footer').load('common.html footer');
     //$('#alertbox .alertcontent').load('common.html .alertcontent');
 });
 

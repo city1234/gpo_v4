@@ -1489,10 +1489,9 @@
             right: 35%
     .bannerItem
         .bannerItem_imgout
+            overflow: hidden
             background-size: cover
             background-position: center
-            img
-                max-width: 80%
     .newsBigBanner,.newsBanner
         margin: 0 0
         .slick-dots
@@ -1501,6 +1500,8 @@
             margin: 20px 0
     .innewsBanner
         margin-top: 20px
+        +breakpoint(pc)
+            margin-top: 0px
         .bannerboxstyle_one
             width: 100%
         .bannerboxstyle_two
@@ -1547,8 +1548,10 @@
     .col-sm-4,.col-lg-12
         +breakpoint(mobile)
             margin-top: 20px
+            padding-left: 0
+            padding-right: 0
         .bannerItem
-            border: 1px solid #000
+            border: 0px solid #000
             .bannerItem_imgout
                 position: relative
                 &:after
@@ -1565,11 +1568,9 @@
             .bannerItem_imgout
                 &:after
                     opacity: 0.2
-        .newsText 
-            background: linear-gradient(to top, rgba(255,255,255,0.7), rgba(255,255,255,1))
-            padding: 12px
+        .newsText
+            padding: 10px 15px
             font-size: 1.2em
-            
             +breakpoint(pad)
                 padding: 8px
             img 

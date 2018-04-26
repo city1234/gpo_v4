@@ -374,23 +374,47 @@ footer
         padding: 10px
     .QQ,.email 
         display: inline-block
+        color: #999
         +breakpoint(mobile)
             display: block
             margin-top: 1.5vh
-    
+            text-align: left
+            float: left
+            width: 50%
+            p
+                text-align: left
+    .QQ
+        +breakpoint(mobile)
+            width: 40%
+    .email
+        +breakpoint(mobile)
+            width: 60%
+        .icon-mail
+            +breakpoint(mobile)
+                top: -14px
+                position: relative
+                &:before
+                    padding-left: 0
     .icon-qq-icon:before,.icon-mail:before
-        padding-right: 0.3em
         padding-left: 1.2em
         font-size: 1.5em
         line-height: 15px
+    .text-right
+        margin-top: 0!important
     .col-lg-6
         margin-top: 1vh
+        float: left
+        padding: 0
+        margin-top: 10px
+        color: #666
         +breakpoint(pc)
             text-align: center
             margin: 1.6vh 0
+            float: none
         +breakpoint(mobile)
             line-height: 1.5
         p
+            font-size: 14px
             display: inline-block
             span
                 +breakpoint(mobile)
@@ -398,7 +422,7 @@ footer
         &:nth-child(2)
             +breakpoint(mobile)
                 padding: 0px 35px
-                text-align: left
+                text-align: center
 
 
 .toTop span 

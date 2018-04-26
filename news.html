@@ -70,23 +70,34 @@
             </div>
         </div>
         <div class="newsnavlist mb">
-            <div>
+            <div class="newsnavlistul">
                 <li class="active" @click="newsnavlist(0)">产品<span>专栏</span></li>
                 <li @click="newsnavlist(1)">内容<span>发布</span></li>
                 <li @click="newsnavlist(2)">活动<span>专栏</span></li>
                 <!--<li @click="newsnavlist(3)">下载<span>通道</span></li>-->
+                <li class="icon-search searchbtn_mb"></li>
+            </div>
+            <div class="searchbox_mb searchactive">
+                <div class="prepage"><i class="icon-prepage"></i></div>
+                <div class="newssearchbar">
+                    <div class="possearchpic">
+                        <img src="images/search_icon.png">
+                    </div>
+                    <div class="form-group">
+                        <input type="search" class="form-control" id="search" placeholder="请输入关键字" v-model="search">
+                    </div>
+                </div>
             </div>
         </div>
         <section class="wow fadeInDown" id="newsPage01">
-            
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 newsBigBanner" data-wow-delay="0.2s">
                         <div class="newstitle">
-                            <div class="title">资讯中心</div>
+                            <div class="title">最新快讯</div>
                             <div class="rightlist">
                                 <div class="newsnavlist">
-                                    <div>
+                                    <div class="newsnavlistul">
                                         <li class="active" @click="newsnavlist(0)">产品<span>专栏</span></li>
                                         <li @click="newsnavlist(1)">内容<span>发布</span></li>
                                         <li @click="newsnavlist(2)">活动<span>专栏</span></li>
@@ -133,7 +144,7 @@
                                     <div id="innewsBanner" v-for="(news,index) in newss" v-show="news.importanttag&news.newstype==nowlistpage">
                                         <!-- <div id="lightboxspan" onclick="ShowLightBox('Newsbox'); return false;"> -->
                                         <a @click="clickindex(index)" :href="news.link" :target="clicktoopen(index)" :class="{alertinfbox:news.clickto}">
-                                            <div class="wow fadeInDown col-lg-12 innewsBannerbox" data-wow-delay="0.4s">
+                                            <div class="fadeInDown col-lg-12 innewsBannerbox" data-wow-delay="0.4s">
                                                 <div class="bannerItem">
                                                     <div class="bannerItem_imgout" :style="'background-image: url(' + news.bannerimg + ');'">
                                                         <img class="img-responsive" src="images/newsBanner.png" alt="">
@@ -143,6 +154,7 @@
                                                             <div class="title"><p>{{news.name}}</p></div>
                                                             <div class="date">{{news.time}}</div>
                                                         </div>
+                                                        <a :href="news.downloadlink" target="_blank" v-if="news.downloadbtn" class="downloadlink"><div class="download"><i class="icon-download"></i><div class="downloadtxt">素材下载</div></div></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -154,7 +166,7 @@
                                 <div class="row">
                                     <div class="innewsBanner" v-for="(news,index) in filterlist" v-show="!news.importanttag&news.newstype==nowlistpage">
                                         <a @click="clickindex(index)" :href="news.link" :target="clicktoopen(index)" :class="{alertinfbox:news.clickto}">
-                                            <div class="wow fadeInDown col-sm-4 innewsBannerbox" data-wow-delay="0.4s">
+                                            <div class="fadeInDown col-sm-4 innewsBannerbox" data-wow-delay="0.4s">
                                                 <div class="bannerItem">
                                                     <div class="bannerItem_imgout" :style="'background-image: url(' + news.bannerimg + ');'">
                                                         <img class="img-responsive" src="images/newsBanner.png" alt="">
@@ -189,20 +201,22 @@
                         <!--contentpage-->
                         <div id="news_contentpage" v-show="nowlistpage==1">
                             <div class="newsBanner">
-                                <div class="contentpage_contentlist_out" v-for="(news,index) in filterlist"  v-show="news.newstype==nowlistpage">
-                                    <a @click="clickindex(index)" :href="news.link" :target="clicktoopen(index)" :class="{alertinfbox1:news.clickto}">
-                                        <div class="wow fadeInDown contentpage_contentlist_in" data-wow-delay="0.4s">
-                                            <div class="contentpage_text">
-                                                <div class="newsText">
-                                                    <div class="title" :class="{title_active:news.importanttag}">
-                                                        <p>{{news.name}}</p>
+                                <div class="row">
+                                    <div class="contentpage_contentlist_out" v-for="(news,index) in filterlist"  v-show="news.newstype==nowlistpage">
+                                        <a @click="clickindex(index)" :href="news.link" :target="clicktoopen(index)" :class="{alertinfbox1:news.clickto}">
+                                            <div class="fadeInDown contentpage_contentlist_in" data-wow-delay="0.4s">
+                                                <div class="contentpage_text">
+                                                    <div class="newsText">
+                                                        <div class="title" :class="{title_active:news.importanttag}">
+                                                            <p>{{news.name}}</p>
+                                                        </div>
+                                                        <div class="newscontent"><p>{{news.containtexts}}</p></div>
+                                                        <div class="date">{{news.time}}</div>
                                                     </div>
-                                                    <div class="newscontent"><p>{{news.containtexts}}</p></div>
-                                                    <div class="date">{{news.time}}</div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </a>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="pagectrlbox">
@@ -225,7 +239,7 @@
                                     <div id="innewsBanner" v-for="(news,index) in newss" v-show="news.importanttag&news.newstype==nowlistpage">
                                         <!-- <div id="lightboxspan" onclick="ShowLightBox('Newsbox'); return false;"> -->
                                         <a @click="clickindex(index)" :href="news.link" :target="clicktoopen(index)" :class="{alertinfbox:news.clickto}">
-                                            <div class="wow fadeInDown col-lg-12 innewsBannerbox" data-wow-delay="0.4s">
+                                            <div class="fadeInDown col-lg-12 innewsBannerbox" data-wow-delay="0.4s">
                                                 <div class="bannerItem">
                                                     <div class="bannerItem_imgout" :style="'background-image: url(' + news.bannerimg + ');'">
                                                         <img class="img-responsive" src="images/newsBanner.png" alt="">
@@ -248,7 +262,7 @@
                                 <div class="row">
                                     <div class="innewsBanner" v-for="(news,index) in filterlist" v-show="!news.importanttag&news.newstype==nowlistpage">
                                         <a @click="clickindex(index)" :href="news.link" :target="clicktoopen(index)" :class="{alertinfbox:news.clickto}">
-                                            <div class="wow fadeInDown col-sm-4 innewsBannerbox" data-wow-delay="0.4s">
+                                            <div class="fadeInDown col-sm-4 innewsBannerbox" data-wow-delay="0.4s">
                                                 <div class="bannerItem">
                                                     <div class="bannerItem_imgout" :style="'background-image: url(' + news.bannerimg + ');'">
                                                         <img class="img-responsive" src="images/newsBanner.png" alt="">
@@ -286,7 +300,7 @@
                             <div class="newsBanner">
                                 <div class="contentpage_contentlist_out" v-for="(news,index) in newss"  v-show="news.newstype==nowlistpage">
                                     <a :href="news.bannerimg" target="_blank">
-                                        <div class="wow fadeInDown contentpage_contentlist_in" data-wow-delay="0.4s">
+                                        <div class="fadeInDown contentpage_contentlist_in" data-wow-delay="0.4s">
                                             <div class="contentpage_text">
                                                 <div class="newsText">
                                                     <div class="newscontent">
@@ -389,6 +403,9 @@
        }
     })*/
     
+    $(".searchbtn_mb,.prepage").click(function () {
+            $(".searchbox_mb").toggleClass("searchactive");
+        });
     $(".alertinfbox").click(function () {
     	initoutalertbox_fn0();
     });

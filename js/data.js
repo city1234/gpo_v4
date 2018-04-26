@@ -36,6 +36,8 @@ var vm = new Vue({
                 istopbanner: true, //是否首页展示
                 clickto: false, //是否有内页跳窗公告
                 link: "luckyairship/index.html", //点击连结,下载檔案
+                downloadbtn: true,//是否有下载按钮
+                downloadlink:"images/activebanner/mainbanner_01.jpg",//下载连结
                 mainbannerimg: "images/activebanner/mainbanner_01.jpg", //首页大图2500*1080
                 bannerimg: "images/activebanner/infbanner_01.jpg", //公告内页小图1410*385
                 name: "幸运相伴，让您梦想成真！", //公告名称(最好8个全形字以内),download活动素材/轮播图
@@ -49,6 +51,8 @@ var vm = new Vue({
                 istopbanner: false,
                 clickto: true,
                 link: "javascript: void(0)",
+                downloadbtn: true,
+                downloadlink:"images/activebanner/mainbanner_01.jpg",
                 mainbannerimg: "images/activebanner/mainbanner.jpg",
                 bannerimg: "images/activebanner/infbanner.jpg",
                 name: "2018新春特惠活动",
@@ -77,6 +81,8 @@ var vm = new Vue({
                 istopbanner: false,
                 clickto: false,
                 link: "v1.0/index.html",
+                downloadbtn: true,
+                downloadlink:"images/activebanner/mainbanner_01.jpg",
                 mainbannerimg: "",
                 bannerimg: "images/newsBigBanner.png",
                 name: "【H5游戏主页改版】新架构，新体验，详戳图片！！",
@@ -102,67 +108,209 @@ var vm = new Vue({
                 istopbanner: false,
                 clickto: true,
                 link: "javascript: void(0)",
+                downloadbtn: true,
+                downloadlink:"images/activebanner/mainbanner_01.jpg",
                 mainbannerimg: "",
                 bannerimg: "",
                 name: "1.2.3版本功能说明",
                 time: "2018/5/16",
                 containtexts: '维护公告内容',
                 containtext: '\
- <table>\
-     <tr>\
-         <td>标题</td>\
-         <td>内容描述</td>\
-         <td width="80">日期</td>\
-     </tr >\
-     <tr>\
-         <td>提款次数优化</td>\
-         <td class="txtleft">1.	会员的提款次数数据拆分为前端提款和人工提款 <br />\
-             2.	历史数据中的人工提出不拆分，归为提款次数中，只在上线后开始拆分 <br />\
-             3.	人工提出次数只包含人工提出项目中重复出款和手动申请出款次数 <br />\
-             </td>\
-         <td>2018/5/16</td>\
-     </tr>\
-     <tr>\
-         <td>忘记密码界面增加在线客服</td>\
-         <td class="txtleft">1.	在忘记密码页面增加在线客服，点击可跳转在线客服聊天窗口 <br />\
-           </td>\
-         <td>2018/5/16</td>\
-     </tr>\
-     <tr>\
-         <td>验证码更改</td>\
-          <td class="txtleft">1.后台新增三种验证码，可满足客户对不同验证的需求，三种验证码分别是：<br />\
-            <li style="list-style-type:lower-alpha;padding-left: 10px;">简单验证码，就是原来的验证码不做改变 </li>\
-            <li style="list-style-type:lower-alpha;padding-left: 10px;">混合验证码，数子字母组合或者纯字母的验证码</li>\
-            <li style="list-style-type:lower-alpha;padding-left: 10px;">逻辑验证码，10以内的整数加减法</li>\
-            2.后台仅能选择开启其中一种模式，默认情况下开启数字验证码</td>\
-            <td>2018/5/16</td>\
-     </tr>\
-     <tr>\
-         <td>微信支付宝支持银行卡转账</td>\
-         <td class="txtleft">1.	线下微信、支付宝均支持银行卡转账，新增账号增加“方式二”，账号和卡号都填写了，新增成功的在停用区产生2条数据，一条是账号，一条是卡号</td>\
-         <td>2018/5/16</td>\
-     </tr>\
-     <tr>\
-         <td>H5增加手机游戏客户端下载</td>\
-         <td class="txtleft">1.	在右侧导航栏增加游戏客户端的入口，可以针对PT、MG、AG的游戏进行下载 <br />\
-             2.	会员有额度转换或者登入过PT、MG游戏，就可以查看密码 <br />\
-            </td>\
-         <td>2018/5/16</td>\
-     </tr>\
-     <tr>\
-         <td>提款页面优化</td>\
-         <td class="txtleft">1.	针对提款界面的银行卡与账号显示进行优化调整，会员可以看到完整的银行卡名称与银行卡账号</td>\
-         <td>2018/5/16</td>\
-     </tr>\
-     <tr>\
-         <td>出入款记录权限</td>\
-         <td class="txtleft">1.  出款记录：只读权限（只能查看出款记录）；操作权限：快速出款、确定（稽核）、取消、拒绝 <br />\
-             2.  入款记录：只读权限（只能查看入款记录）；操作权限：确定、取消 <br />\
-            <br />\
-            </td>\
-         <td>2018/5/16</td>\
-     </tr>\
-  </table >'
+                <table>\
+                    <tr>\
+                        <td>标题</td>\
+                        <td>内容描述</td>\
+                        <td width="80">日期</td>\
+                    </tr >\
+                    <tr>\
+                        <td>提款次数优化</td>\
+                        <td class="txtleft">1.	会员的提款次数数据拆分为前端提款和人工提款 <br />\
+                            2.	历史数据中的人工提出不拆分，归为提款次数中，只在上线后开始拆分 <br />\
+                            3.	人工提出次数只包含人工提出项目中重复出款和手动申请出款次数 <br />\
+                            </td>\
+                        <td>2018/5/16</td>\
+                    </tr>\
+                    <tr>\
+                        <td>忘记密码界面增加在线客服</td>\
+                        <td class="txtleft">1.	在忘记密码页面增加在线客服，点击可跳转在线客服聊天窗口 <br />\
+                        </td>\
+                        <td>2018/5/16</td>\
+                    </tr>\
+                    <tr>\
+                        <td>验证码更改</td>\
+                        <td class="txtleft">1.后台新增三种验证码，可满足客户对不同验证的需求，三种验证码分别是：<br />\
+                            <li style="list-style-type:lower-alpha;padding-left: 10px;">简单验证码，就是原来的验证码不做改变 </li>\
+                            <li style="list-style-type:lower-alpha;padding-left: 10px;">混合验证码，数子字母组合或者纯字母的验证码</li>\
+                            <li style="list-style-type:lower-alpha;padding-left: 10px;">逻辑验证码，10以内的整数加减法</li>\
+                            2.后台仅能选择开启其中一种模式，默认情况下开启数字验证码</td>\
+                            <td>2018/5/16</td>\
+                    </tr>\
+                    <tr>\
+                        <td>微信支付宝支持银行卡转账</td>\
+                        <td class="txtleft">1.	线下微信、支付宝均支持银行卡转账，新增账号增加“方式二”，账号和卡号都填写了，新增成功的在停用区产生2条数据，一条是账号，一条是卡号</td>\
+                        <td>2018/5/16</td>\
+                    </tr>\
+                    <tr>\
+                        <td>H5增加手机游戏客户端下载</td>\
+                        <td class="txtleft">1.	在右侧导航栏增加游戏客户端的入口，可以针对PT、MG、AG的游戏进行下载 <br />\
+                            2.	会员有额度转换或者登入过PT、MG游戏，就可以查看密码 <br />\
+                            </td>\
+                        <td>2018/5/16</td>\
+                    </tr>\
+                    <tr>\
+                        <td>提款页面优化</td>\
+                        <td class="txtleft">1.	针对提款界面的银行卡与账号显示进行优化调整，会员可以看到完整的银行卡名称与银行卡账号</td>\
+                        <td>2018/5/16</td>\
+                    </tr>\
+                    <tr>\
+                        <td>出入款记录权限</td>\
+                        <td class="txtleft">1.  出款记录：只读权限（只能查看出款记录）；操作权限：快速出款、确定（稽核）、取消、拒绝 <br />\
+                            2.  入款记录：只读权限（只能查看入款记录）；操作权限：确定、取消 <br />\
+                            <br />\
+                            </td>\
+                        <td>2018/5/16</td>\
+                    </tr>\
+                </table >'
+            },
+            {
+                newstype: 1,
+                importanttag: true,
+                istopbanner: false,
+                clickto: true,
+                link: "javascript: void(0)",
+                downloadbtn: true,
+                downloadlink: "images/activebanner/mainbanner_01.jpg",
+                mainbannerimg: "",
+                bannerimg: "",
+                name: "1.2.3版本功能说明",
+                time: "2018/5/16",
+                containtexts: '维护公告内容',
+                containtext: '\
+                <table>\
+                    <tr>\
+                        <td>标题</td>\
+                        <td>内容描述</td>\
+                        <td width="80">日期</td>\
+                    </tr >\
+                    <tr>\
+                        <td>提款次数优化</td>\
+                        <td class="txtleft">1.	会员的提款次数数据拆分为前端提款和人工提款 <br />\
+                            2.	历史数据中的人工提出不拆分，归为提款次数中，只在上线后开始拆分 <br />\
+                            3.	人工提出次数只包含人工提出项目中重复出款和手动申请出款次数 <br />\
+                            </td>\
+                        <td>2018/5/16</td>\
+                    </tr>\
+                    <tr>\
+                        <td>忘记密码界面增加在线客服</td>\
+                        <td class="txtleft">1.	在忘记密码页面增加在线客服，点击可跳转在线客服聊天窗口 <br />\
+                        </td>\
+                        <td>2018/5/16</td>\
+                    </tr>\
+                    <tr>\
+                        <td>验证码更改</td>\
+                        <td class="txtleft">1.后台新增三种验证码，可满足客户对不同验证的需求，三种验证码分别是：<br />\
+                            <li style="list-style-type:lower-alpha;padding-left: 10px;">简单验证码，就是原来的验证码不做改变 </li>\
+                            <li style="list-style-type:lower-alpha;padding-left: 10px;">混合验证码，数子字母组合或者纯字母的验证码</li>\
+                            <li style="list-style-type:lower-alpha;padding-left: 10px;">逻辑验证码，10以内的整数加减法</li>\
+                            2.后台仅能选择开启其中一种模式，默认情况下开启数字验证码</td>\
+                            <td>2018/5/16</td>\
+                    </tr>\
+                    <tr>\
+                        <td>微信支付宝支持银行卡转账</td>\
+                        <td class="txtleft">1.	线下微信、支付宝均支持银行卡转账，新增账号增加“方式二”，账号和卡号都填写了，新增成功的在停用区产生2条数据，一条是账号，一条是卡号</td>\
+                        <td>2018/5/16</td>\
+                    </tr>\
+                    <tr>\
+                        <td>H5增加手机游戏客户端下载</td>\
+                        <td class="txtleft">1.	在右侧导航栏增加游戏客户端的入口，可以针对PT、MG、AG的游戏进行下载 <br />\
+                            2.	会员有额度转换或者登入过PT、MG游戏，就可以查看密码 <br />\
+                            </td>\
+                        <td>2018/5/16</td>\
+                    </tr>\
+                    <tr>\
+                        <td>提款页面优化</td>\
+                        <td class="txtleft">1.	针对提款界面的银行卡与账号显示进行优化调整，会员可以看到完整的银行卡名称与银行卡账号</td>\
+                        <td>2018/5/16</td>\
+                    </tr>\
+                    <tr>\
+                        <td>出入款记录权限</td>\
+                        <td class="txtleft">1.  出款记录：只读权限（只能查看出款记录）；操作权限：快速出款、确定（稽核）、取消、拒绝 <br />\
+                            2.  入款记录：只读权限（只能查看入款记录）；操作权限：确定、取消 <br />\
+                            <br />\
+                            </td>\
+                        <td>2018/5/16</td>\
+                    </tr>\
+                </table >'
+            },
+            {
+                newstype: 1,
+                importanttag: false,
+                istopbanner: false,
+                clickto: true,
+                link: "javascript: void(0)",
+                downloadbtn: true,
+                downloadlink: "images/activebanner/mainbanner_01.jpg",
+                mainbannerimg: "",
+                bannerimg: "",
+                name: "1.2.3版本功能说明",
+                time: "2018/5/16",
+                containtexts: '维护公告内容',
+                containtext: '\
+                <table>\
+                    <tr>\
+                        <td>标题</td>\
+                        <td>内容描述</td>\
+                        <td width="80">日期</td>\
+                    </tr >\
+                    <tr>\
+                        <td>提款次数优化</td>\
+                        <td class="txtleft">1.	会员的提款次数数据拆分为前端提款和人工提款 <br />\
+                            2.	历史数据中的人工提出不拆分，归为提款次数中，只在上线后开始拆分 <br />\
+                            3.	人工提出次数只包含人工提出项目中重复出款和手动申请出款次数 <br />\
+                            </td>\
+                        <td>2018/5/16</td>\
+                    </tr>\
+                    <tr>\
+                        <td>忘记密码界面增加在线客服</td>\
+                        <td class="txtleft">1.	在忘记密码页面增加在线客服，点击可跳转在线客服聊天窗口 <br />\
+                        </td>\
+                        <td>2018/5/16</td>\
+                    </tr>\
+                    <tr>\
+                        <td>验证码更改</td>\
+                        <td class="txtleft">1.后台新增三种验证码，可满足客户对不同验证的需求，三种验证码分别是：<br />\
+                            <li style="list-style-type:lower-alpha;padding-left: 10px;">简单验证码，就是原来的验证码不做改变 </li>\
+                            <li style="list-style-type:lower-alpha;padding-left: 10px;">混合验证码，数子字母组合或者纯字母的验证码</li>\
+                            <li style="list-style-type:lower-alpha;padding-left: 10px;">逻辑验证码，10以内的整数加减法</li>\
+                            2.后台仅能选择开启其中一种模式，默认情况下开启数字验证码</td>\
+                            <td>2018/5/16</td>\
+                    </tr>\
+                    <tr>\
+                        <td>微信支付宝支持银行卡转账</td>\
+                        <td class="txtleft">1.	线下微信、支付宝均支持银行卡转账，新增账号增加“方式二”，账号和卡号都填写了，新增成功的在停用区产生2条数据，一条是账号，一条是卡号</td>\
+                        <td>2018/5/16</td>\
+                    </tr>\
+                    <tr>\
+                        <td>H5增加手机游戏客户端下载</td>\
+                        <td class="txtleft">1.	在右侧导航栏增加游戏客户端的入口，可以针对PT、MG、AG的游戏进行下载 <br />\
+                            2.	会员有额度转换或者登入过PT、MG游戏，就可以查看密码 <br />\
+                            </td>\
+                        <td>2018/5/16</td>\
+                    </tr>\
+                    <tr>\
+                        <td>提款页面优化</td>\
+                        <td class="txtleft">1.	针对提款界面的银行卡与账号显示进行优化调整，会员可以看到完整的银行卡名称与银行卡账号</td>\
+                        <td>2018/5/16</td>\
+                    </tr>\
+                    <tr>\
+                        <td>出入款记录权限</td>\
+                        <td class="txtleft">1.  出款记录：只读权限（只能查看出款记录）；操作权限：快速出款、确定（稽核）、取消、拒绝 <br />\
+                            2.  入款记录：只读权限（只能查看入款记录）；操作权限：确定、取消 <br />\
+                            <br />\
+                            </td>\
+                        <td>2018/5/16</td>\
+                    </tr>\
+                </table >'
             },
             {
                 newstype: 2,
@@ -170,6 +318,8 @@ var vm = new Vue({
                 istopbanner: false,
                 clickto: true,
                 link: "javascript: void(0)",
+                downloadbtn: true,
+                downloadlink:"images/activebanner/mainbanner_01.jpg",
                 mainbannerimg: "images/activebanner/mainbanner_pp.jpg",
                 bannerimg: "images/activebanner/infbanner_pp.jpg",
                 name: "过关斩将锦标赛",
@@ -203,6 +353,8 @@ var vm = new Vue({
                 istopbanner: false,
                 clickto: false,
                 link: "http://luckydraw.oriental-game.com/LUCKYDRAW/",
+                downloadbtn: true,
+                downloadlink:"images/activebanner/mainbanner_01.jpg",
                 mainbannerimg: "",
                 bannerimg: "http://luckydraw.oriental-game.com/LUCKYDRAW/assets/images/xinyun-logo.png",
                 name: "东方游戏幸运抽抽乐",
@@ -215,6 +367,8 @@ var vm = new Vue({
                 istopbanner: false,
                 clickto: false,
                 link: "https://www.lc88drt.com/tournaments/site/40",
+                downloadbtn: true,
+                downloadlink:"images/activebanner/mainbanner_01.jpg",
                 mainbannerimg: "",
                 bannerimg: "https://www.lc88drt.com/tournaments/site/Content/Images/fg/lucky_dragoon_logo.png",
                 name: "幸运之龙擂台赛",
@@ -227,6 +381,8 @@ var vm = new Vue({
                 istopbanner: false,
                 clickto: false,
                 link: "http://www.fishhuntergames.com/events/apr2018/",
+                downloadbtn: true,
+                downloadlink:"images/activebanner/mainbanner_01.jpg",
                 mainbannerimg: "",
                 bannerimg: "http://www.fishhuntergames.com/events/apr2018/img/bg.jpg",
                 name: "宝箱宝宝大迁徙",
@@ -239,6 +395,8 @@ var vm = new Vue({
                 istopbanner: false,
                 clickto: false,
                 link: "http://xingaming.com/event_standalone.html",
+                downloadbtn: true,
+                downloadlink:"images/activebanner/mainbanner_01.jpg",
                 mainbannerimg: "",
                 bannerimg: "http://xingaming.com/img/event-coinBattle/banner_1920x870_ZH.jpg",
                 name: "百万英雄金币王   通关翻倍天天赏",
@@ -251,6 +409,8 @@ var vm = new Vue({
                 istopbanner: false,
                 clickto: false,
                 link: "http://yoplay.com/news/guessredpacket_apr18/",
+                downloadbtn: true,
+                downloadlink:"images/activebanner/mainbanner_01.jpg",
                 mainbannerimg: "",
                 bannerimg: "http://yoplay.com/news/guessredpacket_apr18/img/banner.png",
                 name: "YOPLAY 猜红包活动，四月再次来袭",
@@ -263,6 +423,8 @@ var vm = new Vue({
                 istopbanner: false,
                 clickto: false,
                 link: "http://www.xingaming.com/zh_event.html",
+                downloadbtn: true,
+                downloadlink:"images/activebanner/mainbanner_01.jpg",
                 mainbannerimg: "",
                 bannerimg: "http://www.xingaming.com/img/event-coinBattle/banner_1920x870_ZH.jpg",
                 name: "XIN哥來了",
@@ -275,6 +437,8 @@ var vm = new Vue({
                 istopbanner: false,
                 clickto: false,
                 link: "http://www.fishhuntergames.com/events/march2018/",
+                downloadbtn: true,
+                downloadlink:"images/activebanner/mainbanner_01.jpg",
                 mainbannerimg: "",
                 bannerimg: "http://www.fishhuntergames.com/events/march2018/img/bg.jpg",
                 name: "礼金大派送",
@@ -287,6 +451,8 @@ var vm = new Vue({
                 istopbanner: false,
                 clickto: false,
                 link: "http://yoplay.com/news/guessredpacket/",
+                downloadbtn: true,
+                downloadlink:"images/activebanner/mainbanner_01.jpg",
                 mainbannerimg: "",
                 bannerimg: "http://yoplay.com/news/guessredpacket/img/banner.jpg",
                 name: "猜红包活动",
@@ -299,6 +465,8 @@ var vm = new Vue({
                 istopbanner: false,
                 clickto: false,
                 link: "javascript: void(0)",
+                downloadbtn: true,
+                downloadlink:"images/activebanner/mainbanner_01.jpg",
                 mainbannerimg: "",
                 bannerimg: "",
                 name: "活动素材/轮播图",
