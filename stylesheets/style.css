@@ -767,6 +767,8 @@ footer .col-lg-6 p {
 /* line 450, ../sass/_layout.sass */
 .toTop span p::before {
   line-heiht: 50px;
+  position: relative;
+  top: -5px;
 }
 
 /*zindex*/
