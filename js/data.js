@@ -35,7 +35,6 @@ var vm = new Vue({
                 importanttag: true, //产品专栏活动专栏头版,内容发布重点标签
                 istopbanner: true, //是否首页展示
                 clickto: false, //是否有内页跳窗公告
-<<<<<<< HEAD
                 link: "action/20180425_CQ9/index.html", //点击连结,下载檔案
                 downloadbtn: false,//是否有下载按钮
                 downloadlink:"",//下载连结
@@ -69,15 +68,10 @@ var vm = new Vue({
                 link: "luckyairship/index.html", //点击连结,下载檔案
                 downloadbtn: false,//是否有下载按钮
                 downloadlink: "",//下载连结
-=======
-                link: "luckyairship/index.html", //点击连结,下载檔案
-                downloadbtn: false, //是否有下载按钮
-                downloadlink: "", //下载连结
->>>>>>> 4ae50b987ded7483a2c613950bdab08773344d7a
                 mainbannerimg: "images/activebanner/mainbanner_01.jpg", //首页大图2500*1080
                 bannerimg: "images/activebanner/infbanner_01.jpg", //公告内页小图1410*385
                 name: "幸运相伴，让您梦想成真！", //公告名称(最好8个全形字以内),download活动素材/轮播图
-                time: "2018/4/2", //活动日期
+                time: "即将上线", //活动日期
                 containtext: '\
                     <div style="text-align:center;"><a href="luckyairship/index.html" target="_blank">前往活动连结</a></div>' //内容html
             },
@@ -88,7 +82,7 @@ var vm = new Vue({
                 clickto: true,
                 link: "javascript: void(0)",
                 downloadbtn: false,
-                downloadlink: "",
+                downloadlink:"",
                 mainbannerimg: "images/activebanner/mainbanner.jpg",
                 bannerimg: "images/activebanner/infbanner.jpg",
                 name: "2018新春特惠活动",
@@ -118,7 +112,7 @@ var vm = new Vue({
                 clickto: false,
                 link: "v1.0/index.html",
                 downloadbtn: false,
-                downloadlink: "images/activebanner/mainbanner_01.jpg",
+                downloadlink:"images/activebanner/mainbanner_01.jpg",
                 mainbannerimg: "",
                 bannerimg: "images/newsBigBanner.png",
                 name: "【H5游戏主页改版】新架构，新体验，详戳图片！！",
@@ -148,9 +142,9 @@ var vm = new Vue({
                 downloadlink: "images/activebanner/mainbanner_01.jpg",
                 mainbannerimg: "",
                 bannerimg: "",
-                name: "预告",
+                name: "1.2.4版本功能说明",
                 time: "2018/4/30",
-                containtexts: '1.2.4版本功能说明',
+                containtexts: '维护公告内容',
                 containtext: '\
                 <table>\
                     <tr>\
@@ -256,17 +250,17 @@ var vm = new Vue({
             },
             {
                 newstype: 1,
-                importanttag: false,
+                importanttag: true,
                 istopbanner: false,
                 clickto: true,
                 link: "javascript: void(0)",
                 downloadbtn: false,
-                downloadlink: "images/activebanner/mainbanner_01.jpg",
+                downloadlink:"images/activebanner/mainbanner_01.jpg",
                 mainbannerimg: "",
                 bannerimg: "",
-                name: "已更新",
+                name: "1.2.3版本功能说明",
                 time: "2018/4/16",
-                containtexts: '1.2.3版本功能说明',
+                containtexts: '维护公告内容',
                 containtext: '\
                 <table>\
                     <tr>\
@@ -331,7 +325,7 @@ var vm = new Vue({
                 clickto: true,
                 link: "javascript: void(0)",
                 downloadbtn: false,
-                downloadlink: "",
+                downloadlink:"",
                 mainbannerimg: "images/activebanner/mainbanner_pp.jpg",
                 bannerimg: "images/activebanner/infbanner_pp.jpg",
                 name: "过关斩将锦标赛",
