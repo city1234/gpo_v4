@@ -581,20 +581,20 @@ footer{
                         }
                         .title{
                             height: 30px;
-                            width: 140px;
+                            width: 100px;
                             line-height: 30px;
                             padding-top: 5px;
                             p{
-                                width: 140px;
+                                width: 100px;
                                 @include css3(border-radius,20px);
-                                border: 1px solid #4a7cd7;
-                                color: #4a7cd7;
+                                border: 1px solid #9e9e9e;
+                                color: #9e9e9e;
                                 font-size: 14px;
                                 overflow : hidden;
                                 text-overflow : ellipsis;
                                 white-space : nowrap; 
                                 @include range-width-in(0,768px){
-                                    border-left: 2px solid #4a7cd7;
+                                    border-left: 2px solid #9e9e9e;
                                     border-right: 0;
                                     border-top: 0;
                                     border-bottom: 0;

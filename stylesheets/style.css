@@ -1361,20 +1361,20 @@ footer .icon-mail:before {
 /* line 582, ../sass/_add.scss */
 #news_contentpage .newsBanner .contentpage_contentlist_out .contentpage_contentlist_in .contentpage_text .newsText .title, #news_downloadpage .newsBanner .contentpage_contentlist_out .contentpage_contentlist_in .contentpage_text .newsText .title {
   height: 30px;
-  width: 140px;
+  width: 100px;
   line-height: 30px;
   padding-top: 5px;
 }
 /* line 587, ../sass/_add.scss */
 #news_contentpage .newsBanner .contentpage_contentlist_out .contentpage_contentlist_in .contentpage_text .newsText .title p, #news_downloadpage .newsBanner .contentpage_contentlist_out .contentpage_contentlist_in .contentpage_text .newsText .title p {
-  width: 140px;
+  width: 100px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
   border-radius: 20px;
-  border: 1px solid #4a7cd7;
-  color: #4a7cd7;
+  border: 1px solid #9e9e9e;
+  color: #9e9e9e;
   font-size: 14px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1383,7 +1383,7 @@ footer .icon-mail:before {
 @media screen and (min-width: 0) and (max-width: 768px) {
   /* line 587, ../sass/_add.scss */
   #news_contentpage .newsBanner .contentpage_contentlist_out .contentpage_contentlist_in .contentpage_text .newsText .title p, #news_downloadpage .newsBanner .contentpage_contentlist_out .contentpage_contentlist_in .contentpage_text .newsText .title p {
-    border-left: 2px solid #4a7cd7;
+    border-left: 2px solid #9e9e9e;
     border-right: 0;
     border-top: 0;
     border-bottom: 0;

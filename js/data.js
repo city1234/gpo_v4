@@ -142,9 +142,9 @@ var vm = new Vue({
                 downloadlink: "images/activebanner/mainbanner_01.jpg",
                 mainbannerimg: "",
                 bannerimg: "",
-                name: "1.2.4版本功能说明",
+                name: "预告",
                 time: "2018/4/30",
-                containtexts: '维护公告内容',
+                containtexts: '1.2.4版本功能说明',
                 containtext: '\
                 <table>\
                     <tr>\
@@ -250,7 +250,7 @@ var vm = new Vue({
             },
             {
                 newstype: 1,
-                importanttag: true,
+                importanttag: false,
                 istopbanner: false,
                 clickto: true,
                 link: "javascript: void(0)",
@@ -258,9 +258,9 @@ var vm = new Vue({
                 downloadlink:"images/activebanner/mainbanner_01.jpg",
                 mainbannerimg: "",
                 bannerimg: "",
-                name: "1.2.3版本功能说明",
+                name: "已更新",
                 time: "2018/4/16",
-                containtexts: '维护公告内容',
+                containtexts: '1.2.3版本功能说明',
                 containtext: '\
                 <table>\
                     <tr>\
