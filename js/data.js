@@ -36,8 +36,8 @@ var vm = new Vue({
                 istopbanner: true, //是否首页展示
                 clickto: false, //是否有内页跳窗公告
                 link: "action/20180425_CQ9/index.html", //点击连结,下载檔案
-                downloadbtn: false,//是否有下载按钮
-                downloadlink:"",//下载连结
+                downloadbtn: false, //是否有下载按钮
+                downloadlink: "", //下载连结
                 mainbannerimg: "images/activebanner/20180430_cq9.jpg", //首页大图2500*1080
                 bannerimg: "images/activebanner/20180430_cq9_s.jpg", //公告内页小图1410*385
                 name: "亚洲最具规模的游戏研发企业!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
@@ -51,8 +51,8 @@ var vm = new Vue({
                 istopbanner: true, //是否首页展示
                 clickto: false, //是否有内页跳窗公告
                 link: "action/20180425_vgs/index.html", //点击连结,下载檔案
-                downloadbtn: false,//是否有下载按钮
-                downloadlink: "",//下载连结
+                downloadbtn: false, //是否有下载按钮
+                downloadlink: "", //下载连结
                 mainbannerimg: "images/activebanner/20180430_vgs.jpg", //首页大图2500*1080
                 bannerimg: "images/activebanner/20180430_vgs_s.jpg", //公告内页小图1410*385
                 name: "享受真实赌场的精彩刺激!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
@@ -66,8 +66,8 @@ var vm = new Vue({
                 istopbanner: true, //是否首页展示
                 clickto: false, //是否有内页跳窗公告
                 link: "luckyairship/index.html", //点击连结,下载檔案
-                downloadbtn: false,//是否有下载按钮
-                downloadlink: "",//下载连结
+                downloadbtn: false, //是否有下载按钮
+                downloadlink: "", //下载连结
                 mainbannerimg: "images/activebanner/mainbanner_01.jpg", //首页大图2500*1080
                 bannerimg: "images/activebanner/infbanner_01.jpg", //公告内页小图1410*385
                 name: "幸运相伴，让您梦想成真！", //公告名称(最好8个全形字以内),download活动素材/轮播图
@@ -82,7 +82,7 @@ var vm = new Vue({
                 clickto: true,
                 link: "javascript: void(0)",
                 downloadbtn: false,
-                downloadlink:"",
+                downloadlink: "",
                 mainbannerimg: "images/activebanner/mainbanner.jpg",
                 bannerimg: "images/activebanner/infbanner.jpg",
                 name: "2018新春特惠活动",
@@ -112,7 +112,7 @@ var vm = new Vue({
                 clickto: false,
                 link: "v1.0/index.html",
                 downloadbtn: false,
-                downloadlink:"images/activebanner/mainbanner_01.jpg",
+                downloadlink: "images/activebanner/mainbanner_01.jpg",
                 mainbannerimg: "",
                 bannerimg: "images/newsBigBanner.png",
                 name: "【H5游戏主页改版】新架构，新体验，详戳图片！！",
@@ -154,19 +154,15 @@ var vm = new Vue({
                     </tr >\
                     <tr>\
                         <td>统计报表_彩种报表<新增></td>\
-                        <td class="txtleft">1.	代理后台、报表查询-新增彩种报表 <br />\
-                            2.	报表数据按照彩种分类 <br />\
-                            3.	报表数据按要求展示 <br />\
+                        <td class="txtleft">1.	代理后台、报表查询-新增彩种报表，可查阅每个彩种在某个区间内的数据情况 <br />\
+                            \
                             </td>\
                         <td class="datembnone">2018/5/9</td>\
                     </tr>\
                     <tr>\
                         <td>第三方接入<新增></td>\
-                        <td class="txtleft">1.	VGS视讯和CQ9电子的接入：<br />\
-                            <li style="list-style-type:lower-alpha;padding-left: 10px;">在代理后台、前端需要能查询到此平台并有数据的展示 </li>\
-                            <li style="list-style-type:lower-alpha;padding-left: 10px;">保证游戏主页跳转第三方能够正常</li>\
-                            <li style="list-style-type:lower-alpha;padding-left: 10px;">采集数据的即时性</li>\
-                            <li style="list-style-type:lower-alpha;padding-left: 10px;">报表查询的准确性</li>\
+                        <td class="txtleft">1.	视讯新增VGS<br />\
+                        2.	电子游戏新增CQ9传奇电子<br />\
                         </td>\
                         <td class="datembnone">2018/5/9</td>\
                     </tr>\
@@ -184,14 +180,11 @@ var vm = new Vue({
                     <tr>\
                         <td>AG返水拆分</td>\
                         <td class="txtleft">\
-                            1.	新线上付款设定可分别针对视讯、捕鱼和电子做设置<br />\
-                            2.	出入款记录，稽核页面需要分开展示AG三个数据<br />\
-                            3.	子线金系统返水冲销详情需要分开展示AG三个数据<br />\
-                            4.	取款稽核和即时稽核查询需要分开展示AG三个数据<br />\
-                            5.	出入款总账中，返水和冲销需要分开展示AG三个数据<br />\
-                            6.	优惠活动中，返水优惠设定、优惠统计、优惠查询需要分开展示AG三个数据<br />\
-                            7.	退佣统计中，代理佣金设定、退佣统计、退佣查询、有效会员列表需要分开展示AG三个数据<br />\
-                            8.	报表查询中，报表和会员报表需要分开展示AG三个数据<br />\
+                            1.	AG平台拆分为AG视讯，AG捕鱼，AG电子<br />\
+                            2.	代理后台各个模块分别增加AG视讯、捕鱼、电子三类的投注记录，反水/冲销详情<br />\
+                            3.	新线上付款设定、优惠活动、退佣模块均可针对AG视讯/捕鱼/电子三类做不同设定<br />\
+                            4.	历史数据会统计AG视讯中<br />\
+                           \
                         </td>\
                         <td class="datembnone">2018/5/9</td>\
                     </tr>\
@@ -203,7 +196,7 @@ var vm = new Vue({
                             <li style="list-style-type:lower-alpha;padding-left: 10px;">手机端投注记录和往来记录需要分开展示AG三个数据</li>\
                         2.	手机端：<br />\
                             <li style="list-style-type:lower-alpha;padding-left: 10px;">投注记录按照最新样式，可以选择单一平台和七天的时间内进行查询相对应的注单内容</li>\
-                            <li style="list-style-type:lower-alpha;padding-left: 10px;">非美东时间平台时间按照第三方时间展示，需要有温馨提示</li>\
+                            <li style="list-style-type:lower-alpha;padding-left: 10px;">非美东时间平台时间按照第三方时间展示，增加温馨提示</li>\
                             <li style="list-style-type:lower-alpha;padding-left: 10px;">彩票和体育可以查询到注单详情，第三方暂不支持</li>\
                         </td>\
                         <td class="datembnone">2018/5/9</td>\
@@ -211,9 +204,8 @@ var vm = new Vue({
                     <tr>\
                         <td>存款优惠和汇款优惠限额控制</td>\
                         <td class="txtleft"><br / >\
-                            1.	代理后台，代理后台-公告 / 讯息添加代理公告信息，可以查看历史代理公告信息、当前代理公告信息<br / >\
-                            2.	公共信息页面右下角点击代理公告信息，可以跳转到代理公告信息页面<br / >\
-                            3.	添加代理公告信息权限，所有层级都有此权限，默认都开启<br / >\
+                            1.	子账号新增人工存入存款优惠限额、人工存入汇款优惠限额，可以对应控制人工线上存提-人工存入-存款优惠/汇款优惠<br / >\
+                            2.	后台权限添加批次处理（子账号默认不开启）<br / >\
                         </td>\
                         <td class="datembnone">2018/5/9</td>\
                     </tr>\
@@ -238,11 +230,9 @@ var vm = new Vue({
                     <tr>\
                         <td>网站咨询系统</td>\
                         <td class="txtleft">\
-                            1.	编辑组别与删除组别能够正常使用 <br />\
-                            2.	图片上传浏览功能不能够破图 <br />\
-                            3.	子账号权限上线时为全部勾选状态 <br />\
-                            4.	图库的组别在已有图片的情况下，不可进行删除<br />\
-                            5.	具体到各栏目设置页面时，能够根据组别进行图片的选择 <br />\
+                            1.	将网站资讯编辑和在线存款并列放置同级功能项，并单独做权限控制 <br />\
+                            2.	网站资讯编辑，增加分组功能，可支持新增分组，删除分组，图片组别调整，批量删除图库资源 <br />\
+                           \
                         </td>\
                         <td class="datembnone">2018/5/9</td>\
                     </tr>\
@@ -255,7 +245,7 @@ var vm = new Vue({
                 clickto: true,
                 link: "javascript: void(0)",
                 downloadbtn: false,
-                downloadlink:"images/activebanner/mainbanner_01.jpg",
+                downloadlink: "images/activebanner/mainbanner_01.jpg",
                 mainbannerimg: "",
                 bannerimg: "",
                 name: "已更新",
@@ -325,7 +315,7 @@ var vm = new Vue({
                 clickto: true,
                 link: "javascript: void(0)",
                 downloadbtn: false,
-                downloadlink:"",
+                downloadlink: "",
                 mainbannerimg: "images/activebanner/mainbanner_pp.jpg",
                 bannerimg: "images/activebanner/infbanner_pp.jpg",
                 name: "过关斩将锦标赛",
