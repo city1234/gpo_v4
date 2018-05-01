@@ -35,7 +35,7 @@ var vm = new Vue({
                 importanttag: true, //产品专栏活动专栏头版,内容发布重点标签
                 istopbanner: true, //是否首页展示
                 clickto: false, //是否有内页跳窗公告
-                link: "20180425_CQ9/index.html", //点击连结,下载檔案
+                link: "20180501_CQ9/index.html", //点击连结,下载檔案
                 downloadbtn: false, //是否有下载按钮
                 downloadlink: "", //下载连结
                 mainbannerimg: "images/activebanner/20180430_cq9.jpg", //首页大图2500*1080
