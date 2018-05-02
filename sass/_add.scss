@@ -165,7 +165,9 @@
         clear: both;
     }
 }
-
+[v-cloak] {
+    display: none;
+}
 #newsPageout {
     background: #f4f7f8;
     #newsPage01 {
