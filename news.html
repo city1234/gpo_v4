@@ -164,7 +164,7 @@
                             </div>
                             <div class="newsBanner">
                                 <div class="row">
-                                    <div class="innewsBanner" v-for="(news,index) in filterlist" v-show="!news.importanttag&news.newstype==nowlistpage">
+                                    <div class="innewsBanner" v-for="(news,index) in newss" v-show="!news.importanttag&news.newstype==nowlistpage&news.name.indexOf(search)!=-1">
                                         <a @click="clickindex(index)" :href="news.link" :target="clicktoopen(index)" :class="{alertinfbox:news.clickto}">
                                             <div class="fadeInDown col-sm-4 innewsBannerbox" data-wow-delay="0.4s">
                                                 <div class="bannerItem">
@@ -208,7 +208,7 @@
                         <div id="news_contentpage" v-show="nowlistpage==1">
                             <div class="newsBanner">
                                 <div class="row">
-                                    <div class="contentpage_contentlist_out" v-for="(news,index) in filterlist"  v-show="news.newstype==nowlistpage">
+                                    <div class="contentpage_contentlist_out" v-for="(news,index) in newss"  v-show="news.newstype==nowlistpage&news.containtexts.indexOf(search)!=-1">
                                         <a @click="clickindex(index)" :href="news.link" :target="clicktoopen(index)" :class="{alertinfbox1:news.clickto}">
                                             <div class="fadeInDown contentpage_contentlist_in" data-wow-delay="0.4s">
                                                 <div class="contentpage_text">
@@ -272,7 +272,7 @@
                             </div>
                             <div class="newsBanner">
                                 <div class="row">
-                                    <div class="innewsBanner" v-for="(news,index) in filterlist" v-show="!news.importanttag&news.newstype==nowlistpage">
+                                    <div class="innewsBanner" v-for="(news,index) in newss" v-show="!news.importanttag&news.newstype==nowlistpage&news.name.indexOf(search)!=-1">
                                         <a @click="clickindex(index)" :href="news.link" :target="clicktoopen(index)" :class="{alertinfbox:news.clickto}">
                                             <div class="fadeInDown col-sm-4 innewsBannerbox" data-wow-delay="0.4s">
                                                 <div class="bannerItem">

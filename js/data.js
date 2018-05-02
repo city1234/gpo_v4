@@ -42,6 +42,7 @@ var vm = new Vue({
                 bannerimg: "images/activebanner/20180430_cq9_s.jpg", //公告内页小图1410*385
                 name: "亚洲最具规模的游戏研发企业!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
                 time: "2018/05", //活动日期
+                containtexts: '',
                 containtext: '\
                     <div style="text-align:center;"><a href="luckyairship/index.html" target="_blank">前往活动连结</a></div>' //内容html
             },
@@ -57,6 +58,7 @@ var vm = new Vue({
                 bannerimg: "images/activebanner/20180430_vgs_s.jpg", //公告内页小图1410*385
                 name: "享受真实赌场的精彩刺激!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
                 time: "2018/05", //活动日期
+                containtexts: '',
                 containtext: '\
                     <div style="text-align:center;"><a href="luckyairship/index.html" target="_blank">前往活动连结</a></div>' //内容html
             },
@@ -72,6 +74,7 @@ var vm = new Vue({
                 bannerimg: "images/activebanner/infbanner_01.jpg", //公告内页小图1410*385
                 name: "幸运相伴，让您梦想成真！", //公告名称(最好8个全形字以内),download活动素材/轮播图
                 time: "2018/03", //活动日期
+                containtexts: '',
                 containtext: '\
                     <div style="text-align:center;"><a href="luckyairship/index.html" target="_blank">前往活动连结</a></div>' //内容html
             },
@@ -87,6 +90,7 @@ var vm = new Vue({
                 bannerimg: "images/activebanner/infbanner.jpg",
                 name: "2018新春特惠活动",
                 time: "2018/01/30",
+                containtexts: '',
                 containtext: '\
                     东方包网平台为答谢各位新老客户多年的支持与厚爱在春节来临之际特别推出\
                     <span class= "redtxt" > 新春特惠活动</span>，凡此活动期间在我司开设游戏网站\
@@ -117,6 +121,7 @@ var vm = new Vue({
                 bannerimg: "images/newsBigBanner.png",
                 name: "【H5游戏主页改版】新架构，新体验，详戳图片！！",
                 time: "2018/01/30",
+                containtexts: '',
                 containtext: ''
             },
             // {
@@ -320,6 +325,7 @@ var vm = new Vue({
                 bannerimg: "images/activebanner/infbanner_pp.jpg",
                 name: "过关斩将锦标赛",
                 time: "2018/04/05",
+                containtexts: '',
                 containtext: '\
                     <div style="max-width:800px;margin:0 auto;"><div align="center">过关斩将锦标赛，50万谁与争锋 每周奖金池高达88,000元</div>\
                     <br/>Dates:\
@@ -355,6 +361,7 @@ var vm = new Vue({
                 bannerimg: "http://luckydraw.oriental-game.com/LUCKYDRAW/assets/images/xinyun-logo.png",
                 name: "东方游戏幸运抽抽乐",
                 time: "2018/05",
+                containtexts: '',
                 containtext: ''
             },
             {
@@ -369,6 +376,7 @@ var vm = new Vue({
                 bannerimg: "https://www.lc88drt.com/tournaments/site/Content/Images/fg/lucky_dragoon_logo.png",
                 name: "幸运之龙擂台赛",
                 time: "2018/05",
+                containtexts: '',
                 containtext: ''
             },
             {
@@ -383,6 +391,7 @@ var vm = new Vue({
                 bannerimg: "http://www.fishhuntergames.com/events/apr2018/img/bg.jpg",
                 name: "宝箱宝宝大迁徙",
                 time: "2018/04/23",
+                containtexts: '',
                 containtext: '在打鱼过程中,宝箱宝宝不定时在游戏中出现。只需通过点击将其抓获，可获得丰富奖金。每次金额不确定，最高多达5000元。'
             },
             {
@@ -397,6 +406,7 @@ var vm = new Vue({
                 bannerimg: "http://xingaming.com/img/event-coinBattle/banner_1920x870_ZH.jpg",
                 name: "百万英雄金币王   通关翻倍天天赏",
                 time: "2018/04/18",
+                containtexts: '',
                 containtext: '金拉霸，猛龙传奇，金龙珠，XIN哥来了'
             },
             {
@@ -411,6 +421,7 @@ var vm = new Vue({
                 bannerimg: "http://yoplay.com/news/guessredpacket_apr18/img/banner.png",
                 name: "YOPLAY 猜红包活动，四月再次来袭",
                 time: "2018/04/11",
+                containtexts: '',
                 containtext: '全民猜红包，猜中就给你 '
             },
             {
@@ -425,6 +436,7 @@ var vm = new Vue({
                 bannerimg: "http://www.xingaming.com/img/event-coinBattle/banner_1920x870_ZH.jpg",
                 name: "XIN哥來了",
                 time: "2018/03/26",
+                containtexts: '',
                 containtext: ''
             },
             {
@@ -439,6 +451,7 @@ var vm = new Vue({
                 bannerimg: "http://www.fishhuntergames.com/events/march2018/img/bg.jpg",
                 name: "礼金大派送",
                 time: "2018/03/20",
+                containtexts: '',
                 containtext: ''
             },
             {
@@ -453,6 +466,7 @@ var vm = new Vue({
                 bannerimg: "http://yoplay.com/news/guessredpacket/img/banner.jpg",
                 name: "猜红包活动",
                 time: "2018/03/07",
+                containtexts: '',
                 containtext: ''
             },
             {
@@ -467,9 +481,19 @@ var vm = new Vue({
                 bannerimg: "",
                 name: "活动素材/轮播图",
                 time: "无资料",
+                containtexts: '',
                 containtext: '无资料'
             }
         ]
+    },
+    watch: {
+        data: function(value){
+            if (true) {
+                console.log(111);
+            } else {
+                console.log(222);
+            }
+        }
     },
     methods: {
         newsnavlist: function(index) {
@@ -530,11 +554,23 @@ var vm = new Vue({
         */
         filterlist: function(newss) {
             var _this = this;
-
             return this.newss.filter(function (news) {
                 var searchtxt = news.name + news.containtexts;
                 return searchtxt.match(_this.search);
             });
+            /*
+            $(".alertinfbox").click(function () {
+                var alertboxw = $(window).width();
+                if (alertboxw > 1200) { alertboxw = 1200; }
+                var $form = $("#alertbox");
+                $.colorbox({
+                    //iframe: true,
+                    inline: true,
+                    href: $form,
+                    width: alertboxw, //燈箱中間區塊的寬度
+                });
+            });
+            */
         },
        /*
         filterlist: function (newss) {
