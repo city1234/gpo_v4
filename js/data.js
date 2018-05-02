@@ -529,19 +529,28 @@ var vm = new Vue({
         }
         */
         filterlist: function(newss) {
-            return this.newss.filter((news) => {
-                let searchtxt = news.name + news.containtexts;
+            var _this = this;
+
+            return this.newss.filter(function (news) {
+                var searchtxt = news.name + news.containtexts;
+                return searchtxt.match(_this.search);
+            });
+        },
+       /*
+        filterlist: function (newss) {
+            return this.newss.filter(function (news) {
+                var searchtxt = news.name + news.containtexts;
                 return searchtxt.match(this.search);
             });
-        }
+        }*/
     },
     mounted: function() {
         //设置cookie
-        Vue.prototype.setCookie = (c_name, value, expiredays) => {
-                var exdate = new Date();
-                exdate.setDate(exdate.getDate() + expiredays);
-                document.cookie = c_name + "=" + escape(value) + ((expiredays == null) ? "" : ";expires=" + exdate.toGMTString());
-            }
+        Vue.prototype.setCookie = function (c_name, value, expiredays) {
+            var exdate = new Date();
+            exdate.setDate(exdate.getDate() + expiredays);
+            document.cookie = c_name + "=" + escape(value) + (expiredays == null ? "" : ";expires=" + exdate.toGMTString());
+        };
             //获取cookie、
         function getCookie(name) {
             var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
@@ -552,13 +561,12 @@ var vm = new Vue({
         }
         Vue.prototype.getCookie = getCookie;
         //删除cookie
-        Vue.prototype.delCookie = (name) => {
+        Vue.prototype.delCookie = function (name) {
             var exp = new Date();
             exp.setTime(exp.getTime() - 1);
             var cval = getCookie(name);
-            if (cval != null)
-                document.cookie = name + "=" + cval + ";expires=" + exp.toGMTString();
-        }
+            if (cval != null) document.cookie = name + "=" + cval + ";expires=" + exp.toGMTString();
+        };
         if (!this.outwindow) {
             this.setCookie("cancelAlert", "1", 1);
         }
