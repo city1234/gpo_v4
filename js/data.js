@@ -409,6 +409,7 @@ var vm = new Vue({
                 containtexts: '',
                 containtext: '金拉霸，猛龙传奇，金龙珠，XIN哥来了'
             },
+            /*
             {
                 newstype: 2,
                 importanttag: false,
@@ -424,6 +425,7 @@ var vm = new Vue({
                 containtexts: '',
                 containtext: '全民猜红包，猜中就给你 '
             },
+            */
             {
                 newstype: 2,
                 importanttag: false,
@@ -454,6 +456,7 @@ var vm = new Vue({
                 containtexts: '',
                 containtext: ''
             },
+            /*
             {
                 newstype: 2,
                 importanttag: false,
@@ -469,6 +472,7 @@ var vm = new Vue({
                 containtexts: '',
                 containtext: ''
             },
+            */
             {
                 newstype: 3,
                 importanttag: false,
