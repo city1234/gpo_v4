@@ -129,7 +129,7 @@
                                 <div class="alertcontent" v-for="(news,index) in newss" v-if="intopagevif(index)">
                                     <div class="newsconttitlebox">
                                         <div class="title"  :class="{title_active:news.importanttag}">{{news.name}}</div>
-                                        <div class="time">{{news.time}}</div>
+                                        <!--<div class="time">{{news.time}}</div>-->
                                     </div>
                                     <div class="txtmain">{{news.containtexts}}</div>
                                     <div class="txt" v-html="news.containtext">
