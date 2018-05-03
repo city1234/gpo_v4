@@ -340,7 +340,7 @@ var vm = new Vue({
                     <br/>符合条件的游戏：所有PP老虎机，但不包括：888 Gold、 Diamonds are Forever 3 Lines、 Irish Charms、 Money Roll、Queen of Gold、桌面游戏(Table games)和其他游戏(Other games) 。\
                     <br/>* 有关包含所有符合条件的游戏的详细列表，请联系您的客户经理\
                     <br/>每周奖池：超过<span class= "redtxt" >88,800元</span>人民币\
-                    <br/><div class="txtcenter"><div class="inpagebtn">每周排行榜点击这里</div></div>\
+                    <br/><div class="txtcenter"><a href="https://pp88.asia/tournament/the_golden_path_tournament_zh/" target="_blank"><div class="inpagebtn">每周排行榜点击这里</div></a></div>\
                     <br/>奖金池累计总奖金超过<span class= "redtxt" >50万</span>人民币\
                     <br/><br/><br/>运营商有责任确保我们的产品和服务符合他们国家的适用法律。\
                     <br/>现金奖励不能有任何投注要求。如果玩家希望提款，他们可以立即提款。\
