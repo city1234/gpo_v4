@@ -19,7 +19,7 @@
 </style>
 
 <body>
-    <div id="newsPageout">
+    <div id="newsPageout" v-cloak>
         <div class="fadeIn navbar navbar-custom navbar-default navbar-fixed-top" role="navigation" data-wow-delay="0.2s">
             <div class="container">
                 <div class="navbar-header">
@@ -138,7 +138,7 @@
                             </div>
                         </div>
                         <!--productpage-->
-                        <div id="news_productpage" v-show="nowlistpage==0" v-cloak>
+                        <div id="news_productpage" v-show="nowlistpage==0">
                             <div class="newsBanner">
                                 <div class="row">
                                     <div id="innewsBanner" v-for="(news,index) in newss" v-show="news.importanttag&news.newstype==nowlistpage">
@@ -205,7 +205,7 @@
                         </div>
                         <!--productpage_end-->
                         <!--contentpage-->
-                        <div id="news_contentpage" v-show="nowlistpage==1" v-cloak>
+                        <div id="news_contentpage" v-show="nowlistpage==1">
                             <div class="newsBanner">
                                 <div class="row">
                                     <div class="contentpage_contentlist_out" v-for="(news,index) in newss"  v-show="news.newstype==nowlistpage&news.containtexts.indexOf(search)!=-1">
@@ -239,7 +239,7 @@
                         </div>
                         <!--contentpage_end-->
                         <!--eventpage-->
-                        <div id="news_eventpage"  v-show="nowlistpage==2" v-cloak>
+                        <div id="news_eventpage"  v-show="nowlistpage==2">
                             <div class="newsBanner">
                                 <div class="row">
                                     <div id="innewsBanner" v-for="(news,index) in newss" v-show="news.importanttag&news.newstype==nowlistpage">
@@ -314,7 +314,7 @@
                         <!--eventpage_end-->
 
                         <!--downloadpage-->
-                        <div id="news_downloadpage"  v-show="nowlistpage==3" v-cloak>
+                        <div id="news_downloadpage"  v-show="nowlistpage==3">
                             <div class="newsBanner">
                                 <div class="contentpage_contentlist_out" v-for="(news,index) in newss"  v-show="news.newstype==nowlistpage">
                                     <a :href="news.bannerimg" target="_blank">
