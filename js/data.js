@@ -147,7 +147,7 @@ var vm = new Vue({
                 downloadlink: "images/activebanner/mainbanner_01.jpg",
                 mainbannerimg: "",
                 bannerimg: "",
-                name: "预告",
+                name: "已更新",
                 time: "2018/4/30",
                 containtexts: '1.2.4版本功能说明',
                 containtext: '\
@@ -217,9 +217,7 @@ var vm = new Vue({
                     <tr>\
                         <td>增加在线人数权限设置</td>\
                         <td class="txtleft">\
-                            1.	大大股东、大股东、股东、总代、代理的【权限控制】，增加“在线人数”子权限，与子权限下级权限的“踢出”“锁定””解锁”“停用”<br />\
-                            2.	后台大股东、子账号在线人数”权限默认为勾选状态，股东、总代、代理账号在线人数”权限默认为不勾选状态 <br />\
-                            3.	“踢出”“锁定””解锁”“停用”的按钮显示，根据勾选的情况对应显示 <br />\
+                            在线人数权限仅针对厅主与子帐号, 详情请查看后台操作权限 <br />\
                             </td>\
                         <td class="datembnone">2018/5/9</td>\
                     </tr>\
