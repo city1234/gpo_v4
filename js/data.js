@@ -139,7 +139,7 @@ var vm = new Vue({
             // },
             {
                 newstype: 1,
-                importanttag: true,
+                importanttag: false,
                 istopbanner: false,
                 clickto: true,
                 link: "javascript: void(0)",
