@@ -159,7 +159,7 @@ var vm = new Vue({
                     </tr >\
                     <tr>\
                         <td>统计报表_彩种报表<新增></td>\
-                        <td class="txtleft">1.	代理后台、报表查询-新增彩种报表，可查阅每个彩种在某个区间内的数据情况 <br />\
+                        <td class="txtleft">代理后台、报表查询-新增彩种报表，可查阅每个彩种在某个区间内的数据情况 <br />\
                             \
                             </td>\
                         <td class="datembnone">2018/5/9</td>\
