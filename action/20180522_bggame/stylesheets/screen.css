@@ -1,0 +1,278 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/*zindex*/
+/*linear-gradient*/
+/*specify*/
+/*keyframes*/
+/*Responsive*/
+/*radius*/
+/*boxshadow*/
+/*POS*/
+/*clearfix*/
+/*changebg*/
+/*gridbox*/
+/*
+*{
+    font: normal 14px/20px "Microsoft Yahei";
+}*/
+/*
+*********useage*********
+@include POS(475px,75px);
+@include css3(transition,all 1s ease);
+@include css3(box-shadow,0px 0px 14px #ffffff);
+@include css3(border-radius,20px);
+border: 2px solid #6d4b00;
+left: calc(50% - 82.5px);
+@include linear-gradient(#db3542, #bc2741);
+@include range-width-in(0,0){}
+@include ellipsistext();
+@include linear-gradient($top, $bottom);
+
+.btn_face{
+    @include btn_style_face($color_main ,65px ,30px,$radius);
+    @include hover_light();
+}
+.btn_line{
+    @include btn_style_line($color_main ,65px ,30px,$radius);
+}
+.tablebox{
+    @include table_style();
+}
+
+
+@media screen and (min-width: 0px) and (max-width:640px) {}
+@media screen and (min-width: 641px) and (max-width:1200px) {}
+@media screen and (min-width: 1201px) and (max-width:2000px) {}
+
+*********animation*********
+@include css3(transition,all 1s ease);
+@include css3(animation,opacitylight 2s infinite linear);
+@include keyframes(opacitylight) {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+*/
+/* line 189, ../sass/screen.scss */
+select {
+  -webkit-box-shadow: 0px 0px 14px #ffffff;
+  -moz-box-shadow: 0px 0px 14px #ffffff;
+  -ms-box-shadow: 0px 0px 14px #ffffff;
+  -o-box-shadow: 0px 0px 14px #ffffff;
+  box-shadow: 0px 0px 14px #ffffff;
+  border: 0px;
+  line-height: 30px;
+  height: 30px;
+  padding: 0 7px;
+  /*很关键：将默认的select选择框样式清除*/
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  padding-right: 20px;
+  cursor: pointer;
+  min-width: 80px;
+}
+
+/* line 205, ../sass/screen.scss */
+input {
+  border: 1px solid #3e8ef0;
+  background: transparent;
+  line-height: 28px;
+  height: 28px;
+  padding: 0 10px;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  width: 145px;
+}
+
+/* line 215, ../sass/screen.scss */
+.wrapper {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* line 220, ../sass/screen.scss */
+.wrapper_in {
+  width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 226, ../sass/screen.scss */
+#topbanner {
+  background: url(../images/top_bg.jpg) no-repeat top center;
+  background-size: cover;
+  text-align: center;
+  overflow: hidden;
+  display: -webkit-flex;
+  /* 新版本语法: Chrome 21+ */
+  display: flex;
+  /* 新版本语法: Opera 12.1, Firefox 22+ */
+  align-items: center;
+  -webkit-align-items: center;
+  min-height: 100vh;
+}
+/* line 236, ../sass/screen.scss */
+#topbanner .slogan {
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 0) and (max-width: 767px) {
+  /* line 236, ../sass/screen.scss */
+  #topbanner .slogan {
+    margin-bottom: 0;
+  }
+}
+/* line 242, ../sass/screen.scss */
+#topbanner .cardbox {
+  display: -webkit-flex;
+  /* 新版本语法: Chrome 21+ */
+  display: flex;
+  /* 新版本语法: Opera 12.1, Firefox 22+ */
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: bold;
+}
+@media screen and (min-width: 0) and (max-width: 767px) {
+  /* line 242, ../sass/screen.scss */
+  #topbanner .cardbox {
+    display: block;
+  }
+  /* line 255, ../sass/screen.scss */
+  #topbanner .cardbox .card {
+    margin: 5% !important;
+  }
+  /* line 258, ../sass/screen.scss */
+  #topbanner .cardbox img {
+    width: 60%;
+  }
+}
+/* line 262, ../sass/screen.scss */
+#topbanner .cardbox .card {
+  flex: 1;
+  margin: 0 1%;
+  padding: 2% 1%;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.1);
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+/* line 272, ../sass/screen.scss */
+#topbanner .cardbox .card .cardbtn {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border: 1px solid #fff;
+  max-width: 170px;
+  margin: 0 auto;
+}
+/* line 279, ../sass/screen.scss */
+#topbanner .cardbox .card img {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* line 282, ../sass/screen.scss */
+#topbanner .cardbox .card:hover {
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  -o-transform: scale(1.03);
+  transform: scale(1.03);
+}
+/* line 285, ../sass/screen.scss */
+#topbanner .cardbox .card:hover .cardbtn {
+  background: #fff;
+  color: #3dabe5;
+}
+/* line 295, ../sass/screen.scss */
+#topbanner .cardbox .active {
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  -o-transform: scale(1.03);
+  transform: scale(1.03);
+}
+/* line 298, ../sass/screen.scss */
+#topbanner .cardbox .active .cardbtn {
+  background: #fff;
+  color: #3dabe5;
+}
+
+/* line 308, ../sass/screen.scss */
+.totop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  background: #323232;
+  color: #fff;
+  cursor: pointer;
+  z-index: 99;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  /*
+  &:after{
+      display: inline-block;
+      content: " ";
+      height: 18px;
+      width: 18px;
+      border-width: 0 2px 2px 0;
+      border-color: #999999;
+      border-style: solid;
+      transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+      transform-origin: center;
+      transition: transform .3s;
+      position: absolute;
+      top: 60%;
+      right: 10px;
+      margin-top: -10px;
+      @include css3(transform,rotate(-135deg));
+  }*/
+}
+/* line 320, ../sass/screen.scss */
+.totop:hover {
+  background: #494949;
+}

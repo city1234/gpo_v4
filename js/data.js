@@ -30,9 +30,26 @@ var vm = new Vue({
                 nowpage: 1, // 当前页数
             }
         ],
-        newss: [{
+        newss: [
+            {
                 newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
                 importanttag: true, //产品专栏活动专栏头版,内容发布重点标签
+                istopbanner: true, //是否首页展示
+                clickto: false, //是否有内页跳窗公告
+                link: "action/20180522_bggame/index.html", //点击连结,下载檔案
+                downloadbtn: true, //是否有下载按钮
+                downloadlink: "loading/20180522_bggame.zip", //下载连结
+                mainbannerimg: "images/activebanner/20180522_bggame.jpg", //首页大图2500*1080
+                bannerimg: "images/activebanner/20180522_bggame_s.jpg", //公告内页小图1410*385
+                name: "BG大遊丰富你的世界!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
+                time: "2018/05", //活动日期
+                containtexts: '',
+                containtext: '\
+                    <div style="text-align:center;"><a href="luckyairship/index.html" target="_blank">前往活动连结</a></div>' //内容html
+            },
+            {
+                newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
+                importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
                 istopbanner: true, //是否首页展示
                 clickto: false, //是否有内页跳窗公告
                 link: "CQ9/index.html", //点击连结,下载檔案
@@ -346,6 +363,21 @@ var vm = new Vue({
                     <br/>必须在网站，通讯和其他媒体（包括社交媒体）上使用过关斩将锦标赛专用促销包的元素。\
                     <br/>为了符合网络推广资格，参赛游戏必须在突出的大厅位置展示。\
                     <br/>PP保留随时修改，暂停或取消促销的权利。</div>'
+            },
+            {
+                newstype: 2,
+                importanttag: false,
+                istopbanner: false,
+                clickto: false,
+                link: "http://xingaming.com/gameInfo.html",
+                downloadbtn: false,
+                downloadlink: "",
+                mainbannerimg: "",
+                bannerimg: "http://xingaming.com/img/event-SC03/Gold_coin_rush_result_banner_ZH.png",
+                name: "XINGAMING",
+                time: "2018/05",
+                containtexts: '',
+                containtext: ''
             },
             {
                 newstype: 2,

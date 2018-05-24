@@ -1,0 +1,300 @@
+
+.gameFree{
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 100;
+}
+#BGfish_block01{
+	background-image: url(../images/bg_01.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #fff;
+}
+
+.BGfish_intro{
+	text-align: center;
+	margin:auto;
+	padding:25px 0;
+	background-color: rgba(14,25,45,0.7);
+}
+.BGfish_intro h1{
+	font-size: 48px;
+	font-weight: 500;
+	padding-bottom: 15px;
+}
+.BGfish_intro p{
+	font-size: 22px;
+	line-height: 1.5;
+	width: 60vw;
+	margin:auto;
+}
+
+#BGfish_level{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #FFF;
+	text-align: center;
+	background-image: url(../images/bg_002.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 75px 0;
+}
+#BGfish_level article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin:0 50px;
+}
+
+#BGfish_level article div img{
+	width: 90%;
+}
+/*#BGfish_level article img{
+	height: 100%;
+	width: 100%;
+}*/
+
+#BGfish_features{
+	background-color: #0a1a32;/*#001e3f*/
+	color: #fff;
+	text-align: center;
+}
+#BGfish_features .title{
+	font-size: 48px;
+	font-weight: 500;
+	padding:25px 0;
+}
+#BGfish_features .subtitle{
+	font-size: 32px;
+	margin:auto;
+	font-weight: 500;
+}
+#BGfish_features .level_intro p,#BGfish_features .arms_intro p{
+	font-size: 22px;
+	width: 60vw;
+	margin:auto;
+	line-height: 1.5;
+	padding-bottom: 50px;
+}
+.drive_Mobile{
+	display: none;
+}
+.drive_PC{
+	display: block;
+}
+
+#BGfish_arms{
+	background-image: url(../images/bg_003.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 200px 0;
+}
+#BGfish_arms article{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	height: 220px;
+}
+#BGfish_arms article:last-child{
+	height: 280px;
+}
+#BGfish_arms article:nth-child(5){
+	height: 320px;
+}
+
+#BGfish_arms article .arms_banner{
+	z-index: 50;
+}
+
+#BGfish_arms article:nth-child(odd) .arms_intro{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1d4270+10,1d4270+10,1d4270+29&1+30,0+60 */
+background: -moz-linear-gradient(left, rgba(29,66,112,1) 10%, rgba(29,66,112,1) 29%, rgba(29,66,112,1) 30%, rgba(29,66,112,0) 60%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(29,66,112,1) 10%,rgba(29,66,112,1) 29%,rgba(29,66,112,1) 30%,rgba(29,66,112,0) 60%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(29,66,112,1) 10%,rgba(29,66,112,1) 29%,rgba(29,66,112,1) 30%,rgba(29,66,112,0) 60%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d4270', endColorstr='#001d4270',GradientType=1 ); /* IE6-9 */
+    margin-left: -30px;
+}
+#BGfish_arms article:nth-child(even) .arms_intro{
+	order: 1;
+	text-align: right;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1d4270+75,1d4270+84&0+37,1+70 */
+background: -moz-linear-gradient(left, rgba(29,66,112,0) 37%, rgba(29,66,112,1) 70%, rgba(29,66,112,1) 75%, rgba(29,66,112,1) 84%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(29,66,112,0) 37%,rgba(29,66,112,1) 70%,rgba(29,66,112,1) 75%,rgba(29,66,112,1) 84%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(29,66,112,0) 37%,rgba(29,66,112,1) 70%,rgba(29,66,112,1) 75%,rgba(29,66,112,1) 84%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001d4270', endColorstr='#1d4270',GradientType=1 ); /* IE6-9 */
+    margin-right: -30px;
+}
+
+#BGfish_arms article .arms_intro .arms_introContent p{
+	width: 50%;
+}
+#BGfish_arms article:nth-child(even) .arms_intro .arms_introContent p{
+	float:right;
+}
+#BGfish_arms article:nth-child(even) .arms_banner{
+	order: 2;
+}
+
+#BGfish_arms .arms_intro{
+ 	padding: 50px 50px 20px 50px;
+ 	width: 50%;
+}
+
+
+.title_img{
+	position: relative;
+  top: -80px;
+  height: 15px;
+}
+
+#BGfish_arms :nth-child(5) .title_img {
+    top: -105px;
+}
+#BGfish_arms :nth-child(6) .title_img {
+    top: -110px;
+}
+
+#BGfish_arms .arms_intro .arms_introContent{
+	font-size: 22px;
+	line-height: 1.5;
+}
+
+
+@media screen and (max-width:768px){
+/*	#app section article{
+		margin:0 30px;
+	}*/
+	.gameFree{
+		display: none;
+	}
+	.drive_Mobile{
+		display: block;
+	}
+	.drive_PC{
+		display: none;
+	}
+
+	#BGfish_block01{
+		background:rgba(5,16,54,.9);
+	}
+
+	.BGfish_intro h1{
+		font-size: 25px;
+	}
+	.BGfish_intro p{
+		font-size: 15px;
+		width: 80%;
+	}
+
+	#BGfish_features article{
+		margin:0 50px;
+	}
+	#BGfish_features .level_intro p,#BGfish_features .arms_intro p{
+		font-size: 15px;
+		width: 100%;
+	}
+	#BGfish_features .subtitle{
+		font-size: 20px;
+		padding-bottom: 10px;
+	}
+	#BGfish_features .title{
+		font-size: 30px;
+	}
+
+
+	#BGfish_level{
+		background-image: url(../images/mobile_banner_04.jpg);
+	}
+	#BGfish_level article div {
+    max-height: 450px;
+    max-width: 250px;
+    margin: auto;
+	}
+	#BGfish_level {
+		flex-wrap: wrap;
+		width: 100%;
+	}
+	#BGfish_level article:last-child{
+		order: 1;
+		width: 100%;
+		margin: 0;
+	}
+	#BGfish_level article:first-child{
+		order: 2;
+		width: 50%;
+		margin: 0;
+	}
+	#BGfish_level article:nth-child(2){
+		order: 3;
+		width: 50%;
+		margin: 0;
+	}
+
+
+
+	#BGfish_arms{
+		background-image: url(../images/mobile_banner_arms.jpg);
+		padding: 0 50px;
+	}
+	#BGfish_arms article{
+		flex-direction: column;
+		height: inherit;
+	}
+	#BGfish_arms article .arms_banner {
+    z-index: 0;
+	}
+	#BGfish_arms article:nth-child(even) .arms_intro,#BGfish_arms article:nth-child(odd) .arms_intro{
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+		margin-top: -70px;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000032+43,000032+45&0+0,1+30,1+70,0+100 */
+background: -moz-linear-gradient(left, rgba(0,0,50,0) 0%, rgba(0,0,50,1) 30%, rgba(0,0,50,1) 43%, rgba(0,0,50,1) 45%, rgba(0,0,50,1) 70%, rgba(0,0,50,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(0,0,50,0) 0%,rgba(0,0,50,1) 30%,rgba(0,0,50,1) 43%,rgba(0,0,50,1) 45%,rgba(0,0,50,1) 70%,rgba(0,0,50,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(0,0,50,0) 0%,rgba(0,0,50,1) 30%,rgba(0,0,50,1) 43%,rgba(0,0,50,1) 45%,rgba(0,0,50,1) 70%,rgba(0,0,50,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000032', endColorstr='#00000032',GradientType=1 ); /* IE6-9 */
+	}
+	#BGfish_arms article .arms_intro .arms_introContent p {
+    width: 100%;
+   	margin:auto;
+   	font-size: 15px;
+	}
+	#BGfish_arms article:nth-child(even) .arms_intro .arms_introContent p {
+    float: inherit;
+	}
+	#BGfish_arms article:nth-child(even) .arms_banner {
+    order: 1;
+	}
+	#BGfish_arms article .arms_intro{
+		text-align: center;
+	}
+	#BGfish_arms article:nth-child(even) .arms_intro{
+		order:2;
+		text-align: center;
+	}
+	#BGfish_arms article:nth-child(5) {
+    height: inherit;
+	}
+	#BGfish_arms article:last-child {
+    height: inherit;
+	}
+	.title_img{
+		top: -55px;
+	}
+	.title_img img{
+		width: 50%;
+	}
+	#BGfish_arms :nth-child(5) .title_img img,#BGfish_arms :nth-child(6) .title_img img{
+		width: 77%;
+	}
+	#BGfish_arms :nth-child(5) .title_img,#BGfish_arms :nth-child(6) .title_img{
+		top: -55px;
+	}
+	#BGfish_arms .arms_intro {
+    padding: 20px 50px 20px 50px;
+	}
+}

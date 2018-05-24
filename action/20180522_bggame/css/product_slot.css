@@ -1,0 +1,86 @@
+.drive_pc{
+    display: block;
+}
+.drive_mobile{
+    display: none;
+}
+
+.banner_bg{
+    background-image: url(../images/bg_01.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    background-size: cover;
+    padding-top: 20px;
+}
+.banner_bg .img_block{
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+}
+
+
+.intro_block{
+    padding: 50px 0;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,061128+22,061128+22&0+0,1+22 */
+background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(6,17,40,1) 22%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(6,17,40,1) 22%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(6,17,40,1) 22%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#061128',GradientType=0 ); /* IE6-9 */
+}
+.intro_block .title{
+    width: 50vw;
+    color: #fff;
+    margin: auto;
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.intro_block .content{
+    width: 50vw;
+    color: #fff;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+.list_item{
+    background-image: url(../images/bg_02.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    background-size: cover;
+}
+.list_item .img_block{
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+/* @media screen and (max-width:1200px){
+    .img_block.drive_pc{
+        width: 80vw;
+    }
+} */
+@media screen and (max-width:768px){
+    .drive_pc{
+        display: none;
+    }
+    .drive_mobile{
+        display: block;
+    }
+    .banner_bg .img_block{
+        padding-top: 50px;
+    }
+    .banner_bg{
+        background-image: url(../images/mobile_bg_01.jpg);
+        /* background-position: 0% 0%; */
+    }
+    .intro_block .title,.intro_block .content{
+        width: 80vw;
+    }
+    .list_item{
+        background-image: url(../images/mobile_bg_02.jpg);
+    }
+}
