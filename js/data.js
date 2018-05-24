@@ -172,21 +172,18 @@ var vm = new Vue({
                     <tr>\
                         <td>标题</td>\
                         <td>内容描述</td>\
-                        <td class="datembnone" width="80">日期</td>\
                     </tr >\
                     <tr>\
                         <td>统计报表_彩种报表<新增></td>\
                         <td class="txtleft">代理后台、报表查询-新增彩种报表，可查阅每个彩种在某个区间内的数据情况 <br />\
                             \
                             </td>\
-                        <td class="datembnone">2018/5/9</td>\
                     </tr>\
                     <tr>\
                         <td>第三方接入<新增></td>\
                         <td class="txtleft">1.	视讯新增VGS<br />\
                         2.	电子游戏新增CQ9传奇电子<br />\
                         </td>\
-                        <td class="datembnone">2018/5/9</td>\
                     </tr>\
                     <tr>\
                         <td>报表优化</td>\
@@ -197,7 +194,6 @@ var vm = new Vue({
                         4.	优化统计中，BB和MG平台分为小平台展示<br />\
                         5.	退佣统计中，代理佣金设定、退佣统计、退佣查询页面优化<br />\
                         </td>\
-                        <td class="datembnone">2018/5/9</td>\
                     </tr>\
                     <tr>\
                         <td>AG返水拆分</td>\
@@ -208,7 +204,6 @@ var vm = new Vue({
                             4.	历史数据会统计AG视讯中<br />\
                            \
                         </td>\
-                        <td class="datembnone">2018/5/9</td>\
                     </tr>\
                     <tr>\
                         <td>会员中心，投注记录页面优化</td>\
@@ -221,7 +216,6 @@ var vm = new Vue({
                             <li style="list-style-type:lower-alpha;padding-left: 10px;">非美东时间平台时间按照第三方时间展示，增加温馨提示</li>\
                             <li style="list-style-type:lower-alpha;padding-left: 10px;">彩票和体育可以查询到注单详情，第三方暂不支持</li>\
                         </td>\
-                        <td class="datembnone">2018/5/9</td>\
                     </tr>\
                     <tr>\
                         <td>存款优惠和汇款优惠限额控制</td>\
@@ -229,14 +223,12 @@ var vm = new Vue({
                             1.	子账号新增人工存入存款优惠限额、人工存入汇款优惠限额，可以对应控制人工线上存提-人工存入-存款优惠/汇款优惠<br / >\
                             2.	后台权限添加批次处理（子账号默认不开启）<br / >\
                         </td>\
-                        <td class="datembnone">2018/5/9</td>\
                     </tr>\
                     <tr>\
                         <td>增加在线人数权限设置</td>\
                         <td class="txtleft">\
                             在线人数权限仅针对厅主与子帐号, 详情请查看后台操作权限 <br />\
                             </td>\
-                        <td class="datembnone">2018/5/9</td>\
                     </tr>\
                     <tr>\
                         <td>后台添加代理公告信息</td>\
@@ -245,7 +237,6 @@ var vm = new Vue({
                             2.	公共信息页面右下角点击代理公告信息，可以跳转到代理公告信息页面<br />\
                             3.	添加代理公告信息权限，所有层级都有此权限，默认都开启<br />\
                             </td>\
-                        <td class="datembnone">2018/5/9</td>\
                     </tr>\
                     <tr>\
                         <td>网站咨询系统</td>\
@@ -254,7 +245,6 @@ var vm = new Vue({
                             2.	网站资讯编辑，增加分组功能，可支持新增分组，删除分组，图片组别调整，批量删除图库资源 <br />\
                            \
                         </td>\
-                        <td class="datembnone">2018/5/9</td>\
                     </tr>\
                 </table >'
             },
@@ -276,7 +266,6 @@ var vm = new Vue({
                     <tr>\
                         <td>标题</td>\
                         <td>内容描述</td>\
-                        <td class="datembnone" width="80">日期</td>\
                     </tr >\
                     <tr>\
                         <td>提款次数优化</td>\
@@ -284,13 +273,11 @@ var vm = new Vue({
                             2.	历史数据中的人工提出不拆分，归为提款次数中，只在上线后开始拆分 <br />\
                             3.	人工提出次数只包含人工提出项目中重复出款和手动申请出款次数 <br />\
                             </td>\
-                        <td class="datembnone">2018/4/16</td>\
                     </tr>\
                     <tr>\
                         <td>忘记密码界面增加在线客服</td>\
                         <td class="txtleft">1.	在忘记密码页面增加在线客服，点击可跳转在线客服聊天窗口 <br />\
                         </td>\
-                        <td class="datembnone">2018/4/16</td>\
                     </tr>\
                     <tr>\
                         <td>验证码更改</td>\
@@ -299,24 +286,20 @@ var vm = new Vue({
                             <li style="list-style-type:lower-alpha;padding-left: 10px;">混合验证码，数子字母组合或者纯字母的验证码</li>\
                             <li style="list-style-type:lower-alpha;padding-left: 10px;">逻辑验证码，10以内的整数加减法</li>\
                             2.后台仅能选择开启其中一种模式，默认情况下开启数字验证码</td>\
-                            <td class="datembnone">2018/4/16</td>\
                     </tr>\
                     <tr>\
                         <td>微信支付宝支持银行卡转账</td>\
                         <td class="txtleft">1.	线下微信、支付宝均支持银行卡转账，新增账号增加“方式二”，账号和卡号都填写了，新增成功的在停用区产生2条数据，一条是账号，一条是卡号</td>\
-                        <td class="datembnone">2018/4/16</td>\
                     </tr>\
                     <tr>\
                         <td>H5增加手机游戏客户端下载</td>\
                         <td class="txtleft">1.	在右侧导航栏增加游戏客户端的入口，可以针对PT、MG、AG的游戏进行下载 <br />\
                             2.	会员有额度转换或者登入过PT、MG游戏，就可以查看密码 <br />\
                             </td>\
-                        <td class="datembnone">2018/4/16</td>\
                     </tr>\
                     <tr>\
                         <td>提款页面优化</td>\
                         <td class="txtleft">1.	针对提款界面的银行卡与账号显示进行优化调整，会员可以看到完整的银行卡名称与银行卡账号</td>\
-                        <td class="datembnone">2018/4/16</td>\
                     </tr>\
                     <tr>\
                         <td>出入款记录权限</td>\
@@ -324,7 +307,6 @@ var vm = new Vue({
                             2.  入款记录：只读权限（只能查看入款记录）；操作权限：确定、取消 <br />\
                             <br />\
                             </td>\
-                        <td class="datembnone">2018/4/16</td>\
                     </tr>\
                 </table >'
             },
