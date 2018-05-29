@@ -31,6 +31,7 @@ var vm = new Vue({
             }
         ],
         newss: [
+            /*nextnew
             {
                 newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
                 importanttag: true, //产品专栏活动专栏头版,内容发布重点标签
@@ -47,9 +48,10 @@ var vm = new Vue({
                 containtext: '\
                     <div style="text-align:center;"><a href="luckyairship/index.html" target="_blank">前往活动连结</a></div>' //内容html
             },
+            */
             {
                 newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
-                importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
+                importanttag: true, //产品专栏活动专栏头版,内容发布重点标签
                 istopbanner: true, //是否首页展示
                 clickto: false, //是否有内页跳窗公告
                 link: "CQ9/index.html", //点击连结,下载檔案
@@ -154,6 +156,34 @@ var vm = new Vue({
             //     containtexts: "无资料",
             //     containtext: "无资料"
             // },
+            {
+                newstype: 1,
+                importanttag: true,
+                istopbanner: false,
+                clickto: true,
+                link: "javascript: void(0)",
+                downloadbtn: false,
+                downloadlink: "images/activebanner/mainbanner_01.jpg",
+                mainbannerimg: "",
+                bannerimg: "",
+                name: "预告",
+                time: "2018/4/30",
+                containtexts: '彩票2.0.2',
+                containtext: '\
+                <table>\
+                    <tr>\
+                        <td>标题</td>\
+                        <td>内容描述</td>\
+                    </tr >\
+                    <tr>\
+                        <td>手机端六合彩增加玩法</td>\
+                        <td class="txtleft">手机端玩法，增加正码特和自选不中玩法</td>\
+                    </tr>\
+                    <tr>\
+                        <td>香港六合彩撤单功能</td>\
+                        <td class="txtleft">香港六合彩当期未封盘前注单会员可进行撤回</td>\
+                    </tr>'
+            },
             {
                 newstype: 1,
                 importanttag: false,
@@ -346,6 +376,7 @@ var vm = new Vue({
                     <br/>为了符合网络推广资格，参赛游戏必须在突出的大厅位置展示。\
                     <br/>PP保留随时修改，暂停或取消促销的权利。</div>'
             },
+            /*nextnew
             {
                 newstype: 2,
                 importanttag: false,
@@ -361,6 +392,7 @@ var vm = new Vue({
                 containtexts: '',
                 containtext: ''
             },
+            */
             {
                 newstype: 2,
                 importanttag: false,
