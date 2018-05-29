@@ -167,8 +167,8 @@ var vm = new Vue({
                 mainbannerimg: "",
                 bannerimg: "",
                 name: "预告",
-                time: "2018/4/30",
-                containtexts: '彩票2.0.2',
+                time: "2018/5/29",
+                containtexts: '彩票2.0.2版本说明',
                 containtext: '\
                 <table>\
                     <tr>\
