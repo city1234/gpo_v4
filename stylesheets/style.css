@@ -1876,7 +1876,7 @@ footer .icon-mail:before {
 }
 /* line 75, ../sass/style.sass */
 #alertbox .alertcontent, #alertbox1 .alertcontent {
-  min-height: 30vh;
+  min-height: 35vh;
   max-height: 70vh;
 }
 @media screen and (min-width: 0) and (max-width: 600px) {
@@ -1956,7 +1956,7 @@ footer .icon-mail:before {
 
 /* line 134, ../sass/style.sass */
 .newsalert .alertcontent {
-  min-height: 30vh !important;
+  min-height: 35vh !important;
   max-height: 85vh !important;
 }
 
@@ -1978,12 +1978,6 @@ footer .icon-mail:before {
 /* line 146, ../sass/style.sass */
 #cboxContent button:hover {
   transition: background 0s;
-}
-
-/* line 148, ../sass/style.sass */
-#colorbox {
-  position: fixed !important;
-  top: 5vh !important;
 }
 
 /* line 152, ../sass/style.sass */
