@@ -172,7 +172,7 @@ var vm = new Vue({
                 containtext: '\
                 <table>\
                     <tr>\
-                        <td>标题</td>\
+                        <td width="20%">标题</td>\
                         <td>内容描述</td>\
                     </tr >\
                     <tr>\
@@ -627,6 +627,28 @@ var vm = new Vue({
                 return searchtxt.match(this.search);
             });
         }*/
+        initoutalertbox_fn0: function () {
+            var alertboxw = $(window).width();
+            if (alertboxw > 1200) { alertboxw = 1200; }
+            var $form = $("#alertbox");
+            $.colorbox({
+                //iframe: true,
+                inline: true,
+                href: $form,
+                width: alertboxw, //燈箱中間區塊的寬度
+            });
+        },
+        initoutalertbox_fn1: function () {
+            var alertboxw = $(window).width();
+            if (alertboxw > 1200) { alertboxw = 1200; }
+            var $form = $("#alertbox1");
+            $.colorbox({
+                //iframe: true,
+                inline: true,
+                href: $form,
+                width: alertboxw, //燈箱中間區塊的寬度
+            });
+        }
     },
     mounted: function() {
         //设置cookie

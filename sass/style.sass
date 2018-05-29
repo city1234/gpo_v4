@@ -73,9 +73,11 @@
     .alertbannerimg
         width: 100%
     .alertcontent
-        height: 70vh
+        min-height: 30vh
+        max-height: 70vh
         +range-width-in( 0, 600px)
-            height: calc(70vh - 65px)
+            //height: calc(70vh - 65px)
+            height: 85vh
     .btnline
         position: fixed
         text-align: center
@@ -130,7 +132,8 @@
             background: #ff7e00!important
 .newsalert
     .alertcontent
-        height: 85vh!important
+        min-height: 30vh!important
+        max-height: 85vh!important
 .alertboxtwo
     .alertcontent
         height: 70vh!important

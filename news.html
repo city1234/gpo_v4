@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no;">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>最新资讯</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -425,10 +425,11 @@
             $(".searchbox_mb").toggleClass("searchactive");
         });
     $(".alertinfbox").click(function () {
-    	initoutalertbox_fn0();
+        setTimeout('initoutalertbox_fn0()', 50) ;
+    	;
     });
     $(".alertinfbox1").click(function () {
-        initoutalertbox_fn1();
+        setTimeout('initoutalertbox_fn1()', 50);
     });
     
     function initoutalertbox_fn0(){
@@ -443,16 +444,16 @@
         });
     }
     function initoutalertbox_fn1() {
-            var alertboxw = $(window).width();
-            if (alertboxw > 1200) { alertboxw = 1200; }
-            var $form = $("#alertbox1");
-            $.colorbox({
-                //iframe: true,
-                inline: true,
-                href: $form,
-                width: alertboxw, //燈箱中間區塊的寬度
-            });
-        }
+        var alertboxw = $(window).width();
+        if (alertboxw > 1200) { alertboxw = 1200; }
+        var $form = $("#alertbox1");
+        $.colorbox({
+            //iframe: true,
+            inline: true,
+            href: $form,
+            width: alertboxw, //燈箱中間區塊的寬度
+        });
+    }
     $('.slicknews').slick({
             infinite: true,
             slidesToShow: 3,
