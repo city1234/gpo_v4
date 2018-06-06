@@ -31,6 +31,9 @@ $(document).ready(function() {
     }else{
         $('#fullpage').fullpage({
             scrollOverflow: true,
+            scrollOverflowOptions: {
+                click: true
+            }
         });
     };
 });

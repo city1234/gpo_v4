@@ -180,9 +180,10 @@ input {
   height: 100%;
   margin: 0 auto;
   position: relative;
+  overflow: initial !important;
 }
 
-/* line 237, ../sass/screen.scss */
+/* line 238, ../sass/screen.scss */
 .topbanner {
   background: url(../images/topbanner.jpg);
   background-position: top center;
@@ -190,27 +191,27 @@ input {
   width: 100%;
   height: 100vh;
 }
-/* line 243, ../sass/screen.scss */
+/* line 244, ../sass/screen.scss */
 .topbanner img {
   width: 100%;
 }
 @media screen and (min-width: 0) and (max-width: 768px) {
-  /* line 237, ../sass/screen.scss */
+  /* line 238, ../sass/screen.scss */
   .topbanner {
     height: auto !important;
   }
-  /* line 248, ../sass/screen.scss */
+  /* line 249, ../sass/screen.scss */
   .topbanner .fp-tableCell {
     height: auto !important;
   }
 }
 
-/* line 253, ../sass/screen.scss */
+/* line 254, ../sass/screen.scss */
 img {
   vertical-align: middle;
 }
 
-/* line 256, ../sass/screen.scss */
+/* line 257, ../sass/screen.scss */
 .vhbox {
   display: -webkit-flex;
   display: flex;
@@ -220,29 +221,29 @@ img {
   text-align: center;
 }
 
-/* line 264, ../sass/screen.scss */
+/* line 265, ../sass/screen.scss */
 .turnbannerbox {
   max-width: 1070px;
   width: 100%;
   margin-bottom: 60px;
 }
-/* line 268, ../sass/screen.scss */
+/* line 269, ../sass/screen.scss */
 .turnbannerbox img {
   width: 100%;
 }
 
-/* line 273, ../sass/screen.scss */
+/* line 274, ../sass/screen.scss */
 .turnbannerboxs img {
   width: 100%;
 }
 
-/* line 277, ../sass/screen.scss */
+/* line 278, ../sass/screen.scss */
 .downloadbtn {
   text-align: center;
   padding: 0 20%;
   margin-bottom: 50px;
 }
-/* line 281, ../sass/screen.scss */
+/* line 282, ../sass/screen.scss */
 .downloadbtn img {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -253,25 +254,25 @@ img {
   width: 100%;
   opacity: 0;
 }
-/* line 288, ../sass/screen.scss */
+/* line 289, ../sass/screen.scss */
 .downloadbtn:hover img {
   opacity: 1;
 }
 
-/* line 293, ../sass/screen.scss */
+/* line 294, ../sass/screen.scss */
 .downloadbtnbg {
   background: url(../images/btn_hover.png) center no-repeat;
   background-size: contain;
   display: inline-block;
 }
 
-/* line 298, ../sass/screen.scss */
+/* line 299, ../sass/screen.scss */
 .part {
   margin-top: 10px;
   margin-bottom: 20px;
 }
 
-/* line 302, ../sass/screen.scss */
+/* line 303, ../sass/screen.scss */
 .turnbannertxt {
   color: #fff;
   font-family: "Microsoft Yahei";
@@ -281,30 +282,30 @@ img {
   text-align: center;
 }
 @media screen and (min-width: 0) and (max-width: 767px) {
-  /* line 302, ../sass/screen.scss */
+  /* line 303, ../sass/screen.scss */
   .turnbannertxt {
     font-size: 14px;
   }
 }
 
 @media screen and (min-width: 0) and (max-width: 767px) {
-  /* line 314, ../sass/screen.scss */
+  /* line 315, ../sass/screen.scss */
   .mb_show {
     display: block;
   }
 
-  /* line 317, ../sass/screen.scss */
+  /* line 318, ../sass/screen.scss */
   .pc_show {
     display: none;
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 322, ../sass/screen.scss */
+  /* line 323, ../sass/screen.scss */
   .mb_show {
     display: none;
   }
 
-  /* line 325, ../sass/screen.scss */
+  /* line 326, ../sass/screen.scss */
   .pc_show {
     display: block;
   }
