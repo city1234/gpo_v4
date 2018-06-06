@@ -36,6 +36,52 @@ var vm = new Vue({
                 importanttag: true, //产品专栏活动专栏头版,内容发布重点标签
                 istopbanner: true, //是否首页展示
                 clickto: false, //是否有内页跳窗公告
+                link: "action/20180522_bggame/index.html", //点击连结,下载檔案
+                downloadbtn: true, //是否有下载按钮
+                downloadlink: "loading/20180522_bggame.zip", //下载连结
+                mainbannerimg: "images/activebanner/20180522_bggame.jpg", //首页大图2500*1080
+                bannerimg: "images/activebanner/20180522_bggame_s.jpg", //公告内页小图1410*385
+                name: "BG大遊丰富你的世界!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
+                time: "2018/06", //活动日期
+                containtexts: '',
+                containtext: '\
+                    <div style="text-align:center;"><a href="luckyairship/index.html" target="_blank">前往活动连结</a></div>' //内容html
+            },
+            {
+                newstype: 0,
+                importanttag: false,
+                istopbanner: true,
+                clickto: false,
+                link: "http://yoplay.com/index.php#yo80s",
+                downloadbtn: true,
+                downloadlink: "loading/",
+                mainbannerimg: "images/activebanner/20180522_bggame.jpg",
+                bannerimg: "images/activebanner/20180522_bggame_s.jpg",
+                name: "业内首创多人街机，热闹互动新体验",
+                time: "2018/06",
+                containtexts: '',
+                containtext: ''
+            },
+            {
+                newstype: 0,
+                importanttag: false,
+                istopbanner: true,
+                clickto: false,
+                link: "http://xingaming.com/gameInfo.html",
+                downloadbtn: true,
+                downloadlink: "loading/",
+                mainbannerimg: "http://xingaming.com/img/event-SC03/Gold_coin_rush_result_banner_ZH.png",
+                bannerimg: "http://xingaming.com/img/event-SC03/Gold_coin_rush_result_banner_ZH.png",
+                name: "XINGAMING",
+                time: "2018/06",
+                containtexts: '',
+                containtext: ''
+            },
+            {
+                newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
+                importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
+                istopbanner: true, //是否首页展示
+                clickto: false, //是否有内页跳窗公告
                 link: "action/20180605_pngpage/index.html", //点击连结,下载檔案
                 downloadbtn: true, //是否有下载按钮
                 downloadlink: "loading/20180605_pngpage.rar", //下载连结
@@ -43,22 +89,6 @@ var vm = new Vue({
                 bannerimg: "images/activebanner/20180605_pngs.jpg", //公告内页小图1410*385
                 name: "PLAY'n GO 独特灵感和创造力!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
                 time: "2018/06", //活动日期
-                containtexts: '',
-                containtext: '\
-                    <div style="text-align:center;"><a href="luckyairship/index.html" target="_blank">前往活动连结</a></div>' //内容html
-            },
-            {
-                newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
-                importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
-                istopbanner: true, //是否首页展示
-                clickto: false, //是否有内页跳窗公告
-                link: "action/20180522_bggame/index.html", //点击连结,下载檔案
-                downloadbtn: true, //是否有下载按钮
-                downloadlink: "loading/20180522_bggame.zip", //下载连结
-                mainbannerimg: "images/activebanner/20180522_bggame.jpg", //首页大图2500*1080
-                bannerimg: "images/activebanner/20180522_bggame_s.jpg", //公告内页小图1410*385
-                name: "BG大遊丰富你的世界!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
-                time: "2018/05", //活动日期
                 containtexts: '',
                 containtext: '\
                     <div style="text-align:center;"><a href="luckyairship/index.html" target="_blank">前往活动连结</a></div>' //内容html
@@ -390,23 +420,6 @@ var vm = new Vue({
                     <br/>为了符合网络推广资格，参赛游戏必须在突出的大厅位置展示。\
                     <br/>PP保留随时修改，暂停或取消促销的权利。</div>'
             },
-            /*nextnew
-            {
-                newstype: 2,
-                importanttag: false,
-                istopbanner: false,
-                clickto: false,
-                link: "http://xingaming.com/gameInfo.html",
-                downloadbtn: false,
-                downloadlink: "",
-                mainbannerimg: "",
-                bannerimg: "http://xingaming.com/img/event-SC03/Gold_coin_rush_result_banner_ZH.png",
-                name: "XINGAMING",
-                time: "2018/05",
-                containtexts: '',
-                containtext: ''
-            },
-            */
             {
                 newstype: 2,
                 importanttag: false,
@@ -467,23 +480,6 @@ var vm = new Vue({
                 containtexts: '',
                 containtext: '金拉霸，猛龙传奇，金龙珠，XIN哥来了'
             },
-            /*
-            {
-                newstype: 2,
-                importanttag: false,
-                istopbanner: false,
-                clickto: false,
-                link: "http://yoplay.com/news/guessredpacket_apr18/",
-                downloadbtn: false,
-                downloadlink: "",
-                mainbannerimg: "",
-                bannerimg: "http://yoplay.com/news/guessredpacket_apr18/img/banner.png",
-                name: "YOPLAY 猜红包活动，四月再次来袭",
-                time: "2018/04/11",
-                containtexts: '',
-                containtext: '全民猜红包，猜中就给你 '
-            },
-            */
             {
                 newstype: 2,
                 importanttag: false,
