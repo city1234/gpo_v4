@@ -38,7 +38,7 @@ var vm = new Vue({
                 clickto: false, //是否有内页跳窗公告
                 link: "action/20180605_pngpage/index.html", //点击连结,下载檔案
                 downloadbtn: true, //是否有下载按钮
-                downloadlink: "loading/20180605_pngpage.zip", //下载连结
+                downloadlink: "loading/20180605_pngpage.rar", //下载连结
                 mainbannerimg: "images/activebanner/20180605_png.jpg", //首页大图2500*1080
                 bannerimg: "images/activebanner/20180605_pngs.jpg", //公告内页小图1410*385
                 name: "PLAY'n GO 独特灵感和创造力!!", //公告名称(最好8个全形字以内),download活动素材/轮播图

@@ -212,3 +212,6 @@
     opacity: 1;
     color: #e69466;
 }
+.slick-slide:focus{
+    outline: 0!important;
+}
