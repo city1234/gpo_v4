@@ -225,25 +225,37 @@ img {
 .turnbannerbox {
   max-width: 1070px;
   width: 100%;
-  margin-bottom: 60px;
+  margin: 0 auto 60px auto;
 }
-/* line 269, ../sass/screen.scss */
+/* line 270, ../sass/screen.scss */
 .turnbannerbox img {
   width: 100%;
 }
+@media screen and (min-width: 0) and (max-width: 1280px) {
+  /* line 265, ../sass/screen.scss */
+  .turnbannerbox {
+    width: 70%;
+  }
+}
+@media screen and (min-height: 0px) and (max-height: 900px) {
+  /* line 265, ../sass/screen.scss */
+  .turnbannerbox {
+    width: 70%;
+  }
+}
 
-/* line 274, ../sass/screen.scss */
+/* line 281, ../sass/screen.scss */
 .turnbannerboxs img {
   width: 100%;
 }
 
-/* line 278, ../sass/screen.scss */
+/* line 285, ../sass/screen.scss */
 .downloadbtn {
   text-align: center;
   padding: 0 20%;
   margin-bottom: 50px;
 }
-/* line 282, ../sass/screen.scss */
+/* line 289, ../sass/screen.scss */
 .downloadbtn img {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -254,25 +266,25 @@ img {
   width: 100%;
   opacity: 0;
 }
-/* line 289, ../sass/screen.scss */
+/* line 296, ../sass/screen.scss */
 .downloadbtn:hover img {
   opacity: 1;
 }
 
-/* line 294, ../sass/screen.scss */
+/* line 301, ../sass/screen.scss */
 .downloadbtnbg {
   background: url(../images/btn_hover.png) center no-repeat;
   background-size: contain;
   display: inline-block;
 }
 
-/* line 299, ../sass/screen.scss */
+/* line 306, ../sass/screen.scss */
 .part {
   margin-top: 10px;
   margin-bottom: 20px;
 }
 
-/* line 303, ../sass/screen.scss */
+/* line 310, ../sass/screen.scss */
 .turnbannertxt {
   color: #fff;
   font-family: "Microsoft Yahei";
@@ -282,30 +294,30 @@ img {
   text-align: center;
 }
 @media screen and (min-width: 0) and (max-width: 767px) {
-  /* line 303, ../sass/screen.scss */
+  /* line 310, ../sass/screen.scss */
   .turnbannertxt {
     font-size: 14px;
   }
 }
 
 @media screen and (min-width: 0) and (max-width: 767px) {
-  /* line 315, ../sass/screen.scss */
+  /* line 322, ../sass/screen.scss */
   .mb_show {
     display: block;
   }
 
-  /* line 318, ../sass/screen.scss */
+  /* line 325, ../sass/screen.scss */
   .pc_show {
     display: none;
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 323, ../sass/screen.scss */
+  /* line 330, ../sass/screen.scss */
   .mb_show {
     display: none;
   }
 
-  /* line 326, ../sass/screen.scss */
+  /* line 333, ../sass/screen.scss */
   .pc_show {
     display: block;
   }

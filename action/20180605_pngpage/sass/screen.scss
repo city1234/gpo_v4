@@ -264,10 +264,17 @@ img{
 }
 .turnbannerbox{
     max-width: 1070px;
+    //width: 70%;
     width: 100%;
-    margin-bottom: 60px;
+    margin: 0 auto 60px auto;
     img{
         width: 100%;
+    }
+    @include range-width-in(0,1280px){
+        width: 70%;
+    }
+    @media screen and (min-height: 0px) and (max-height:900px) {
+        width: 70%;
     }
 }
 .turnbannerboxs{
