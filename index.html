@@ -61,7 +61,11 @@
         <div class="wrapper topbanner">
             <div class="topbanner-out">
                 <div  v-for="(news,index) in newss" v-if="news.istopbanner">
-                    <a @click="clickindex(index)" :href="news.link" :target="clicktoopen(index)"><img :class="{alertinfbox:news.clickto}" :src="news.mainbannerimg"></a>
+                    <a @click="clickindex(index)" :href="news.link" :target="clicktoopen(index)">
+                        <div class="topbanner-imgbox" :style="'background-image: url(' + news.mainbannerimg + ');'">
+                            <img :class="{alertinfbox:news.clickto}" src="images/topbanner_bg.png">
+                        </div>
+                    </a>
                 </div>
             </div>
             <div class="linestyle"></div>
