@@ -202,7 +202,7 @@ var vm = new Vue({
             // },
             {
                 newstype: 1,
-                importanttag: true,
+                importanttag: false,
                 istopbanner: false,
                 clickto: true,
                 link: "javascript: void(0)",
@@ -210,7 +210,7 @@ var vm = new Vue({
                 downloadlink: "images/activebanner/mainbanner_01.jpg",
                 mainbannerimg: "",
                 bannerimg: "",
-                name: "预告",
+                name: "已更新",
                 time: "2018/5/29",
                 containtexts: '彩票2.0.2版本功能说明',
                 containtext: '\
