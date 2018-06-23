@@ -1,0 +1,368 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "mixin.scss";
+
+//------------------------------PC--------------------
+@media only screen and (min-width: 1025px){
+    .mb_show{
+        display: none;
+    }
+    .wrapper{
+        overflow-x: hidden;
+        width: 100%;
+        height: 100vh;
+        font-family: Microsoft JhengHei;
+        .zone01{
+            width: 100%;
+            min-width: 1350px;
+            height: 1259px;
+            background: url(../img/zonebg_01_pc.jpg) center no-repeat;
+            .logo_h5{
+                display: none;
+            }
+            .zone01_center{
+                position: relative;
+                width: 75%;
+                min-width: 1350px;
+                height: 1259px;
+                //background-color: aqua;
+                margin: 0 auto;
+                img{
+                    display: none;
+                }
+                .mainlogo{
+                    position: relative;
+                    margin: 0 auto;
+                    top: 20px;
+                    width: 1029px;
+                    height: 319px;
+                    background: url(../img/main_slogan_pc.png) center no-repeat;
+                    @include css3(animation,ani_3 4.5s);
+                }
+                .man_left{
+                    position: absolute;
+                    top: 207px;
+                    width: 484px;
+                    height: 746px;
+                    left: 16%;
+                    background: url(../img/man_2_pc.png) center no-repeat;
+                    @include css3(animation,ani_1 4.5s);
+                }
+                .man_right{
+                    position: absolute;
+                    top: 159px;
+                    width: 534px;
+                    height: 844px;
+                    right: 25%;
+                    background: url(../img/man_1_pc.png) center no-repeat;
+                    @include css3(animation,ani_2 4.5s);
+                    .soccor{
+                        position: absolute;
+                        top: 590px;
+                        left: 165px;
+                        width: 109px;
+                        height: 108px;
+                        background: url(../img/soccor.png) center no-repeat;
+                        @include css3(animation,ani_soccor 0.8s linear infinite);
+                    }
+                }
+                .worldcup{
+                    position: absolute;
+                    bottom: 20px;
+                    width: 203px;
+                    height: 429px;
+                    right: 20%;
+                    background: url(../img/award_pc.png) center no-repeat;
+                }
+                .textzone_01{
+                    position: absolute;
+                    top: 989px;
+                    left: 13%;
+                    .title_static{
+                        font-size: 27px;
+                        color: #ffd800;
+                        margin-bottom: 20px;
+                    }
+                    .textcontent_01{
+                        font-size: 16px;
+                        color: white;
+                        width: 60%;
+                        line-height: 29px;
+                        letter-spacing: 2px;
+                    }
+                }
+
+            }
+        }
+        .zone02{
+            width: 100%;
+            min-width: 1350px;
+            height: 576px;
+            background: url(../img/zonebg_02_pc.jpg) center no-repeat;
+            .zone02_center{
+                position: relative;
+                width: 75%;
+                min-width: 1350px;
+                height: 576px;
+                //background-color: aqua;
+                margin: 0 auto;
+                ul.groupzone{
+                    width: 1056px;
+                    margin: 0 auto;
+                    top: 33px;
+                    position: relative;
+                    overflow: hidden;
+                    //background-color: tomato;
+                    li{
+                        float: left;
+                        margin: 0 3px 16px;
+                        width: calc(25% - 6px);
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    
+                    /*.w258h246{
+                        width: 258px;
+                        height: 246px;
+                        float: left;
+                        margin: 0 3px 16px;
+                    }
+                    .group_A{
+                        background: url(../img/group_a.png) center no-repeat;
+                        background-size: 258px 246px;
+                    }
+                    .group_B{
+                        background: url(../img/group_b.png) center no-repeat;
+                        background-size: 258px 246px;
+                    }
+                    .group_C{
+                        background: url(../img/group_c.png) center no-repeat;
+                        background-size: 258px 246px;
+                    }
+                    .group_D{
+                        background: url(../img/group_d.png) center no-repeat;
+                        background-size: 258px 246px;
+                    }
+                    .group_E{
+                        background: url(../img/group_e.png) center no-repeat;
+                        background-size: 258px 246px;
+                    }
+                    .group_F{
+                        background: url(../img/group_f.png) center no-repeat;
+                        background-size: 258px 246px;
+                    }
+                    .group_G{
+                        background: url(../img/group_g.png) center no-repeat;
+                        background-size: 258px 246px;
+                    }
+                    .group_H{
+                        background: url(../img/group_h.png) center no-repeat;
+                        background-size: 258px 246px;
+                    }*/
+                }
+            }
+        }
+        .zone03{
+            width: 100%;
+            min-width: 1350px;
+            height: 540px;
+            background: url(../img/zonebg_03_pc.jpg) center no-repeat;
+            .zone03_center{
+                position: relative;
+                width: 75%;
+                min-width: 1350px;
+                height: 540px;
+                //background-color: rgb(0, 17, 255);
+                margin: 0 auto;
+                .zone03_leftzone{
+                    position: absolute;
+                    left: 4%;
+                    top: 17px;
+                    width: 722px;
+                    height: 523px;
+                    background: url(../img/sport_pc.png) center no-repeat;
+                }
+                .zone03_rightzone{
+                    position: absolute;
+                    top: 124px;
+                    right: 13%;
+                    width: 30%;
+                    .divider_03{
+                        width: 14%;
+                        height: 1px;
+                        background-color: #656565;
+                        margin: 37px auto;
+                    }
+                    .zone03_textz{
+                        .title_static{
+                            font-size: 27px;
+                            color: #ffd800;
+                            margin-bottom: 20px;
+                        }
+                        .textcontent_03{
+                            font-size: 16px;
+                            color: white;
+                            line-height: 29px;
+                            letter-spacing: 2px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+//------------------------------mobile--------------------
+@media only screen and (max-width: 1024px){
+    .wrapper{
+        width: 100%;
+        font-family: Microsoft JhengHei;
+        overflow: hidden;
+        background-color: #161616;
+        .zone01{
+            width: 100%;
+            .logo_h5{
+                width: 100%;
+                height: 68px;
+                background: url(../img/logo_h5.png) center no-repeat;
+                background-size: 160px 45px;
+            }
+            .zone01_center{
+                background: url(../img/zonebg_01_h5.jpg) top center no-repeat;
+                background-size: 100%;
+            }
+        }
+    }
+    .textzone_01{
+        .title_static{
+            font-size: 27px;
+            color: #ffd800;
+            margin-bottom: 20px;
+            width: 100%;
+            text-align: center;
+        }
+        .textcontent_01{
+            font-size: 16px;
+            color: white;
+            width: 90%;
+            margin: 0 auto;
+            line-height: 29px;
+            letter-spacing: 2px;
+        }
+    }
+    .zone02{
+        width: 100%;
+        overflow: hidden;
+        .zone02_center{
+            width: 90%;
+            margin: 40px auto 0;
+            .groupzone{
+                width: 100%;
+                li{
+                    width: calc(50% - 6px);
+                    float: left;
+                    margin: 5px 3px;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .zone03{
+        margin-top: 20px;
+        .zone03_center{
+            .zone03_leftzone{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .zone03_textz{
+        .title_static{
+            font-size: 27px;
+            color: #ffd800;
+            margin-bottom: 20px;
+            width: 100%;
+            text-align: center;
+        }
+        .textcontent_03{
+            font-size: 16px;
+            color: white;
+            width: 90%;
+            margin: 0 auto;
+            line-height: 29px;
+            letter-spacing: 2px;
+            margin-bottom: 40px;
+        }
+    }
+    .divider_03{
+        img{
+            width: 100%;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+//----------------------anima_pc---------------------
+@include keyframes(ani_1) {
+    0% {
+        opacity: 0;
+        left: 20%;
+    }
+    20% {
+        opacity: 1;
+        left: 16%;
+    }
+}
+@include keyframes(ani_soccor) {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@include keyframes(ani_2) {
+    0% {
+        opacity: 0;
+        right: 27%;
+    }
+    10% {
+        opacity: 0;
+        right: 27%;
+    }
+    25% {
+        opacity: 1;
+        right: 25%;
+    }
+}
+@include keyframes(ani_3) {
+    0% {
+        opacity: 0;
+        top: 50px;
+    }
+    15% {
+        opacity: 0;
+        top: 40px;
+    }
+    30% {
+        opacity: 1;
+        top: 20px;
+    }
+}

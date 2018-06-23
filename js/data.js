@@ -36,6 +36,21 @@ var vm = new Vue({
                 importanttag: true, //产品专栏活动专栏头版,内容发布重点标签
                 istopbanner: true, //是否首页展示
                 clickto: false, //是否有内页跳窗公告
+                link: "action/20180622_og_intro/index.html", //点击连结,下载檔案
+                downloadbtn: true, //是否有下载按钮
+                downloadlink: "loading/20180623_ogtu_banner.zip", //下载连结
+                mainbannerimg: "images/activebanner/20180623_ogtu.jpg", //首页大图2500*1080
+                bannerimg: "images/activebanner/20180623_ogtus.jpg", //公告内页小图1410*385
+                name: "OG体育上线,见证王者诞生!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
+                time: "2018/06", //活动日期
+                containtexts: '',
+                containtext: '' //内容html
+            },
+            {
+                newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
+                importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
+                istopbanner: true, //是否首页展示
+                clickto: false, //是否有内页跳窗公告
                 link: "action/20180522_bggame/index.html", //点击连结,下载檔案
                 downloadbtn: true, //是否有下载按钮
                 downloadlink: "loading/20180522_bggame.zip", //下载连结
@@ -44,8 +59,7 @@ var vm = new Vue({
                 name: "BG大遊丰富你的世界!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
                 time: "2018/06", //活动日期
                 containtexts: '',
-                containtext: '\
-                    <div style="text-align:center;"><a href="luckyairship/index.html" target="_blank">前往活动连结</a></div>' //内容html
+                containtext: '' //内容html
             },
             {
                 newstype: 0,
@@ -90,8 +104,7 @@ var vm = new Vue({
                 name: "PLAY'n GO 独特灵感和创造力!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
                 time: "2018/06", //活动日期
                 containtexts: '',
-                containtext: '\
-                    <div style="text-align:center;"><a href="luckyairship/index.html" target="_blank">前往活动连结</a></div>' //内容html
+                containtext: '' //内容html
             },
             {
                 newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
@@ -106,8 +119,7 @@ var vm = new Vue({
                 name: "亚洲最具规模的游戏研发企业!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
                 time: "2018/05", //活动日期
                 containtexts: '',
-                containtext: '\
-                    <div style="text-align:center;"><a href="luckyairship/index.html" target="_blank">前往活动连结</a></div>' //内容html
+                containtext: '' //内容html
             },
             {
                 newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
@@ -122,8 +134,7 @@ var vm = new Vue({
                 name: "享受真实赌场的精彩刺激!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
                 time: "2018/05", //活动日期
                 containtexts: '',
-                containtext: '\
-                    <div style="text-align:center;"><a href="luckyairship/index.html" target="_blank">前往活动连结</a></div>' //内容html
+                containtext: '' //内容html
             },
             {
                 newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
