@@ -22,7 +22,7 @@
             height: 1259px;
             background: url(../img/zonebg_01_pc.jpg) center no-repeat;
             .logo_h5{
-                display: none;
+                display: none; 
             }
             .zone01_center{
                 position: relative;
@@ -52,6 +52,15 @@
                     background: url(../img/man_2_pc.png) center no-repeat;
                     @include css3(animation,ani_1 4.5s);
                 }
+                .man_left_blur{
+                    position: absolute;
+                    top: 207px;
+                    width: 484px;
+                    height: 746px;
+                    left: 16%;
+                    background: url(../img/man_2_pc_blur.png) center no-repeat;
+                    animation: ani_1_blur 4.5s infinite;
+                }
                 .man_right{
                     position: absolute;
                     top: 159px;
@@ -69,6 +78,15 @@
                         background: url(../img/soccor.png) center no-repeat;
                         @include css3(animation,ani_soccor 0.8s linear infinite);
                     }
+                }
+                .man_right_blur{
+                    position: absolute;
+                    top: 159px;
+                    width: 534px;
+                    height: 844px;
+                    right: 27%;
+                    background: url(../img/man_1_pc_blur.png) center no-repeat;
+                    animation: ani_2_blur 4.5s infinite;
                 }
                 .worldcup{
                     position: absolute;
@@ -364,5 +382,49 @@
     30% {
         opacity: 1;
         top: 20px;
+    }
+}
+@keyframes ani_1_blur {
+    0% {
+        opacity: 0;
+        left: 20%;
+    }
+    25% {
+        opacity: 0;
+        left: 20%;
+    }
+    28% {
+        opacity: 0.6;
+        left: 15%;
+    }
+    31% {
+        opacity: 0;
+        left: 20%;
+    }
+    100% {
+        opacity: 0;
+        left: 20%;
+    }
+}
+@keyframes ani_2_blur {
+    0% {
+        opacity: 0;
+        right: 26%;
+    }
+    30% {
+        opacity: 0;
+        right: 26%;
+    }
+    33% {
+        opacity: 0.6;
+        right: 24%;
+    }
+    36% {
+        opacity: 0;
+        right: 26%;
+    }
+    100% {
+        opacity: 0;
+        right: 26%;
     }
 }
