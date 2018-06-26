@@ -237,14 +237,14 @@
                 }
                 .zone03_rightzone{
                     position: absolute;
-                    top: 115px;
+                    top: 124px;
                     right: 13%;
                     width: 30%;
                     .divider_03{
                         width: 14%;
                         height: 1px;
                         background-color: #656565;
-                        margin: 17px auto;
+                        margin: 37px auto;
                     }
                     .zone03_textz{
                         .title_static{
@@ -259,37 +259,8 @@
                             letter-spacing: 2px;
                         }
                     }
-                    .btn_only{
-                        font-size: 20px;
-                        position: absolute;
-                        background-color: #333a4b;
-                        text-decoration: none;
-                        padding: 18px 92px 18px 72px;
-                        letter-spacing: 7px;
-                        color: white;
-                        top: 299px;
-                        left: 66px;
-                        transition-duration: 0.6s;
-                        border: 2px solid #7b7b7b;
-                        &::after{
-                            content: "";
-                            position: absolute;
-                            top: 18px;
-                            left: 187px;
-                            width: 18px;
-                            height: 20px;
-                            background: url(../img/load_i.png) center no-repeat;
-                            background-size: 90%;
-                        }
-                        &:hover{
-                            background-color: #6b7a9f;
-                        }
-                    }
                 }
             }
-        }
-        .btn_aria_h5{
-            display: none;
         }
     }
 
@@ -384,39 +355,6 @@
     .divider_03{
         img{
             width: 100%;
-        }
-    }
-    .btn_only{
-        display: none;
-    }
-    .btn_aria_h5{
-        background-color: #333a4b;
-        padding: 22px 10%;
-        margin: 25px 5% 33px;
-        animation: ani_8_h5 1.5s;
-        border: 2px solid #7b7b7b;
-        //cursor: pointer;
-        .btn_c_h5{
-            position: relative;
-            margin: 0 auto;
-            width: 166px;
-            height: 26px;
-            .btn_load_h5{
-                position: absolute;
-                font-size: 24px;
-                font-weight: bold;
-                color: white;
-                letter-spacing: 11px;
-            }
-            .loadicon_h5{
-                position: absolute;
-                width: 17px;
-                height: 30px;
-                background: url(../img/load_i.png) center no-repeat;
-                background-size: 104%;
-                left: 146px;
-                top: -2px;
-            }
         }
     }
 }

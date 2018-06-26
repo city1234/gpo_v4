@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
@@ -79,30 +80,30 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /*changebg*/
 /*gridbox*/
 @media only screen and (min-width: 1025px) {
-  /* line 11, ../sass/screen.scss */
+  /* line 11, ../sass/screen - 複製.scss */
   .mb_show {
     display: none;
   }
 
-  /* line 14, ../sass/screen.scss */
+  /* line 14, ../sass/screen - 複製.scss */
   .wrapper {
     overflow-x: hidden;
     width: 100%;
     height: 100vh;
     font-family: Microsoft JhengHei;
   }
-  /* line 19, ../sass/screen.scss */
+  /* line 19, ../sass/screen - 複製.scss */
   .wrapper .zone01 {
     width: 100%;
     min-width: 1350px;
     height: 1259px;
     background: url(../img/zonebg_01_pc.jpg) center no-repeat;
   }
-  /* line 24, ../sass/screen.scss */
+  /* line 24, ../sass/screen - 複製.scss */
   .wrapper .zone01 .logo_h5 {
     display: none;
   }
-  /* line 27, ../sass/screen.scss */
+  /* line 27, ../sass/screen - 複製.scss */
   .wrapper .zone01 .zone01_center {
     position: relative;
     width: 75%;
@@ -110,11 +111,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     height: 1259px;
     margin: 0 auto;
   }
-  /* line 34, ../sass/screen.scss */
+  /* line 34, ../sass/screen - 複製.scss */
   .wrapper .zone01 .zone01_center img {
     display: none;
   }
-  /* line 37, ../sass/screen.scss */
+  /* line 37, ../sass/screen - 複製.scss */
   .wrapper .zone01 .zone01_center .mainlogo {
     position: relative;
     margin: 0 auto;
@@ -125,7 +126,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     background: url(../img/main_slogan_pc.png) center no-repeat;
     overflow: hidden;
   }
-  /* line 47, ../sass/screen.scss */
+  /* line 47, ../sass/screen - 複製.scss */
   .wrapper .zone01 .zone01_center .mainlogo:after {
     content: "";
     position: absolute;
@@ -144,7 +145,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     -o-animation: linerun 3.5s infinite;
     animation: linerun 3.5s infinite;
   }
-  /* line 61, ../sass/screen.scss */
+  /* line 61, ../sass/screen - 複製.scss */
   .wrapper .zone01 .zone01_center .mainlogo:before {
     content: "";
     position: absolute;
@@ -155,7 +156,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     background: url(../img/main_slogan_bg.png) center no-repeat;
     z-index: 1;
   }
-  /* line 72, ../sass/screen.scss */
+  /* line 72, ../sass/screen - 複製.scss */
   .wrapper .zone01 .zone01_center .man_left {
     position: absolute;
     top: 207px;
@@ -170,7 +171,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     animation: ani_1 4.5s;
     z-index: 2;
   }
-  /* line 82, ../sass/screen.scss */
+  /* line 82, ../sass/screen - 複製.scss */
   .wrapper .zone01 .zone01_center .man_left_blur {
     position: absolute;
     top: 207px;
@@ -181,7 +182,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     animation: ani_1_blur 4.5s infinite;
     z-index: 2;
   }
-  /* line 92, ../sass/screen.scss */
+  /* line 92, ../sass/screen - 複製.scss */
   .wrapper .zone01 .zone01_center .man_right {
     position: absolute;
     top: 159px;
@@ -196,7 +197,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     animation: ani_2 4.5s;
     z-index: 2;
   }
-  /* line 101, ../sass/screen.scss */
+  /* line 101, ../sass/screen - 複製.scss */
   .wrapper .zone01 .zone01_center .man_right .soccor {
     position: absolute;
     top: 590px;
@@ -210,7 +211,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     -o-animation: ani_soccor 0.8s linear infinite;
     animation: ani_soccor 0.8s linear infinite;
   }
-  /* line 111, ../sass/screen.scss */
+  /* line 111, ../sass/screen - 複製.scss */
   .wrapper .zone01 .zone01_center .man_right_blur {
     position: absolute;
     top: 159px;
@@ -221,7 +222,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     animation: ani_2_blur 4.5s infinite;
     z-index: 2;
   }
-  /* line 121, ../sass/screen.scss */
+  /* line 121, ../sass/screen - 複製.scss */
   .wrapper .zone01 .zone01_center .worldcup {
     position: absolute;
     bottom: 20px;
@@ -230,19 +231,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     right: 20%;
     background: url(../img/award_pc.png) center no-repeat;
   }
-  /* line 129, ../sass/screen.scss */
+  /* line 129, ../sass/screen - 複製.scss */
   .wrapper .zone01 .zone01_center .textzone_01 {
     position: absolute;
     top: 989px;
     left: 13%;
   }
-  /* line 133, ../sass/screen.scss */
+  /* line 133, ../sass/screen - 複製.scss */
   .wrapper .zone01 .zone01_center .textzone_01 .title_static {
     font-size: 27px;
     color: #ffd800;
     margin-bottom: 20px;
   }
-  /* line 138, ../sass/screen.scss */
+  /* line 138, ../sass/screen - 複製.scss */
   .wrapper .zone01 .zone01_center .textzone_01 .textcontent_01 {
     font-size: 16px;
     color: white;
@@ -250,14 +251,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     line-height: 29px;
     letter-spacing: 2px;
   }
-  /* line 149, ../sass/screen.scss */
+  /* line 149, ../sass/screen - 複製.scss */
   .wrapper .zone02 {
     width: 100%;
     min-width: 1350px;
     height: 576px;
     background: url(../img/zonebg_02_pc.jpg) center no-repeat;
   }
-  /* line 154, ../sass/screen.scss */
+  /* line 154, ../sass/screen - 複製.scss */
   .wrapper .zone02 .zone02_center {
     position: relative;
     width: 75%;
@@ -265,7 +266,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     height: 576px;
     margin: 0 auto;
   }
-  /* line 161, ../sass/screen.scss */
+  /* line 161, ../sass/screen - 複製.scss */
   .wrapper .zone02 .zone02_center ul.groupzone {
     width: 1056px;
     margin: 0 auto;
@@ -311,24 +312,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
         background-size: 258px 246px;
     }*/
   }
-  /* line 168, ../sass/screen.scss */
+  /* line 168, ../sass/screen - 複製.scss */
   .wrapper .zone02 .zone02_center ul.groupzone li {
     float: left;
     margin: 0 3px 16px;
     width: calc(25% - 6px);
   }
-  /* line 172, ../sass/screen.scss */
+  /* line 172, ../sass/screen - 複製.scss */
   .wrapper .zone02 .zone02_center ul.groupzone li img {
     width: 100%;
   }
-  /* line 218, ../sass/screen.scss */
+  /* line 218, ../sass/screen - 複製.scss */
   .wrapper .zone03 {
     width: 100%;
     min-width: 1350px;
     height: 540px;
     background: url(../img/zonebg_03_pc.jpg) center no-repeat;
   }
-  /* line 223, ../sass/screen.scss */
+  /* line 223, ../sass/screen - 複製.scss */
   .wrapper .zone03 .zone03_center {
     position: relative;
     width: 75%;
@@ -336,7 +337,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     height: 540px;
     margin: 0 auto;
   }
-  /* line 230, ../sass/screen.scss */
+  /* line 230, ../sass/screen - 複製.scss */
   .wrapper .zone03 .zone03_center .zone03_leftzone {
     position: absolute;
     left: 4%;
@@ -345,93 +346,60 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     height: 523px;
     background: url(../img/sport_pc.png) center no-repeat;
   }
-  /* line 238, ../sass/screen.scss */
+  /* line 238, ../sass/screen - 複製.scss */
   .wrapper .zone03 .zone03_center .zone03_rightzone {
     position: absolute;
-    top: 115px;
+    top: 124px;
     right: 13%;
     width: 30%;
   }
-  /* line 243, ../sass/screen.scss */
+  /* line 243, ../sass/screen - 複製.scss */
   .wrapper .zone03 .zone03_center .zone03_rightzone .divider_03 {
     width: 14%;
     height: 1px;
     background-color: #656565;
-    margin: 17px auto;
+    margin: 37px auto;
   }
-  /* line 250, ../sass/screen.scss */
+  /* line 250, ../sass/screen - 複製.scss */
   .wrapper .zone03 .zone03_center .zone03_rightzone .zone03_textz .title_static {
     font-size: 27px;
     color: #ffd800;
     margin-bottom: 20px;
   }
-  /* line 255, ../sass/screen.scss */
+  /* line 255, ../sass/screen - 複製.scss */
   .wrapper .zone03 .zone03_center .zone03_rightzone .zone03_textz .textcontent_03 {
     font-size: 16px;
     color: white;
     line-height: 29px;
     letter-spacing: 2px;
   }
-  /* line 262, ../sass/screen.scss */
-  .wrapper .zone03 .zone03_center .zone03_rightzone .btn_only {
-    font-size: 20px;
-    position: absolute;
-    background-color: #333a4b;
-    text-decoration: none;
-    padding: 18px 92px 18px 72px;
-    letter-spacing: 7px;
-    color: white;
-    top: 299px;
-    left: 66px;
-    transition-duration: 0.6s;
-    border: 2px solid #7b7b7b;
-  }
-  /* line 274, ../sass/screen.scss */
-  .wrapper .zone03 .zone03_center .zone03_rightzone .btn_only::after {
-    content: "";
-    position: absolute;
-    top: 18px;
-    left: 187px;
-    width: 18px;
-    height: 20px;
-    background: url(../img/load_i.png) center no-repeat;
-    background-size: 90%;
-  }
-  /* line 284, ../sass/screen.scss */
-  .wrapper .zone03 .zone03_center .zone03_rightzone .btn_only:hover {
-    background-color: #6b7a9f;
-  }
-  /* line 291, ../sass/screen.scss */
-  .wrapper .btn_aria_h5 {
-    display: none;
-  }
 }
 @media only screen and (max-width: 1024px) {
-  /* line 301, ../sass/screen.scss */
+  /* line 272, ../sass/screen - 複製.scss */
   .wrapper {
     width: 100%;
     font-family: Microsoft JhengHei;
     overflow: hidden;
     background-color: #161616;
   }
-  /* line 306, ../sass/screen.scss */
+  /* line 277, ../sass/screen - 複製.scss */
   .wrapper .zone01 {
     width: 100%;
   }
-  /* line 308, ../sass/screen.scss */
+  /* line 279, ../sass/screen - 複製.scss */
   .wrapper .zone01 .logo_h5 {
     width: 100%;
     height: 68px;
     background: url(../img/logo_h5.png) center no-repeat;
     background-size: 160px 45px;
   }
-  /* line 314, ../sass/screen.scss */
+  /* line 285, ../sass/screen - 複製.scss */
   .wrapper .zone01 .zone01_center {
     background: url(../img/zonebg_01_h5.jpg) top center no-repeat;
     background-size: 100%;
   }
 
-  /* line 321, ../sass/screen.scss */
+  /* line 292, ../sass/screen - 複製.scss */
   .textzone_01 .title_static {
     font-size: 27px;
     color: #ffd800;
@@ -439,7 +407,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     width: 100%;
     text-align: center;
   }
-  /* line 328, ../sass/screen.scss */
+  /* line 299, ../sass/screen - 複製.scss */
   .textzone_01 .textcontent_01 {
     font-size: 16px;
     color: white;
@@ -449,41 +417,41 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     letter-spacing: 2px;
   }
 
-  /* line 337, ../sass/screen.scss */
+  /* line 308, ../sass/screen - 複製.scss */
   .zone02 {
     width: 100%;
     overflow: hidden;
   }
-  /* line 340, ../sass/screen.scss */
+  /* line 311, ../sass/screen - 複製.scss */
   .zone02 .zone02_center {
     width: 90%;
     margin: 40px auto 0;
   }
-  /* line 343, ../sass/screen.scss */
+  /* line 314, ../sass/screen - 複製.scss */
   .zone02 .zone02_center .groupzone {
     width: 100%;
   }
-  /* line 345, ../sass/screen.scss */
+  /* line 316, ../sass/screen - 複製.scss */
   .zone02 .zone02_center .groupzone li {
     width: calc(50% - 6px);
     float: left;
     margin: 5px 3px;
   }
-  /* line 349, ../sass/screen.scss */
+  /* line 320, ../sass/screen - 複製.scss */
   .zone02 .zone02_center .groupzone li img {
     width: 100%;
   }
 
-  /* line 356, ../sass/screen.scss */
+  /* line 327, ../sass/screen - 複製.scss */
   .zone03 {
     margin-top: 20px;
   }
-  /* line 360, ../sass/screen.scss */
+  /* line 331, ../sass/screen - 複製.scss */
   .zone03 .zone03_center .zone03_leftzone img {
     width: 100%;
   }
 
-  /* line 367, ../sass/screen.scss */
+  /* line 338, ../sass/screen - 複製.scss */
   .zone03_textz .title_static {
     font-size: 27px;
     color: #ffd800;
@@ -491,7 +459,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     width: 100%;
     text-align: center;
   }
-  /* line 374, ../sass/screen.scss */
+  /* line 345, ../sass/screen - 複製.scss */
   .zone03_textz .textcontent_03 {
     font-size: 16px;
     color: white;
@@ -502,48 +470,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-bottom: 40px;
   }
 
-  /* line 385, ../sass/screen.scss */
+  /* line 356, ../sass/screen - 複製.scss */
   .divider_03 img {
     width: 100%;
-  }
-
-  /* line 389, ../sass/screen.scss */
-  .btn_only {
-    display: none;
-  }
-
-  /* line 392, ../sass/screen.scss */
-  .btn_aria_h5 {
-    background-color: #333a4b;
-    padding: 22px 10%;
-    margin: 25px 5% 33px;
-    animation: ani_8_h5 1.5s;
-    border: 2px solid #7b7b7b;
-  }
-  /* line 399, ../sass/screen.scss */
-  .btn_aria_h5 .btn_c_h5 {
-    position: relative;
-    margin: 0 auto;
-    width: 166px;
-    height: 26px;
-  }
-  /* line 404, ../sass/screen.scss */
-  .btn_aria_h5 .btn_c_h5 .btn_load_h5 {
-    position: absolute;
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-    letter-spacing: 11px;
-  }
-  /* line 411, ../sass/screen.scss */
-  .btn_aria_h5 .btn_c_h5 .loadicon_h5 {
-    position: absolute;
-    width: 17px;
-    height: 30px;
-    background: url(../img/load_i.png) center no-repeat;
-    background-size: 104%;
-    left: 146px;
-    top: -2px;
   }
 }
 @-webkit-keyframes ani_1 {
