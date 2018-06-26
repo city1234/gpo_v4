@@ -204,11 +204,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     width: 109px;
     height: 108px;
     background: url(../img/soccor.png) center no-repeat;
-    -webkit-animation: ani_soccor 0.8s linear infinite;
-    -moz-animation: ani_soccor 0.8s linear infinite;
-    -ms-animation: ani_soccor 0.8s linear infinite;
-    -o-animation: ani_soccor 0.8s linear infinite;
-    animation: ani_soccor 0.8s linear infinite;
   }
   /* line 111, ../sass/screen.scss */
   .wrapper .zone01 .zone01_center .man_right_blur {

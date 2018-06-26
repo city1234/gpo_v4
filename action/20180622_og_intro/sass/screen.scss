@@ -105,7 +105,7 @@
                         width: 109px;
                         height: 108px;
                         background: url(../img/soccor.png) center no-repeat;
-                        @include css3(animation,ani_soccor 0.8s linear infinite);
+                        //@include css3(animation,ani_soccor 0.8s linear infinite);
                     }
                 }
                 .man_right_blur{
