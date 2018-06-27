@@ -46,6 +46,7 @@ var vm = new Vue({
                 containtexts: '',
                 containtext: '' //内容html
             },
+            /*
             {
                 newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
                 importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
@@ -106,6 +107,7 @@ var vm = new Vue({
                 containtexts: '',
                 containtext: '' //内容html
             },
+            */
             {
                 newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
                 importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
