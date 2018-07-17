@@ -248,7 +248,7 @@ var vm = new Vue({
                         <td>内容描述</td>\
                     </tr >\
                     <tr>\
-                        <td>第三方接入<新增>（链接产品专栏介绍页）</td>\
+                        <td>第三方接入<新增></td>\
                         <td class="txtleft">\
                             1.	接入<a href="action/20180605_pngpage/index.html" target="_blank">PNG电子</a><br />\
                             2.	接入<a href="action/20180522_bggame/index.html" target="_blank">BG平台</a>，包括：BG视讯、BG捕鱼、BG电子<br />\
