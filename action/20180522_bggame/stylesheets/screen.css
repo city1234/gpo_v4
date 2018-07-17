@@ -124,11 +124,28 @@ input {
   /* 新版本语法: Opera 12.1, Firefox 22+ */
   align-items: center;
   -webkit-align-items: center;
-  min-height: 100vh;
+  min-height: 110vh;
 }
 /* line 236, ../sass/screen.scss */
 #topbanner .slogan {
-  margin-bottom: 50px;
+  margin-bottom: 25px;
+}
+a.download{
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: bold;
+  background: rgba(0, 51, 153, 0.3);
+  text-decoration: none;
+  text-align: 2;
+  padding: 10px 50px;
+  border: 1px solid rgba(0, 51, 153, 0.5);
+}
+a.download:hover{
+  font-weight: bold;
+  background: #fff;
+  color: #3dabe5;
+  text-decoration: none;
 }
 @media screen and (min-width: 0) and (max-width: 767px) {
   /* line 236, ../sass/screen.scss */
@@ -145,7 +162,7 @@ input {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom:55px;
   font-size: 16px;
   line-height: 30px;
   font-weight: bold;
