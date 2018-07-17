@@ -31,6 +31,7 @@ var vm = new Vue({
             }
         ],
         newss: [
+            /*
             {
                 newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
                 importanttag: true, //产品专栏活动专栏头版,内容发布重点标签
@@ -46,7 +47,22 @@ var vm = new Vue({
                 containtexts: '',
                 containtext: '' //内容html
             },
-            /*
+            */
+            {
+                newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
+                importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
+                istopbanner: false, //是否首页展示
+                clickto: false, //是否有内页跳窗公告
+                link: "/action/20180717_news/index.html", //点击连结,下载檔案
+                downloadbtn: true, //是否有下载按钮
+                downloadlink: "loading/20180717_news.zip", //下载连结
+                mainbannerimg: "images/activebanner/20180717_news.jpg", //首页大图2500*1080
+                bannerimg: "images/activebanner/20180717_news_s.jpg", //公告内页小图1410*385
+                name: "代理后台新增即时注单功能", //公告名称(最好8个全形字以内),download活动素材/轮播图
+                time: "2018/07", //活动日期
+                containtexts: '',
+                containtext: '' //内容html
+            },
             {
                 newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
                 importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
@@ -62,6 +78,7 @@ var vm = new Vue({
                 containtexts: '',
                 containtext: '' //内容html
             },
+            /*
             {
                 newstype: 0,
                 importanttag: false,
@@ -92,6 +109,7 @@ var vm = new Vue({
                 containtexts: '',
                 containtext: ''
             },
+            */
             {
                 newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
                 importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
@@ -107,7 +125,6 @@ var vm = new Vue({
                 containtexts: '',
                 containtext: '' //内容html
             },
-            */
             {
                 newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
                 importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
@@ -213,6 +230,54 @@ var vm = new Vue({
             //     containtexts: "无资料",
             //     containtext: "无资料"
             // },
+            {
+                newstype: 1,
+                importanttag: false,
+                istopbanner: false,
+                clickto: true,
+                link: "javascript: void(0)",
+                downloadbtn: false,
+                downloadlink: "images/activebanner/mainbanner_01.jpg",
+                mainbannerimg: "",
+                bannerimg: "",
+                name: "已更新",
+                time: "2018/7/17",
+                containtexts: '1.2.5版本功能说明',
+                containtext: '\
+                <table>\
+                    <tr>\
+                        <td width="20%">标题</td>\
+                        <td>内容描述</td>\
+                    </tr >\
+                    <tr>\
+                        <td>第三方接入<新增>（链接产品专栏介绍页）</td>\
+                        <td class="txtleft">\
+                            1.	接入<a href="action/20180605_pngpage/index.html" target="_blank">PNG电子</a><br />\
+                            2.	接入<a href="action/20180522_bggame/index.html" target="_blank">BG平台</a>，包括：BG视讯、BG捕鱼、BG电子<br />\
+                            3.	AG拆分位AG电子和<a href="http://yoplay.com/index.php#yo80s" target="_blank">YOPALY电子</a>，增设各个电子游戏入口<br />\
+                        </td>\
+                    </tr>\
+                    <tr>\
+                        <td>注册功能设置</td>\
+                        <td class="txtleft">\
+                            1.	代理后台可关闭手机和PC端注册功能<br />\
+                            2.	可开启同一个IP的注册人数限制<br />\
+                            3.	增加注册黑名单功能，可将某个IP、姓名、电话、邮箱加入黑名单中<br />\
+                        </td>\
+                    </tr>\
+                    <tr>\
+                        <td>出入款总账优化</td>\
+                        <td class="txtleft">\
+                            1.	出入款总账中，会员出款数据根据操作时间统计，且只统计成功出款的数据<br />\
+                            2.	出入款记录中增加操作时间查询<br />\
+                            3.	拒绝出款数据统计在会员【出款被扣除金额】中<br />\
+                        </td>\
+                    </tr>\
+                    <tr>\
+                        <td>后台IP名单开关控制</td>\
+                        <td class="txtleft">针对厅主及子账号设置IP白名单，只能通过白名单才可进行登陆，确认厅主及子账号登陆的安全性</td>\
+                    </tr>'
+            },
             {
                 newstype: 1,
                 importanttag: false,

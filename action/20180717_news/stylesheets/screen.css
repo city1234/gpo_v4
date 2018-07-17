@@ -1,0 +1,144 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+.padding-zero{
+  padding: 0;
+}
+
+@media only screen and (min-width: 1025px) {
+  /* line 10, ../sass/screen.scss */
+  .wrapper {
+    overflow-x: hidden;
+    width: 100vw;
+    font-family: Microsoft JhengHei;
+    color: #fff;
+    line-height: 1.8;
+  }
+  /* line 16, ../sass/screen.scss */
+  .wrapper .zone01 {
+    padding: 1.8em 2em;
+    background: linear-gradient(to right top, #004a71, #0083a9, #00c0d8);
+  }
+  /* line 20, ../sass/screen.scss */
+  .wrapper .zone01 h2.title {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 auto 14px;
+    padding: 0px 5px;
+    border-bottom: 1px solid #fff;
+  }
+  .wrapper .zone01 li[class*="col-"]{
+    padding: 0.8em 4em;
+  }
+  .wrapper .zone01 li[class*="col-"] img{
+    margin-bottom: 0.5em;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .wrapper {
+    width: 100vw;
+    font-family: Microsoft JhengHei;
+    overflow-x: hidden;
+    color: #fff;
+    line-height: 1.8;
+  }
+  .wrapper .img-responsive{
+    width: 100%;
+  }
+  .wrapper .zone01 {
+    padding: 1.8em 2em;
+    background: linear-gradient(to right top, #082858, #004a71, #0083a9, #00c0d8);
+  }
+  .wrapper .zone01 h2.title {
+    text-align: center;
+    font-size: 2.2em;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 auto 14px;
+    padding: 0px 5px;
+    border-bottom: 1px solid #fff;
+  }
+  .wrapper .zone01 li[class*="col-"]{
+    padding: 0.8em 2em;
+  }
+  .wrapper .zone01 li[class*="col-"] img{
+    margin-bottom: 0.5em;
+  }
+}
+@media only screen and (max-width: 376px) {
+  .wrapper .zone01 {
+    padding: 1.8em 3em;
+  }
+  .wrapper .zone01 li[class*="col-"]{
+    padding: 0.8em 0.5em;
+  }
+  }
+}
