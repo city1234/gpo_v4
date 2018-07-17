@@ -52,7 +52,7 @@ var vm = new Vue({
                 istopbanner: false, //是否首页展示
                 clickto: false, //是否有内页跳窗公告
                 link: "action/20180717_news/index.html", //点击连结,下载檔案
-                downloadbtn: true, //是否有下载按钮
+                downloadbtn: false, //是否有下载按钮
                 downloadlink: "loading/20180717_news.zip", //下载连结
                 mainbannerimg: "images/activebanner/20180717_news.jpg", //首页大图2500*1080
                 bannerimg: "images/activebanner/20180717_news_s.jpg", //公告内页小图1410*385
