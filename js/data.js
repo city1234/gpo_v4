@@ -50,7 +50,7 @@ var vm = new Vue({
             */
             {
                 newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
-                importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
+                importanttag: true, //产品专栏活动专栏头版,内容发布重点标签
                 istopbanner: false, //是否首页展示
                 clickto: false, //是否有内页跳窗公告
                 link: "/action/20180717_news/index.html", //点击连结,下载檔案
