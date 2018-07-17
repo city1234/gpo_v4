@@ -68,7 +68,7 @@ var vm = new Vue({
                 clickto: false, //是否有内页跳窗公告
                 link: "action/20180522_bggame/index.html", //点击连结,下载檔案
                 downloadbtn: true, //是否有下载按钮
-                downloadlink: "loading/20180522_bggame.zip", //下载连结
+                downloadlink: "loading/BG_banner.rar", //下载连结
                 mainbannerimg: "images/activebanner/20180522_bggame.jpg", //首页大图2500*1080
                 bannerimg: "images/activebanner/20180522_bggame_s.jpg", //公告内页小图1410*385
                 name: "BG大遊丰富你的世界!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
