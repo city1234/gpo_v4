@@ -31,23 +31,6 @@ var vm = new Vue({
             }
         ],
         newss: [
-            /*
-            {
-                newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
-                importanttag: true, //产品专栏活动专栏头版,内容发布重点标签
-                istopbanner: true, //是否首页展示
-                clickto: false, //是否有内页跳窗公告
-                link: "action/20180622_og_intro/index.html", //点击连结,下载檔案
-                downloadbtn: true, //是否有下载按钮
-                downloadlink: "loading/20180623_ogtu_banner.zip", //下载连结
-                mainbannerimg: "images/activebanner/20180623_ogtu.jpg", //首页大图2500*1080
-                bannerimg: "images/activebanner/20180623_ogtus.jpg", //公告内页小图1410*385
-                name: "OG体育上线,见证王者诞生!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
-                time: "2018/06", //活动日期
-                containtexts: '',
-                containtext: '' //内容html
-            },
-            */
             {
                 newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
                 importanttag: true, //产品专栏活动专栏头版,内容发布重点标签
@@ -121,6 +104,21 @@ var vm = new Vue({
                 mainbannerimg: "images/activebanner/20180605_png.jpg", //首页大图2500*1080
                 bannerimg: "images/activebanner/20180605_pngs.jpg", //公告内页小图1410*385
                 name: "PLAY'n GO 独特灵感和创造力!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
+                time: "2018/06", //活动日期
+                containtexts: '',
+                containtext: '' //内容html
+            },
+            {
+                newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
+                importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
+                istopbanner: false, //是否首页展示
+                clickto: false, //是否有内页跳窗公告
+                link: "action/20180622_og_intro/index.html", //点击连结,下载檔案
+                downloadbtn: true, //是否有下载按钮
+                downloadlink: "loading/20180623_ogtu_banner.zip", //下载连结
+                mainbannerimg: "images/activebanner/20180623_ogtu.jpg", //首页大图2500*1080
+                bannerimg: "images/activebanner/20180623_ogtus.jpg", //公告内页小图1410*385
+                name: "OG体育上线,见证王者诞生!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
                 time: "2018/06", //活动日期
                 containtexts: '',
                 containtext: '' //内容html
