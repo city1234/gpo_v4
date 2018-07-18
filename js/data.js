@@ -62,27 +62,11 @@ var vm = new Vue({
                 containtext: '' //内容html
             },
             {
-                newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
-                importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
-                istopbanner: true, //是否首页展示
-                clickto: false, //是否有内页跳窗公告
-                link: "action/20180522_bggame/index.html", //点击连结,下载檔案
-                downloadbtn: true, //是否有下载按钮
-                downloadlink: "loading/BG_banner.rar", //下载连结
-                mainbannerimg: "images/activebanner/20180522_bggame.jpg", //首页大图2500*1080
-                bannerimg: "images/activebanner/20180522_bggame_s.jpg", //公告内页小图1410*385
-                name: "BG大遊丰富你的世界!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
-                time: "2018/06", //活动日期
-                containtexts: '',
-                containtext: '' //内容html
-            },
-            /*
-            {
                 newstype: 0,
                 importanttag: false,
                 istopbanner: true,
                 clickto: false,
-                link: "http://yoplay.com/index.php#yo80s",
+                link: "http://yoplay.com/index.php#service",
                 downloadbtn: true,
                 downloadlink: "loading/",
                 mainbannerimg: "images/activebanner/20180608_yoplay.jpg",
@@ -107,7 +91,21 @@ var vm = new Vue({
                 containtexts: '',
                 containtext: ''
             },
-            */
+            {
+                newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
+                importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
+                istopbanner: true, //是否首页展示
+                clickto: false, //是否有内页跳窗公告
+                link: "action/20180522_bggame/index.html", //点击连结,下载檔案
+                downloadbtn: true, //是否有下载按钮
+                downloadlink: "loading/BG_banner.rar", //下载连结
+                mainbannerimg: "images/activebanner/20180522_bggame.jpg", //首页大图2500*1080
+                bannerimg: "images/activebanner/20180522_bggame_s.jpg", //公告内页小图1410*385
+                name: "BG大遊丰富你的世界!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
+                time: "2018/06", //活动日期
+                containtexts: '',
+                containtext: '' //内容html
+            },
             {
                 newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
                 importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
@@ -126,7 +124,7 @@ var vm = new Vue({
             {
                 newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
                 importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
-                istopbanner: true, //是否首页展示
+                istopbanner: false, //是否首页展示
                 clickto: false, //是否有内页跳窗公告
                 link: "CQ9/index.html", //点击连结,下载檔案
                 downloadbtn: true, //是否有下载按钮
@@ -141,7 +139,7 @@ var vm = new Vue({
             {
                 newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
                 importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
-                istopbanner: true, //是否首页展示
+                istopbanner: false, //是否首页展示
                 clickto: false, //是否有内页跳窗公告
                 link: "20180425_vgs/index.html", //点击连结,下载檔案
                 downloadbtn: true, //是否有下载按钮
