@@ -83,7 +83,7 @@ var vm = new Vue({
                 clickto: false,
                 link: "http://xingaming.com/gameInfo.html",
                 downloadbtn: true,
-                downloadlink: "loading/20180607_XIN.rar",
+                downloadlink: "loading/XIN_banner.zip",
                 mainbannerimg: "images/activebanner/20180607_xin.jpg",
                 bannerimg: "images/activebanner/20180607_xin_s.jpg",
                 name: "XINGAMING",
