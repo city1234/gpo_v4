@@ -256,7 +256,7 @@ var vm = new Vue({
                         <td class="txtleft">\
                             1.	接入<a href="action/20180605_pngpage/index.html" target="_blank">PNG电子</a><br />\
                             2.	接入<a href="action/20180522_bggame/index.html" target="_blank">BG平台</a>，包括：BG视讯、BG捕鱼、BG电子<br />\
-                            3.	AG拆分位AG电子和<a href="http://yoplay.com/index.php#yo80s" target="_blank">YOPALY电子</a>，增设各个电子游戏入口<br />\
+                            3.	AG拆分为AG电子和<a href="http://yoplay.com/index.php#yo80s" target="_blank">YOPALY电子</a>，增设各个电子游戏入口<br />\
                             4.	<a href="action/20180622_og_intro/index.html" target="_blank">OG体育</a>\
                         </td>\
                     </tr>\
