@@ -30,8 +30,7 @@ var vm = new Vue({
                 nowpage: 1, // 当前页数
             }
         ],
-        newss: [
-            {
+        newss: [{
                 newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
                 importanttag: true, //产品专栏活动专栏头版,内容发布重点标签
                 istopbanner: true, //是否首页展示
@@ -237,6 +236,54 @@ var vm = new Vue({
                 mainbannerimg: "",
                 bannerimg: "",
                 name: "即将上线",
+                time: "2018/8/22",
+                containtexts: '产品功能概述',
+                containtext: '\
+                <table>\
+                    <tr>\
+                        <td width="20%">标题</td>\
+                        <td>内容描述</td>\
+                    </tr >\
+                    <tr>\
+                        <td>支付页面改版</td>\
+                        <td class="txtleft">\
+                            1.  界面优化， 呈现简洁， 操作简便， 用户可快速选择到需要的具体支付方式； <br / > \
+                            2.  手机端充值页面展现内容支持管理后台按需自定义； <br / > \
+                            3.  支持前端快选金额自定义； <br / > \
+                            4.  第三方充值， 自动生成小数点开启 / 关闭可灵活控制； <br / > \
+                            5.  公司账号管理优化， 新增银行界面增加筛选条件， 前端提交名称可后台调整； <br / > \
+                        </td>\
+                    </tr>\
+                    <tr>\
+                        <td>第三方平台</td>\
+                        <td class="txtleft">\
+                            1.  新接入JDB电子；\
+                        </td>\
+                    </tr>\
+                    <tr>\
+                        <td>登录逻辑优化</td>\
+                        <td class="txtleft">\
+                            1. 会员登录错误次数过多时， 增加复杂验证码验证及更多个人信息验证；\
+                        </td>\
+                    </tr>\
+                    <tr>\
+                        <td>会员真实姓名字符限制修改</td>\
+                        <td class="txtleft">\
+                            1.  会员真实姓名长度可支持20位； \
+                        </td>\
+                    </tr>'
+            },
+            {
+                newstype: 1,
+                importanttag: false,
+                istopbanner: false,
+                clickto: true,
+                link: "javascript: void(0)",
+                downloadbtn: false,
+                downloadlink: "images/activebanner/mainbanner_01.jpg",
+                mainbannerimg: "",
+                bannerimg: "",
+                name: "已更新",
                 time: "2018/7/17",
                 containtexts: '1.2.5版本功能说明',
                 containtext: '\
@@ -626,7 +673,7 @@ var vm = new Vue({
         ]
     },
     watch: {
-        data: function(value){
+        data: function(value) {
             if (true) {
                 console.log(111);
             } else {
@@ -693,7 +740,7 @@ var vm = new Vue({
         */
         filterlist: function(newss) {
             var _this = this;
-            return this.newss.filter(function (news) {
+            return this.newss.filter(function(news) {
                 var searchtxt = news.name + news.containtexts;
                 return searchtxt.match(_this.search);
             });
@@ -711,14 +758,14 @@ var vm = new Vue({
             });
             */
         },
-       /*
-        filterlist: function (newss) {
-            return this.newss.filter(function (news) {
-                var searchtxt = news.name + news.containtexts;
-                return searchtxt.match(this.search);
-            });
-        }*/
-        initoutalertbox_fn0: function () {
+        /*
+         filterlist: function (newss) {
+             return this.newss.filter(function (news) {
+                 var searchtxt = news.name + news.containtexts;
+                 return searchtxt.match(this.search);
+             });
+         }*/
+        initoutalertbox_fn0: function() {
             var alertboxw = $(window).width();
             if (alertboxw > 1200) { alertboxw = 1200; }
             var $form = $("#alertbox");
@@ -729,7 +776,7 @@ var vm = new Vue({
                 width: alertboxw, //燈箱中間區塊的寬度
             });
         },
-        initoutalertbox_fn1: function () {
+        initoutalertbox_fn1: function() {
             var alertboxw = $(window).width();
             if (alertboxw > 1200) { alertboxw = 1200; }
             var $form = $("#alertbox1");
@@ -743,12 +790,12 @@ var vm = new Vue({
     },
     mounted: function() {
         //设置cookie
-        Vue.prototype.setCookie = function (c_name, value, expiredays) {
+        Vue.prototype.setCookie = function(c_name, value, expiredays) {
             var exdate = new Date();
             exdate.setDate(exdate.getDate() + expiredays);
             document.cookie = c_name + "=" + escape(value) + (expiredays == null ? "" : ";expires=" + exdate.toGMTString());
         };
-            //获取cookie、
+        //获取cookie、
         function getCookie(name) {
             var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
             if (arr = document.cookie.match(reg))
@@ -758,7 +805,7 @@ var vm = new Vue({
         }
         Vue.prototype.getCookie = getCookie;
         //删除cookie
-        Vue.prototype.delCookie = function (name) {
+        Vue.prototype.delCookie = function(name) {
             var exp = new Date();
             exp.setTime(exp.getTime() - 1);
             var cval = getCookie(name);
