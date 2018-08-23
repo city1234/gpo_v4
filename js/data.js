@@ -30,7 +30,23 @@ var vm = new Vue({
                 nowpage: 1, // 当前页数
             }
         ],
-        newss: [{
+        newss: [
+            {
+                newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
+                importanttag: true, //产品专栏活动专栏头版,内容发布重点标签
+                istopbanner: true, //是否首页展示
+                clickto: false, //是否有内页跳窗公告
+                link: "https://elegant-wescoff-78d55a.netlify.com/", //点击连结,下载檔案
+                downloadbtn: true, //是否有下载按钮
+                downloadlink: "loading/jdb.zip", //下载连结
+                mainbannerimg: "images/activebanner/20180823_jdb.jpg", //首页大图2500*1080
+                bannerimg: "images/activebanner/20180823_jdbs.jpg", //公告内页小图1410*385
+                name: "只战经典 娱乐首选!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
+                time: "2018/08", //活动日期
+                containtexts: '',
+                containtext: '' //内容html
+            },
+            {
                 newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
                 importanttag: true, //产品专栏活动专栏头版,内容发布重点标签
                 istopbanner: true, //是否首页展示
