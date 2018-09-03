@@ -243,7 +243,7 @@ var vm = new Vue({
             // },
             {
                 newstype: 1,
-                importanttag: true,
+                importanttag: false,
                 istopbanner: false,
                 clickto: true,
                 link: "javascript: void(0)",
@@ -251,7 +251,7 @@ var vm = new Vue({
                 downloadlink: "images/activebanner/mainbanner_01.jpg",
                 mainbannerimg: "",
                 bannerimg: "",
-                name: "即将上线",
+                name: "已更新",
                 time: "2018/8/22",
                 containtexts: '1.2.6版本功能说明',
                 containtext: '\
