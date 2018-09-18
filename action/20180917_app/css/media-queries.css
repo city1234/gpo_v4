@@ -147,6 +147,19 @@ header {
     left: calc(50% - 197px);
   }
 }
+#accordion{
+	display: block!important;
+}
+a.accordion-section-title.active-pc {
+	text-decoration: none;
+	color: #c0ab80;
+	padding-bottom: 8px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+a.accordion-section-title.active-pc span.question-1{
+	background-position: 0px -30px;
+}
 
 }
 
