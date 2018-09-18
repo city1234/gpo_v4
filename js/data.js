@@ -36,6 +36,21 @@ var vm = new Vue({
                 importanttag: true, //产品专栏活动专栏头版,内容发布重点标签
                 istopbanner: true, //是否首页展示
                 clickto: false, //是否有内页跳窗公告
+                link: "action/20180917_app/index.html", //点击连结,下载檔案
+                downloadbtn: false, //是否有下载按钮
+                downloadlink: "", //下载连结
+                mainbannerimg: "images/activebanner/20180917_app.jpg", //首页大图2500*1080
+                bannerimg: "images/activebanner/20180917_apps.jpg", //公告内页小图1410*385
+                name: "精彩隨時隨地,一切盡在掌握!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
+                time: "2018/09", //活动日期
+                containtexts: '',
+                containtext: '' //内容html
+            },
+            {
+                newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
+                importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
+                istopbanner: true, //是否首页展示
+                clickto: false, //是否有内页跳窗公告
                 link: "https://elegant-wescoff-78d55a.netlify.com/", //点击连结,下载檔案
                 downloadbtn: true, //是否有下载按钮
                 downloadlink: "loading/jdb.zip", //下载连结
