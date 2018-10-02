@@ -382,10 +382,12 @@ section{
             }
         }
         .mac{
-            flex-grow:1;
-            width: 50%;
+            flex-grow: 1;
+            width: 525px;
+            margin-right: 60px;
             position: relative;
             padding-bottom: 45px;
+            overflow: hidden;
             &:after{
                 position: absolute;
                 top:0;
