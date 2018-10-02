@@ -312,7 +312,7 @@ section{
         margin-bottom: 10px;
         @include range-width-in(0,1000px){
             text-align: center;
-            margin-bottom: 30px;
+            margin: 0 0 30px 0!important;
         }
         i{
             background: #84a2e4;
@@ -441,9 +441,14 @@ section{
 }
 .part_advantages{
     overflow: hidden;
+    padding: 30px 0;
+    .sec_title{
+        margin-left: 16px;
+    }
     ul{
         li{
             flex-grow:1;
+            width: calc(100% / 3);
             text-align: center;
             margin: 60px 0;
             cursor: pointer;

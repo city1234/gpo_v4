@@ -320,7 +320,7 @@ section .sec_title {
   /* line 308, ../sass/screen.scss */
   section .sec_title {
     text-align: center;
-    margin-bottom: 30px;
+    margin: 0 0 30px 0 !important;
   }
 }
 /* line 317, ../sass/screen.scss */
@@ -472,16 +472,22 @@ section p {
 /* line 442, ../sass/screen.scss */
 .part_advantages {
   overflow: hidden;
+  padding: 30px 0;
 }
 /* line 445, ../sass/screen.scss */
+.part_advantages .sec_title {
+  margin-left: 16px;
+}
+/* line 449, ../sass/screen.scss */
 .part_advantages ul li {
   flex-grow: 1;
+  width: calc(100% / 3);
   text-align: center;
   margin: 60px 0;
   cursor: pointer;
   position: relative;
 }
-/* line 451, ../sass/screen.scss */
+/* line 456, ../sass/screen.scss */
 .part_advantages ul li::before {
   z-index: -1;
   position: absolute;
@@ -499,25 +505,25 @@ section p {
   transition: all 0.3s ease;
 }
 @media screen and (min-width: 1001px) {
-  /* line 465, ../sass/screen.scss */
+  /* line 470, ../sass/screen.scss */
   .part_advantages ul li:hover::before {
     opacity: 1;
   }
-  /* line 468, ../sass/screen.scss */
+  /* line 473, ../sass/screen.scss */
   .part_advantages ul li:hover .picicon {
     background: #fff;
   }
-  /* line 470, ../sass/screen.scss */
+  /* line 475, ../sass/screen.scss */
   .part_advantages ul li:hover .picicon::before {
     color: #84a2e4;
     text-shadow: 3px 3px 0px rgba(132, 162, 228, 0.25);
   }
-  /* line 475, ../sass/screen.scss */
+  /* line 480, ../sass/screen.scss */
   .part_advantages ul li:hover h3, .part_advantages ul li:hover .txts {
     color: #fff;
   }
 }
-/* line 480, ../sass/screen.scss */
+/* line 485, ../sass/screen.scss */
 .part_advantages ul li .picicon {
   background: #84a2e4;
   -webkit-border-radius: 50%;
@@ -532,7 +538,7 @@ section p {
   text-align: center;
   margin: 0 auto;
 }
-/* line 489, ../sass/screen.scss */
+/* line 494, ../sass/screen.scss */
 .part_advantages ul li .picicon:before {
   color: #fff;
   font-size: 100px;
@@ -544,61 +550,61 @@ section p {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 497, ../sass/screen.scss */
+/* line 502, ../sass/screen.scss */
 .part_advantages ul li h3 {
   font-size: 24px;
 }
-/* line 500, ../sass/screen.scss */
+/* line 505, ../sass/screen.scss */
 .part_advantages ul li .txts {
   color: #999999;
   font-size: 16px;
   line-height: 24px;
 }
 
-/* line 509, ../sass/screen.scss */
+/* line 514, ../sass/screen.scss */
 .detail-mb img {
   width: 100%;
 }
 
-/* line 514, ../sass/screen.scss */
+/* line 519, ../sass/screen.scss */
 .advantages-mb li {
   margin: 30px 0 !important;
 }
 
-/* line 518, ../sass/screen.scss */
+/* line 523, ../sass/screen.scss */
 .nextpage {
   margin: 0 auto 50px auto;
 }
 
 @media screen and (min-width: 0) and (max-width: 1000px) {
-  /* line 521, ../sass/screen.scss */
+  /* line 526, ../sass/screen.scss */
   .pc_show {
     display: none !important;
   }
 }
 
 @media screen and (min-width: 1001px) {
-  /* line 526, ../sass/screen.scss */
+  /* line 531, ../sass/screen.scss */
   .mb_show {
     display: none !important;
   }
 }
-/* line 530, ../sass/screen.scss */
+/* line 535, ../sass/screen.scss */
 .mb_show .slick-prev, .mb_show .slick-next {
   width: 30px !important;
   height: 30px !important;
   z-index: 10;
 }
-/* line 534, ../sass/screen.scss */
+/* line 539, ../sass/screen.scss */
 .mb_show .slick-prev:before, .mb_show .slick-next:before {
   color: #84a2e4 !important;
   font-size: 30px !important;
 }
-/* line 539, ../sass/screen.scss */
+/* line 544, ../sass/screen.scss */
 .mb_show .slick-prev {
   left: 0 !important;
 }
-/* line 542, ../sass/screen.scss */
+/* line 547, ../sass/screen.scss */
 .mb_show .slick-next {
   right: 0 !important;
 }
