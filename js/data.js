@@ -349,12 +349,12 @@ var vm = new Vue({
                         <td>【新线上付款设定】新增优惠类型</td>\
                         <td class="txtleft">\
                             1.  新线上付款设定新增优惠类型<br / > \
-                            <ul><li style="list-style-type:lower-alpha;padding-left: 10px;">设定界面新增优惠类型，按照充值类型设置不同优惠比例； </li> \
+                            <div><li style="list-style-type:lower-alpha;padding-left: 10px;">设定界面新增优惠类型，按照充值类型设置不同优惠比例； </li> \
                             <li style="list-style-type:lower-alpha;padding-left: 10px;">界面优化，按功能划分小标题，支持展开收缩操作，操作更简便快捷； </li> \
-                            <li style="list-style-type:lower-alpha;padding-left: 10px;">设定模块只保留人民币，去掉其他币种，界面排版调整，层级管理界面同步优化； </li></ul> \
+                            <li style="list-style-type:lower-alpha;padding-left: 10px;">设定模块只保留人民币，去掉其他币种，界面排版调整，层级管理界面同步优化； </li></div> \
                             2.	出入款总账给予优惠界面优化<br / > \
-                            <ul><li style="list-style-type:lower-alpha;padding-left: 10px;">出入款总账给予优惠功能同步修改，根据不同存入方式统计优惠；</li> \
-                            <li style="list-style-type:lower-alpha;padding-left: 10px;">界面优化，去掉币别，新增界面导航条；</li></ul> \
+                            <div><li style="list-style-type:lower-alpha;padding-left: 10px;">出入款总账给予优惠功能同步修改，根据不同存入方式统计优惠；</li> \
+                            <li style="list-style-type:lower-alpha;padding-left: 10px;">界面优化，去掉币别，新增界面导航条；</li></div> \
                         </td>\
                     </tr>\
                     <tr>\
