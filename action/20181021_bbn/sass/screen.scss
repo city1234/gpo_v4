@@ -640,6 +640,7 @@ body{
                 .img{
                     display: inline-block;
                     position: relative;
+                    @include css3(transition,all .3s ease);
                     &:after{
                         content: "";
                         position: absolute;
@@ -653,6 +654,7 @@ body{
                         cursor: pointer;
                     }
                     &:hover{
+                        @include css3(transform,scale(1.1));
                         &:after{opacity: 1;}
                     }
                 }
