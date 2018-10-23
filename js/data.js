@@ -51,8 +51,8 @@ var vm = new Vue({
                 importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
                 istopbanner: true, //是否首页展示
                 clickto: false, //是否有内页跳窗公告
-                link: "http://www.avia-gaming.com/", //点击连结,下载檔案
-                downloadbtn: false, //是否有下载按钮
+                link: "http://www.avia-gaming.com/welcome/", //点击连结,下载檔案
+                downloadbtn: true, //是否有下载按钮
                 downloadlink: "loading/20181021_va.zip", //下载连结
                 mainbannerimg: "images/activebanner/20181021_va.jpg", //首页大图2500*1080
                 bannerimg: "images/activebanner/20181021_va_s.jpg", //公告内页小图1410*385
@@ -67,11 +67,11 @@ var vm = new Vue({
                 istopbanner: true, //是否首页展示
                 clickto: false, //是否有内页跳窗公告
                 link: "action/20181021_bbn/index.html", //点击连结,下载檔案
-                downloadbtn: false, //是否有下载按钮
+                downloadbtn: true, //是否有下载按钮
                 downloadlink: "loading/20181021_bbn.zip", //下载连结
                 mainbannerimg: "images/activebanner/20181021_bbn.jpg", //首页大图2500*1080
                 bannerimg: "images/activebanner/20181021_bbn_s.jpg", //公告内页小图1410*385
-                name: "bbn热门直播!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
+                name: "bbin热门直播!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
                 time: "2018/10", //活动日期
                 containtexts: '',
                 containtext: '' //内容html
