@@ -318,6 +318,62 @@ var vm = new Vue({
             // },
             {
                 newstype: 1,
+                importanttag: true,
+                istopbanner: false,
+                clickto: true,
+                link: "javascript: void(0)",
+                downloadbtn: false,
+                downloadlink: "images/activebanner/mainbanner_01.jpg",
+                mainbannerimg: "",
+                bannerimg: "",
+                name: "即将上线",
+                time: "2018/10/23",
+                containtexts: '1.2.7版本功能说明',
+                containtext: '\
+                <table>\
+                    <tr>\
+                        <td width="20%">标题</td>\
+                        <td>内容描述</td>\
+                    </tr >\
+                    <tr>\
+                        <td>【第三方】游戏平台</td>\
+                        <td class="txtleft">\
+                            1.  新接入泛亚电竞：体育赛事类型中新增FY电竞；<br / > \
+                            2.	新接入FG平台：新增FG棋牌，FG捕鱼，FG电子; <br / > \
+                            3.	BBIN平台拆分： <br / > \
+                            <li style="list-style-type:lower-alpha;padding-left: 10px;">PC端：新增BBIN电子，BBIN捕鱼两个入口； </li> \
+                            <li style="list-style-type:lower-alpha;padding-left: 10px;">手机端：新增BBIN电子，BBIN捕鱼，BBIN体育三个入口； </li> \
+                        </td>\
+                    </tr>\
+                    <tr>\
+                        <td>【新线上付款设定】新增优惠类型</td>\
+                        <td class="txtleft">\
+                            1.  新线上付款设定新增优惠类型<br / > \
+                            <li style="list-style-type:lower-alpha;padding-left: 10px;">设定界面新增优惠类型，按照充值类型设置不同优惠比例； </li> \
+                            <li style="list-style-type:lower-alpha;padding-left: 10px;">界面优化，按功能划分小标题，支持展开收缩操作，操作更简便快捷； </li> \
+                            <li style="list-style-type:lower-alpha;padding-left: 10px;">设定模块只保留人民币，去掉其他币种，界面排版调整，层级管理界面同步优化； </li> \
+                            2.	出入款总账给予优惠界面优化<br / > \
+                            <li style="list-style-type:lower-alpha;padding-left: 10px;">出入款总账给予优惠功能同步修改，根据不同存入方式统计优惠；</li> \
+                            <li style="list-style-type:lower-alpha;padding-left: 10px;">界面优化，去掉币别，新增界面导航条；</li> \
+                        </td>\
+                    </tr>\
+                    <tr>\
+                        <td>【手机】电子游戏管理</td>\
+                        <td class="txtleft">\
+                            1.	管理后台支持自定义设置手机端单个电子游戏的开启、关闭、排序等操作；<br / > \
+                        </td>\
+                    </tr>\
+                    <tr>\
+                        <td>【报表】平台报表</td>\
+                        <td class="txtleft">\
+                            1.	针对现有报表的功能进行视觉效果及交互体验优化；<br / > \
+                            2.	可以选择平台和游戏类型进行查询并展示汇总数据；<br / > \
+                            3.	融合会员报表功能，优化原有报表的页面排版显示；<br / > \
+                        </td>\
+                    </tr>'
+            },
+            {
+                newstype: 1,
                 importanttag: false,
                 istopbanner: false,
                 clickto: true,
