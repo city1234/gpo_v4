@@ -338,9 +338,9 @@ var vm = new Vue({
                     <tr>\
                         <td>【第三方】游戏平台</td>\
                         <td class="txtleft">\
-                            1.  新接入泛亚电竞：体育赛事类型中新增FY电竞；<br / > \
-                            2.	新接入FG平台：新增FG棋牌，FG捕鱼，FG电子; <br / > \
-                            3.	BBIN平台拆分： <br / > \
+                            1.  新接入<a href="http://www.avia-gaming.com/welcome/" target="_blank">泛亚电竞</a>：体育赛事类型中新增FY电竞；<br / > \
+                            2.	新接入<a href="https://web.fungaming.com/" target="_blank">FG平台</a>：新增FG棋牌，FG捕鱼，FG电子; <br / > \
+                            3.	<a href="action/20181021_bbn/index.html" target="_blank">BBIN平台</a>拆分： <br / > \
                             <li style="list-style-type:lower-alpha;padding-left: 10px;">PC端：新增BBIN电子，BBIN捕鱼两个入口； </li> \
                             <li style="list-style-type:lower-alpha;padding-left: 10px;">手机端：新增BBIN电子，BBIN捕鱼，BBIN体育三个入口； </li> \
                         </td>\
