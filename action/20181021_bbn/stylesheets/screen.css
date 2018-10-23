@@ -1,0 +1,911 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, ../sass/reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 16, ../sass/reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 19, ../sass/reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../sass/reset.scss */
+ol, ul, li {
+  list-style: none;
+}
+
+/* line 25, ../sass/reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 29, ../sass/reset.scss */
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+/* line 34, ../sass/reset.scss */
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 38, ../sass/reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*zindex*/
+/*linear-gradient*/
+/*specify*/
+/*keyframes*/
+/*Responsive*/
+/*radius*/
+/*boxshadow*/
+/*POS*/
+/*clearfix*/
+/*changebg*/
+/*gridbox*/
+/*
+*{
+    font: normal 14px/20px "Microsoft Yahei";
+}*/
+/*
+*********useage*********
+@include POS(475px,75px);
+@include css3(transition,all 1s ease);
+@include css3(box-shadow,0px 0px 14px #ffffff);
+@include css3(border-radius,20px);
+border: 2px solid #6d4b00;
+left: calc(50% - 82.5px);
+@include linear-gradient(#db3542, #bc2741);
+@include range-width-in(0,0){}
+@include ellipsistext();
+@include linear-gradient($top, $bottom);
+
+.btn_face{
+    @include btn_style_face($color_main ,65px ,30px,$radius);
+    @include hover_light();
+}
+.btn_line{
+    @include btn_style_line($color_main ,65px ,30px,$radius);
+}
+.tablebox{
+    @include table_style();
+}
+
+
+@media screen and (min-width: 0px) and (max-width:640px) {}
+@media screen and (min-width: 641px) and (max-width:1200px) {}
+@media screen and (min-width: 1201px) and (max-width:2000px) {}
+
+*********animation*********
+@include css3(transition,all 1s ease);
+@include css3(animation,opacitylight 2s infinite linear);
+@include keyframes(opacitylight) {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+*/
+/* line 196, ../sass/screen.scss */
+select {
+  -webkit-box-shadow: 0px 0px 14px #ffffff;
+  -moz-box-shadow: 0px 0px 14px #ffffff;
+  -ms-box-shadow: 0px 0px 14px #ffffff;
+  -o-box-shadow: 0px 0px 14px #ffffff;
+  box-shadow: 0px 0px 14px #ffffff;
+  border: 0px;
+  line-height: 30px;
+  height: 30px;
+  padding: 0 7px;
+  /*很关键：将默认的select选择框样式清除*/
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  padding-right: 20px;
+  cursor: pointer;
+  min-width: 80px;
+}
+
+/* line 212, ../sass/screen.scss */
+input {
+  border: 1px solid #3e8ef0;
+  background: transparent;
+  line-height: 28px;
+  height: 28px;
+  padding: 0 10px;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  width: 145px;
+}
+
+/* line 222, ../sass/screen.scss */
+.wrapper {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* line 227, ../sass/screen.scss */
+.wrapper_in {
+  max-width: 1280px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+@media screen and (min-width: 0) and (max-width: 767px) {
+  /* line 227, ../sass/screen.scss */
+  .wrapper_in {
+    padding: 0 5%;
+    padding-bottom: 15%;
+  }
+}
+
+/* line 238, ../sass/screen.scss */
+body {
+  font-family: "Microsoft YaHei";
+  font-size: 14px;
+}
+
+/* line 242, ../sass/screen.scss */
+.title {
+  font-size: 48px;
+  font-size: 5vmin;
+  line-height: 60px;
+  line-height: 6vmin;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 10px;
+  letter-spacing: 1vmin;
+  font-weight: 900;
+}
+@media screen and (min-width: 0) and (max-width: 767px) {
+  /* line 242, ../sass/screen.scss */
+  .title {
+    font-size: 40px;
+    font-size: 10vmin;
+    line-height: 50px;
+    line-height: 12vmin;
+    letter-spacing: 3px;
+    letter-spacing: 0.5vmin;
+  }
+}
+
+/* line 261, ../sass/screen.scss */
+.stitle {
+  color: #fff;
+  font-size: 20px;
+  font-size: 2vmin;
+  line-height: 25px;
+  line-height: 2.5vmin;
+  letter-spacing: 5px;
+  letter-spacing: 0.5vmin;
+}
+@media screen and (min-width: 0) and (max-width: 767px) {
+  /* line 261, ../sass/screen.scss */
+  .stitle {
+    font-size: 25px;
+    font-size: 5vmin;
+    line-height: 30px;
+    line-height: 8vmin;
+    letter-spacing: 1px;
+    letter-spacing: 0.2vmin;
+  }
+}
+
+/* line 278, ../sass/screen.scss */
+.txt {
+  color: #fff;
+  font-size: 18px;
+  font-size: 2vmin;
+  line-height: 25px;
+  line-height: 2.5vmin;
+}
+@media screen and (min-width: 0) and (max-width: 767px) {
+  /* line 278, ../sass/screen.scss */
+  .txt {
+    font-size: 18px;
+    font-size: 4vmin;
+    line-height: 25px;
+    line-height: 6.5vmin;
+  }
+}
+
+/* line 291, ../sass/screen.scss */
+.rowbox {
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  -webkit-align-items: center;
+}
+
+/* line 294, ../sass/screen.scss */
+.img {
+  text-align: center;
+}
+/* line 296, ../sass/screen.scss */
+.img img {
+  max-width: 100%;
+}
+
+/* line 300, ../sass/screen.scss */
+#topbanner {
+  background: url(../images/bg_top.jpg) no-repeat top center;
+  background-size: cover;
+  text-align: center;
+  overflow: hidden;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  -webkit-align-items: center;
+  min-height: 100vh;
+}
+/* line 307, ../sass/screen.scss */
+#topbanner .slogan {
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 0) and (max-width: 767px) {
+  /* line 307, ../sass/screen.scss */
+  #topbanner .slogan {
+    margin-bottom: 0;
+  }
+  /* line 311, ../sass/screen.scss */
+  #topbanner .slogan img {
+    width: 100%;
+  }
+}
+/* line 316, ../sass/screen.scss */
+#topbanner .cardbox {
+  width: 100%;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  -webkit-align-items: center;
+  margin-bottom: 40px;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: bold;
+}
+@media screen and (min-width: 0) and (max-width: 767px) {
+  /* line 316, ../sass/screen.scss */
+  #topbanner .cardbox {
+    display: block;
+  }
+}
+/* line 330, ../sass/screen.scss */
+#topbanner .cardbox .card {
+  display: block;
+  padding: 0 10px;
+}
+/* line 333, ../sass/screen.scss */
+#topbanner .cardbox .card .btnbox {
+  position: relative;
+}
+/* line 335, ../sass/screen.scss */
+#topbanner .cardbox .card .btnbox::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* line 348, ../sass/screen.scss */
+#topbanner .cardbox .card .btnbox:hover::after {
+  opacity: 1;
+}
+/* line 353, ../sass/screen.scss */
+#topbanner .cardbox .card img {
+  width: 100%;
+}
+/* line 357, ../sass/screen.scss */
+#topbanner .cardbox .active .btnbox::after {
+  opacity: 1;
+}
+/* line 358, ../sass/screen.scss */
+#topbanner .cardbox .card_true .btnbox.pc_show::after {
+  background-image: url(../images/titlebtn_01_hover.png);
+}
+/* line 359, ../sass/screen.scss */
+#topbanner .cardbox .card_true .btnbox.mb_show::after {
+  background-image: url(../images/titlebtn_01_mb_hover.png);
+}
+/* line 360, ../sass/screen.scss */
+#topbanner .cardbox .card_bbn .btnbox.pc_show::after {
+  background-image: url(../images/titlebtn_02_hover.png);
+}
+/* line 361, ../sass/screen.scss */
+#topbanner .cardbox .card_bbn .btnbox.mb_show::after {
+  background-image: url(../images/titlebtn_02_mb_hover.png);
+}
+/* line 362, ../sass/screen.scss */
+#topbanner .cardbox .card_ele .btnbox.pc_show::after {
+  background-image: url(../images/titlebtn_03_hover.png);
+}
+/* line 363, ../sass/screen.scss */
+#topbanner .cardbox .card_ele .btnbox.mb_show::after {
+  background-image: url(../images/titlebtn_03_mb_hover.png);
+}
+
+/* line 367, ../sass/screen.scss */
+.inpage > div {
+  min-height: 100vh;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  -webkit-align-items: center;
+}
+
+/*truevideo*/
+/* line 374, ../sass/screen.scss */
+#truevideo .title {
+  margin: 50px 0;
+}
+/* line 377, ../sass/screen.scss */
+#truevideo .truevideo_part1 {
+  text-align: center;
+  background: url(../images/bg_true01.jpg) center no-repeat;
+  background-size: cover;
+}
+/* line 382, ../sass/screen.scss */
+#truevideo .truevideo_part2 {
+  background: url(../images/bg_true02.jpg) center no-repeat;
+  background-size: cover;
+}
+/* line 385, ../sass/screen.scss */
+#truevideo .truevideo_part2 .rowbox {
+  min-height: 100vh;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: justify;
+  justify-content: space-around;
+}
+/* line 390, ../sass/screen.scss */
+#truevideo .truevideo_part2 .rowbox > div {
+  flex-grow: 1;
+}
+/* line 395, ../sass/screen.scss */
+#truevideo .truevideo_part2 .title .stitle {
+  margin-top: 15px;
+  letter-spacing: 1px;
+}
+/* line 401, ../sass/screen.scss */
+#truevideo .truevideo_part2 .list .stitle {
+  color: #fff000;
+  margin-bottom: 5px;
+}
+/* line 405, ../sass/screen.scss */
+#truevideo .truevideo_part2 .list .txt {
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+/*bbnsport*/
+/* line 414, ../sass/screen.scss */
+#bbnsport .bbnsport_part1 {
+  background: url(../images/bg_sport01.jpg) center no-repeat;
+  background-size: cover;
+}
+@media screen and (min-width: 0) and (max-width: 767px) {
+  /* line 417, ../sass/screen.scss */
+  #bbnsport .bbnsport_part1 .outiconbox {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  /* line 422, ../sass/screen.scss */
+  #bbnsport .bbnsport_part1 .outiconbox .iconbox {
+    margin: 15% 0;
+    width: 100%;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  /* line 428, ../sass/screen.scss */
+  #bbnsport .bbnsport_part1 .outiconbox .iconbox .icon {
+    margin: 0 auto;
+  }
+  /* line 431, ../sass/screen.scss */
+  #bbnsport .bbnsport_part1 .outiconbox .iconbox .listbox {
+    width: 100%;
+  }
+  /* line 434, ../sass/screen.scss */
+  #bbnsport .bbnsport_part1 .outiconbox .iconbox .title {
+    text-align: center !important;
+    padding: 15px 0 !important;
+  }
+}
+/* line 441, ../sass/screen.scss */
+#bbnsport .bbnsport_part1 .iconbox {
+  width: 50%;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+/* line 449, ../sass/screen.scss */
+#bbnsport .bbnsport_part1 .iconbox .icon {
+  margin-right: 20px;
+}
+/* line 452, ../sass/screen.scss */
+#bbnsport .bbnsport_part1 .iconbox .listbox {
+  width: 400px;
+}
+/* line 454, ../sass/screen.scss */
+#bbnsport .bbnsport_part1 .iconbox .listbox .title {
+  font-size: 36px;
+  font-size: 3.5vmin;
+  padding: 35px 0;
+  color: #15908f;
+  letter-spacing: 2px;
+  text-align: left;
+  line-height: 40px;
+}
+@media screen and (min-width: 0) and (max-width: 767px) {
+  /* line 454, ../sass/screen.scss */
+  #bbnsport .bbnsport_part1 .iconbox .listbox .title {
+    font-size: 30px;
+    font-size: 10vmin;
+  }
+}
+/* line 467, ../sass/screen.scss */
+#bbnsport .bbnsport_part1 .iconbox .listbox .list {
+  color: #fff;
+  letter-spacing: 2px;
+}
+/* line 472, ../sass/screen.scss */
+#bbnsport .bbnsport_part1 .iconbox .icon {
+  min-width: 110px;
+}
+/* line 477, ../sass/screen.scss */
+#bbnsport .bbnsport_part2 {
+  background: url(../images/bg_sport02.jpg) center no-repeat;
+  background-size: cover;
+}
+/* line 481, ../sass/screen.scss */
+#bbnsport .bbnsport_part3 {
+  background: url(../images/bg_sport03.jpg) center no-repeat;
+  background-size: cover;
+}
+/* line 484, ../sass/screen.scss */
+#bbnsport .bbnsport_part3 .outiconbox {
+  width: 80%;
+  margin: 0 auto;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 0) and (max-width: 767px) {
+  /* line 484, ../sass/screen.scss */
+  #bbnsport .bbnsport_part3 .outiconbox {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  /* line 494, ../sass/screen.scss */
+  #bbnsport .bbnsport_part3 .outiconbox .iconbox {
+    margin: 15% 0;
+    width: 100%;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  /* line 500, ../sass/screen.scss */
+  #bbnsport .bbnsport_part3 .outiconbox .iconbox .icon {
+    margin: 0 auto;
+  }
+  /* line 503, ../sass/screen.scss */
+  #bbnsport .bbnsport_part3 .outiconbox .iconbox .listbox {
+    width: 100%;
+  }
+  /* line 506, ../sass/screen.scss */
+  #bbnsport .bbnsport_part3 .outiconbox .iconbox .title {
+    text-align: center !important;
+    padding: 15px 0 !important;
+  }
+  /* line 510, ../sass/screen.scss */
+  #bbnsport .bbnsport_part3 .outiconbox .iconbox .txt {
+    text-align: center;
+  }
+}
+/* line 516, ../sass/screen.scss */
+#bbnsport .bbnsport_part3 .iconbox {
+  width: 50%;
+  margin-bottom: 40px;
+}
+/* line 519, ../sass/screen.scss */
+#bbnsport .bbnsport_part3 .iconbox .icon {
+  margin-right: 20px;
+}
+/* line 523, ../sass/screen.scss */
+#bbnsport .bbnsport_part3 .iconbox .listbox .title {
+  font-size: 36px;
+  font-size: 3.5vmin;
+  padding-bottom: 15px;
+  color: #ffea00;
+  letter-spacing: 2px;
+  text-align: left;
+  line-height: 40px;
+}
+@media screen and (min-width: 0) and (max-width: 767px) {
+  /* line 523, ../sass/screen.scss */
+  #bbnsport .bbnsport_part3 .iconbox .listbox .title {
+    font-size: 30px;
+    font-size: 10vmin;
+  }
+}
+/* line 536, ../sass/screen.scss */
+#bbnsport .bbnsport_part3 .iconbox .listbox .list {
+  color: #fff;
+  letter-spacing: 2px;
+}
+/* line 541, ../sass/screen.scss */
+#bbnsport .bbnsport_part3 .iconbox .icon {
+  min-width: 110px;
+}
+
+/*elegame*/
+/* line 549, ../sass/screen.scss */
+#elegame .elegame_part1 {
+  background: url(../images/bg_ele01.gif) center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+@media screen and (min-width: 0) and (max-width: 767px) {
+  /* line 549, ../sass/screen.scss */
+  #elegame .elegame_part1 {
+    background: url(../images/bg_ele_mb.jpg) center no-repeat;
+    background-size: cover;
+  }
+}
+/* line 557, ../sass/screen.scss */
+#elegame .elegame_part1 .eleimgbanner {
+  position: absolute;
+  bottom: 0;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+@media screen and (min-width: 0) and (max-width: 767px) {
+  /* line 557, ../sass/screen.scss */
+  #elegame .elegame_part1 .eleimgbanner {
+    display: none;
+  }
+}
+/* line 569, ../sass/screen.scss */
+#elegame .elegame_part1 .eleimgbanner_l1 {
+  background-image: url(../images/eleimgbanner_l1.png);
+  background-position: left 0 bottom 0;
+  -webkit-animation: leftin 0.5s ease;
+  -moz-animation: leftin 0.5s ease;
+  -ms-animation: leftin 0.5s ease;
+  -o-animation: leftin 0.5s ease;
+  animation: leftin 0.5s ease;
+}
+/* line 570, ../sass/screen.scss */
+#elegame .elegame_part1 .eleimgbanner_l2 {
+  background-image: url(../images/eleimgbanner_l2.png);
+  background-position: left 0 bottom 0;
+  -webkit-animation: leftin 1s ease;
+  -moz-animation: leftin 1s ease;
+  -ms-animation: leftin 1s ease;
+  -o-animation: leftin 1s ease;
+  animation: leftin 1s ease;
+}
+/* line 571, ../sass/screen.scss */
+#elegame .elegame_part1 .eleimgbanner_r1 {
+  background-image: url(../images/eleimgbanner_r1.png);
+  background-position: right 0 bottom 0;
+  -webkit-animation: rightin 0.5s ease;
+  -moz-animation: rightin 0.5s ease;
+  -ms-animation: rightin 0.5s ease;
+  -o-animation: rightin 0.5s ease;
+  animation: rightin 0.5s ease;
+}
+/* line 572, ../sass/screen.scss */
+#elegame .elegame_part1 .eleimgbanner_r2 {
+  background-image: url(../images/eleimgbanner_r2.png);
+  background-position: right 0 bottom 0;
+  -webkit-animation: rightin 1s ease;
+  -moz-animation: rightin 1s ease;
+  -ms-animation: rightin 1s ease;
+  -o-animation: rightin 1s ease;
+  animation: rightin 1s ease;
+}
+/* line 574, ../sass/screen.scss */
+#elegame .elegame_part2 {
+  background: url(../images/bg_ele02.jpg) center no-repeat;
+  background-size: cover;
+}
+/* line 577, ../sass/screen.scss */
+#elegame .elegame_part2 .title {
+  color: #f1ba60;
+  margin: 50px 0;
+}
+/* line 582, ../sass/screen.scss */
+#elegame .elegame_part2 .rowbox > div {
+  width: 50%;
+}
+@media screen and (min-width: 0) and (max-width: 767px) {
+  /* line 582, ../sass/screen.scss */
+  #elegame .elegame_part2 .rowbox > div {
+    width: 100%;
+  }
+}
+/* line 589, ../sass/screen.scss */
+#elegame .elegame_part2 .rowbox .content li {
+  margin-bottom: 50px;
+}
+/* line 590, ../sass/screen.scss */
+#elegame .elegame_part2 .rowbox .content li .stitle {
+  font-size: 36px;
+  font-size: 3.5vmin;
+  line-height: 45px;
+  line-height: 4.5vmin;
+  margin-bottom: 20px;
+  font-weight: 900;
+}
+@media screen and (min-width: 0) and (max-width: 767px) {
+  /* line 590, ../sass/screen.scss */
+  #elegame .elegame_part2 .rowbox .content li .stitle {
+    font-size: 25px;
+    font-size: 5vmin;
+    line-height: 30px;
+    line-height: 8vmin;
+  }
+}
+/* line 603, ../sass/screen.scss */
+#elegame .elegame_part2 .rowbox .content li .stitle:before {
+  content: "●";
+}
+@media screen and (min-width: 0) and (max-width: 767px) {
+  /* line 603, ../sass/screen.scss */
+  #elegame .elegame_part2 .rowbox .content li .stitle:before {
+    content: "";
+  }
+}
+/* line 610, ../sass/screen.scss */
+#elegame .elegame_part2 .rowbox .content li .txt {
+  padding-left: 30px;
+}
+@media screen and (min-width: 0) and (max-width: 767px) {
+  /* line 610, ../sass/screen.scss */
+  #elegame .elegame_part2 .rowbox .content li .txt {
+    padding-left: 0;
+  }
+}
+/* line 617, ../sass/screen.scss */
+#elegame .elegame_part2 .rowbox .content li .stitle, #elegame .elegame_part2 .rowbox .content li .txt {
+  color: inherit;
+}
+/* line 620, ../sass/screen.scss */
+#elegame .elegame_part2 .rowbox .content li:nth-child(1) {
+  color: #8154b9;
+}
+/* line 621, ../sass/screen.scss */
+#elegame .elegame_part2 .rowbox .content li:nth-child(2) {
+  color: #99c042;
+}
+/* line 622, ../sass/screen.scss */
+#elegame .elegame_part2 .rowbox .content li:nth-child(3) {
+  color: #7dfaca;
+}
+/* line 627, ../sass/screen.scss */
+#elegame .elegame_part3 {
+  background: url(../images/bg_ele03.jpg) center no-repeat;
+  background-size: cover;
+}
+/* line 630, ../sass/screen.scss */
+#elegame .elegame_part3 .btnbox {
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+/* line 637, ../sass/screen.scss */
+#elegame .elegame_part3 .btnbox > div {
+  width: 50%;
+  text-align: center;
+}
+/* line 640, ../sass/screen.scss */
+#elegame .elegame_part3 .btnbox > div .img {
+  display: inline-block;
+  position: relative;
+}
+/* line 643, ../sass/screen.scss */
+#elegame .elegame_part3 .btnbox > div .img:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+/* line 656, ../sass/screen.scss */
+#elegame .elegame_part3 .btnbox > div .img:hover:after {
+  opacity: 1;
+}
+/* line 660, ../sass/screen.scss */
+#elegame .elegame_part3 .btnbox .budz .img:after {
+  background-image: url(../images/eleimg02_btn1_active.png);
+}
+/* line 661, ../sass/screen.scss */
+#elegame .elegame_part3 .btnbox .buds .img:after {
+  background-image: url(../images/eleimg02_btn2_active.png);
+}
+/* line 662, ../sass/screen.scss */
+#elegame .elegame_part3 .btnbox .active .img:after {
+  opacity: 1;
+}
+/* line 664, ../sass/screen.scss */
+#elegame .elegame_part3 .boborder {
+  background: url(../images/eleimgborder.png) no-repeat center;
+  background-size: contain;
+  padding: 50px;
+}
+@media screen and (min-width: 0) and (max-width: 767px) {
+  /* line 664, ../sass/screen.scss */
+  #elegame .elegame_part3 .boborder {
+    padding: 0;
+  }
+}
+
+@-webkit-keyframes rightin {
+  0% {
+    background-position: right -100% bottom 0;
+  }
+  100% {
+    background-position: right 0 bottom 0;
+  }
+}
+@-moz-keyframes rightin {
+  0% {
+    background-position: right -100% bottom 0;
+  }
+  100% {
+    background-position: right 0 bottom 0;
+  }
+}
+@-o-keyframes rightin {
+  0% {
+    background-position: right -100% bottom 0;
+  }
+  100% {
+    background-position: right 0 bottom 0;
+  }
+}
+@keyframes rightin {
+  0% {
+    background-position: right -100% bottom 0;
+  }
+  100% {
+    background-position: right 0 bottom 0;
+  }
+}
+@-webkit-keyframes leftin {
+  0% {
+    background-position: left -100% bottom 0;
+  }
+  100% {
+    background-position: left 0 bottom 0;
+  }
+}
+@-moz-keyframes leftin {
+  0% {
+    background-position: left -100% bottom 0;
+  }
+  100% {
+    background-position: left 0 bottom 0;
+  }
+}
+@-o-keyframes leftin {
+  0% {
+    background-position: left -100% bottom 0;
+  }
+  100% {
+    background-position: left 0 bottom 0;
+  }
+}
+@keyframes leftin {
+  0% {
+    background-position: left -100% bottom 0;
+  }
+  100% {
+    background-position: left 0 bottom 0;
+  }
+}
+/* line 682, ../sass/screen.scss */
+.totop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  background: #323232;
+  color: #fff;
+  cursor: pointer;
+  z-index: 99;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+/* line 694, ../sass/screen.scss */
+.totop:hover {
+  background: #494949;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 698, ../sass/screen.scss */
+  .mb_show {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 0) and (max-width: 767px) {
+  /* line 703, ../sass/screen.scss */
+  .pc_show {
+    display: none !important;
+  }
+}

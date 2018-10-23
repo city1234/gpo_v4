@@ -36,6 +36,51 @@ var vm = new Vue({
                 importanttag: true, //产品专栏活动专栏头版,内容发布重点标签
                 istopbanner: true, //是否首页展示
                 clickto: false, //是否有内页跳窗公告
+                link: "https://web.fungaming.com/", //点击连结,下载檔案
+                downloadbtn: true, //是否有下载按钮
+                downloadlink: "loading/20181021_fg.zip", //下载连结
+                mainbannerimg: "images/activebanner/20181021_fg.jpg", //首页大图2500*1080
+                bannerimg: "images/activebanner/20181021_fg_s.jpg", //公告内页小图1410*385
+                name: "乐趣无限共赢财富!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
+                time: "2018/10", //活动日期
+                containtexts: '',
+                containtext: '' //内容html
+            },
+            {
+                newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
+                importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
+                istopbanner: true, //是否首页展示
+                clickto: false, //是否有内页跳窗公告
+                link: "http://www.avia-gaming.com/", //点击连结,下载檔案
+                downloadbtn: false, //是否有下载按钮
+                downloadlink: "loading/20181021_va.zip", //下载连结
+                mainbannerimg: "images/activebanner/20181021_va.jpg", //首页大图2500*1080
+                bannerimg: "images/activebanner/20181021_va_s.jpg", //公告内页小图1410*385
+                name: "亚洲顶尖泛亚电竞", //公告名称(最好8个全形字以内),download活动素材/轮播图
+                time: "2018/10", //活动日期
+                containtexts: '',
+                containtext: '' //内容html
+            },
+            {
+                newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
+                importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
+                istopbanner: true, //是否首页展示
+                clickto: false, //是否有内页跳窗公告
+                link: "action/20181021_bbn/index.html", //点击连结,下载檔案
+                downloadbtn: false, //是否有下载按钮
+                downloadlink: "loading/20181021_bbn.zip", //下载连结
+                mainbannerimg: "images/activebanner/20181021_bbn.jpg", //首页大图2500*1080
+                bannerimg: "images/activebanner/20181021_bbn_s.jpg", //公告内页小图1410*385
+                name: "bbn热门直播!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
+                time: "2018/10", //活动日期
+                containtexts: '',
+                containtext: '' //内容html
+            },
+            {
+                newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
+                importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
+                istopbanner: true, //是否首页展示
+                clickto: false, //是否有内页跳窗公告
                 link: "action/20180929_openwarad/index.html", //点击连结,下载檔案
                 downloadbtn: false, //是否有下载按钮
                 downloadlink: "", //下载连结
@@ -49,7 +94,7 @@ var vm = new Vue({
             {
                 newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
                 importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
-                istopbanner: true, //是否首页展示
+                istopbanner: false, //是否首页展示
                 clickto: false, //是否有内页跳窗公告
                 link: "action/20180917_app/index.html", //点击连结,下载檔案
                 downloadbtn: false, //是否有下载按钮
@@ -64,7 +109,7 @@ var vm = new Vue({
             {
                 newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
                 importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
-                istopbanner: true, //是否首页展示
+                istopbanner: false, //是否首页展示
                 clickto: false, //是否有内页跳窗公告
                 link: "https://elegant-wescoff-78d55a.netlify.com/", //点击连结,下载檔案
                 downloadbtn: true, //是否有下载按钮
@@ -79,7 +124,7 @@ var vm = new Vue({
             {
                 newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
                 importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
-                istopbanner: true, //是否首页展示
+                istopbanner: false, //是否首页展示
                 clickto: false, //是否有内页跳窗公告
                 link: "action/20180605_pngpage/index.html", //点击连结,下载檔案
                 downloadbtn: true, //是否有下载按钮
@@ -109,7 +154,7 @@ var vm = new Vue({
             {
                 newstype: 0,
                 importanttag: false,
-                istopbanner: true,
+                istopbanner: false,
                 clickto: false,
                 link: "http://yoplay.com/index.php#service",
                 downloadbtn: true,
@@ -124,7 +169,7 @@ var vm = new Vue({
             {
                 newstype: 0,
                 importanttag: false,
-                istopbanner: true,
+                istopbanner: false,
                 clickto: false,
                 link: "http://xingaming.com/gameInfo.html",
                 downloadbtn: true,

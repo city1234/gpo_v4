@@ -1,0 +1,707 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+//@import "compass/reset";
+@import "reset.scss";
+@import "mixin.scss";
+
+//UI definition
+//color
+$bg_main: #f4f9ff;
+$bg_sup: #edf4ff;
+$color_main: #3e8ef0;
+$color_sup: #0068d6;
+$color_add: #54a7ff;
+$colortxt_main: #323232;
+$colortxt_sup: #666666;
+$color_ignore: #9b9a9a;
+$color_alert: #f09e3e;
+$color_tip: #4a4a4a;
+$color_red: #f68622;
+$color_green: #26bd7b;
+
+//main-border-radius
+//@include css3(border-radius,$radius);
+$radius: 5px;
+
+//main-shadow
+$shadow: 0px 0px 14px #ffffff;
+@mixin shadow($shadow:$shadow){
+    @include css3(box-shadow,$shadow);
+}
+
+
+//font
+/*
+*{
+    font: normal 14px/20px "Microsoft Yahei";
+}*/
+@mixin bigtitle(){
+    font-size: 25px;
+    line-height: 50px;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+@mixin midtitle(){
+    font-size: 16px;
+    line-height: 25px;
+}
+@mixin txt(){
+    font-size: 14px;
+}
+@mixin txts(){
+    font-size: 12px;
+}
+
+//btn style
+@mixin btn_style_face($color ,$width ,$height ,$radius:0){
+    width: $width;
+    height: $height;
+    color: #fff;
+    background: $color;
+    line-height: $height;
+    text-align: center;
+    cursor: pointer;
+    vertical-align: middle;
+    padding: 0 5px;
+    @include txt();
+    @include css3(border-radius,$radius);
+}
+@mixin btn_style_line($color ,$width ,$height ,$radius:0){
+    width: $width;
+    height: $height;
+    border: 1px solid $color;
+    line-height: $height;
+    text-align: center;
+    cursor: pointer;
+    vertical-align: middle;
+    @include css3(transition,all .2s ease);
+    @include css3(border-radius,$radius);
+    &:hover{
+        background: $color;
+        color: #fff;
+        i{
+            color: #fff;
+        }
+    }
+}
+
+//hover active style
+@mixin hover_light(){
+    position: relative;
+    &:after{
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        content: "";
+        background: rgba(255, 255, 255,0);
+        @include css3(transition,all .2s ease);
+    }
+    &:hover{
+        //background: #59a4ff!important;
+        &:after{
+            background: rgba(255, 255, 255,.25);
+        }
+    }
+}
+
+
+//table style
+@mixin table_style(){
+    table{
+        margin: 0 auto;
+        border-collapse: separate;
+        border-spacing: 2px!important;
+        font-size: 16px;
+        line-height:1.5;
+        width: 100%;
+        tr{
+            &:first-child{
+                @include midtitle();
+                background: $color_main!important;
+                color: #fff;
+            }
+            &:nth-child(odd) {
+                background-color: rgba(190, 190, 190, 0.2);
+            }
+            span{
+                @include txts();
+                font-size: 23px;
+            }
+            td{
+                text-align: center;
+                padding: 5px;
+            }
+        }
+    }
+}
+
+//boxalign
+@mixin boxalign(){
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+}
+/*
+*********useage*********
+@include POS(475px,75px);
+@include css3(transition,all 1s ease);
+@include css3(box-shadow,0px 0px 14px #ffffff);
+@include css3(border-radius,20px);
+border: 2px solid #6d4b00;
+left: calc(50% - 82.5px);
+@include linear-gradient(#db3542, #bc2741);
+@include range-width-in(0,0){}
+@include ellipsistext();
+@include linear-gradient($top, $bottom);
+
+.btn_face{
+    @include btn_style_face($color_main ,65px ,30px,$radius);
+    @include hover_light();
+}
+.btn_line{
+    @include btn_style_line($color_main ,65px ,30px,$radius);
+}
+.tablebox{
+    @include table_style();
+}
+
+
+@media screen and (min-width: 0px) and (max-width:640px) {}
+@media screen and (min-width: 641px) and (max-width:1200px) {}
+@media screen and (min-width: 1201px) and (max-width:2000px) {}
+
+*********animation*********
+@include css3(transition,all 1s ease);
+@include css3(animation,opacitylight 2s infinite linear);
+@include keyframes(opacitylight) {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+*/
+
+//select style
+select{
+    @include shadow();
+    border: 0px;
+    line-height: 30px;
+    height: 30px;
+    padding: 0 7px;
+    /*很关键：将默认的select选择框样式清除*/
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    //background: #fff url("../images/select_arrow.png") no-repeat scroll right 5px center;
+    padding-right: 20px;
+    cursor: pointer;
+    min-width: 80px;
+}
+//input style
+input{
+    border: 1px solid $color_main;
+    background: rgba(0, 0, 0, 0);
+    line-height: 28px;
+    height: 28px;
+    padding: 0 10px;
+    @include css3(transition,all .2s ease);
+    width: 145px;
+}
+
+.wrapper{
+    width:100%;
+    height:auto;
+    margin:0 auto;
+}
+.wrapper_in{
+    max-width: 1280px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    @include range-width-in(0,767px){
+        padding: 0 5%;
+        padding-bottom: 15%;
+    }
+}
+body{
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+}
+.title{
+    font-size: 48px;
+    font-size: 5vmin;
+    line-height: 60px;
+    line-height: 6vmin;
+    color:#fff;
+    text-align: center;
+    letter-spacing: 10px;
+    letter-spacing: 1vmin;
+    font-weight: 900;
+    @include range-width-in(0,767px){
+        font-size: 40px;
+        font-size: 10vmin;
+        line-height: 50px;
+        line-height: 12vmin;
+        letter-spacing: 3px;
+        letter-spacing: 0.5vmin;
+    }
+}
+.stitle{
+    color:#fff;
+    font-size: 20px;
+    font-size: 2vmin;
+    line-height: 25px;
+    line-height: 2.5vmin;
+    letter-spacing: 5px;
+    letter-spacing: 0.5vmin;
+    @include range-width-in(0,767px){
+        font-size: 25px;
+        font-size: 5vmin;
+        line-height: 30px;
+        line-height: 8vmin;
+        letter-spacing: 1px;
+        letter-spacing: 0.2vmin;
+    }
+}
+.txt{
+    color:#fff;
+    font-size: 18px;
+    font-size: 2vmin;
+    line-height: 25px;
+    line-height: 2.5vmin;
+    @include range-width-in(0,767px){
+        font-size: 18px;
+        font-size: 4vmin;
+        line-height: 25px;
+        line-height: 6.5vmin;
+    }
+}
+.rowbox{
+    @include boxalign();
+}
+.img{
+    text-align: center;
+    img{
+        max-width:100%;
+    }
+}
+#topbanner{
+    background: url(../images/bg_top.jpg) no-repeat top center;
+    background-size: cover;
+    text-align: center;
+    overflow: hidden;
+    @include boxalign();
+    min-height: 100vh;
+    .slogan{
+        margin-bottom: 50px;
+        @include range-width-in(0,767px){
+            margin-bottom: 0;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .cardbox{
+        width: 100%;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        @include boxalign();
+        margin-bottom: 40px;
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: bold;
+        //flex-wrap: wrap;
+        @include range-width-in(0,767px){
+            display: block;
+        }
+        .card{
+            display: block;
+            padding: 0 10px;
+            .btnbox{
+                position: relative;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    opacity: 0;
+                    @include css3(transition,all .3s ease);
+                }
+                &:hover{
+                    &::after{
+                        opacity: 1;
+                    }
+                }
+            }
+            img{
+                width: 100%;
+            }
+        }
+        .active{.btnbox{&::after{opacity: 1;}}}
+        .card_true{.btnbox.pc_show{&::after{background-image: url(../images/titlebtn_01_hover.png);}}}
+        .card_true{.btnbox.mb_show{&::after{background-image: url(../images/titlebtn_01_mb_hover.png);}}}
+        .card_bbn{.btnbox.pc_show{&::after{background-image: url(../images/titlebtn_02_hover.png);}}}
+        .card_bbn{.btnbox.mb_show{&::after{background-image: url(../images/titlebtn_02_mb_hover.png);}}}
+        .card_ele{.btnbox.pc_show{&::after{background-image: url(../images/titlebtn_03_hover.png);}}}
+        .card_ele{.btnbox.mb_show{&::after{background-image: url(../images/titlebtn_03_mb_hover.png);}}}
+    }
+}
+.inpage{
+    >div{
+        min-height: 100vh;
+        @include boxalign();
+    }
+}
+/*truevideo*/
+#truevideo{
+    .title{
+        margin: 50px 0;
+    }
+    .truevideo_part1{
+        text-align: center;
+        background: url(../images/bg_true01.jpg) center no-repeat;
+        background-size: cover;
+    }
+    .truevideo_part2{
+        background: url(../images/bg_true02.jpg) center no-repeat;
+        background-size: cover;
+        .rowbox{
+            min-height: 100vh;
+            -webkit-justify-content: space-around;
+            -ms-flex-pack: justify;
+            justify-content: space-around;
+            >div{
+                flex-grow: 1;
+            }
+        }
+        .title{
+            .stitle{
+                margin-top: 15px;
+                letter-spacing: 1px;
+            }
+        }
+        .list{
+            .stitle{
+                color:#fff000;
+                margin-bottom: 5px;
+            }
+            .txt{
+                padding-left: 20px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+/*bbnsport*/
+#bbnsport{
+    .bbnsport_part1{
+        background: url(../images/bg_sport01.jpg) center no-repeat;
+        background-size: cover;
+        .outiconbox{
+            @include range-width-in(0,767px){
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                .iconbox{
+                    margin: 15% 0;
+                    width: 100%;
+                    -webkit-flex-direction: column;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                    .icon{
+                        margin: 0 auto;
+                    }
+                    .listbox{
+                        width: 100%;
+                    }
+                    .title{
+                        text-align: center!important;
+                        padding: 15px 0!important;
+                    }
+                }
+            }
+        }
+        .iconbox{
+            width: 50%;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-align-items: flex-start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+            .icon{
+                margin-right: 20px;
+            }
+            .listbox{
+                width: 400px;
+                .title{
+                    font-size: 36px;
+                    font-size:3.5vmin;
+                    padding: 35px 0;
+                    color:#15908f;
+                    letter-spacing: 2px;
+                    text-align: left;
+                    line-height: 40px;
+                    @include range-width-in(0,767px){
+                        font-size: 30px;
+                        font-size: 10vmin;
+                    }
+                }
+                .list{
+                    color:#fff;
+                    letter-spacing: 2px;
+                }
+            }
+            .icon{
+                min-width: 110px;
+            }
+        }
+    }
+    .bbnsport_part2{
+        background: url(../images/bg_sport02.jpg) center no-repeat;
+        background-size: cover;
+    }
+    .bbnsport_part3{
+        background: url(../images/bg_sport03.jpg) center no-repeat;
+        background-size: cover;
+        .outiconbox{
+            width: 80%;
+            margin: 0 auto;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            @include range-width-in(0,767px){
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                .iconbox{
+                    margin: 15% 0;
+                    width: 100%;
+                    -webkit-flex-direction: column;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                    .icon{
+                        margin: 0 auto;
+                    }
+                    .listbox{
+                        width: 100%;
+                    }
+                    .title{
+                        text-align: center!important;
+                        padding: 15px 0!important;
+                    }
+                    .txt{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .iconbox{
+            width: 50%;
+            margin-bottom: 40px;
+            .icon{
+                margin-right: 20px;
+            }
+            .listbox{
+                .title{
+                    font-size: 36px;
+                    font-size:3.5vmin;
+                    padding-bottom: 15px;
+                    color:#ffea00;
+                    letter-spacing: 2px;
+                    text-align: left;
+                    line-height: 40px;
+                    @include range-width-in(0,767px){
+                        font-size: 30px;
+                        font-size: 10vmin;
+                    }
+                }
+                .list{
+                    color:#fff;
+                    letter-spacing: 2px;
+                }
+            }
+            .icon{
+                min-width: 110px;
+            }
+        }
+    }
+}
+/*elegame*/
+#elegame{
+    .elegame_part1{
+        background: url(../images/bg_ele01.gif) center no-repeat;
+        background-size: cover;
+        position: relative;
+        @include range-width-in(0,767px){
+            background: url(../images/bg_ele_mb.jpg) center no-repeat;
+            background-size: cover;
+        }
+        .eleimgbanner{
+            position: absolute;
+            bottom: 0;
+            background-size: contain;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            @include css3(transition,all 1s ease);
+            @include range-width-in(0,767px){
+                display: none;
+            }
+        }
+        .eleimgbanner_l1{background-image: url(../images/eleimgbanner_l1.png);background-position: left 0 bottom 0;@include css3(animation,leftin .5s ease);}
+        .eleimgbanner_l2{background-image: url(../images/eleimgbanner_l2.png);background-position: left 0 bottom 0;@include css3(animation,leftin 1s ease);}
+        .eleimgbanner_r1{background-image: url(../images/eleimgbanner_r1.png);background-position: right 0 bottom 0;@include css3(animation,rightin .5s ease);}
+        .eleimgbanner_r2{background-image: url(../images/eleimgbanner_r2.png);background-position: right 0 bottom 0;@include css3(animation,rightin 1s ease);}
+    }
+    .elegame_part2{
+        background: url(../images/bg_ele02.jpg) center no-repeat;
+        background-size: cover;
+        .title{
+            color: #f1ba60;
+            margin: 50px 0;
+        }
+        .rowbox{
+            >div{
+                width: 50%;
+                @include range-width-in(0,767px){
+                    width: 100%;
+                }
+            }
+            .content{
+                li{
+                    .stitle{
+                        font-size: 36px;
+                        font-size: 3.5vmin;
+                        line-height: 45px;
+                        line-height: 4.5vmin;
+                        margin-bottom: 20px;
+                        font-weight: 900;
+                        @include range-width-in(0,767px){
+                            font-size: 25px;
+                            font-size: 5vmin;
+                            line-height: 30px;
+                            line-height: 8vmin;
+                        }
+                        &:before{
+                            content: "●";
+                            @include range-width-in(0,767px){
+                                content: "";
+                            }
+                        }
+                    }
+                    .txt{
+                        padding-left: 30px;
+                        @include range-width-in(0,767px){
+                            padding-left: 0;
+                        }
+                    }
+                    margin-bottom: 50px;
+                    .stitle,.txt{
+                        color: inherit;
+                    }
+                    &:nth-child(1){color:#8154b9;}
+                    &:nth-child(2){color:#99c042;}
+                    &:nth-child(3){color:#7dfaca;}
+                }
+            }
+        }
+    }
+    .elegame_part3{
+        background: url(../images/bg_ele03.jpg) center no-repeat;
+        background-size: cover;
+        .btnbox{
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 50px;
+            >div{
+                width: 50%;
+                text-align: center;
+                .img{
+                    display: inline-block;
+                    position: relative;
+                    &:after{
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-size: contain;
+                        opacity: 0;
+                        @include css3(transition,all .3s ease);
+                        cursor: pointer;
+                    }
+                    &:hover{
+                        &:after{opacity: 1;}
+                    }
+                }
+            }
+            .budz{.img{&:after{background-image: url(../images/eleimg02_btn1_active.png);}}}
+            .buds{.img{&:after{background-image: url(../images/eleimg02_btn2_active.png);}}}
+            .active{.img{&:after{opacity: 1;}}}
+        }
+        .boborder{
+            background: url(../images/eleimgborder.png) no-repeat center;
+            background-size: contain;
+            padding: 50px;
+            @include range-width-in(0,767px){
+                padding: 0;
+            }
+        }
+    }
+}
+@include keyframes(rightin) {
+    0% {background-position: right -100% bottom 0;}
+    100% {background-position: right 0 bottom 0;}
+}
+@include keyframes(leftin) {
+    0% {background-position: left -100% bottom 0;}
+    100% {background-position: left 0 bottom 0;}
+}
+.totop{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    background: #323232;
+    color: #fff;
+    cursor: pointer;
+    z-index: 99;
+    //@include css3(transition,all .3s ease);
+    @include css3(border-radius,50%);
+    &:hover{
+        background: #494949;
+    }
+}
+.mb_show{
+    @include range-width-in(768px){
+        display: none!important;
+    }
+}
+.pc_show{
+    @include range-width-in(0,767px){
+        display: none!important;
+    }
+}
