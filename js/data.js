@@ -42,7 +42,7 @@ var vm = new Vue({
                 mainbannerimg: "images/activebanner/20181102_marksix.jpg", //首页大图2500*1080
                 bannerimg: "images/activebanner/20181102_marksix_s.jpg", //公告内页小图1410*385
                 name: "六合彩特码玩法问世", //公告名称(最好8个全形字以内),download活动素材/轮播图
-                time: "2018/10", //活动日期
+                time: "2018/11", //活动日期
                 containtexts: '',
                 containtext: '' //内容html
             },
