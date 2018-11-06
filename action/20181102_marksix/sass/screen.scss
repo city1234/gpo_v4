@@ -1,0 +1,601 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+//------------------------------PC--------------------
+@media only screen and (min-width: 961px){
+    .wrapper{
+        overflow-x: hidden;
+        width: 100vw;
+        font-family: Microsoft JhengHei;
+        .zone01{
+            width: 100%;
+            height: 720px;
+            background: url(../img/mainbn.jpg) center no-repeat;
+            .zonecenter01{
+                width: 75%;
+                min-width: 1000px;
+                height: 720px;
+                margin: 0 auto;
+                background: url(../img/mainbn.jpg) center no-repeat;
+                img{
+                    display: none;
+                }
+                .mainlogo_z1{
+                    position: relative;
+                    width: 177px;
+                    height: 133px;
+                    margin: 0 auto;
+                    background: url(../img/zone01_logo.png) center no-repeat;
+                    top: 188px;
+                }
+                .mainslogan_z1{
+                    position: relative;
+                    width: 985px;
+                    height: 216px;
+                    margin: 0 auto;
+                    background: url(../img/zone01_slogan.png) center no-repeat;
+                    top: 209px;
+                }
+            }
+        }
+        .zone02{
+            width: 100%;
+            height: 640px;
+            background: white;
+            .zonecenter02{
+                position: relative;
+                width: 75%;
+                min-width: 1000px;
+                margin: 0 auto;
+                height: 640px;
+                .title02{
+                    position: relative;
+                    top: 65px;
+                    width: 680px;
+                    height: 51px;
+                    margin: 0 auto;
+                    background: url(../img/title_01_pc.png) center no-repeat;
+                    img{
+                        display: none;
+                    }
+                }
+                .computerflame{
+                    position: absolute;
+                    top: 227px;
+                    width: 581px;
+                    height: 339px;
+                    .computer_cover{
+                        position: absolute;
+                        top: 0;
+                        width: 581px;
+                        height: 339px;
+                        background: url(../img/pcflame.png) center no-repeat;
+                    }
+                    .computer_screen{
+                        width: 364px;
+                        height: 232px;
+                        //background-color: blue;
+                        position: absolute;
+                        top: 23px;
+                        left: 104px;
+                        overflow: hidden;
+                        .slick-prev{
+                            display: none;
+                        }
+                        .slick-next{
+                            display: none;
+                        }
+                        /*.computerphoto{
+                            float: left;
+                            width: 364px;
+                            height: 232px;
+                        }
+                        .photo_01{
+                            background: url(../img/pcpic_01.png) center no-repeat;
+                            background-size: 100%;
+                        }
+                        .photo_02{
+                            background: url(../img/pcpic_02.png) center no-repeat;
+                            background-size: 100%;
+                        }*/
+                    }
+                }
+                .text02{
+                    position: absolute;
+                    width: 35%;
+                    top: 282px;
+                    right: 10%;
+                    color: #343434;
+                    font-size: 20px;
+                    line-height: 36px;
+                }
+            }
+        }
+        .zone03{
+            width: 100%;
+            height: 640px;
+            background: #07a7ea;
+            .zonecenter03{
+                position: relative;
+                width: 75%;
+                min-width: 1000px;
+                margin: 0 auto;
+                height: 640px;
+                .title03{
+                    position: relative;
+                    top: 65px;
+                    width: 680px;
+                    height: 55px;
+                    margin: 0 auto;
+                    background: url(../img/title_02_pc.png) center no-repeat;
+                    img{
+                        display: none;
+                    }
+                }
+                .mobileicon{
+                    position: absolute;
+                    bottom: 0;
+                    right: 3%;
+                    width: 515px;
+                    height: 419px;
+                    background: url(../img/mobileicon.jpg) center no-repeat;
+                }
+                .text03{
+                    position: absolute;
+                    width: 600px;
+                    top: 294px;
+                    left: 11%;
+                    color: white;
+                    font-size: 20px;
+                    line-height: 36px;
+                    ul{
+                        display: inline-block;
+                        li{
+                            float: left;
+                            margin-right: 10px;
+                        }
+                        li.point{
+                            width: 18px;
+                            height: 36px;
+                            background: url(../img/point.png) center no-repeat;
+                        }
+                    }
+                }
+            }
+        }
+        .zone04{
+            width: 100%;
+            height: 440px;
+            background: white;
+            .zonecenter04{
+                position: relative;
+                width: 75%;
+                min-width: 1000px;
+                margin: 0 auto;
+                height: 440px;
+                .title04{
+                    position: relative;
+                    top: 114px;
+                    width: 680px;
+                    height: 55px;
+                    margin: 0 auto;
+                    background: url(../img/title_03_pc.png) center no-repeat;
+                    img{
+                        display: none;
+                    }
+                }
+                .text04{
+                    position: relative;
+                    width: 80%;
+                    top: 200px;
+                    color: #343434;
+                    font-size: 20px;
+                    line-height: 36px;
+                    margin: 0 auto;
+                }
+                /*.btn{
+                    position: relative;
+                    color: #fff;
+                    background-color: #0597ea;
+                    text-align: center;
+                    width: 200px;
+                    height: 60px;
+                    margin: 0 auto;
+                    border-radius: 8px;
+                    font-size: 22px;
+                    line-height: 60px;
+                    top: 304px;
+                    transition-duration: 0.6s;
+                    cursor: pointer;
+                    &:hover{
+                        color: #003452;
+                        background-color: #90d7ff;
+                    }
+                }*/
+            }
+        }
+    }
+    
+}
+
+//------------------------------pad--------------------
+@media screen and (min-width: 768px) and (max-width: 960px) {
+    .wrapper{
+        overflow-x: hidden;
+        width: 100vw;
+        font-family: Microsoft JhengHei;
+        .zone01{
+            width: 100%;
+            height: 460px;
+            background: url(../img/mainbn.jpg) center no-repeat;
+            background-size: 162%;
+            .zonecenter01{
+                //width: 75%;
+                min-width: 700px;
+                height: 460px;
+                margin: 0 auto;
+                background: url(../img/mainbn.jpg) center no-repeat;
+                background-size: 170%;
+                img{
+                    display: none;
+                }
+                .mainlogo_z1{
+                    position: relative;
+                    width: 177px;
+                    height: 133px;
+                    margin: 0 auto;
+                    background: url(../img/zone01_logo.png) center no-repeat;
+                    background-size: 80%;
+                    top: 85px;
+                }
+                .mainslogan_z1{
+                    position: relative;
+                    width: 710px;
+                    height: 162px;
+                    margin: 0 auto;
+                    background: url(../img/zone01_slogan.png) center no-repeat;
+                    background-size: 93%;
+                    top: 82px;
+                }
+            }
+        }
+        .zone02{
+            width: 100%;
+            height: 690px;
+            background: white;
+            .zonecenter02{
+                position: relative;
+                width: 75%;
+                min-width: 700px;
+                margin: 0 auto;
+                height: 690px;
+                .title02{
+                    position: relative;
+                    top: 65px;
+                    width: 680px;
+                    height: 51px;
+                    margin: 0 auto;
+                    background: url(../img/title_01_pc.png) center no-repeat;
+                }
+                /*.computerflame{
+                    position: relative;
+                    top: 110px;
+                    width: 581px;
+                    height: 339px;
+                    background: url(../img/pcflame.png) center no-repeat;
+                    margin: 0 auto;
+                }*/
+                .computerflame{
+                    position: relative;
+                    top: 110px;
+                    width: 581px;
+                    height: 339px;
+                    overflow: hidden;
+                    margin: 0 auto;
+                    .computer_cover{
+                        position: absolute;
+                        top: 0;
+                        width: 581px;
+                        height: 339px;
+                        background: url(../img/pcflame.png) center no-repeat;
+                    }
+                    .computer_screen{
+                        width: 364px;
+                        height: 232px;
+                        //background-color: blue;
+                        position: absolute;
+                        top: 23px;
+                        left: 104px;
+                        overflow: hidden;
+                        .slick-prev{
+                            display: none;
+                        }
+                        .slick-next{
+                            display: none;
+                        }
+                        /*.computerphoto{
+                            float: left;
+                            width: 364px;
+                            height: 232px;
+                        }
+                        .photo_01{
+                            background: url(../img/pcpic_01.png) center no-repeat;
+                            background-size: 100%;
+                        }
+                        .photo_02{
+                            background: url(../img/pcpic_02.png) center no-repeat;
+                            background-size: 100%;
+                        }*/
+                    }
+                }
+                .text02{
+                    position: relative;
+                    width: 100%;
+                    top: 143px;
+                    color: #343434;
+                    font-size: 20px;
+                    line-height: 29px;
+                    margin: 0 auto;
+                }
+            }
+        }
+        .zone03{
+            width: 100%;
+            height: 535px;
+            background: #07a7ea;
+            .zonecenter03{
+                position: relative;
+                width: 75%;
+                min-width: 700px;
+                margin: 0 auto;
+                height: 535px;
+                .title03{
+                    position: relative;
+                    top: 65px;
+                    width: 680px;
+                    height: 55px;
+                    margin: 0 auto;
+                    background: url(../img/title_02_pc.png) center no-repeat;
+                }
+                .mobileicon{
+                    position: absolute;
+                    bottom: 0;
+                    right: 13%;
+                    width: 515px;
+                    height: 419px;
+                    background: url(../img/mobileicon.jpg) center no-repeat;
+                    opacity: 0.2;
+                }
+                .text03{
+                    position: relative;
+                    width: 524px;
+                    top: 160px;
+                    /* left: 104px; */
+                    color: white;
+                    font-size: 20px;
+                    line-height: 36px;
+                    margin: 0 auto;
+                    ul{
+                        display: inline-block;
+                        li{
+                            float: left;
+                            margin-right: 10px;
+                        }
+                        li.point{
+                            width: 18px;
+                            height: 36px;
+                            background: url(../img/point.png) center no-repeat;
+                        }
+                    }
+                }
+            }
+        }
+        .zone04{
+            width: 100%;
+            height: 400px;
+            background: white;
+            .zonecenter04{
+                position: relative;
+                width: 75%;
+                min-width: 700px;
+                margin: 0 auto;
+                height: 400px;
+                .title04{
+                    position: relative;
+                    top: 65px;
+                    width: 680px;
+                    height: 55px;
+                    margin: 0 auto;
+                    background: url(../img/title_03_pc.png) center no-repeat;
+                }
+                .text04{
+                    position: relative;
+                    width: 80%;
+                    top: 130px;
+                    color: #343434;
+                    font-size: 20px;
+                    line-height: 36px;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+
+//------------------------------mobile--------------------
+@media only screen and (max-width: 767px){
+    .wrapper{
+        width: 100vw;
+        font-family: Microsoft JhengHei;
+        overflow-x: hidden;
+        background-color: #161616;
+        font-size: 17px;
+        line-height: 30px;
+        .zone01{
+            .zonecenter01{
+                width: 100%;
+                background: url(../img/mainbn_h5.jpg) top center no-repeat;
+                background-size: 104%;
+            }
+        }
+        .zone02{
+            background-color: white;
+            padding: 35px 24px;
+            .zonecenter02{
+                width: 100%;
+                .title02{
+                    width: 80%;
+                    background: url(../img/title_01_h5.png) top center no-repeat;
+                    background-size: 100%;
+                    margin: 0 auto 20px;
+                }
+                .computerflame{
+                    display: none;
+                }
+            }
+        }
+        .zone03{
+            background-color: #0a9aeb;
+            color: white;
+            padding: 35px 24px;
+            .zonecenter03{
+                width: 100%;
+                .title03{
+                    width: 80%;
+                    background: url(../img/title_02_h5.png) top center no-repeat;
+                    background-size: 100%;
+                    margin: 0 auto 20px;
+                }
+            }
+            .text03{
+                text-align: center;
+                .separation{
+                    width: 5%;
+                    height: 1px;
+                    background-color: white;
+                    margin: 20px auto;
+                }
+            }
+        }
+        .zone04{
+            background-color: white;
+            padding: 35px 24px;
+            .zonecenter04{
+                width: 100%;
+                .title04{
+                    width: 80%;
+                    background: url(../img/title_03_h5.png) top center no-repeat;
+                    background-size: 100%;
+                    margin: 0 auto 20px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+//----------------------anima_pc---------------------
+@keyframes ani_1 {
+    0% {
+        opacity: 0;
+        left: 20%;
+    }
+    20% {
+        opacity: 1;
+        left: 16%;
+    }
+}
+@keyframes ani_1_blur {
+    0% {
+        opacity: 0;
+        left: 20%;
+    }
+    25% {
+        opacity: 0;
+        left: 20%;
+    }
+    28% {
+        opacity: 0.6;
+        left: 15%;
+    }
+    31% {
+        opacity: 0;
+        left: 20%;
+    }
+    100% {
+        opacity: 0;
+        left: 20%;
+    }
+}
+
+@keyframes ani_soccor {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes ani_2 {
+    0% {
+        opacity: 0;
+        right: 27%;
+    }
+    6% {
+        opacity: 0;
+        right: 27%;
+    }
+    25% {
+        opacity: 1;
+        right: 25%;
+    }
+}
+@keyframes ani_2_blur {
+    0% {
+        opacity: 0;
+        right: 26%;
+    }
+    30% {
+        opacity: 0;
+        right: 26%;
+    }
+    33% {
+        opacity: 0.6;
+        right: 24%;
+    }
+    36% {
+        opacity: 0;
+        right: 26%;
+    }
+    100% {
+        opacity: 0;
+        right: 26%;
+    }
+}
+
+@keyframes ani_3 {
+    0% {
+        opacity: 0;
+        top: 50px;
+    }
+    10% {
+        opacity: 0;
+        top: 40px;
+    }
+    30% {
+        opacity: 1;
+        top: 20px;
+    }
+}

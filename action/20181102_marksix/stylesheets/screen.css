@@ -1,0 +1,710 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@media only screen and (min-width: 961px) {
+  /* line 10, ../sass/screen.scss */
+  .wrapper {
+    overflow-x: hidden;
+    width: 100vw;
+    font-family: Microsoft JhengHei;
+  }
+  /* line 14, ../sass/screen.scss */
+  .wrapper .zone01 {
+    width: 100%;
+    height: 720px;
+    background: url(../img/mainbn.jpg) center no-repeat;
+  }
+  /* line 18, ../sass/screen.scss */
+  .wrapper .zone01 .zonecenter01 {
+    width: 75%;
+    min-width: 1000px;
+    height: 720px;
+    margin: 0 auto;
+    background: url(../img/mainbn.jpg) center no-repeat;
+  }
+  /* line 24, ../sass/screen.scss */
+  .wrapper .zone01 .zonecenter01 img {
+    display: none;
+  }
+  /* line 27, ../sass/screen.scss */
+  .wrapper .zone01 .zonecenter01 .mainlogo_z1 {
+    position: relative;
+    width: 177px;
+    height: 133px;
+    margin: 0 auto;
+    background: url(../img/zone01_logo.png) center no-repeat;
+    top: 188px;
+  }
+  /* line 35, ../sass/screen.scss */
+  .wrapper .zone01 .zonecenter01 .mainslogan_z1 {
+    position: relative;
+    width: 985px;
+    height: 216px;
+    margin: 0 auto;
+    background: url(../img/zone01_slogan.png) center no-repeat;
+    top: 209px;
+  }
+  /* line 45, ../sass/screen.scss */
+  .wrapper .zone02 {
+    width: 100%;
+    height: 640px;
+    background: white;
+  }
+  /* line 49, ../sass/screen.scss */
+  .wrapper .zone02 .zonecenter02 {
+    position: relative;
+    width: 75%;
+    min-width: 1000px;
+    margin: 0 auto;
+    height: 640px;
+  }
+  /* line 55, ../sass/screen.scss */
+  .wrapper .zone02 .zonecenter02 .title02 {
+    position: relative;
+    top: 65px;
+    width: 680px;
+    height: 51px;
+    margin: 0 auto;
+    background: url(../img/title_01_pc.png) center no-repeat;
+  }
+  /* line 62, ../sass/screen.scss */
+  .wrapper .zone02 .zonecenter02 .title02 img {
+    display: none;
+  }
+  /* line 66, ../sass/screen.scss */
+  .wrapper .zone02 .zonecenter02 .computerflame {
+    position: absolute;
+    top: 227px;
+    width: 581px;
+    height: 339px;
+  }
+  /* line 71, ../sass/screen.scss */
+  .wrapper .zone02 .zonecenter02 .computerflame .computer_cover {
+    position: absolute;
+    top: 0;
+    width: 581px;
+    height: 339px;
+    background: url(../img/pcflame.png) center no-repeat;
+  }
+  /* line 78, ../sass/screen.scss */
+  .wrapper .zone02 .zonecenter02 .computerflame .computer_screen {
+    width: 364px;
+    height: 232px;
+    position: absolute;
+    top: 23px;
+    left: 104px;
+    overflow: hidden;
+    /*.computerphoto{
+        float: left;
+        width: 364px;
+        height: 232px;
+    }
+    .photo_01{
+        background: url(../img/pcpic_01.png) center no-repeat;
+        background-size: 100%;
+    }
+    .photo_02{
+        background: url(../img/pcpic_02.png) center no-repeat;
+        background-size: 100%;
+    }*/
+  }
+  /* line 86, ../sass/screen.scss */
+  .wrapper .zone02 .zonecenter02 .computerflame .computer_screen .slick-prev {
+    display: none;
+  }
+  /* line 89, ../sass/screen.scss */
+  .wrapper .zone02 .zonecenter02 .computerflame .computer_screen .slick-next {
+    display: none;
+  }
+  /* line 107, ../sass/screen.scss */
+  .wrapper .zone02 .zonecenter02 .text02 {
+    position: absolute;
+    width: 35%;
+    top: 282px;
+    right: 10%;
+    color: #343434;
+    font-size: 20px;
+    line-height: 36px;
+  }
+  /* line 118, ../sass/screen.scss */
+  .wrapper .zone03 {
+    width: 100%;
+    height: 640px;
+    background: #07a7ea;
+  }
+  /* line 122, ../sass/screen.scss */
+  .wrapper .zone03 .zonecenter03 {
+    position: relative;
+    width: 75%;
+    min-width: 1000px;
+    margin: 0 auto;
+    height: 640px;
+  }
+  /* line 128, ../sass/screen.scss */
+  .wrapper .zone03 .zonecenter03 .title03 {
+    position: relative;
+    top: 65px;
+    width: 680px;
+    height: 55px;
+    margin: 0 auto;
+    background: url(../img/title_02_pc.png) center no-repeat;
+  }
+  /* line 135, ../sass/screen.scss */
+  .wrapper .zone03 .zonecenter03 .title03 img {
+    display: none;
+  }
+  /* line 139, ../sass/screen.scss */
+  .wrapper .zone03 .zonecenter03 .mobileicon {
+    position: absolute;
+    bottom: 0;
+    right: 3%;
+    width: 515px;
+    height: 419px;
+    background: url(../img/mobileicon.jpg) center no-repeat;
+  }
+  /* line 147, ../sass/screen.scss */
+  .wrapper .zone03 .zonecenter03 .text03 {
+    position: absolute;
+    width: 600px;
+    top: 294px;
+    left: 11%;
+    color: white;
+    font-size: 20px;
+    line-height: 36px;
+  }
+  /* line 155, ../sass/screen.scss */
+  .wrapper .zone03 .zonecenter03 .text03 ul {
+    display: inline-block;
+  }
+  /* line 157, ../sass/screen.scss */
+  .wrapper .zone03 .zonecenter03 .text03 ul li {
+    float: left;
+    margin-right: 10px;
+  }
+  /* line 161, ../sass/screen.scss */
+  .wrapper .zone03 .zonecenter03 .text03 ul li.point {
+    width: 18px;
+    height: 36px;
+    background: url(../img/point.png) center no-repeat;
+  }
+  /* line 170, ../sass/screen.scss */
+  .wrapper .zone04 {
+    width: 100%;
+    height: 440px;
+    background: white;
+  }
+  /* line 174, ../sass/screen.scss */
+  .wrapper .zone04 .zonecenter04 {
+    position: relative;
+    width: 75%;
+    min-width: 1000px;
+    margin: 0 auto;
+    height: 440px;
+    /*.btn{
+        position: relative;
+        color: #fff;
+        background-color: #0597ea;
+        text-align: center;
+        width: 200px;
+        height: 60px;
+        margin: 0 auto;
+        border-radius: 8px;
+        font-size: 22px;
+        line-height: 60px;
+        top: 304px;
+        transition-duration: 0.6s;
+        cursor: pointer;
+        &:hover{
+            color: #003452;
+            background-color: #90d7ff;
+        }
+    }*/
+  }
+  /* line 180, ../sass/screen.scss */
+  .wrapper .zone04 .zonecenter04 .title04 {
+    position: relative;
+    top: 114px;
+    width: 680px;
+    height: 55px;
+    margin: 0 auto;
+    background: url(../img/title_03_pc.png) center no-repeat;
+  }
+  /* line 187, ../sass/screen.scss */
+  .wrapper .zone04 .zonecenter04 .title04 img {
+    display: none;
+  }
+  /* line 191, ../sass/screen.scss */
+  .wrapper .zone04 .zonecenter04 .text04 {
+    position: relative;
+    width: 80%;
+    top: 200px;
+    color: #343434;
+    font-size: 20px;
+    line-height: 36px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 960px) {
+  /* line 227, ../sass/screen.scss */
+  .wrapper {
+    overflow-x: hidden;
+    width: 100vw;
+    font-family: Microsoft JhengHei;
+  }
+  /* line 231, ../sass/screen.scss */
+  .wrapper .zone01 {
+    width: 100%;
+    height: 460px;
+    background: url(../img/mainbn.jpg) center no-repeat;
+    background-size: 162%;
+  }
+  /* line 236, ../sass/screen.scss */
+  .wrapper .zone01 .zonecenter01 {
+    min-width: 700px;
+    height: 460px;
+    margin: 0 auto;
+    background: url(../img/mainbn.jpg) center no-repeat;
+    background-size: 170%;
+  }
+  /* line 243, ../sass/screen.scss */
+  .wrapper .zone01 .zonecenter01 img {
+    display: none;
+  }
+  /* line 246, ../sass/screen.scss */
+  .wrapper .zone01 .zonecenter01 .mainlogo_z1 {
+    position: relative;
+    width: 177px;
+    height: 133px;
+    margin: 0 auto;
+    background: url(../img/zone01_logo.png) center no-repeat;
+    background-size: 80%;
+    top: 85px;
+  }
+  /* line 255, ../sass/screen.scss */
+  .wrapper .zone01 .zonecenter01 .mainslogan_z1 {
+    position: relative;
+    width: 710px;
+    height: 162px;
+    margin: 0 auto;
+    background: url(../img/zone01_slogan.png) center no-repeat;
+    background-size: 93%;
+    top: 82px;
+  }
+  /* line 266, ../sass/screen.scss */
+  .wrapper .zone02 {
+    width: 100%;
+    height: 690px;
+    background: white;
+  }
+  /* line 270, ../sass/screen.scss */
+  .wrapper .zone02 .zonecenter02 {
+    position: relative;
+    width: 75%;
+    min-width: 700px;
+    margin: 0 auto;
+    height: 690px;
+    /*.computerflame{
+        position: relative;
+        top: 110px;
+        width: 581px;
+        height: 339px;
+        background: url(../img/pcflame.png) center no-repeat;
+        margin: 0 auto;
+    }*/
+  }
+  /* line 276, ../sass/screen.scss */
+  .wrapper .zone02 .zonecenter02 .title02 {
+    position: relative;
+    top: 65px;
+    width: 680px;
+    height: 51px;
+    margin: 0 auto;
+    background: url(../img/title_01_pc.png) center no-repeat;
+  }
+  /* line 292, ../sass/screen.scss */
+  .wrapper .zone02 .zonecenter02 .computerflame {
+    position: relative;
+    top: 110px;
+    width: 581px;
+    height: 339px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  /* line 299, ../sass/screen.scss */
+  .wrapper .zone02 .zonecenter02 .computerflame .computer_cover {
+    position: absolute;
+    top: 0;
+    width: 581px;
+    height: 339px;
+    background: url(../img/pcflame.png) center no-repeat;
+  }
+  /* line 306, ../sass/screen.scss */
+  .wrapper .zone02 .zonecenter02 .computerflame .computer_screen {
+    width: 364px;
+    height: 232px;
+    position: absolute;
+    top: 23px;
+    left: 104px;
+    overflow: hidden;
+    /*.computerphoto{
+        float: left;
+        width: 364px;
+        height: 232px;
+    }
+    .photo_01{
+        background: url(../img/pcpic_01.png) center no-repeat;
+        background-size: 100%;
+    }
+    .photo_02{
+        background: url(../img/pcpic_02.png) center no-repeat;
+        background-size: 100%;
+    }*/
+  }
+  /* line 314, ../sass/screen.scss */
+  .wrapper .zone02 .zonecenter02 .computerflame .computer_screen .slick-prev {
+    display: none;
+  }
+  /* line 317, ../sass/screen.scss */
+  .wrapper .zone02 .zonecenter02 .computerflame .computer_screen .slick-next {
+    display: none;
+  }
+  /* line 335, ../sass/screen.scss */
+  .wrapper .zone02 .zonecenter02 .text02 {
+    position: relative;
+    width: 100%;
+    top: 143px;
+    color: #343434;
+    font-size: 20px;
+    line-height: 29px;
+    margin: 0 auto;
+  }
+  /* line 346, ../sass/screen.scss */
+  .wrapper .zone03 {
+    width: 100%;
+    height: 535px;
+    background: #07a7ea;
+  }
+  /* line 350, ../sass/screen.scss */
+  .wrapper .zone03 .zonecenter03 {
+    position: relative;
+    width: 75%;
+    min-width: 700px;
+    margin: 0 auto;
+    height: 535px;
+  }
+  /* line 356, ../sass/screen.scss */
+  .wrapper .zone03 .zonecenter03 .title03 {
+    position: relative;
+    top: 65px;
+    width: 680px;
+    height: 55px;
+    margin: 0 auto;
+    background: url(../img/title_02_pc.png) center no-repeat;
+  }
+  /* line 364, ../sass/screen.scss */
+  .wrapper .zone03 .zonecenter03 .mobileicon {
+    position: absolute;
+    bottom: 0;
+    right: 13%;
+    width: 515px;
+    height: 419px;
+    background: url(../img/mobileicon.jpg) center no-repeat;
+    opacity: 0.2;
+  }
+  /* line 373, ../sass/screen.scss */
+  .wrapper .zone03 .zonecenter03 .text03 {
+    position: relative;
+    width: 524px;
+    top: 160px;
+    /* left: 104px; */
+    color: white;
+    font-size: 20px;
+    line-height: 36px;
+    margin: 0 auto;
+  }
+  /* line 382, ../sass/screen.scss */
+  .wrapper .zone03 .zonecenter03 .text03 ul {
+    display: inline-block;
+  }
+  /* line 384, ../sass/screen.scss */
+  .wrapper .zone03 .zonecenter03 .text03 ul li {
+    float: left;
+    margin-right: 10px;
+  }
+  /* line 388, ../sass/screen.scss */
+  .wrapper .zone03 .zonecenter03 .text03 ul li.point {
+    width: 18px;
+    height: 36px;
+    background: url(../img/point.png) center no-repeat;
+  }
+  /* line 397, ../sass/screen.scss */
+  .wrapper .zone04 {
+    width: 100%;
+    height: 400px;
+    background: white;
+  }
+  /* line 401, ../sass/screen.scss */
+  .wrapper .zone04 .zonecenter04 {
+    position: relative;
+    width: 75%;
+    min-width: 700px;
+    margin: 0 auto;
+    height: 400px;
+  }
+  /* line 407, ../sass/screen.scss */
+  .wrapper .zone04 .zonecenter04 .title04 {
+    position: relative;
+    top: 65px;
+    width: 680px;
+    height: 55px;
+    margin: 0 auto;
+    background: url(../img/title_03_pc.png) center no-repeat;
+  }
+  /* line 415, ../sass/screen.scss */
+  .wrapper .zone04 .zonecenter04 .text04 {
+    position: relative;
+    width: 80%;
+    top: 130px;
+    color: #343434;
+    font-size: 20px;
+    line-height: 36px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 431, ../sass/screen.scss */
+  .wrapper {
+    width: 100vw;
+    font-family: Microsoft JhengHei;
+    overflow-x: hidden;
+    background-color: #161616;
+    font-size: 17px;
+    line-height: 30px;
+  }
+  /* line 439, ../sass/screen.scss */
+  .wrapper .zone01 .zonecenter01 {
+    width: 100%;
+    background: url(../img/mainbn_h5.jpg) top center no-repeat;
+    background-size: 104%;
+  }
+  /* line 445, ../sass/screen.scss */
+  .wrapper .zone02 {
+    background-color: white;
+    padding: 35px 24px;
+  }
+  /* line 448, ../sass/screen.scss */
+  .wrapper .zone02 .zonecenter02 {
+    width: 100%;
+  }
+  /* line 450, ../sass/screen.scss */
+  .wrapper .zone02 .zonecenter02 .title02 {
+    width: 80%;
+    background: url(../img/title_01_h5.png) top center no-repeat;
+    background-size: 100%;
+    margin: 0 auto 20px;
+  }
+  /* line 456, ../sass/screen.scss */
+  .wrapper .zone02 .zonecenter02 .computerflame {
+    display: none;
+  }
+  /* line 461, ../sass/screen.scss */
+  .wrapper .zone03 {
+    background-color: #0a9aeb;
+    color: white;
+    padding: 35px 24px;
+  }
+  /* line 465, ../sass/screen.scss */
+  .wrapper .zone03 .zonecenter03 {
+    width: 100%;
+  }
+  /* line 467, ../sass/screen.scss */
+  .wrapper .zone03 .zonecenter03 .title03 {
+    width: 80%;
+    background: url(../img/title_02_h5.png) top center no-repeat;
+    background-size: 100%;
+    margin: 0 auto 20px;
+  }
+  /* line 474, ../sass/screen.scss */
+  .wrapper .zone03 .text03 {
+    text-align: center;
+  }
+  /* line 476, ../sass/screen.scss */
+  .wrapper .zone03 .text03 .separation {
+    width: 5%;
+    height: 1px;
+    background-color: white;
+    margin: 20px auto;
+  }
+  /* line 484, ../sass/screen.scss */
+  .wrapper .zone04 {
+    background-color: white;
+    padding: 35px 24px;
+  }
+  /* line 487, ../sass/screen.scss */
+  .wrapper .zone04 .zonecenter04 {
+    width: 100%;
+  }
+  /* line 489, ../sass/screen.scss */
+  .wrapper .zone04 .zonecenter04 .title04 {
+    width: 80%;
+    background: url(../img/title_03_h5.png) top center no-repeat;
+    background-size: 100%;
+    margin: 0 auto 20px;
+  }
+}
+@keyframes ani_1 {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  20% {
+    opacity: 1;
+    left: 16%;
+  }
+}
+@keyframes ani_1_blur {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  25% {
+    opacity: 0;
+    left: 20%;
+  }
+  28% {
+    opacity: 0.6;
+    left: 15%;
+  }
+  31% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 0;
+    left: 20%;
+  }
+}
+@keyframes ani_soccor {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes ani_2 {
+  0% {
+    opacity: 0;
+    right: 27%;
+  }
+  6% {
+    opacity: 0;
+    right: 27%;
+  }
+  25% {
+    opacity: 1;
+    right: 25%;
+  }
+}
+@keyframes ani_2_blur {
+  0% {
+    opacity: 0;
+    right: 26%;
+  }
+  30% {
+    opacity: 0;
+    right: 26%;
+  }
+  33% {
+    opacity: 0.6;
+    right: 24%;
+  }
+  36% {
+    opacity: 0;
+    right: 26%;
+  }
+  100% {
+    opacity: 0;
+    right: 26%;
+  }
+}
+@keyframes ani_3 {
+  0% {
+    opacity: 0;
+    top: 50px;
+  }
+  10% {
+    opacity: 0;
+    top: 40px;
+  }
+  30% {
+    opacity: 1;
+    top: 20px;
+  }
+}

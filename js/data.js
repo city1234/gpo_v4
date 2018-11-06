@@ -36,6 +36,21 @@ var vm = new Vue({
                 importanttag: true, //产品专栏活动专栏头版,内容发布重点标签
                 istopbanner: true, //是否首页展示
                 clickto: false, //是否有内页跳窗公告
+                link: "action/20181102_marksix/index.html", //点击连结,下载檔案
+                downloadbtn: false, //是否有下载按钮
+                downloadlink: "", //下载连结
+                mainbannerimg: "images/activebanner/20181102_marksix.jpg", //首页大图2500*1080
+                bannerimg: "images/activebanner/20181102_marksix_s.jpg", //公告内页小图1410*385
+                name: "乐趣无限共赢财富!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
+                time: "2018/10", //活动日期
+                containtexts: '',
+                containtext: '' //内容html
+            },
+            {
+                newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
+                importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
+                istopbanner: true, //是否首页展示
+                clickto: false, //是否有内页跳窗公告
                 link: "https://web.fungaming.com/", //点击连结,下载檔案
                 downloadbtn: true, //是否有下载按钮
                 downloadlink: "loading/20181021_fg.zip", //下载连结
@@ -79,7 +94,7 @@ var vm = new Vue({
             {
                 newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
                 importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
-                istopbanner: true, //是否首页展示
+                istopbanner: false, //是否首页展示
                 clickto: false, //是否有内页跳窗公告
                 link: "action/20180929_openwarad/index.html", //点击连结,下载檔案
                 downloadbtn: false, //是否有下载按钮
@@ -318,7 +333,7 @@ var vm = new Vue({
             // },
             {
                 newstype: 1,
-                importanttag: true,
+                importanttag: false,
                 istopbanner: false,
                 clickto: true,
                 link: "javascript: void(0)",
@@ -326,7 +341,7 @@ var vm = new Vue({
                 downloadlink: "images/activebanner/mainbanner_01.jpg",
                 mainbannerimg: "",
                 bannerimg: "",
-                name: "即将上线",
+                name: "已更新",
                 time: "2018/10/23",
                 containtexts: '1.2.7版本功能说明',
                 containtext: '\
