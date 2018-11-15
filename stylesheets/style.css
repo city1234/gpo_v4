@@ -3386,9 +3386,7 @@ footer .icon-mail:before {
 }
 
 /* line 805, ../sass/style.sass */
-#sportPage03,
-#sportPage04,
-#sportPage05 {
+#sportPage03, #sportPage04 {
   background-image: url("../images/imageSide/sportSide02.png");
   background-repeat: no-repeat;
   background-position: right center;
@@ -3398,16 +3396,14 @@ footer .icon-mail:before {
 }
 @media only screen and (max-width: 1024px) {
   /* line 805, ../sass/style.sass */
-  #sportPage03 {
+  #sportPage03, #sportPage04 {
     background: none;
     background-color: #ece6db;
     height: auto;
   }
 }
 /* line 815, ../sass/style.sass */
-#sportPage03 .markSaba, #sportPage03 .markSport, 
-#sportPage04 .markSaba, #sportPage04 .markSport, 
-#sportPage05 .markSaba, #sportPage05 .markSport {
+#sportPage03 .markSaba, #sportPage03 .markSport, #sportPage04 .markSaba, #sportPage04 .markSport {
   font-family: "ANTON-REGULAR";
   font-size: 150px;
   position: absolute;
@@ -3416,53 +3412,39 @@ footer .icon-mail:before {
 }
 @media only screen and (max-width: 1024px) {
   /* line 815, ../sass/style.sass */
-  #sportPage03 .markSaba, #sportPage03 .markSport, 
-  #sportPage04 .markSaba, #sportPage04 .markSport, 
-  #sportPage05 .markSaba, #sportPage05 .markSport {
+  #sportPage03 .markSaba, #sportPage03 .markSport, #sportPage04 .markSaba, #sportPage04 .markSport {
     font-size: 100px;
   }
 }
 @media only screen and (max-width: 425px) {
   /* line 815, ../sass/style.sass */
-  #sportPage03 .markSaba, #sportPage03 .markSport, 
-  #sportPage04 .markSaba, #sportPage04 .markSport, 
-  #sportPage05 .markSaba, #sportPage05 .markSport {
+  #sportPage03 .markSaba, #sportPage03 .markSport, #sportPage04 .markSaba, #sportPage04 .markSport {
     font-size: 80px;
   }
 }
 /* line 825, ../sass/style.sass */
-#sportPage03 .markSaba, 
-#sportPage04 .markSaba,
-#sportPage05 .markSaba {
+#sportPage03 .markSaba, #sportPage04 .markSaba {
   top: 5%;
   left: 5%;
 }
 /* line 827, ../sass/style.sass */
-#sportPage03 .markSport, 
-#sportPage04 .markSport, 
-#sportPage05 .markSport {
+#sportPage03 .markSport, #sportPage04 .markSport {
   top: 40%;
   left: 15%;
 }
 /* line 829, ../sass/style.sass */
-#sportPage03 .sportbox03, 
-#sportPage04 .sportbox03, 
-#sportPage05 .sportbox03 {
+#sportPage03 .sportbox03, #sportPage04 .sportbox03 {
   padding: 8% 15%;
 }
 @media only screen and (max-width: 1024px) {
   /* line 829, ../sass/style.sass */
-  #sportPage03 .sportbox03, 
-  #sportPage04 .sportbox03, 
-  #sportPage05 .sportbox03 {
+  #sportPage03 .sportbox03, #sportPage04 .sportbox03 {
     text-align: center;
     padding: 5em 0;
   }
 }
 /* line 834, ../sass/style.sass */
-#sportPage03 .sportbox03 h3, 
-#sportPage04 .sportbox03 h3, 
-#sportPage05 .sportbox03 h3 {
+#sportPage03 .sportbox03 h3, #sportPage04 .sportbox03 h3 {
   color: #ff6d00;
   font-size: 2.5em;
   margin-bottom: 2vh;
@@ -3470,42 +3452,29 @@ footer .icon-mail:before {
 }
 @media only screen and (max-width: 1024px) {
   /* line 834, ../sass/style.sass */
-  #sportPage03 .sportbox03 h3, 
-  #sportPage04 .sportbox03 h3, 
-  #sportPage05 .sportbox03 h3 {
+  #sportPage03 .sportbox03 h3, #sportPage04 .sportbox03 h3 {
     font-size: 2.2em;
   }
 }
 @media only screen and (max-width: 768px) {
   /* line 834, ../sass/style.sass */
-  #sportPage03 .sportbox03 h3, 
-  #sportPage04 .sportbox03 h3, 
-  #sportPage05 .sportbox03 h3 {
+  #sportPage03 .sportbox03 h3, #sportPage04 .sportbox03 h3 {
     font-size: 2em;
   }
 }
 @media only screen and (max-width: 425px) {
   /* line 834, ../sass/style.sass */
-  #sportPage03 .sportbox03 h3, 
-  #sportPage04 .sportbox03 h3, 
-  #sportPage05 .sportbox03 h3 {
+  #sportPage03 .sportbox03 h3, #sportPage04 .sportbox03 h3 {
     font-size: 1.8em;
   }
 }
 /* line 845, ../sass/style.sass */
-#sportPage03 .sportbox03 h3 img, 
-#sportPage04 .sportbox03 h3 img {
+#sportPage03 .sportbox03 h3 img, #sportPage04 .sportbox03 h3 img {
   margin: 0 10px;
   width: 100px;
 }
-#sportPage05 .sportbox03 h3 img {
-  margin: 0 10px;
-  width: 140px;
-}
 /* line 848, ../sass/style.sass */
-#sportPage03 .sportbox03 p, 
-#sportPage04 .sportbox03 p, 
-#sportPage05 .sportbox03 p {
+#sportPage03 .sportbox03 p, #sportPage04 .sportbox03 p {
   font-size: 1.4em;
   margin: 2vw 0;
   font-weight: 100;
@@ -3513,94 +3482,72 @@ footer .icon-mail:before {
 }
 @media only screen and (max-width: 1024px) {
   /* line 848, ../sass/style.sass */
-  #sportPage03 .sportbox03 p, 
-  #sportPage04 .sportbox03 p, 
-  #sportPage05 .sportbox03 p {
+  #sportPage03 .sportbox03 p, #sportPage04 .sportbox03 p {
     font-size: 1.2em;
   }
 }
 @media only screen and (max-width: 768px) {
   /* line 848, ../sass/style.sass */
-  #sportPage03 .sportbox03 p, 
-  #sportPage04 .sportbox03 p, 
-  #sportPage05 .sportbox03 p {
+  #sportPage03 .sportbox03 p, #sportPage04 .sportbox03 p {
     font-size: 1em;
   }
 }
 @media only screen and (max-width: 425px) {
   /* line 848, ../sass/style.sass */
-  #sportPage03 .sportbox03 p, 
-  #sportPage04 .sportbox03 p, 
-  #sportPage05 .sportbox03 p {
+  #sportPage03 .sportbox03 p, #sportPage04 .sportbox03 p {
     font-size: 0.8em;
   }
 }
 
 /* line 859, ../sass/style.sass */
-#sportPage04, #sportPage05 {
+#sportPage04 {
   background-image: url("../images/imageSide/sportSide03.png");
   background-repeat: no-repeat;
   background-position: left center;
   background-color: #534b72;
 }
-#sportPage05 {
-  background-image: url("../images/imageSide/sportSide04.png");
-}
 @media only screen and (max-width: 1024px) {
   /* line 859, ../sass/style.sass */
-  #sportPage04, 
-  #sportPage05 {
+  #sportPage04 {
     background: none;
     background-color: #534b72;
-    height: auto;
   }
 }
 /* line 866, ../sass/style.sass */
-#sportPage04 .markSaba, 
-#sportPage05 .markSaba {
+#sportPage04 .markSaba {
   right: 25%;
   left: auto;
 }
-#sportPage05 .markSaba {
-  right: 32%;
-}
-
 /* line 869, ../sass/style.sass */
-#sportPage04 .markSport,
-#sportPage05 .markSport  {
+#sportPage04 .markSport {
   right: 15%;
   left: auto;
 }
 @media only screen and (max-width: 1024px) {
   /* line 872, ../sass/style.sass */
-  #sportPage04 .sportbox03,
-  #sportPage05 .sportbox03 {
+  #sportPage04 .sportbox03 {
     text-align: center;
   }
 }
 /* line 875, ../sass/style.sass */
-#sportPage04 .sportbox03 h3, 
-#sportPage05 .sportbox03 h3 {
+#sportPage04 .sportbox03 h3 {
   margin-right: 4vh;
   text-align: right;
 }
 @media only screen and (max-width: 1024px) {
   /* line 875, ../sass/style.sass */
-  #sportPage04 .sportbox03 h3, 
-  #sportPage05 .sportbox03 h3 {
+  #sportPage04 .sportbox03 h3 {
     text-align: center;
   }
 }
 /* line 880, ../sass/style.sass */
-#sportPage04 .sportbox03 p,
-#sportPage05 .sportbox03 p {
+#sportPage04 .sportbox03 p {
   text-align: right;
   color: #fff;
 }
 @media only screen and (max-width: 1024px) {
   /* line 880, ../sass/style.sass */
-  #sportPage04 .sportbox03 p,
-  #sportPage05 .sportbox03 p {
+  #sportPage04 .sportbox03 p {
     text-align: center;
   }
 }
@@ -3997,8 +3944,8 @@ footer .icon-mail:before {
 }
 /* line 1089, ../sass/style.sass */
 #culturePage03 .cultureItem03 {
-  background-color: rgba(255, 220, 153, 0.6);
-  padding: 6px 0;
+  background-color: rgba(255, 247, 231, 0.81);
+  padding: 64px 0 34px;
   margin: 2em 0;
 }
 /* line 1093, ../sass/style.sass */
@@ -4031,7 +3978,7 @@ footer .icon-mail:before {
 }
 /* line 1106, ../sass/style.sass */
 #culturePage03 .cultureItem03 .col-sm-3 img {
-  width: 120px;
+  width: 150px;
 }
 @media only screen and (max-width: 768px) {
   /* line 1106, ../sass/style.sass */
