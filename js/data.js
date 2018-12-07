@@ -355,6 +355,45 @@ var vm = new Vue({
                 clickto: true,
                 link: "javascript: void(0)",
                 downloadbtn: false,
+                downloadlink: "",
+                mainbannerimg: "",
+                bannerimg: "",
+                name: "已更新",
+                time: "2018/12/07",
+                containtexts: '彩票2.0.3版本功能说明',
+                containtext: '\
+                <table>\
+                    <tr>\
+                        <td width="20%">标题</td>\
+                        <td>内容描述</td>\
+                    </tr >\
+                    <tr>\
+                        <td>新增彩种</td>\
+                        <td class="txtleft">\
+                            1.  新增秒秒赛车，东方游戏自主研发的即开型赛车彩票游戏；<br / >\
+                            2.	新增北京快三，官方游戏；\
+                        </td>\
+                    </tr>\
+                    <tr>\
+                        <td>H5彩票路单优化</td>\
+                        <td class="txtleft">\
+                            1.	手机端彩票游戏路单走势，全新改版；<br / > \
+                        </td>\
+                    </tr>\
+                    <tr>\
+                        <td>彩票规则补全</td>\
+                        <td class="txtleft">\
+                            1.	主系统查看彩票规则页，补全和完善了彩票相关规则；<br / > \
+                        </td>\
+                    </tr>'
+            },
+            {
+                newstype: 1,
+                importanttag: false,
+                istopbanner: false,
+                clickto: true,
+                link: "javascript: void(0)",
+                downloadbtn: false,
                 downloadlink: "images/activebanner/mainbanner_01.jpg",
                 mainbannerimg: "",
                 bannerimg: "",
