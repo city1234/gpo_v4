@@ -310,9 +310,11 @@ section{
     overflow: hidden;
     min-height: auto!important;
     height: 100vh;
+    position: relative;
     .slogan{
         margin-bottom: 50px;
         position: relative;
+        z-index: 10;
         &:after{
             position: absolute;
             background: url(../images/toptitle_move.png) top center no-repeat;
@@ -341,7 +343,18 @@ section{
             }
         }
     }
-    
+    video{
+        display : block ;
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width : 100% ;
+        min-height : 100% ;
+        @include range-width-in(0,767px){
+            display: none;
+            visibility:hidden;
+        }
+    }
 }
 .cardbox{
     width: 100%;

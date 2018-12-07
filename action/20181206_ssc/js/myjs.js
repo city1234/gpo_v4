@@ -13,4 +13,9 @@ $(document).ready(function() {
         return false;
     });
     new WOW().init();
+    var agent = navigator.userAgent.toLowerCase();
+    if (agent.match("android") || agent.match("iphone") || agent.match("ipad")) {
+        $("#bgvid").remove();
+    } else {
+    };
 });

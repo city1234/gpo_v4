@@ -279,13 +279,15 @@ section {
   overflow: hidden;
   min-height: auto !important;
   height: 100vh;
+  position: relative;
 }
-/* line 313, ../sass/screen.scss */
+/* line 314, ../sass/screen.scss */
 #topbanner .slogan {
   margin-bottom: 50px;
   position: relative;
+  z-index: 10;
 }
-/* line 316, ../sass/screen.scss */
+/* line 318, ../sass/screen.scss */
 #topbanner .slogan:after {
   position: absolute;
   background: url(../images/toptitle_move.png) top center no-repeat;
@@ -335,17 +337,33 @@ section {
   }
 }
 @media screen and (min-width: 0) and (max-width: 767px) {
-  /* line 313, ../sass/screen.scss */
+  /* line 314, ../sass/screen.scss */
   #topbanner .slogan {
     margin-bottom: 0;
   }
-  /* line 338, ../sass/screen.scss */
+  /* line 340, ../sass/screen.scss */
   #topbanner .slogan img {
     width: 100%;
   }
 }
-
 /* line 346, ../sass/screen.scss */
+#topbanner video {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+@media screen and (min-width: 0) and (max-width: 767px) {
+  /* line 346, ../sass/screen.scss */
+  #topbanner video {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+/* line 359, ../sass/screen.scss */
 .cardbox {
   width: 100%;
   -webkit-justify-content: space-around;
@@ -361,14 +379,14 @@ section {
   font-weight: bold;
 }
 @media screen and (min-width: 0) and (max-width: 767px) {
-  /* line 346, ../sass/screen.scss */
+  /* line 359, ../sass/screen.scss */
   .cardbox {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
   }
 }
-/* line 361, ../sass/screen.scss */
+/* line 374, ../sass/screen.scss */
 .cardbox .card {
   display: block;
   max-width: 360px;
@@ -383,12 +401,12 @@ section {
   cursor: pointer;
 }
 @media screen and (min-width: 0) and (max-width: 767px) {
-  /* line 361, ../sass/screen.scss */
+  /* line 374, ../sass/screen.scss */
   .cardbox .card {
     margin: 5% 10px;
   }
 }
-/* line 372, ../sass/screen.scss */
+/* line 385, ../sass/screen.scss */
 .cardbox .card:hover {
   -webkit-box-shadow: 0px 0px 12px rgba(20, 200, 255, 0.5);
   -moz-box-shadow: 0px 0px 12px rgba(20, 200, 255, 0.5);
@@ -397,12 +415,12 @@ section {
   box-shadow: 0px 0px 12px rgba(20, 200, 255, 0.5);
   border: 2px solid #12c4ff;
 }
-/* line 376, ../sass/screen.scss */
+/* line 389, ../sass/screen.scss */
 .cardbox .card img {
   width: 100%;
   vertical-align: middle;
 }
-/* line 380, ../sass/screen.scss */
+/* line 393, ../sass/screen.scss */
 .cardbox .card .cardtxt {
   position: absolute;
   background: rgba(0, 0, 0, 0.8);
@@ -413,7 +431,7 @@ section {
   font-weight: 100;
 }
 
-/* line 391, ../sass/screen.scss */
+/* line 404, ../sass/screen.scss */
 #product_intro {
   background: url(../images/bg_01.jpg) no-repeat top center;
   background-size: cover;
@@ -424,7 +442,7 @@ section {
   -ms-flex-direction: column;
   flex-direction: column;
 }
-/* line 400, ../sass/screen.scss */
+/* line 413, ../sass/screen.scss */
 #product_intro .title {
   display: -webkit-flex;
   display: flex;
@@ -435,12 +453,12 @@ section {
   align-items: flex-start;
   width: 100%;
 }
-/* line 406, ../sass/screen.scss */
+/* line 419, ../sass/screen.scss */
 #product_intro .title .topline {
   flex-grow: 1;
   border-top: 2px solid #f7db1f;
 }
-/* line 411, ../sass/screen.scss */
+/* line 424, ../sass/screen.scss */
 #product_intro .txtbox {
   max-width: 1100px;
   background: rgba(0, 0, 0, 0.7);
@@ -460,12 +478,12 @@ section {
   line-height: 40px;
   text-align: left;
 }
-/* line 421, ../sass/screen.scss */
+/* line 434, ../sass/screen.scss */
 #product_intro .txtbox span {
   color: #ffcf3f;
   font-size: 28px;
 }
-/* line 425, ../sass/screen.scss */
+/* line 438, ../sass/screen.scss */
 #product_intro .txtbox .list {
   display: -webkit-flex;
   display: flex;
@@ -479,11 +497,11 @@ section {
   transition: all 0.3s ease;
   cursor: pointer;
 }
-/* line 430, ../sass/screen.scss */
+/* line 443, ../sass/screen.scss */
 #product_intro .txtbox .list:hover {
   color: #ffcf3f;
 }
-/* line 432, ../sass/screen.scss */
+/* line 445, ../sass/screen.scss */
 #product_intro .txtbox .list:hover .list-icon {
   -webkit-animation: jump 0.3s ease-in;
   -moz-animation: jump 0.3s ease-in;
@@ -535,11 +553,11 @@ section {
     top: 0;
   }
 }
-/* line 442, ../sass/screen.scss */
+/* line 455, ../sass/screen.scss */
 #product_intro .txtbox .list .list-txt {
   margin-left: 15px;
 }
-/* line 445, ../sass/screen.scss */
+/* line 458, ../sass/screen.scss */
 #product_intro .txtbox .list .list-icon {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -549,7 +567,7 @@ section {
   position: relative;
 }
 @media screen and (min-width: 0) and (max-width: 767px) {
-  /* line 452, ../sass/screen.scss */
+  /* line 465, ../sass/screen.scss */
   #product_intro .txtbox .list {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
@@ -557,22 +575,22 @@ section {
   }
 }
 
-/* line 460, ../sass/screen.scss */
+/* line 473, ../sass/screen.scss */
 #product_sp {
   background: url(../images/bg_02.jpg) no-repeat top center;
   background-size: cover;
   font-size: 24px;
 }
-/* line 464, ../sass/screen.scss */
+/* line 477, ../sass/screen.scss */
 #product_sp .title {
   margin: 5% 0;
 }
-/* line 467, ../sass/screen.scss */
+/* line 480, ../sass/screen.scss */
 #product_sp .download {
   margin-bottom: 5%;
 }
 
-/* line 471, ../sass/screen.scss */
+/* line 484, ../sass/screen.scss */
 .totop {
   position: fixed;
   bottom: 30px;
@@ -589,20 +607,20 @@ section {
   -o-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 483, ../sass/screen.scss */
+/* line 496, ../sass/screen.scss */
 .totop:hover {
   background: #494949;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 487, ../sass/screen.scss */
+  /* line 500, ../sass/screen.scss */
   .mb_show {
     display: none !important;
   }
 }
 
 @media screen and (min-width: 0) and (max-width: 767px) {
-  /* line 492, ../sass/screen.scss */
+  /* line 505, ../sass/screen.scss */
   .pc_show {
     display: none !important;
   }
