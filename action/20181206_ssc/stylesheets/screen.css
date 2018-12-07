@@ -1,0 +1,608 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, ../sass/reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 16, ../sass/reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 19, ../sass/reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../sass/reset.scss */
+ol, ul, li {
+  list-style: none;
+}
+
+/* line 25, ../sass/reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 29, ../sass/reset.scss */
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+/* line 34, ../sass/reset.scss */
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 38, ../sass/reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*zindex*/
+/*linear-gradient*/
+/*specify*/
+/*keyframes*/
+/*Responsive*/
+/*radius*/
+/*boxshadow*/
+/*POS*/
+/*clearfix*/
+/*changebg*/
+/*gridbox*/
+/*
+*{
+    font: normal 14px/20px "Microsoft Yahei";
+}*/
+/*
+*********useage*********
+@include POS(475px,75px);
+@include css3(transition,all 1s ease);
+@include css3(box-shadow,0px 0px 14px #ffffff);
+@include css3(border-radius,20px);
+border: 2px solid #6d4b00;
+left: calc(50% - 82.5px);
+@include linear-gradient(#db3542, #bc2741);
+@include range-width-in(0,0){}
+@include ellipsistext();
+@include linear-gradient($top, $bottom);
+
+.btn_face{
+    @include btn_style_face($color_main ,65px ,30px,$radius);
+    @include hover_light();
+}
+.btn_line{
+    @include btn_style_line($color_main ,65px ,30px,$radius);
+}
+.tablebox{
+    @include table_style();
+}
+
+
+@media screen and (min-width: 0px) and (max-width:640px) {}
+@media screen and (min-width: 641px) and (max-width:1200px) {}
+@media screen and (min-width: 1201px) and (max-width:2000px) {}
+
+*********animation*********
+@include css3(transition,all 1s ease);
+@include css3(animation,opacitylight 2s infinite linear);
+@include keyframes(opacitylight) {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+*/
+/* line 196, ../sass/screen.scss */
+select {
+  -webkit-box-shadow: 0px 0px 14px #ffffff;
+  -moz-box-shadow: 0px 0px 14px #ffffff;
+  -ms-box-shadow: 0px 0px 14px #ffffff;
+  -o-box-shadow: 0px 0px 14px #ffffff;
+  box-shadow: 0px 0px 14px #ffffff;
+  border: 0px;
+  line-height: 30px;
+  height: 30px;
+  padding: 0 7px;
+  /*很关键：将默认的select选择框样式清除*/
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  padding-right: 20px;
+  cursor: pointer;
+  min-width: 80px;
+}
+
+/* line 212, ../sass/screen.scss */
+input {
+  border: 1px solid #3e8ef0;
+  background: transparent;
+  line-height: 28px;
+  height: 28px;
+  padding: 0 10px;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  width: 145px;
+}
+
+/* line 222, ../sass/screen.scss */
+.wrapper {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* line 227, ../sass/screen.scss */
+.wrapper_in {
+  max-width: 1280px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 5%;
+  line-height: 40px;
+}
+@media screen and (min-width: 0) and (max-width: 767px) {
+  /* line 227, ../sass/screen.scss */
+  .wrapper_in {
+    padding: 0 5%;
+    padding-bottom: 15%;
+  }
+}
+
+/* line 240, ../sass/screen.scss */
+body {
+  font-family: "Microsoft YaHei";
+  font-size: 14px;
+}
+
+/* line 244, ../sass/screen.scss */
+.title {
+  font-size: 48px;
+  font-size: 5vmin;
+  line-height: 60px;
+  line-height: 6vmin;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 10px;
+  letter-spacing: 1vmin;
+  font-weight: 900;
+}
+@media screen and (min-width: 0) and (max-width: 767px) {
+  /* line 244, ../sass/screen.scss */
+  .title {
+    font-size: 40px;
+    font-size: 10vmin;
+    line-height: 50px;
+    line-height: 12vmin;
+    letter-spacing: 3px;
+    letter-spacing: 0.5vmin;
+  }
+}
+
+/* line 263, ../sass/screen.scss */
+.stitle {
+  color: #fff;
+  font-size: 20px;
+  font-size: 2vmin;
+  line-height: 25px;
+  line-height: 2.5vmin;
+  letter-spacing: 5px;
+  letter-spacing: 0.5vmin;
+}
+@media screen and (min-width: 0) and (max-width: 767px) {
+  /* line 263, ../sass/screen.scss */
+  .stitle {
+    font-size: 25px;
+    font-size: 5vmin;
+    line-height: 30px;
+    line-height: 8vmin;
+    letter-spacing: 1px;
+    letter-spacing: 0.2vmin;
+  }
+}
+
+/* line 280, ../sass/screen.scss */
+.txt {
+  color: #fff;
+  font-size: 18px;
+  font-size: 2vmin;
+  line-height: 25px;
+  line-height: 2.5vmin;
+}
+@media screen and (min-width: 0) and (max-width: 767px) {
+  /* line 280, ../sass/screen.scss */
+  .txt {
+    font-size: 18px;
+    font-size: 4vmin;
+    line-height: 25px;
+    line-height: 6.5vmin;
+  }
+}
+
+/* line 293, ../sass/screen.scss */
+.rowbox {
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  -webkit-align-items: center;
+}
+
+/* line 296, ../sass/screen.scss */
+.img {
+  text-align: center;
+}
+/* line 298, ../sass/screen.scss */
+.img img {
+  max-width: 100%;
+}
+
+/* line 302, ../sass/screen.scss */
+section {
+  min-height: 100vh;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  -webkit-align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+/* line 308, ../sass/screen.scss */
+#topbanner {
+  background: url(../images/bg_top.jpg) no-repeat top center;
+  background-size: cover;
+  overflow: hidden;
+}
+/* line 312, ../sass/screen.scss */
+#topbanner .slogan {
+  margin-bottom: 50px;
+  position: relative;
+}
+/* line 315, ../sass/screen.scss */
+#topbanner .slogan:after {
+  position: absolute;
+  background: url(../images/toptitle_move.png) top center no-repeat;
+  background-size: contain;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-animation: opacitylight 1.5s linear;
+  -moz-animation: opacitylight 1.5s linear;
+  -ms-animation: opacitylight 1.5s linear;
+  -o-animation: opacitylight 1.5s linear;
+  animation: opacitylight 1.5s linear;
+}
+@-webkit-keyframes opacitylight {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes opacitylight {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-o-keyframes opacitylight {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes opacitylight {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@media screen and (min-width: 0) and (max-width: 767px) {
+  /* line 312, ../sass/screen.scss */
+  #topbanner .slogan {
+    margin-bottom: 0;
+  }
+  /* line 337, ../sass/screen.scss */
+  #topbanner .slogan img {
+    width: 100%;
+  }
+}
+
+/* line 345, ../sass/screen.scss */
+.cardbox {
+  width: 100%;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: justify;
+  justify-content: space-around;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  -webkit-align-items: center;
+  margin-bottom: 40px;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: bold;
+}
+@media screen and (min-width: 0) and (max-width: 767px) {
+  /* line 345, ../sass/screen.scss */
+  .cardbox {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+/* line 360, ../sass/screen.scss */
+.cardbox .card {
+  display: block;
+  max-width: 360px;
+  margin: 0 10px;
+  position: relative;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+@media screen and (min-width: 0) and (max-width: 767px) {
+  /* line 360, ../sass/screen.scss */
+  .cardbox .card {
+    margin: 5% 10px;
+  }
+}
+/* line 371, ../sass/screen.scss */
+.cardbox .card:hover {
+  -webkit-box-shadow: 0px 0px 12px rgba(20, 200, 255, 0.5);
+  -moz-box-shadow: 0px 0px 12px rgba(20, 200, 255, 0.5);
+  -ms-box-shadow: 0px 0px 12px rgba(20, 200, 255, 0.5);
+  -o-box-shadow: 0px 0px 12px rgba(20, 200, 255, 0.5);
+  box-shadow: 0px 0px 12px rgba(20, 200, 255, 0.5);
+  border: 2px solid #12c4ff;
+}
+/* line 375, ../sass/screen.scss */
+.cardbox .card img {
+  width: 100%;
+  vertical-align: middle;
+}
+/* line 379, ../sass/screen.scss */
+.cardbox .card .cardtxt {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  bottom: 0;
+  font-size: 28px;
+  line-height: 80px;
+  font-weight: 100;
+}
+
+/* line 390, ../sass/screen.scss */
+#product_intro {
+  background: url(../images/bg_01.jpg) no-repeat top center;
+  background-size: cover;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+/* line 399, ../sass/screen.scss */
+#product_intro .title {
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  -webkit-align-items: center;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  width: 100%;
+}
+/* line 405, ../sass/screen.scss */
+#product_intro .title .topline {
+  flex-grow: 1;
+  border-top: 2px solid #f7db1f;
+}
+/* line 410, ../sass/screen.scss */
+#product_intro .txtbox {
+  max-width: 1100px;
+  background: rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  margin: 5% auto;
+  padding: 4%;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: left;
+}
+/* line 420, ../sass/screen.scss */
+#product_intro .txtbox span {
+  color: #ffcf3f;
+  font-size: 28px;
+}
+/* line 424, ../sass/screen.scss */
+#product_intro .txtbox .list {
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  -webkit-align-items: center;
+  margin: 20px 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+/* line 429, ../sass/screen.scss */
+#product_intro .txtbox .list:hover {
+  color: #ffcf3f;
+}
+/* line 431, ../sass/screen.scss */
+#product_intro .txtbox .list:hover .list-icon {
+  -webkit-animation: jump 0.3s ease-in;
+  -moz-animation: jump 0.3s ease-in;
+  -ms-animation: jump 0.3s ease-in;
+  -o-animation: jump 0.3s ease-in;
+  animation: jump 0.3s ease-in;
+}
+@-webkit-keyframes jump {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -20px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-moz-keyframes jump {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -20px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-o-keyframes jump {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -20px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes jump {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -20px;
+  }
+  100% {
+    top: 0;
+  }
+}
+/* line 441, ../sass/screen.scss */
+#product_intro .txtbox .list .list-txt {
+  margin-left: 15px;
+}
+/* line 444, ../sass/screen.scss */
+#product_intro .txtbox .list .list-icon {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+}
+@media screen and (min-width: 0) and (max-width: 767px) {
+  /* line 451, ../sass/screen.scss */
+  #product_intro .txtbox .list {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+/* line 459, ../sass/screen.scss */
+#product_sp {
+  background: url(../images/bg_02.jpg) no-repeat top center;
+  background-size: cover;
+  font-size: 24px;
+}
+/* line 463, ../sass/screen.scss */
+#product_sp .title {
+  margin: 5% 0;
+}
+/* line 466, ../sass/screen.scss */
+#product_sp .download {
+  margin-bottom: 5%;
+}
+
+/* line 470, ../sass/screen.scss */
+.totop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  background: #323232;
+  color: #fff;
+  cursor: pointer;
+  z-index: 99;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+/* line 482, ../sass/screen.scss */
+.totop:hover {
+  background: #494949;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 486, ../sass/screen.scss */
+  .mb_show {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 0) and (max-width: 767px) {
+  /* line 491, ../sass/screen.scss */
+  .pc_show {
+    display: none !important;
+  }
+}

@@ -53,6 +53,21 @@ var vm = new Vue({
                 importanttag: true, //产品专栏活动专栏头版,内容发布重点标签
                 istopbanner: true, //是否首页展示
                 clickto: false, //是否有内页跳窗公告
+                link: "action/20181206_ssc/index.html", //点击连结,下载檔案
+                downloadbtn: true, //是否有下载按钮
+                downloadlink: "loading/20181206_ssc.zip", //下载连结
+                mainbannerimg: "images/activebanner/20181206_ssc.jpg", //首页大图2500*1080
+                bannerimg: "images/activebanner/20181206_ssc_s.jpg", //公告内页小图1410*385
+                name: "秒秒赛车，梦想更近一步！", //公告名称(最好8个全形字以内),download活动素材/轮播图
+                time: "2018/10", //活动日期
+                containtexts: '',
+                containtext: '' //内容html
+            },
+            {
+                newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
+                importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
+                istopbanner: true, //是否首页展示
+                clickto: false, //是否有内页跳窗公告
                 link: "https://web.fungaming.com/", //点击连结,下载檔案
                 downloadbtn: true, //是否有下载按钮
                 downloadlink: "loading/20181021_fg.zip", //下载连结
