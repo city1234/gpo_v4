@@ -625,3 +625,101 @@ section {
     display: none !important;
   }
 }
+
+/* line 510, ../sass/screen.scss */
+a.scroll {
+  color: #fff;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+/* line 521, ../sass/screen.scss */
+a.scroll span.arrow {
+  -webkit-transition: all 600ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  -moz-transition: all 600ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  -ms-transition: all 600ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  -o-transition: all 600ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  transition: all 600ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  border-left: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+  border-radius: 4px;
+  margin-left: -15px;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  -webkit-animation: moveopacitylight 1s infinite linear;
+  -moz-animation: moveopacitylight 1s infinite linear;
+  -ms-animation: moveopacitylight 1s infinite linear;
+  -o-animation: moveopacitylight 1s infinite linear;
+  animation: moveopacitylight 1s infinite linear;
+}
+@-webkit-keyframes moveopacitylight {
+  0% {
+    top: 10px;
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    top: 30px;
+    opacity: 0;
+  }
+}
+@-moz-keyframes moveopacitylight {
+  0% {
+    top: 10px;
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    top: 30px;
+    opacity: 0;
+  }
+}
+@-o-keyframes moveopacitylight {
+  0% {
+    top: 10px;
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    top: 30px;
+    opacity: 0;
+  }
+}
+@keyframes moveopacitylight {
+  0% {
+    top: 10px;
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    top: 30px;
+    opacity: 0;
+  }
+}
