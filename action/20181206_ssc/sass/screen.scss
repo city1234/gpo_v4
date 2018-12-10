@@ -325,7 +325,7 @@ section{
             top:0;
             left: 0;
             opacity: 0;
-            @include css3(animation,opacitylight 1.5s linear);
+            @include css3(animation,opacitylight 1.5s 2s linear);
             @include keyframes(opacitylight) {
                 0% {
                     opacity: 1;

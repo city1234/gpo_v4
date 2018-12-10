@@ -298,11 +298,11 @@ section {
   top: 0;
   left: 0;
   opacity: 0;
-  -webkit-animation: opacitylight 1.5s linear;
-  -moz-animation: opacitylight 1.5s linear;
-  -ms-animation: opacitylight 1.5s linear;
-  -o-animation: opacitylight 1.5s linear;
-  animation: opacitylight 1.5s linear;
+  -webkit-animation: opacitylight 1.5s 2s linear;
+  -moz-animation: opacitylight 1.5s 2s linear;
+  -ms-animation: opacitylight 1.5s 2s linear;
+  -o-animation: opacitylight 1.5s 2s linear;
+  animation: opacitylight 1.5s 2s linear;
 }
 @-webkit-keyframes opacitylight {
   0% {
