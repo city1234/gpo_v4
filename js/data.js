@@ -350,6 +350,7 @@ var vm = new Vue({
                 containtexts: '',
                 containtext: ''
             },
+            
             // {
             //     newstype: 1,
             //     importanttag: false,
