@@ -1,0 +1,345 @@
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain)*/
+html, body, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr,
+acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong,
+sub, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer,
+header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline; }
+h1, h2, h3, h4, h5, h6 { color: #3a3a3a; }
+h4 { text-transform: none; }
+div#BodyContent { min-height: 0px;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+ul { list-style: disc; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+.clear { display: none; }
+.container { width: 100%; }
+body div#BodyFooter { margin-top: 0px; }
+body { color: #3a3a3a; }
+section.body, #bodycolumn { color: #3a3a3a; }
+.text-cta { font-family: Segoe UI Semibold, segoe, arial, helvetica, sans-serif; font-size: 15px; color: #5dc21e !important; }
+.text-cta-white { font-family: Segoe UI, segoe, arial, helvetica, sans-serif; font-size: 18px; color: #fff !important; }
+.contentBlock { overflow: visible; }
+/* Mobile fixes */
+
+.splashBlockHeader { display: none; }
+section.body { margin: 0 auto; max-width: 1280px; min-width: 320px; overflow: hidden; }
+div#BodyContent { width: 100%; overflow: hidden}
+.center-wrapper { width: 100%; margin: 0 auto; }
+.contentBlock { border-bottom: none; padding: 0; min-height: 0px; }
+.header img { width: 100%; height: auto; margin: 0; }
+
+/* lightbox shell menu fix */
+.shell-category-header { z-index: 10 !important; }
+/****************************************************************/
+/* normalized element styles */
+
+
+
+
+/* End normalized element styles */
+/* Full width image blades */
+
+
+.blackBG { color: #fff; background-color: #000; }
+.blackBG h2 { color: #fff !important; }
+.lightGreyBG { color: #000; background-color: #e3e3e3; }
+.lightGrey h2 { color: #000; }
+.greenBG { color: #fff; background-color: #107c10; }
+.greenBG h2 { color: #fff; }
+.darkGreyBG { color: #fff; background-color: #3a3a3a; }
+.darkGreyBG h2 { color: #fff; }
+.mediumGreyBG { color: #fff; background-color: #282828; }
+.mediumGreyBG h2 { color: #fff; }
+
+
+.bbg { border-bottom: 1px solid #c8c8c8;
+           width: 90%; margin: 0 auto; }
+.zero-pad {padding: 0px;}
+.npt {padding-top: 0px !important;}
+.thirtyTwoPad {padding: 32px 0;}
+.getMore .headline {margin-bottom: 0px;}
+@media  (max-width: 768px) {
+.xb1GamesIntro .button-container {margin: 44px 0 0 0;}
+}
+
+/* Twist Nav */
+@media (min-width: 1750px) {
+.twistLink {margin-right: 150px; }
+}
+@media (min-width: 1400px) and (max-width: 1749px) {
+.twistLink {margin-right: 83px; }
+}
+@media (min-width: 1084px) and (max-width: 1399px) {
+.twistLink {margin-right: 39px; }
+}
+@media (min-width: 768px) and (max-width: 1083px) {
+.twistLink {margin-right: 50px; }
+}
+@media  (max-width: 768px) {
+.twistLink  {display: flex !important;}
+.twistNav .navColumns {margin-left: 9px !important; }
+}
+
+.twistNav {color: #107c10; background-color: #fff; padding: 20px 0 7px 0; font-size: 19px; text-align: center; }
+.twistNav .navColumns {margin: 0 auto; }
+.twistNav a { line-height: 1.2; color: #107c10;  }
+.twistLink {display: inline-block; padding-bottom: 20px;}
+@media (max-width: 540px) {
+.twistLink {max-width: none; float: initial; }
+}
+.twistLink a:hover, .twistLink a:focus {}
+.twistLink a:focus {outline: none;}
+.twistLink:last-child {margin-right: 0px;}
+/* End Twist Nav */
+
+.RetailerLogos { float: left; padding-right: 25px; padding-bottom: 25px; }
+.RetailerLogos img { width: 100%; }
+.logoParade { padding-top: 40px; }
+.blade_bg { background-color: #282828; color: #fff; }
+.blade_bg:nth-child(odd) { background-color: #000; }
+
+/********* 50-50 with vert stripe */
+#consolesList {align-items: inherit;}
+/* Alternating borders */
+   @media (min-width: 769px) {
+   .vertRule {border-right: 1px solid #c1c1c1; ;} 
+   }
+
+.product-price {margin-bottom: 18px;}
+.productBorder {padding: 42px 0 42px 0;}
+.singleProduct img {margin-top: 0px;}
+.singleProduct .button-container, .button-container.copyPad {padding-top: 44px;}
+@media (min-width: 1400px) {
+.singleProduct {padding: 0 4vw 0 4vw; height: auto; margin: 33px 0 33px 0;}
+}
+@media (min-width: 1084px) and (max-width: 1399px) {
+.singleProduct {padding: 0 4vw 0 4vw; height: auto; margin: 33px 0 33px 0;}
+}
+@media (min-width: 769px) and (max-width: 1083px) {
+.singleProduct {padding: 0 4vw 0 4vw; height: auto; margin: 33px 0 33px 0;}
+
+}
+@media (max-width: 768px) {
+.singleProduct {padding: 0 4vw 0 4vw; height: auto; margin: 28px 0 28px 0;}
+
+}
+
+
+
+/**********************************************************************************************************************************************************************************************************************************************
+********************************************************************************************************************************************************************************************************************************/
+
+
+
+
+/************** Legal Footer *************************************/
+.tgd_kg-BlackStripe.greenbordersmall { border-top: 1px solid #107c10; }
+.tgd_kg-BlackStripe { width: 100%; background: #000000; }
+.tgd_kg-LegalStripe { padding-bottom: 50px; }
+.tgd_kg-ContentStripe { margin: 0 auto; padding: 40px 50px 60px; width: 100%; max-width: 1280px; box-sizing: border-box; }
+.tgd_kg-LegalStripe > p, .tgd_kg-LegalStripe > ol li, .tgd_kg-LegalStripe > ol p { margin-bottom: 10px; font-style: italic; font-size: calc(9px + 0.22vw); }
+.tgd_kg-BlackStripe h1, .tgd_kg-BlackStripe h4, .tgd_kg-BlackStripe p, .tgd_kg-BlackStripe ol li { color: #ffffff; }
+/* End legal footer */
+/* retailer popups */
+@media (min-width: 1280px) {
+    .retailerpopup { background-color: white; margin: 0 auto; width: 1280px; right: 0; display: none; z-index: 20; padding-left: 60px; }
+    .popimage { display: inline-block; width: 470px; padding: 20px; vertical-align: middle; }
+    .popimage img { width: 470px; position: relative; bottom: 30px; }
+    .popinfo { display: inline-block; width: 50%; padding: 20px; vertical-align: middle; }
+    .popretaillogo { width: 24%; display: inline-block; }
+    .popretaillogo img { width: 96%; max-width: 130px; }
+    .popclosebutton { left: 96%; }
+    .popclosebutton { top: 10%; }
+}
+@media (min-width: 981px) and (max-width: 1279px) {
+    .retailerpopup { background-color: white; margin: 0 auto; width: 960px; right: 0; display: none; z-index: 20; }
+    .popimage { display: inline-block; width: 470px; padding: 20px; vertical-align: middle; }
+    .popimage img { width: 470px; position: relative; bottom: 40px; }
+    .popinfo { display: inline-block; width: 50%; padding: 20px; vertical-align: middle; }
+    .popretaillogo { width: 32%; display: inline-block; }
+    .popretaillogo img { width: 100%; max-width: 130px; }
+    .popclosebutton { left: 96%; }
+    .popclosebutton { top: 10%; }
+}
+.otherretailerspop, #otherretailers { color: #107c10; font-size: 18px; cursor: pointer; }
+@media (min-width: 740px) and (max-width: 980px) {
+    .retailerpopup { background-color: white; margin: 0 auto; width: 740px; right: 0; display: none; z-index: 20; text-align: center; }
+    .popimage { display: inline-block; width: 360px; padding: 20px 8px; vertical-align: middle; }
+    .popinfo { display: inline-block; width: 360px; padding: 20px; vertical-align: middle; }
+    .popimage img { width: 380px; margin: 8px 0; position: relative; bottom: 30px; }
+    .popretaillogo { width: 150px; display: inline-block; }
+    .popretaillogo img { width: 150px; }
+    .popclosebutton { left: 96%; }
+    .popclosebutton { top: 10%; }
+}
+@media (max-width: 739px) {
+    .retailerpopup { background-color: white; margin: 0 auto; width: 320px; right: 0; display: none; z-index: 1001; text-align: center; top: 4% !important; }
+    .popimage { display: none; }
+    .popinfo { display: inline-block; width: 300px; padding: 20px 8px; vertical-align: middle; }
+    .popretaillogo { width: 136px; margin: 8px 0; display: inline-block; }
+    .popretaillogo img { width: 136px; }
+    .popclosebutton { left: 85%; }
+    .popinfo h4 { margin-top: 20px; }
+    .popclosebutton { top: 3%; }
+}
+
+
+.popclosebutton { text-align: right; position: absolute; background-color: rgb(50, 50, 50); border-radius: 20px; padding: 1px; width: 25px; font-size: 1px; }
+.popclosebutton img { width: 25px; vertical-align: middle; }
+.popclosebutton :hover { cursor: pointer; }
+.popretailerlist { margin-top: 12px; }
+.retailerpopup { position: relative; border-top: 1px solid #c1c1c1; }
+.matchinnerbg { background-color: white; }
+
+/************** retailer pops *************************************/
+/* game list */
+/************************************* Slick Slider Overrides *******************************************************/
+.gameScroller {width: 100%;}
+@media (min-width: 1400px) {
+.gamesModuleWrap {max-width: 1520px; margin: 0 auto;}
+.gameBoxNav.slick-next {right: -16px;}
+.gameBoxNav.slick-prev {left: -34px;}
+.slick-arrow {top: 90px; height: auto;}
+}
+@media (min-width: 1084px) and (max-width: 1399px) {
+.gamesModuleWrap {max-width: 1112px; margin: 0 auto;}
+.slick-next {right: -34px;}
+.slick-prev {left: -34px;}
+.slick-arrow {top: 90px; height: auto;}
+}
+@media (min-width: 769px) and (max-width: 1083px) {
+.gamesModuleWrap {max-width: 716px; margin: 0 auto;}
+.slick-next {right: -34px;}
+.slick-prev {left: -34px;}
+.slick-arrow {top: 90px; height: auto;}
+}
+@media  (max-width: 768px) {
+.gamesModuleWrap {max-width: 418px; margin: 0 auto;}
+.slick-next {right: -34px;}
+.slick-prev {left: -34px;}
+.slick-arrow {top: 90px; height: auto;}
+}
+.gameScroller .containerIMG  {width: 100%; max-width: 211px;  display: inline-block; padding: 0 6px; }
+.gameScroller .containerIMG .subtitle {padding: 24px 0 0px 0;}
+.gameScroller .containerIMG.square {height: 310px;}
+.gameScroller .containerIMG.vid {height: 385px;}
+.gameBlades { padding-top: -webkit-calc(10.5px + 1.8vw);
+                       padding-top: calc(10.5px + 1.8vw);
+                       padding-bottom: -webkit-calc(10.5px + 1.8vw);
+                       padding-bottom: calc(10.5px + 1.8vw);}
+.gameBlades .gameDiv {margin: 0 25px; max-width: 211px;
+                                      padding-top: -webkit-calc(10.5px + 1.6vw);
+                                      padding-top: calc(10.5px + 1.6vw);
+                                      padding-bottom: -webkit-calc(8px + 1vw);
+                                      padding-bottom: calc(8px + 1vw); 
+                                      position: relative;}
+
+.gamesModuleWrap {padding: 0 65px;}
+.gamesModuleWrap .title {padding: 20px 0 32px 4px; margin-bottom: 0px;}
+
+.slick-next img { padding: 20px 10px;   
+                          background-color: rgba(0,0,0,.5);}
+.slick-prev img {  padding: 20px 10px;   
+                            background-color: rgba(0,0,0,.5);}
+
+.slick-dots li button {min-width: 24px;}
+@media (min-width: 769px) {
+.rotate-hero .slick-dots {
+    position: absolute;
+    bottom: 0px;
+    left: 45%;
+}
+}
+
+/* hero */
+    .heroNav.slick-arrow {
+        top: 15vw;
+        height: auto;
+    }
+@media (max-width: 768px) {
+ .slick-dots {display: none !important;}
+    .heroNav.slick-arrow {
+        top: 40vw;   
+    }
+}
+.heroNav.slick-next {right: 0px;}
+.heroNav.slick-prev {left: 0px;}
+.heroNav.slick-next img,
+.heroNav.slick-prev img {
+    padding: 20px 10px;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+@media (min-width:769px) {
+    .rotate-hero {
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+
+        .rotate-hero .slick-slide img {
+            max-width: 1920px;
+            width: 100%;
+            height: auto;
+        }
+}
+
+@media (max-width:768px) {
+    .rotate-hero .slick-slide img {
+        max-width: 768px;
+        width: 100%;
+        height: auto;
+    }
+}
+/******************************/
+/**********************************************************************************************************************************************************************************************************************************************
+********************************************************************************************************************************************************************************************************************************/
+/* Console Rotator area CSS */
+#consoleRotator .separatorLine { width: 87.5%; border-top: 1px solid #c8c8c8; margin: 20px auto 0; }
+.consoleTitle { font-family: Segoe UI Light, Arial, Sans-Serif; color: #fff; text-align: center; }
+.consolebundle a:hover {color: #fff;}
+ .consoleSeeAll { display: inline-block; width: 218px; position: relative; top: 60px; left: 100px; color: #fff; }
+@media (min-width: 1400px) {
+    #consoleRotator .separatorLine { display: block; }
+    .consolesDeskTab { display: block; width: 1420px; margin: 48px auto 0px; padding: 0 0 48px 0; }
+    .consolesMobile { display: none; }
+    .consolebundle { display: inline-block; width: 239px; margin: 0 60px; vertical-align: top; }
+    .consolesDeskTab img { width: 239px; height: auto; }
+    .consoleSeeAll { width: 218px; position: relative; top: 60px; left: 100px;  }
+    .consoleSeeAll span { font-size: 24px; }
+    .console1 { margin-left: 20px; }
+    .consoleTitle { font-size: 18px;  line-height: 1.4; margin-bottom: 12px;  }
+   .sectionHeader h2 { text-align: center; padding: 60px 0 40px 0; }
+}
+
+@media (min-width: 768px) and (max-width: 1399px) {
+    #consoleRotator .separatorLine { display: block; }
+    .consolesDeskTab { display: block; width: 810px; margin: 24px auto 0px; padding: 0 0 48px 0;}
+    .consolesMobile { display: none; }
+    .consolebundle { display: inline-block; width: 190px; margin: 0 4px; vertical-align: top; }
+    .consolesDeskTab img { width: 188px; height: auto; }
+    .consoleSeeAll {  width: 150px; position: relative; top: 70px; left: 20px;  }
+    .consoleSeeAll span { font-size: 20px; }
+    .console1 { margin-left: 0; }
+    .consoleTitle { font-size: 17px;  line-height: 1.4; margin-bottom: 12px;  }
+   .sectionHeader h2 { text-align: center; padding: 60px 0 40px 0; }
+}
+
+@media (max-width: 767px) {
+    #consoleRotator .separatorLine { display: none; }
+    .consolesDeskTab { display: none; }
+    .consolesMobile { display: block; }
+    .consoleTitle { font-size: 18px;  line-height: 1.3; margin: 0 auto 12px;  width: 200px; }
+    .consoleSeeAll {  width: 300px; text-align: center; padding: 18px 0; position: absolute; left: calc(50% - 150px); z-index: 500;  }
+    .sectionHeader h2 { text-align: center; padding: 40px 0 25px 0; }
+    .posRel {position: relative;}
+}
+
+.ssBoxShot {
+    max-width: 219px;
+    margin: 0 1vw;
+}
+
+
+

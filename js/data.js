@@ -48,9 +48,24 @@ var vm = new Vue({
                 containtext: '' //内容html
             },
             */
-            {
+           {
                 newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
                 importanttag: true, //产品专栏活动专栏头版,内容发布重点标签
+                istopbanner: true, //是否首页展示
+                clickto: false, //是否有内页跳窗公告
+                link: "action/20190114_kyqp/index.html", //点击连结,下载檔案
+                downloadbtn: true, //是否有下载按钮
+                downloadlink: "loading/20190114_kyqp.zip", //下载连结
+                mainbannerimg: "images/activebanner/20190114_kyqp.jpg", //首页大图2500*1080
+                bannerimg: "images/activebanner/20190114_kyqp_s.jpg", //公告内页小图1410*385
+                name: "全球顶级竞技棋牌中心，开元棋牌！", //公告名称(最好8个全形字以内),download活动素材/轮播图
+                time: "2019/15", //活动日期
+                containtexts: '',
+                containtext: '' //内容html
+            },
+            {
+                newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
+                importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
                 istopbanner: true, //是否首页展示
                 clickto: false, //是否有内页跳窗公告
                 link: "action/20181206_ssc/index.html", //点击连结,下载檔案
@@ -111,7 +126,7 @@ var vm = new Vue({
             {
                 newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
                 importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
-                istopbanner: true, //是否首页展示
+                istopbanner: false, //是否首页展示
                 clickto: false, //是否有内页跳窗公告
                 link: "action/20181021_bbn/index.html", //点击连结,下载檔案
                 downloadbtn: true, //是否有下载按钮
@@ -364,6 +379,82 @@ var vm = new Vue({
             //     containtexts: "无资料",
             //     containtext: "无资料"
             // },
+            {
+                newstype: 1,
+                importanttag: true,
+                istopbanner: false,
+                clickto: true,
+                link: "javascript: void(0)",
+                downloadbtn: false,
+                downloadlink: "",
+                mainbannerimg: "",
+                bannerimg: "",
+                name: "即将发布",
+                time: "2018-12-26",
+                containtexts: '原生APP6.6.6.2版本更新说明',
+                containtext: '\
+                <table>\
+                    <tr>\
+                        <td width="20%">标题</td>\
+                        <td>内容描述</td>\
+                    </tr >\
+                    <tr>\
+                        <td>【第三方】游戏平台</td>\
+                        <td class="txtleft">\
+                        新接入【开元棋牌】平台：</br>\
+                        ●PC端：新增开元棋牌列表，在棋牌游戏中可查看入口，PC端共15款游戏。</br>\
+                        ●手机端：棋牌游戏类型中新增15款开元棋牌游戏，支持H5和APP。\
+                        </td>\
+                    </tr>\
+                    <tr>\
+                        <td>【现金系统】层级管理优化</td>\
+                        <td class="txtleft">\
+                        【层级管理】中“会员层级导出”界面优化</br>\
+                            ●新增分页功能，优化后界面加载更快。</br>\
+                            ●支持导出对应层级全部会员，同时支持导出选定会员。\
+                        </td>\
+                    </tr>'
+            },
+            {
+                newstype: 1,
+                importanttag: false,
+                istopbanner: false,
+                clickto: true,
+                link: "javascript: void(0)",
+                downloadbtn: false,
+                downloadlink: "",
+                mainbannerimg: "",
+                bannerimg: "",
+                name: "已更新",
+                time: "2018/12/24",
+                containtexts: '原生APP6.0.0.2版本更新说明',
+                containtext: '\
+                <table>\
+                    <tr>\
+                        <td width="20%">标题</td>\
+                        <td>内容描述</td>\
+                    </tr >\
+                    <tr>\
+                        <td>新增功能</td>\
+                        <td class="txtleft">\
+                            1.新增版本信息;<br / >\
+                            2.新增FG电子，BBIN电子;<br / >\
+                            3.新增电子游戏支持试玩功能;<br / >\
+                            4.新增线路检测，默认最快域名;<br / >\
+                            5.入款二维码支持长按图片保存;\
+                        </td>\
+                    </tr>\
+                    <tr>\
+                        <td>优化功能</td>\
+                        <td class="txtleft">\
+                            1.MG电子下架，屏蔽MG电子下载客户端;<br / > \
+                            2.登录时去掉对账号的限制;<br / > \
+                            3.优惠活动功能进行优化；<br / > \
+                            4.支付跳转功能进行优化；<br / > \
+                            5.修复部分已知问题;\
+                        </td>\
+                    </tr>'
+            },
             {
                 newstype: 1,
                 importanttag: false,
