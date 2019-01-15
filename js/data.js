@@ -390,8 +390,8 @@ var vm = new Vue({
                 mainbannerimg: "",
                 bannerimg: "",
                 name: "即将发布",
-                time: "2018-12-26",
-                containtexts: '原生APP6.6.6.2版本更新说明',
+                time: "2018/12/26",
+                containtexts: '1.2.8版本更新说明',
                 containtext: '\
                 <table>\
                     <tr>\
@@ -426,7 +426,7 @@ var vm = new Vue({
                 mainbannerimg: "",
                 bannerimg: "",
                 name: "已更新",
-                time: "2018/12/24",
+                time: "2018/12/26",
                 containtexts: '原生APP6.0.0.2版本更新说明',
                 containtext: '\
                 <table>\
