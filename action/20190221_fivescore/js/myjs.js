@@ -30,42 +30,8 @@ $(document).ready(function() {
         });
     });
     /*endlinkhashanimate*/
-
-    $('.slider-for').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        asNavFor: '.slider-nav-list',
-        infinite: true,
-        speed: 300,
-        slidesToShow: 1,
-        adaptiveHeight: true,
-        autoplay: true,
-        autoplaySpeed: 2000
-    });
-    $('.slider-nav-list').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        asNavFor: '.slider-for',
-        dots: false,
-        centerMode: false,
-        focusOnSelect: true,
-        swipe:false
-    });
-    $('.detail-mb').slick({
-        dots: false,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 1,
-        adaptiveHeight: true,
-        arrows: true
-    });
-    $('.advantages-mb').slick({
-        dots: false,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 1,
-        adaptiveHeight: true,
-        arrows: true
+    $(".note").eq(0).fadeIn().siblings(".note").fadeOut(0);
+    $(".productlist li").hover(function() {
+        $(".note").eq($(this).index()).fadeIn().siblings(".note").fadeOut(0);
     });
 });

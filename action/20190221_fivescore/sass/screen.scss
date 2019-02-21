@@ -425,6 +425,7 @@ input{
             font-size: 16px;
             @include range-width-in(0,767px){
                 font-size: 12px;
+                line-height: 24px;
             }
             img{
                 margin-right: 5px;

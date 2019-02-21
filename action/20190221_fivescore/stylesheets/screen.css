@@ -451,13 +451,14 @@ input {
   /* line 420, ../sass/screen.scss */
   .sec_spal .notebg .note {
     font-size: 12px;
+    line-height: 24px;
   }
 }
-/* line 429, ../sass/screen.scss */
+/* line 430, ../sass/screen.scss */
 .sec_spal .notebg .note img {
   margin-right: 5px;
 }
-/* line 434, ../sass/screen.scss */
+/* line 435, ../sass/screen.scss */
 .sec_spal .downloadbtn {
   margin-top: 80px;
   text-align: center;
@@ -468,12 +469,12 @@ input {
   position: relative;
 }
 @media screen and (min-width: 0) and (max-width: 767px) {
-  /* line 434, ../sass/screen.scss */
+  /* line 435, ../sass/screen.scss */
   .sec_spal .downloadbtn {
     margin-top: 20px;
   }
 }
-/* line 445, ../sass/screen.scss */
+/* line 446, ../sass/screen.scss */
 .sec_spal .downloadbtn:after {
   content: "";
   position: absolute;
@@ -490,17 +491,17 @@ input {
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
-/* line 458, ../sass/screen.scss */
+/* line 459, ../sass/screen.scss */
 .sec_spal .downloadbtn:hover:after {
   opacity: 1;
 }
-/* line 462, ../sass/screen.scss */
+/* line 463, ../sass/screen.scss */
 .sec_spal .downloadbtn img {
   width: 100%;
   max-width: 304px;
 }
 
-/* line 468, ../sass/screen.scss */
+/* line 469, ../sass/screen.scss */
 img {
   vertical-align: middle;
 }
