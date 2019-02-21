@@ -396,7 +396,7 @@ var vm = new Vue({
             // },
             {
                 newstype: 1,
-                importanttag: true,
+                importanttag: false,
                 istopbanner: false,
                 clickto: true,
                 link: "javascript: void(0)",
@@ -404,8 +404,8 @@ var vm = new Vue({
                 downloadlink: "",
                 mainbannerimg: "",
                 bannerimg: "",
-                name: "即将发布",
-                time: "2019/01/15",
+                name: "已更新",
+                time: "2019/01/18",
                 containtexts: '1.2.8版本更新说明',
                 containtext: '\
                 <table>\
