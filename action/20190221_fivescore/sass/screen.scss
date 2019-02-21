@@ -328,7 +328,7 @@ input{
         }
         &:before{
             background: url(../images/zhuangshi2.png);
-            bottom: -100px;
+            bottom: -150px;
             right: -55px;
         }
         .list{
@@ -372,6 +372,11 @@ input{
     background: url(../images/wufensaichebeijing_03.jpg) center center;
     min-height: 1080px;
     overflow-x:hidden; 
+    @include range-width-in(767px){
+        .wrapper_in{
+            margin-top: -20px;
+        }
+    }
     @include range-width-in(0,500px){
         min-height: 360px;
         background: url(../images/bg_mb_03.jpg) top center;
