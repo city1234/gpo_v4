@@ -53,13 +53,28 @@ var vm = new Vue({
                 importanttag: true, //产品专栏活动专栏头版,内容发布重点标签
                 istopbanner: true, //是否首页展示
                 clickto: false, //是否有内页跳窗公告
+                link: "action/20190221_fivescore/index.html", //点击连结,下载檔案
+                downloadbtn: true, //是否有下载按钮
+                downloadlink: "loading/20190221_fivescore.zip", //下载连结
+                mainbannerimg: "images/activebanner/20190221_fivescore.jpg", //首页大图2500*1080
+                bannerimg: "images/activebanner/20190221_fivescore_s.jpg", //公告内页小图1410*385
+                name: "五分PK10强势回归！", //公告名称(最好8个全形字以内),download活动素材/轮播图
+                time: "2019/02", //活动日期
+                containtexts: '',
+                containtext: '' //内容html
+            },
+           {
+                newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
+                importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
+                istopbanner: true, //是否首页展示
+                clickto: false, //是否有内页跳窗公告
                 link: "action/20190114_kyqp/index.html", //点击连结,下载檔案
                 downloadbtn: true, //是否有下载按钮
                 downloadlink: "loading/20190114_kyqp.zip", //下载连结
                 mainbannerimg: "images/activebanner/20190114_kyqp.jpg", //首页大图2500*1080
                 bannerimg: "images/activebanner/20190114_kyqp_s.jpg", //公告内页小图1410*385
                 name: "全球顶级竞技棋牌中心，开元棋牌！", //公告名称(最好8个全形字以内),download活动素材/轮播图
-                time: "2019/15", //活动日期
+                time: "2019/01", //活动日期
                 containtexts: '',
                 containtext: '' //内容html
             },
@@ -390,7 +405,7 @@ var vm = new Vue({
                 mainbannerimg: "",
                 bannerimg: "",
                 name: "即将发布",
-                time: "2018/12/26",
+                time: "2019/01/15",
                 containtexts: '1.2.8版本更新说明',
                 containtext: '\
                 <table>\
@@ -401,7 +416,7 @@ var vm = new Vue({
                     <tr>\
                         <td>【第三方】游戏平台</td>\
                         <td class="txtleft">\
-                        新接入【开元棋牌】平台：</br>\
+                        <span style="font-weight:bolder;">新接入【<a href="action/20190114_kyqp/index.html" target="_blank">开元棋牌</a>】平台：</span></br>\
                         ●PC端：新增开元棋牌列表，在棋牌游戏中可查看入口，PC端共15款游戏。</br>\
                         ●手机端：棋牌游戏类型中新增15款开元棋牌游戏，支持H5和APP。\
                         </td>\
@@ -409,7 +424,7 @@ var vm = new Vue({
                     <tr>\
                         <td>【现金系统】层级管理优化</td>\
                         <td class="txtleft">\
-                        【层级管理】中“会员层级导出”界面优化</br>\
+                        <span style="font-weight:bolder;">【层级管理】中“会员层级导出”界面优化：</span></br>\
                             ●新增分页功能，优化后界面加载更快。</br>\
                             ●支持导出对应层级全部会员，同时支持导出选定会员。\
                         </td>\

@@ -1,0 +1,470 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+//@import "compass/reset";
+@import "reset.scss";
+@import "mixin.scss";
+
+//UI definition
+//color
+$bg_main: #f4f9ff;
+$bg_sup: #edf4ff;
+$color_main: #3e8ef0;
+$color_sup: #0068d6;
+$color_add: #54a7ff;
+$colortxt_main: #323232;
+$colortxt_sup: #666666;
+$color_ignore: #9b9a9a;
+$color_alert: #f09e3e;
+$color_tip: #4a4a4a;
+$color_red: #f68622;
+$color_green: #26bd7b;
+
+//main-border-radius
+//@include css3(border-radius,$radius);
+$radius: 5px;
+
+//main-shadow
+$shadow: 0px 0px 14px #ffffff;
+@mixin shadow($shadow:$shadow){
+    @include css3(box-shadow,$shadow);
+}
+
+
+//font
+body{
+    font: normal 14px/20px "Microsoft Yahei";
+}
+@mixin bigtitle(){
+    font-size: 25px;
+    line-height: 50px;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+@mixin midtitle(){
+    font-size: 16px;
+    line-height: 25px;
+}
+@mixin txt(){
+    font-size: 14px;
+}
+@mixin txts(){
+    font-size: 12px;
+}
+
+//btn style
+@mixin btn_style_face($color ,$width ,$height ,$radius:0){
+    width: $width;
+    height: $height;
+    color: #fff;
+    background: $color;
+    line-height: $height;
+    text-align: center;
+    cursor: pointer;
+    vertical-align: middle;
+    padding: 0 5px;
+    @include txt();
+    @include css3(border-radius,$radius);
+}
+@mixin btn_style_line($color ,$width ,$height ,$radius:0){
+    width: $width;
+    height: $height;
+    border: 1px solid $color;
+    line-height: $height;
+    text-align: center;
+    cursor: pointer;
+    vertical-align: middle;
+    @include css3(transition,all .2s ease);
+    @include css3(border-radius,$radius);
+    &:hover{
+        background: $color;
+        color: #fff;
+        i{
+            color: #fff;
+        }
+    }
+}
+
+//hover active style
+@mixin hover_light(){
+    position: relative;
+    &:after{
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        content: "";
+        background: rgba(255, 255, 255,0);
+        @include css3(transition,all .2s ease);
+    }
+    &:hover{
+        //background: #59a4ff!important;
+        &:after{
+            background: rgba(255, 255, 255,.25);
+        }
+    }
+}
+
+
+//table style
+@mixin table_style(){
+    table{
+        margin: 0 auto;
+        border-collapse: separate;
+        border-spacing: 2px!important;
+        font-size: 16px;
+        line-height:1.5;
+        width: 100%;
+        tr{
+            &:first-child{
+                @include midtitle();
+                background: $color_main!important;
+                color: #fff;
+            }
+            &:nth-child(odd) {
+                background-color: rgba(190, 190, 190, 0.2);
+            }
+            span{
+                @include txts();
+                font-size: 23px;
+            }
+            td{
+                text-align: center;
+                padding: 5px;
+            }
+        }
+    }
+}
+
+//boxalign
+@mixin boxalign(){
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+}
+.rowbox{
+    @include boxalign();
+}
+
+/*
+*********useage*********
+@include POS(475px,75px);
+@include css3(transition,all 1s ease);
+@include css3(box-shadow,0px 0px 14px #ffffff);
+@include css3(border-radius,20px);
+border: 2px solid #6d4b00;
+left: calc(50% - 82.5px);
+@include linear-gradient(#db3542, #bc2741);
+@include range-width-in(0,0){}
+@include ellipsistext();
+@include linear-gradient($top, $bottom);
+
+.btn_face{
+    @include btn_style_face($color_main ,65px ,30px,$radius);
+    @include hover_light();
+}
+.btn_line{
+    @include btn_style_line($color_main ,65px ,30px,$radius);
+}
+.tablebox{
+    @include table_style();
+}
+
+
+@media screen and (min-width: 0px) and (max-width:640px) {}
+@media screen and (min-width: 641px) and (max-width:1200px) {}
+@media screen and (min-width: 1201px) and (max-width:2000px) {}
+
+*********animation*********
+@include css3(transition,all 1s ease);
+@include css3(animation,opacitylight 2s infinite linear);
+@include keyframes(opacitylight) {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+*/
+body{
+    background: #fff;
+}
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+//select style
+select{
+    @include shadow();
+    border: 0px;
+    line-height: 30px;
+    height: 30px;
+    padding: 0 7px;
+    /*很关键：将默认的select选择框样式清除*/
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    //background: #fff url("../images/select_arrow.png") no-repeat scroll right 5px center;
+    padding-right: 20px;
+    cursor: pointer;
+    min-width: 80px;
+}
+//input style
+input{
+    border: 1px solid $color_main;
+    background: rgba(0, 0, 0, 0);
+    line-height: 28px;
+    height: 28px;
+    padding: 0 10px;
+    @include css3(transition,all .2s ease);
+    width: 145px;
+}
+
+.wrapper{
+    width:100%;
+    height:auto;
+    margin:0 auto;
+}
+.wrapper_in{
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.gridbox li{
+    height: 100px;
+    @include grid( 5, 5%);
+    background: #000;
+    img{
+        width: 100%;
+    }
+}
+.mb_show{
+    @include range-width-in(768px){
+        display: none;
+    }
+}
+.pc_show{
+    @include range-width-in(0,767px){
+        display: none;
+    }
+}
+.topbanner{
+    background: url(../images/bg.jpg) center center;
+    background-size: cover;
+    min-height: 1080px;
+    @include range-width-in(0,500px){
+        min-height: 310px;
+        background: url(../images/bg_mb_01.jpg) top center;
+        background-size: cover;
+    }
+    .title{
+        text-align: center;
+        padding-top: 10%;
+        @include range-width-in(0,767px){
+            padding-top: 0%;
+        }
+        img{
+            max-width: 780px;
+            width: 100%;
+            @include range-width-in(0,767px){
+                width: 80%;
+            }
+        }
+    }
+}
+.sectitle{
+    text-align: center;
+    img{
+        width: 100%;
+        max-width: 1176px;
+    }
+}
+.sec_intro{
+    background: url(../images/wufensaichebeijing_02.jpg) center center;
+    min-height: 1080px;
+    @include range-width-in(0,500px){
+        min-height: 300px;
+        background: url(../images/bg_mb_02.jpg) top center;
+        background-size: cover;
+        .wrapper_in{
+            top: -60px;
+        }
+    }
+    .boxoutline{
+        position: relative;
+        .stitle{
+            img{
+                max-width: 830px;
+                width: 100%;
+            }
+        }
+        &:after,&:before{
+            content: "";
+            position: absolute;
+            width: 547px;
+            height: 266px;
+            @include range-width-in(0,768px){
+                width: 0;
+                height: 0;
+            }
+        }
+        &:after{
+            background: url(../images/zhuangshi1.png);
+            top: -100px;
+            left: -55px;
+        }
+        &:before{
+            background: url(../images/zhuangshi2.png);
+            bottom: -100px;
+            right: -55px;
+        }
+        .list{
+            li{
+                position: relative;
+                padding-left: 45px;
+                color:#c8f6f6;
+                font-size: 24px;
+                line-height: 40px;
+                margin-top: 70px;
+                padding-bottom: 15px;
+                @include range-width-in(0,767px){
+                    font-size: 12px;
+                    margin-top: 25px;
+                    line-height: 24px;
+                    padding-left: 25px;
+                    padding-bottom: 0px;
+                }
+                span{
+                    color:#b81628;
+                    font-weight: 900;
+                }
+                &:after{
+                    content: "";
+                    position: absolute;
+                    background: url(../images/jiantou.png);
+                    width: 37px;
+                    height: 43px;
+                    top: 0;
+                    left: 0;
+                    @include range-width-in(0,767px){
+                        width: 24px; height: 24px;
+                        background-size: contain;
+                    }
+                }
+            }
+        }
+    }
+}
+.sec_spal{
+    background: url(../images/wufensaichebeijing_03.jpg) center center;
+    min-height: 1080px;
+    overflow-x:hidden; 
+    @include range-width-in(0,500px){
+        min-height: 360px;
+        background: url(../images/bg_mb_03.jpg) top center;
+        background-size: cover;
+    }
+    .productlist{
+        margin: 1%;
+        li{
+            flex-grow: 1;
+            margin: -1%;
+            position: relative;
+            @include css3(transition,all .2s ease);
+            cursor: pointer;
+            img{
+                width: 100%;
+            }
+            &:after{
+                //content: url(../images/borderlight.png);
+                content:"";
+                position: absolute;
+                background: url(../images/borderlight.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 133%;
+                height: 133%;
+                top: -17%;
+                left: -14%;
+                opacity: 0;
+                @include css3(transition,all .2s ease);
+            }
+            &:hover{
+                @include css3(transform,scale(1.1));
+                &:after{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .notebg{
+        position: relative;
+        padding-top: 5px;
+        .txtbg{
+            width: 100%;
+            max-width: 1199px;
+        }
+        .note{
+            position: absolute;
+            top: calc(50% - 8px);
+            left: 22%;
+            color:#fff;
+            font-size: 16px;
+            @include range-width-in(0,767px){
+                font-size: 12px;
+            }
+            img{
+                margin-right: 5px;
+            }
+        }
+    }
+    .downloadbtn{
+        margin-top: 80px;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        max-width: 304px;
+        margin: 80px auto 20px auto;
+        position: relative;
+        @include range-width-in(0,767px){
+            margin-top: 20px;
+        }
+        &:after{
+            content: "";
+            position: absolute;
+            background: url(../images/sucaixiazai01.png);
+            background-size: contain;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            @include css3(transition,all .2s ease);
+        }
+        &:hover{
+            &:after{
+                opacity: 1;
+            }
+        } 
+        img{
+            width: 100%;
+            max-width: 304px;
+        }
+    }
+}
+img{
+    vertical-align: middle;
+}
