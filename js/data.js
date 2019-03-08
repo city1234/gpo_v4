@@ -1,37 +1,38 @@
 //資料架構
 var vm = new Vue({
-    el: '#mainbanner,#newsPageout,#airship',
-    data: {
-        outwindow: false, //首页是否跳窗
-        showpage: 0, //首页跳窗是第几个公告从0开始
-        newnews: 1, //新闻新产品预告数量****delete
-        bannerstyle: 0,
-        slickstyle: false,
-        nowlistpage: 0, //当前分页 product>0,content>1,event>2,download>3
-        search: "",
-        page: [{
-                totalnews: 0, //资料总数
-                pagelistnum: 9, //每页显示条数
-                nowpage: 1, // 当前页数
-            },
-            {
-                totalnews: 0, //资料总数
-                pagelistnum: 9, //每页显示条数
-                nowpage: 1, // 当前页数
-            },
-            {
-                totalnews: 0, //资料总数
-                pagelistnum: 9, //每页显示条数
-                nowpage: 1, // 当前页数
-            },
-            {
-                totalnews: 0, //资料总数
-                pagelistnum: 9, //每页显示条数
-                nowpage: 1, // 当前页数
-            }
-        ],
-        newss: [
-            /*
+  el: "#mainbanner,#newsPageout,#airship",
+  data: {
+    outwindow: false, //首页是否跳窗
+    showpage: 0, //首页跳窗是第几个公告从0开始
+    newnews: 1, //新闻新产品预告数量****delete
+    bannerstyle: 0,
+    slickstyle: false,
+    nowlistpage: 0, //当前分页 product>0,content>1,event>2,download>3
+    search: "",
+    page: [
+      {
+        totalnews: 0, //资料总数
+        pagelistnum: 9, //每页显示条数
+        nowpage: 1 // 当前页数
+      },
+      {
+        totalnews: 0, //资料总数
+        pagelistnum: 9, //每页显示条数
+        nowpage: 1 // 当前页数
+      },
+      {
+        totalnews: 0, //资料总数
+        pagelistnum: 9, //每页显示条数
+        nowpage: 1 // 当前页数
+      },
+      {
+        totalnews: 0, //资料总数
+        pagelistnum: 9, //每页显示条数
+        nowpage: 1 // 当前页数
+      }
+    ],
+    newss: [
+      /*
             {
                 newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
                 importanttag: true, //产品专栏活动专栏头版,内容发布重点标签
@@ -48,306 +49,323 @@ var vm = new Vue({
                 containtext: '' //内容html
             },
             */
-           {
-                newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
-                importanttag: true, //产品专栏活动专栏头版,内容发布重点标签
-                istopbanner: true, //是否首页展示
-                clickto: false, //是否有内页跳窗公告
-                link: "action/20190221_fivescore/index.html", //点击连结,下载檔案
-                downloadbtn: true, //是否有下载按钮
-                downloadlink: "loading/20190221_fivescore.zip", //下载连结
-                mainbannerimg: "images/activebanner/20190221_fivescore.jpg", //首页大图2500*1080
-                bannerimg: "images/activebanner/20190221_fivescore_s.jpg", //公告内页小图1410*385
-                name: "五分PK10强势回归！", //公告名称(最好8个全形字以内),download活动素材/轮播图
-                time: "2019/02", //活动日期
-                containtexts: '',
-                containtext: '' //内容html
-            },
-           {
-                newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
-                importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
-                istopbanner: true, //是否首页展示
-                clickto: false, //是否有内页跳窗公告
-                link: "action/20190114_kyqp/index.html", //点击连结,下载檔案
-                downloadbtn: true, //是否有下载按钮
-                downloadlink: "loading/20190114_kyqp.zip", //下载连结
-                mainbannerimg: "images/activebanner/20190114_kyqp.jpg", //首页大图2500*1080
-                bannerimg: "images/activebanner/20190114_kyqp_s.jpg", //公告内页小图1410*385
-                name: "全球顶级竞技棋牌中心，开元棋牌！", //公告名称(最好8个全形字以内),download活动素材/轮播图
-                time: "2019/01", //活动日期
-                containtexts: '',
-                containtext: '' //内容html
-            },
-            {
-                newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
-                importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
-                istopbanner: true, //是否首页展示
-                clickto: false, //是否有内页跳窗公告
-                link: "action/20181206_ssc/index.html", //点击连结,下载檔案
-                downloadbtn: true, //是否有下载按钮
-                downloadlink: "loading/20181206_ssc.zip", //下载连结
-                mainbannerimg: "images/activebanner/20181206_ssc.jpg", //首页大图2500*1080
-                bannerimg: "images/activebanner/20181206_ssc_s.jpg", //公告内页小图1410*385
-                name: "秒秒赛车，梦想更近一步！", //公告名称(最好8个全形字以内),download活动素材/轮播图
-                time: "2018/12", //活动日期
-                containtexts: '',
-                containtext: '' //内容html
-            },
-            {
-                newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
-                importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
-                istopbanner: true, //是否首页展示
-                clickto: false, //是否有内页跳窗公告
-                link: "action/20181205_bjk3/index.html", //点击连结,下载檔案
-                downloadbtn: true, //是否有下载按钮
-                downloadlink: "loading/20181205_bjk3.zip", //下载连结
-                mainbannerimg: "images/activebanner/20181205_bjk3.jpg", //首页大图2500*1080
-                bannerimg: "images/activebanner/20181205_bjk3_s.jpg", //公告内页小图1410*385
-                name: "北京快3，百万人的选择绝对没错!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
-                time: "2018/12", //活动日期
-                containtexts: '',
-                containtext: '' //内容html
-            },
-            {
-                newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
-                importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
-                istopbanner: true, //是否首页展示
-                clickto: false, //是否有内页跳窗公告
-                link: "https://web.fungaming.com/", //点击连结,下载檔案
-                downloadbtn: true, //是否有下载按钮
-                downloadlink: "loading/20181021_fg.zip", //下载连结
-                mainbannerimg: "images/activebanner/20181021_fg.jpg", //首页大图2500*1080
-                bannerimg: "images/activebanner/20181021_fg_s.jpg", //公告内页小图1410*385
-                name: "乐趣无限共赢财富!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
-                time: "2018/10", //活动日期
-                containtexts: '',
-                containtext: '' //内容html
-            },
-            {
-                newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
-                importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
-                istopbanner: false, //是否首页展示
-                clickto: false, //是否有内页跳窗公告
-                link: "http://www.avia-gaming.com/welcome/", //点击连结,下载檔案
-                downloadbtn: true, //是否有下载按钮
-                downloadlink: "loading/20181021_va.zip", //下载连结
-                mainbannerimg: "images/activebanner/20181021_va.jpg", //首页大图2500*1080
-                bannerimg: "images/activebanner/20181021_va_s.jpg", //公告内页小图1410*385
-                name: "亚洲顶尖泛亚电竞", //公告名称(最好8个全形字以内),download活动素材/轮播图
-                time: "2018/10", //活动日期
-                containtexts: '',
-                containtext: '' //内容html
-            },
-            {
-                newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
-                importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
-                istopbanner: false, //是否首页展示
-                clickto: false, //是否有内页跳窗公告
-                link: "action/20181021_bbn/index.html", //点击连结,下载檔案
-                downloadbtn: true, //是否有下载按钮
-                downloadlink: "loading/20181021_bbn.zip", //下载连结
-                mainbannerimg: "images/activebanner/20181021_bbn.jpg", //首页大图2500*1080
-                bannerimg: "images/activebanner/20181021_bbn_s.jpg", //公告内页小图1410*385
-                name: "bbin热门直播!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
-                time: "2018/10", //活动日期
-                containtexts: '',
-                containtext: '' //内容html
-            },
-            {
-                newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
-                importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
-                istopbanner: false, //是否首页展示
-                clickto: false, //是否有内页跳窗公告
-                link: "action/20180929_openwarad/index.html", //点击连结,下载檔案
-                downloadbtn: false, //是否有下载按钮
-                downloadlink: "", //下载连结
-                mainbannerimg: "images/activebanner/20180929_openwarad.jpg", //首页大图2500*1080
-                bannerimg: "images/activebanner/20180929_openwarad_s.jpg", //公告内页小图1410*385
-                name: "业界顶尖的彩票开奖平台!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
-                time: "2018/10", //活动日期
-                containtexts: '',
-                containtext: '' //内容html
-            },
-            {
-                newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
-                importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
-                istopbanner: false, //是否首页展示
-                clickto: false, //是否有内页跳窗公告
-                link: "action/20180917_app/index.html", //点击连结,下载檔案
-                downloadbtn: false, //是否有下载按钮
-                downloadlink: "", //下载连结
-                mainbannerimg: "images/activebanner/20180917_app.jpg", //首页大图2500*1080
-                bannerimg: "images/activebanner/20180917_apps.jpg", //公告内页小图1410*385
-                name: "精彩隨時隨地,一切盡在掌握!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
-                time: "2018/09", //活动日期
-                containtexts: '',
-                containtext: '' //内容html
-            },
-            {
-                newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
-                importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
-                istopbanner: false, //是否首页展示
-                clickto: false, //是否有内页跳窗公告
-                link: "https://elegant-wescoff-78d55a.netlify.com/", //点击连结,下载檔案
-                downloadbtn: true, //是否有下载按钮
-                downloadlink: "loading/jdb.zip", //下载连结
-                mainbannerimg: "images/activebanner/20180823_jdb.jpg", //首页大图2500*1080
-                bannerimg: "images/activebanner/20180823_jdbs.jpg", //公告内页小图1410*385
-                name: "只战经典 娱乐首选!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
-                time: "2018/08", //活动日期
-                containtexts: '',
-                containtext: '' //内容html
-            },
-            {
-                newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
-                importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
-                istopbanner: false, //是否首页展示
-                clickto: false, //是否有内页跳窗公告
-                link: "action/20180605_pngpage/index.html", //点击连结,下载檔案
-                downloadbtn: true, //是否有下载按钮
-                downloadlink: "loading/PNG.rar", //下载连结
-                mainbannerimg: "images/activebanner/20180605_png.jpg", //首页大图2500*1080
-                bannerimg: "images/activebanner/20180605_pngs.jpg", //公告内页小图1410*385
-                name: "PLAY'n GO 独特灵感和创造力!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
-                time: "2018/06", //活动日期
-                containtexts: '',
-                containtext: '' //内容html
-            },
-            {
-                newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
-                importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
-                istopbanner: false, //是否首页展示
-                clickto: false, //是否有内页跳窗公告
-                link: "action/20180717_news/index.html", //点击连结,下载檔案
-                downloadbtn: false, //是否有下载按钮
-                downloadlink: "loading/20180717_news.zip", //下载连结
-                mainbannerimg: "images/activebanner/20180717_news.jpg", //首页大图2500*1080
-                bannerimg: "images/activebanner/20180717_news_s.jpg", //公告内页小图1410*385
-                name: "代理后台新增即时注单功能", //公告名称(最好8个全形字以内),download活动素材/轮播图
-                time: "2018/07", //活动日期
-                containtexts: '',
-                containtext: '' //内容html
-            },
-            {
-                newstype: 0,
-                importanttag: false,
-                istopbanner: false,
-                clickto: false,
-                link: "http://yoplay.com/index.php#service",
-                downloadbtn: true,
-                downloadlink: "loading/20180608_yoplay.zip",
-                mainbannerimg: "images/activebanner/20180608_yoplay.jpg",
-                bannerimg: "images/activebanner/20180608_yoplays.jpg",
-                name: "业内首创多人街机，热闹互动新体验",
-                time: "2018/06",
-                containtexts: '',
-                containtext: ''
-            },
-            {
-                newstype: 0,
-                importanttag: false,
-                istopbanner: false,
-                clickto: false,
-                link: "http://xingaming.com/gameInfo.html",
-                downloadbtn: true,
-                downloadlink: "loading/XIN_banner.zip",
-                mainbannerimg: "images/activebanner/20180607_xin.jpg",
-                bannerimg: "images/activebanner/20180607_xin_s.jpg",
-                name: "XINGAMING",
-                time: "2018/06",
-                containtexts: '',
-                containtext: ''
-            },
-            {
-                newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
-                importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
-                istopbanner: false, //是否首页展示
-                clickto: false, //是否有内页跳窗公告
-                link: "action/20180522_bggame/index.html", //点击连结,下载檔案
-                downloadbtn: true, //是否有下载按钮
-                downloadlink: "loading/BG_banner.rar", //下载连结
-                mainbannerimg: "images/activebanner/20180522_bggame.jpg", //首页大图2500*1080
-                bannerimg: "images/activebanner/20180522_bggame_s.jpg", //公告内页小图1410*385
-                name: "BG大遊丰富你的世界!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
-                time: "2018/06", //活动日期
-                containtexts: '',
-                containtext: '' //内容html
-            },
-            {
-                newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
-                importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
-                istopbanner: false, //是否首页展示
-                clickto: false, //是否有内页跳窗公告
-                link: "action/20180622_og_intro/index.html", //点击连结,下载檔案
-                downloadbtn: true, //是否有下载按钮
-                downloadlink: "loading/20180623_ogtu_banner.zip", //下载连结
-                mainbannerimg: "images/activebanner/20180623_ogtu.jpg", //首页大图2500*1080
-                bannerimg: "images/activebanner/20180623_ogtus.jpg", //公告内页小图1410*385
-                name: "OG体育上线,见证王者诞生!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
-                time: "2018/06", //活动日期
-                containtexts: '',
-                containtext: '' //内容html
-            },
-            {
-                newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
-                importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
-                istopbanner: false, //是否首页展示
-                clickto: false, //是否有内页跳窗公告
-                link: "CQ9/index.html", //点击连结,下载檔案
-                downloadbtn: true, //是否有下载按钮
-                downloadlink: "loading/CQ9.zip", //下载连结
-                mainbannerimg: "images/activebanner/20180430_cq9.jpg", //首页大图2500*1080
-                bannerimg: "images/activebanner/20180430_cq9_s.jpg", //公告内页小图1410*385
-                name: "亚洲最具规模的游戏研发企业!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
-                time: "2018/05", //活动日期
-                containtexts: '',
-                containtext: '' //内容html
-            },
-            {
-                newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
-                importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
-                istopbanner: false, //是否首页展示
-                clickto: false, //是否有内页跳窗公告
-                link: "20180425_vgs/index.html", //点击连结,下载檔案
-                downloadbtn: true, //是否有下载按钮
-                downloadlink: "loading/VGS.zip", //下载连结
-                mainbannerimg: "images/activebanner/20180430_vgs.jpg", //首页大图2500*1080
-                bannerimg: "images/activebanner/20180430_vgs_s.jpg", //公告内页小图1410*385
-                name: "享受真实赌场的精彩刺激!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
-                time: "2018/05", //活动日期
-                containtexts: '',
-                containtext: '' //内容html
-            },
-            {
-                newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
-                importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
-                istopbanner: false, //是否首页展示
-                clickto: false, //是否有内页跳窗公告
-                link: "luckyairship/index.html", //点击连结,下载檔案
-                downloadbtn: false, //是否有下载按钮
-                downloadlink: "", //下载连结
-                mainbannerimg: "images/activebanner/mainbanner_01.jpg", //首页大图2500*1080
-                bannerimg: "images/activebanner/infbanner_01.jpg", //公告内页小图1410*385
-                name: "幸运相伴，让您梦想成真！", //公告名称(最好8个全形字以内),download活动素材/轮播图
-                time: "2018/03", //活动日期
-                containtexts: '',
-                containtext: '\
+      {
+        newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
+        importanttag: true, //产品专栏活动专栏头版,内容发布重点标签
+        istopbanner: true, //是否首页展示
+        clickto: false, //是否有内页跳窗公告
+        link: "action/20190308_long/index.html", //点击连结,下载檔案
+        downloadbtn: true, //是否有下载按钮
+        downloadlink: "loading/20190308_long.zip", //下载连结
+        mainbannerimg: "images/activebanner/20190308_long.jpg", //首页大图2500*1080
+        bannerimg: "images/activebanner/20190308_long_s.jpg", //公告内页小图1410*385
+        name: "长龙引路助力致富！", //公告名称(最好8个全形字以内),download活动素材/轮播图
+        time: "2019/03", //活动日期
+        containtexts: "",
+        containtext: "" //内容html
+      },
+      {
+        newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
+        importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
+        istopbanner: true, //是否首页展示
+        clickto: false, //是否有内页跳窗公告
+        link: "action/20190221_fivescore/index.html", //点击连结,下载檔案
+        downloadbtn: true, //是否有下载按钮
+        downloadlink: "loading/20190221_fivescore.zip", //下载连结
+        mainbannerimg: "images/activebanner/20190221_fivescore.jpg", //首页大图2500*1080
+        bannerimg: "images/activebanner/20190221_fivescore_s.jpg", //公告内页小图1410*385
+        name: "五分PK10强势回归！", //公告名称(最好8个全形字以内),download活动素材/轮播图
+        time: "2019/02", //活动日期
+        containtexts: "",
+        containtext: "" //内容html
+      },
+      {
+        newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
+        importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
+        istopbanner: true, //是否首页展示
+        clickto: false, //是否有内页跳窗公告
+        link: "action/20190114_kyqp/index.html", //点击连结,下载檔案
+        downloadbtn: true, //是否有下载按钮
+        downloadlink: "loading/20190114_kyqp.zip", //下载连结
+        mainbannerimg: "images/activebanner/20190114_kyqp.jpg", //首页大图2500*1080
+        bannerimg: "images/activebanner/20190114_kyqp_s.jpg", //公告内页小图1410*385
+        name: "全球顶级竞技棋牌中心，开元棋牌！", //公告名称(最好8个全形字以内),download活动素材/轮播图
+        time: "2019/01", //活动日期
+        containtexts: "",
+        containtext: "" //内容html
+      },
+      {
+        newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
+        importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
+        istopbanner: true, //是否首页展示
+        clickto: false, //是否有内页跳窗公告
+        link: "action/20181206_ssc/index.html", //点击连结,下载檔案
+        downloadbtn: true, //是否有下载按钮
+        downloadlink: "loading/20181206_ssc.zip", //下载连结
+        mainbannerimg: "images/activebanner/20181206_ssc.jpg", //首页大图2500*1080
+        bannerimg: "images/activebanner/20181206_ssc_s.jpg", //公告内页小图1410*385
+        name: "秒秒赛车，梦想更近一步！", //公告名称(最好8个全形字以内),download活动素材/轮播图
+        time: "2018/12", //活动日期
+        containtexts: "",
+        containtext: "" //内容html
+      },
+      {
+        newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
+        importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
+        istopbanner: true, //是否首页展示
+        clickto: false, //是否有内页跳窗公告
+        link: "action/20181205_bjk3/index.html", //点击连结,下载檔案
+        downloadbtn: true, //是否有下载按钮
+        downloadlink: "loading/20181205_bjk3.zip", //下载连结
+        mainbannerimg: "images/activebanner/20181205_bjk3.jpg", //首页大图2500*1080
+        bannerimg: "images/activebanner/20181205_bjk3_s.jpg", //公告内页小图1410*385
+        name: "北京快3，百万人的选择绝对没错!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
+        time: "2018/12", //活动日期
+        containtexts: "",
+        containtext: "" //内容html
+      },
+      {
+        newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
+        importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
+        istopbanner: false, //是否首页展示
+        clickto: false, //是否有内页跳窗公告
+        link: "https://web.fungaming.com/", //点击连结,下载檔案
+        downloadbtn: true, //是否有下载按钮
+        downloadlink: "loading/20181021_fg.zip", //下载连结
+        mainbannerimg: "images/activebanner/20181021_fg.jpg", //首页大图2500*1080
+        bannerimg: "images/activebanner/20181021_fg_s.jpg", //公告内页小图1410*385
+        name: "乐趣无限共赢财富!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
+        time: "2018/10", //活动日期
+        containtexts: "",
+        containtext: "" //内容html
+      },
+      {
+        newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
+        importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
+        istopbanner: false, //是否首页展示
+        clickto: false, //是否有内页跳窗公告
+        link: "http://www.avia-gaming.com/welcome/", //点击连结,下载檔案
+        downloadbtn: true, //是否有下载按钮
+        downloadlink: "loading/20181021_va.zip", //下载连结
+        mainbannerimg: "images/activebanner/20181021_va.jpg", //首页大图2500*1080
+        bannerimg: "images/activebanner/20181021_va_s.jpg", //公告内页小图1410*385
+        name: "亚洲顶尖泛亚电竞", //公告名称(最好8个全形字以内),download活动素材/轮播图
+        time: "2018/10", //活动日期
+        containtexts: "",
+        containtext: "" //内容html
+      },
+      {
+        newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
+        importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
+        istopbanner: false, //是否首页展示
+        clickto: false, //是否有内页跳窗公告
+        link: "action/20181021_bbn/index.html", //点击连结,下载檔案
+        downloadbtn: true, //是否有下载按钮
+        downloadlink: "loading/20181021_bbn.zip", //下载连结
+        mainbannerimg: "images/activebanner/20181021_bbn.jpg", //首页大图2500*1080
+        bannerimg: "images/activebanner/20181021_bbn_s.jpg", //公告内页小图1410*385
+        name: "bbin热门直播!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
+        time: "2018/10", //活动日期
+        containtexts: "",
+        containtext: "" //内容html
+      },
+      {
+        newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
+        importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
+        istopbanner: false, //是否首页展示
+        clickto: false, //是否有内页跳窗公告
+        link: "action/20180929_openwarad/index.html", //点击连结,下载檔案
+        downloadbtn: false, //是否有下载按钮
+        downloadlink: "", //下载连结
+        mainbannerimg: "images/activebanner/20180929_openwarad.jpg", //首页大图2500*1080
+        bannerimg: "images/activebanner/20180929_openwarad_s.jpg", //公告内页小图1410*385
+        name: "业界顶尖的彩票开奖平台!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
+        time: "2018/10", //活动日期
+        containtexts: "",
+        containtext: "" //内容html
+      },
+      {
+        newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
+        importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
+        istopbanner: false, //是否首页展示
+        clickto: false, //是否有内页跳窗公告
+        link: "action/20180917_app/index.html", //点击连结,下载檔案
+        downloadbtn: false, //是否有下载按钮
+        downloadlink: "", //下载连结
+        mainbannerimg: "images/activebanner/20180917_app.jpg", //首页大图2500*1080
+        bannerimg: "images/activebanner/20180917_apps.jpg", //公告内页小图1410*385
+        name: "精彩隨時隨地,一切盡在掌握!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
+        time: "2018/09", //活动日期
+        containtexts: "",
+        containtext: "" //内容html
+      },
+      {
+        newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
+        importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
+        istopbanner: false, //是否首页展示
+        clickto: false, //是否有内页跳窗公告
+        link: "https://elegant-wescoff-78d55a.netlify.com/", //点击连结,下载檔案
+        downloadbtn: true, //是否有下载按钮
+        downloadlink: "loading/jdb.zip", //下载连结
+        mainbannerimg: "images/activebanner/20180823_jdb.jpg", //首页大图2500*1080
+        bannerimg: "images/activebanner/20180823_jdbs.jpg", //公告内页小图1410*385
+        name: "只战经典 娱乐首选!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
+        time: "2018/08", //活动日期
+        containtexts: "",
+        containtext: "" //内容html
+      },
+      {
+        newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
+        importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
+        istopbanner: false, //是否首页展示
+        clickto: false, //是否有内页跳窗公告
+        link: "action/20180605_pngpage/index.html", //点击连结,下载檔案
+        downloadbtn: true, //是否有下载按钮
+        downloadlink: "loading/PNG.rar", //下载连结
+        mainbannerimg: "images/activebanner/20180605_png.jpg", //首页大图2500*1080
+        bannerimg: "images/activebanner/20180605_pngs.jpg", //公告内页小图1410*385
+        name: "PLAY'n GO 独特灵感和创造力!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
+        time: "2018/06", //活动日期
+        containtexts: "",
+        containtext: "" //内容html
+      },
+      {
+        newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
+        importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
+        istopbanner: false, //是否首页展示
+        clickto: false, //是否有内页跳窗公告
+        link: "action/20180717_news/index.html", //点击连结,下载檔案
+        downloadbtn: false, //是否有下载按钮
+        downloadlink: "loading/20180717_news.zip", //下载连结
+        mainbannerimg: "images/activebanner/20180717_news.jpg", //首页大图2500*1080
+        bannerimg: "images/activebanner/20180717_news_s.jpg", //公告内页小图1410*385
+        name: "代理后台新增即时注单功能", //公告名称(最好8个全形字以内),download活动素材/轮播图
+        time: "2018/07", //活动日期
+        containtexts: "",
+        containtext: "" //内容html
+      },
+      {
+        newstype: 0,
+        importanttag: false,
+        istopbanner: false,
+        clickto: false,
+        link: "http://yoplay.com/index.php#service",
+        downloadbtn: true,
+        downloadlink: "loading/20180608_yoplay.zip",
+        mainbannerimg: "images/activebanner/20180608_yoplay.jpg",
+        bannerimg: "images/activebanner/20180608_yoplays.jpg",
+        name: "业内首创多人街机，热闹互动新体验",
+        time: "2018/06",
+        containtexts: "",
+        containtext: ""
+      },
+      {
+        newstype: 0,
+        importanttag: false,
+        istopbanner: false,
+        clickto: false,
+        link: "http://xingaming.com/gameInfo.html",
+        downloadbtn: true,
+        downloadlink: "loading/XIN_banner.zip",
+        mainbannerimg: "images/activebanner/20180607_xin.jpg",
+        bannerimg: "images/activebanner/20180607_xin_s.jpg",
+        name: "XINGAMING",
+        time: "2018/06",
+        containtexts: "",
+        containtext: ""
+      },
+      {
+        newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
+        importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
+        istopbanner: false, //是否首页展示
+        clickto: false, //是否有内页跳窗公告
+        link: "action/20180522_bggame/index.html", //点击连结,下载檔案
+        downloadbtn: true, //是否有下载按钮
+        downloadlink: "loading/BG_banner.rar", //下载连结
+        mainbannerimg: "images/activebanner/20180522_bggame.jpg", //首页大图2500*1080
+        bannerimg: "images/activebanner/20180522_bggame_s.jpg", //公告内页小图1410*385
+        name: "BG大遊丰富你的世界!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
+        time: "2018/06", //活动日期
+        containtexts: "",
+        containtext: "" //内容html
+      },
+      {
+        newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
+        importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
+        istopbanner: false, //是否首页展示
+        clickto: false, //是否有内页跳窗公告
+        link: "action/20180622_og_intro/index.html", //点击连结,下载檔案
+        downloadbtn: true, //是否有下载按钮
+        downloadlink: "loading/20180623_ogtu_banner.zip", //下载连结
+        mainbannerimg: "images/activebanner/20180623_ogtu.jpg", //首页大图2500*1080
+        bannerimg: "images/activebanner/20180623_ogtus.jpg", //公告内页小图1410*385
+        name: "OG体育上线,见证王者诞生!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
+        time: "2018/06", //活动日期
+        containtexts: "",
+        containtext: "" //内容html
+      },
+      {
+        newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
+        importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
+        istopbanner: false, //是否首页展示
+        clickto: false, //是否有内页跳窗公告
+        link: "CQ9/index.html", //点击连结,下载檔案
+        downloadbtn: true, //是否有下载按钮
+        downloadlink: "loading/CQ9.zip", //下载连结
+        mainbannerimg: "images/activebanner/20180430_cq9.jpg", //首页大图2500*1080
+        bannerimg: "images/activebanner/20180430_cq9_s.jpg", //公告内页小图1410*385
+        name: "亚洲最具规模的游戏研发企业!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
+        time: "2018/05", //活动日期
+        containtexts: "",
+        containtext: "" //内容html
+      },
+      {
+        newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
+        importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
+        istopbanner: false, //是否首页展示
+        clickto: false, //是否有内页跳窗公告
+        link: "20180425_vgs/index.html", //点击连结,下载檔案
+        downloadbtn: true, //是否有下载按钮
+        downloadlink: "loading/VGS.zip", //下载连结
+        mainbannerimg: "images/activebanner/20180430_vgs.jpg", //首页大图2500*1080
+        bannerimg: "images/activebanner/20180430_vgs_s.jpg", //公告内页小图1410*385
+        name: "享受真实赌场的精彩刺激!!", //公告名称(最好8个全形字以内),download活动素材/轮播图
+        time: "2018/05", //活动日期
+        containtexts: "",
+        containtext: "" //内容html
+      },
+      {
+        newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
+        importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
+        istopbanner: false, //是否首页展示
+        clickto: false, //是否有内页跳窗公告
+        link: "luckyairship/index.html", //点击连结,下载檔案
+        downloadbtn: false, //是否有下载按钮
+        downloadlink: "", //下载连结
+        mainbannerimg: "images/activebanner/mainbanner_01.jpg", //首页大图2500*1080
+        bannerimg: "images/activebanner/infbanner_01.jpg", //公告内页小图1410*385
+        name: "幸运相伴，让您梦想成真！", //公告名称(最好8个全形字以内),download活动素材/轮播图
+        time: "2018/03", //活动日期
+        containtexts: "",
+        containtext:
+          '\
                     <div style="text-align:center;"><a href="luckyairship/index.html" target="_blank">前往活动连结</a></div>' //内容html
-            },
-            {
-                newstype: 0,
-                importanttag: false,
-                istopbanner: false,
-                clickto: true,
-                link: "javascript: void(0)",
-                downloadbtn: false,
-                downloadlink: "",
-                mainbannerimg: "images/activebanner/mainbanner.jpg",
-                bannerimg: "images/activebanner/infbanner.jpg",
-                name: "2018新春特惠活动",
-                time: "2018/01/30",
-                containtexts: '',
-                containtext: '\
+      },
+      {
+        newstype: 0,
+        importanttag: false,
+        istopbanner: false,
+        clickto: true,
+        link: "javascript: void(0)",
+        downloadbtn: false,
+        downloadlink: "",
+        mainbannerimg: "images/activebanner/mainbanner.jpg",
+        bannerimg: "images/activebanner/infbanner.jpg",
+        name: "2018新春特惠活动",
+        time: "2018/01/30",
+        containtexts: "",
+        containtext:
+          '\
                     东方包网平台为答谢各位新老客户多年的支持与厚爱在春节来临之际特别推出\
                     <span class= "redtxt" > 新春特惠活动</span>，凡此活动期间在我司开设游戏网站\
                     <span class= "redtxt" > 开版费！服务费！费用统统全免！</span> 活动时间2018年2月1日至3月31日名额仅限58名、开完即止。\
@@ -364,50 +382,106 @@ var vm = new Vue({
                     <br />\
                     <br />\
                     <br /> 东方平台全体员工祝您新的一年生意兴隆！财源广进！兴旺发达！'
-            },
-            {
-                newstype: 0,
-                importanttag: false,
-                istopbanner: false,
-                clickto: false,
-                link: "v1.0/index.html",
-                downloadbtn: false,
-                downloadlink: "images/activebanner/mainbanner_01.jpg",
-                mainbannerimg: "",
-                bannerimg: "images/newsBigBanner.png",
-                name: "【H5游戏主页改版】新架构，新体验，详戳图片！！",
-                time: "2018/01/30",
-                containtexts: '',
-                containtext: ''
-            },
-            
-            // {
-            //     newstype: 1,
-            //     importanttag: false,
-            //     istopbanner: false,
-            //     clickto: false,
-            //     link: "javascript: void(0)",
-            //     mainbannerimg: "",
-            //     bannerimg: "无资料",
-            //     name: "无资料",
-            //     time: "无资料",
-            //     containtexts: "无资料",
-            //     containtext: "无资料"
-            // },
-            {
-                newstype: 1,
-                importanttag: false,
-                istopbanner: false,
-                clickto: true,
-                link: "javascript: void(0)",
-                downloadbtn: false,
-                downloadlink: "",
-                mainbannerimg: "",
-                bannerimg: "",
-                name: "已更新",
-                time: "2019/01/18",
-                containtexts: '1.2.8版本更新说明',
-                containtext: '\
+      },
+      {
+        newstype: 0,
+        importanttag: false,
+        istopbanner: false,
+        clickto: false,
+        link: "v1.0/index.html",
+        downloadbtn: false,
+        downloadlink: "images/activebanner/mainbanner_01.jpg",
+        mainbannerimg: "",
+        bannerimg: "images/newsBigBanner.png",
+        name: "【H5游戏主页改版】新架构，新体验，详戳图片！！",
+        time: "2018/01/30",
+        containtexts: "",
+        containtext: ""
+      },
+
+      // {
+      //     newstype: 1,
+      //     importanttag: false,
+      //     istopbanner: false,
+      //     clickto: false,
+      //     link: "javascript: void(0)",
+      //     mainbannerimg: "",
+      //     bannerimg: "无资料",
+      //     name: "无资料",
+      //     time: "无资料",
+      //     containtexts: "无资料",
+      //     containtext: "无资料"
+      // },
+      {
+        newstype: 1,
+        importanttag: true,
+        istopbanner: false,
+        clickto: true,
+        link: "javascript: void(0)",
+        downloadbtn: false,
+        downloadlink: "",
+        mainbannerimg: "",
+        bannerimg: "",
+        name: "即将上线",
+        time: "2019/03/08",
+        containtexts: "彩票2.0.4版本功能说明",
+        containtext:
+          '\
+                <table>\
+                    <tr>\
+                        <td width="20%">标题</td>\
+                        <td>内容描述</td>\
+                    </tr >\
+                    <tr>\
+                        <td>H5彩票新增长龙助手功能</td>\
+                        <td class="txtleft">\
+                        1、查看“大”‘小“”单“”双“玩法3期及以上的长龙</br>\
+                        2、提供斩龙和顺龙投注方案，支持立即投注</br>\
+                        </td>\
+                    </tr>'
+      },
+      {
+        newstype: 1,
+        importanttag: true,
+        istopbanner: false,
+        clickto: true,
+        link: "javascript: void(0)",
+        downloadbtn: false,
+        downloadlink: "",
+        mainbannerimg: "",
+        bannerimg: "",
+        name: "已更新",
+        time: "2019/02/22",
+        containtexts: "新增彩种",
+        containtext:
+          '\
+                <table>\
+                    <tr>\
+                        <td width="20%">标题</td>\
+                        <td>内容描述</td>\
+                    </tr >\
+                    <tr>\
+                        <td>新上线彩种</td>\
+                        <td class="txtleft">\
+                            新增彩种，五分赛车</br>\
+                        </td>\
+                    </tr>'
+      },
+      {
+        newstype: 1,
+        importanttag: false,
+        istopbanner: false,
+        clickto: true,
+        link: "javascript: void(0)",
+        downloadbtn: false,
+        downloadlink: "",
+        mainbannerimg: "",
+        bannerimg: "",
+        name: "已更新",
+        time: "2019/01/18",
+        containtexts: "1.2.8版本更新说明",
+        containtext:
+          '\
                 <table>\
                     <tr>\
                         <td width="20%">标题</td>\
@@ -429,21 +503,22 @@ var vm = new Vue({
                             ●支持导出对应层级全部会员，同时支持导出选定会员。\
                         </td>\
                     </tr>'
-            },
-            {
-                newstype: 1,
-                importanttag: false,
-                istopbanner: false,
-                clickto: true,
-                link: "javascript: void(0)",
-                downloadbtn: false,
-                downloadlink: "",
-                mainbannerimg: "",
-                bannerimg: "",
-                name: "已更新",
-                time: "2018/12/26",
-                containtexts: '原生APP6.0.0.2版本更新说明',
-                containtext: '\
+      },
+      {
+        newstype: 1,
+        importanttag: false,
+        istopbanner: false,
+        clickto: true,
+        link: "javascript: void(0)",
+        downloadbtn: false,
+        downloadlink: "",
+        mainbannerimg: "",
+        bannerimg: "",
+        name: "已更新",
+        time: "2018/12/26",
+        containtexts: "原生APP6.0.0.2版本更新说明",
+        containtext:
+          '\
                 <table>\
                     <tr>\
                         <td width="20%">标题</td>\
@@ -469,21 +544,22 @@ var vm = new Vue({
                             5.修复部分已知问题;\
                         </td>\
                     </tr>'
-            },
-            {
-                newstype: 1,
-                importanttag: false,
-                istopbanner: false,
-                clickto: true,
-                link: "javascript: void(0)",
-                downloadbtn: false,
-                downloadlink: "",
-                mainbannerimg: "",
-                bannerimg: "",
-                name: "已更新",
-                time: "2018/12/14",
-                containtexts: '彩票2.0.3版本功能说明',
-                containtext: '\
+      },
+      {
+        newstype: 1,
+        importanttag: false,
+        istopbanner: false,
+        clickto: true,
+        link: "javascript: void(0)",
+        downloadbtn: false,
+        downloadlink: "",
+        mainbannerimg: "",
+        bannerimg: "",
+        name: "已更新",
+        time: "2018/12/14",
+        containtexts: "彩票2.0.3版本功能说明",
+        containtext:
+          '\
                 <table>\
                     <tr>\
                         <td width="20%">标题</td>\
@@ -508,21 +584,22 @@ var vm = new Vue({
                             1.	主系统查看彩票规则页，补全和完善了彩票相关规则；<br / > \
                         </td>\
                     </tr>'
-            },
-            {
-                newstype: 1,
-                importanttag: false,
-                istopbanner: false,
-                clickto: true,
-                link: "javascript: void(0)",
-                downloadbtn: false,
-                downloadlink: "images/activebanner/mainbanner_01.jpg",
-                mainbannerimg: "",
-                bannerimg: "",
-                name: "已更新",
-                time: "2018/10/23",
-                containtexts: '1.2.7版本功能说明',
-                containtext: '\
+      },
+      {
+        newstype: 1,
+        importanttag: false,
+        istopbanner: false,
+        clickto: true,
+        link: "javascript: void(0)",
+        downloadbtn: false,
+        downloadlink: "images/activebanner/mainbanner_01.jpg",
+        mainbannerimg: "",
+        bannerimg: "",
+        name: "已更新",
+        time: "2018/10/23",
+        containtexts: "1.2.7版本功能说明",
+        containtext:
+          '\
                 <table>\
                     <tr>\
                         <td width="20%">标题</td>\
@@ -565,21 +642,22 @@ var vm = new Vue({
                             4.  上线后原【报表】变为【平台报表】，去除【会员报表】栏位，查询单会员投注明细数据需要在即时注单查询。<br/ > \
                         </td>\
                     </tr>'
-            },
-            {
-                newstype: 1,
-                importanttag: false,
-                istopbanner: false,
-                clickto: true,
-                link: "javascript: void(0)",
-                downloadbtn: false,
-                downloadlink: "images/activebanner/mainbanner_01.jpg",
-                mainbannerimg: "",
-                bannerimg: "",
-                name: "已更新",
-                time: "2018/8/22",
-                containtexts: '1.2.6版本功能说明',
-                containtext: '\
+      },
+      {
+        newstype: 1,
+        importanttag: false,
+        istopbanner: false,
+        clickto: true,
+        link: "javascript: void(0)",
+        downloadbtn: false,
+        downloadlink: "images/activebanner/mainbanner_01.jpg",
+        mainbannerimg: "",
+        bannerimg: "",
+        name: "已更新",
+        time: "2018/8/22",
+        containtexts: "1.2.6版本功能说明",
+        containtext:
+          '\
                 <table>\
                     <tr>\
                         <td width="20%">标题</td>\
@@ -613,21 +691,22 @@ var vm = new Vue({
                             会员真实姓名长度可支持20位； \
                         </td>\
                     </tr>'
-            },
-            {
-                newstype: 1,
-                importanttag: false,
-                istopbanner: false,
-                clickto: true,
-                link: "javascript: void(0)",
-                downloadbtn: false,
-                downloadlink: "images/activebanner/mainbanner_01.jpg",
-                mainbannerimg: "",
-                bannerimg: "",
-                name: "已更新",
-                time: "2018/7/17",
-                containtexts: '1.2.5版本功能说明',
-                containtext: '\
+      },
+      {
+        newstype: 1,
+        importanttag: false,
+        istopbanner: false,
+        clickto: true,
+        link: "javascript: void(0)",
+        downloadbtn: false,
+        downloadlink: "images/activebanner/mainbanner_01.jpg",
+        mainbannerimg: "",
+        bannerimg: "",
+        name: "已更新",
+        time: "2018/7/17",
+        containtexts: "1.2.5版本功能说明",
+        containtext:
+          '\
                 <table>\
                     <tr>\
                         <td width="20%">标题</td>\
@@ -668,21 +747,22 @@ var vm = new Vue({
                         <td>后台IP名单开关控制</td>\
                         <td class="txtleft">针对厅主及子账号设置IP白名单，只能通过白名单才可进行登陆，确认厅主及子账号登陆的安全性</td>\
                     </tr>'
-            },
-            {
-                newstype: 1,
-                importanttag: false,
-                istopbanner: false,
-                clickto: true,
-                link: "javascript: void(0)",
-                downloadbtn: false,
-                downloadlink: "images/activebanner/mainbanner_01.jpg",
-                mainbannerimg: "",
-                bannerimg: "",
-                name: "已更新",
-                time: "2018/5/29",
-                containtexts: '彩票2.0.2版本功能说明',
-                containtext: '\
+      },
+      {
+        newstype: 1,
+        importanttag: false,
+        istopbanner: false,
+        clickto: true,
+        link: "javascript: void(0)",
+        downloadbtn: false,
+        downloadlink: "images/activebanner/mainbanner_01.jpg",
+        mainbannerimg: "",
+        bannerimg: "",
+        name: "已更新",
+        time: "2018/5/29",
+        containtexts: "彩票2.0.2版本功能说明",
+        containtext:
+          '\
                 <table>\
                     <tr>\
                         <td width="20%">标题</td>\
@@ -696,21 +776,22 @@ var vm = new Vue({
                         <td>香港六合彩撤单功能</td>\
                         <td class="txtleft">香港六合彩当期未封盘前注单会员可进行撤回</td>\
                     </tr>'
-            },
-            {
-                newstype: 1,
-                importanttag: false,
-                istopbanner: false,
-                clickto: true,
-                link: "javascript: void(0)",
-                downloadbtn: false,
-                downloadlink: "images/activebanner/mainbanner_01.jpg",
-                mainbannerimg: "",
-                bannerimg: "",
-                name: "已更新",
-                time: "2018/4/30",
-                containtexts: '1.2.4版本功能说明',
-                containtext: '\
+      },
+      {
+        newstype: 1,
+        importanttag: false,
+        istopbanner: false,
+        clickto: true,
+        link: "javascript: void(0)",
+        downloadbtn: false,
+        downloadlink: "images/activebanner/mainbanner_01.jpg",
+        mainbannerimg: "",
+        bannerimg: "",
+        name: "已更新",
+        time: "2018/4/30",
+        containtexts: "1.2.4版本功能说明",
+        containtext:
+          '\
                 <table>\
                     <tr>\
                         <td>标题</td>\
@@ -790,21 +871,22 @@ var vm = new Vue({
                         </td>\
                     </tr>\
                 </table >'
-            },
-            {
-                newstype: 1,
-                importanttag: false,
-                istopbanner: false,
-                clickto: true,
-                link: "javascript: void(0)",
-                downloadbtn: false,
-                downloadlink: "images/activebanner/mainbanner_01.jpg",
-                mainbannerimg: "",
-                bannerimg: "",
-                name: "已更新",
-                time: "2018/4/16",
-                containtexts: '1.2.3版本功能说明',
-                containtext: '\
+      },
+      {
+        newstype: 1,
+        importanttag: false,
+        istopbanner: false,
+        clickto: true,
+        link: "javascript: void(0)",
+        downloadbtn: false,
+        downloadlink: "images/activebanner/mainbanner_01.jpg",
+        mainbannerimg: "",
+        bannerimg: "",
+        name: "已更新",
+        time: "2018/4/16",
+        containtexts: "1.2.3版本功能说明",
+        containtext:
+          '\
                 <table>\
                     <tr>\
                         <td>标题</td>\
@@ -852,21 +934,22 @@ var vm = new Vue({
                             </td>\
                     </tr>\
                 </table >'
-            },
-            {
-                newstype: 2,
-                importanttag: true,
-                istopbanner: false,
-                clickto: true,
-                link: "javascript: void(0)",
-                downloadbtn: false,
-                downloadlink: "",
-                mainbannerimg: "images/activebanner/mainbanner_pp.jpg",
-                bannerimg: "images/activebanner/infbanner_pp.jpg",
-                name: "过关斩将锦标赛",
-                time: "2018/04/05",
-                containtexts: '',
-                containtext: '\
+      },
+      {
+        newstype: 2,
+        importanttag: true,
+        istopbanner: false,
+        clickto: true,
+        link: "javascript: void(0)",
+        downloadbtn: false,
+        downloadlink: "",
+        mainbannerimg: "images/activebanner/mainbanner_pp.jpg",
+        bannerimg: "images/activebanner/infbanner_pp.jpg",
+        name: "过关斩将锦标赛",
+        time: "2018/04/05",
+        containtexts: "",
+        containtext:
+          '\
                     <div style="max-width:800px;margin:0 auto;"><div align="center">过关斩将锦标赛，50万谁与争锋 每周奖金池高达88,000元</div>\
                     <br/>Dates:\
                     <br/>锦标赛1：2018年4月5日至2018年4月8日\
@@ -888,98 +971,103 @@ var vm = new Vue({
                     <br/>必须在网站，通讯和其他媒体（包括社交媒体）上使用过关斩将锦标赛专用促销包的元素。\
                     <br/>为了符合网络推广资格，参赛游戏必须在突出的大厅位置展示。\
                     <br/>PP保留随时修改，暂停或取消促销的权利。</div>'
-            },
-            {
-                newstype: 2,
-                importanttag: false,
-                istopbanner: false,
-                clickto: false,
-                link: "http://luckydraw.oriental-game.com/LUCKYDRAW/",
-                downloadbtn: false,
-                downloadlink: "",
-                mainbannerimg: "",
-                bannerimg: "http://luckydraw.oriental-game.com/LUCKYDRAW/assets/images/xinyun-logo.png",
-                name: "东方游戏幸运抽抽乐",
-                time: "2018/05",
-                containtexts: '',
-                containtext: ''
-            },
-            {
-                newstype: 2,
-                importanttag: false,
-                istopbanner: false,
-                clickto: false,
-                link: "https://www.lc88drt.com/tournaments/site/40",
-                downloadbtn: false,
-                downloadlink: "",
-                mainbannerimg: "",
-                bannerimg: "https://www.lc88drt.com/tournaments/site/Content/Images/fg/lucky_dragoon_logo.png",
-                name: "幸运之龙擂台赛",
-                time: "2018/05",
-                containtexts: '',
-                containtext: ''
-            },
-            {
-                newstype: 2,
-                importanttag: false,
-                istopbanner: false,
-                clickto: false,
-                link: "http://www.fishhuntergames.com/events/apr2018/",
-                downloadbtn: false,
-                downloadlink: "",
-                mainbannerimg: "",
-                bannerimg: "http://www.fishhuntergames.com/events/apr2018/img/bg.jpg",
-                name: "宝箱宝宝大迁徙",
-                time: "2018/04/23",
-                containtexts: '',
-                containtext: '在打鱼过程中,宝箱宝宝不定时在游戏中出现。只需通过点击将其抓获，可获得丰富奖金。每次金额不确定，最高多达5000元。'
-            },
-            {
-                newstype: 2,
-                importanttag: false,
-                istopbanner: false,
-                clickto: false,
-                link: "http://xingaming.com/event_standalone.html",
-                downloadbtn: false,
-                downloadlink: "",
-                mainbannerimg: "",
-                bannerimg: "http://xingaming.com/img/event-coinBattle/banner_1920x870_ZH.jpg",
-                name: "百万英雄金币王   通关翻倍天天赏",
-                time: "2018/04/18",
-                containtexts: '',
-                containtext: '金拉霸，猛龙传奇，金龙珠，XIN哥来了'
-            },
-            {
-                newstype: 2,
-                importanttag: false,
-                istopbanner: false,
-                clickto: false,
-                link: "http://www.xingaming.com/zh_event.html",
-                downloadbtn: false,
-                downloadlink: "",
-                mainbannerimg: "",
-                bannerimg: "http://www.xingaming.com/img/event-coinBattle/banner_1920x870_ZH.jpg",
-                name: "XIN哥來了",
-                time: "2018/03/26",
-                containtexts: '',
-                containtext: ''
-            },
-            {
-                newstype: 2,
-                importanttag: false,
-                istopbanner: false,
-                clickto: false,
-                link: "http://www.fishhuntergames.com/events/march2018/",
-                downloadbtn: false,
-                downloadlink: "",
-                mainbannerimg: "",
-                bannerimg: "http://www.fishhuntergames.com/events/march2018/img/bg.jpg",
-                name: "礼金大派送",
-                time: "2018/03/20",
-                containtexts: '',
-                containtext: ''
-            },
-            /*
+      },
+      {
+        newstype: 2,
+        importanttag: false,
+        istopbanner: false,
+        clickto: false,
+        link: "http://luckydraw.oriental-game.com/LUCKYDRAW/",
+        downloadbtn: false,
+        downloadlink: "",
+        mainbannerimg: "",
+        bannerimg:
+          "http://luckydraw.oriental-game.com/LUCKYDRAW/assets/images/xinyun-logo.png",
+        name: "东方游戏幸运抽抽乐",
+        time: "2018/05",
+        containtexts: "",
+        containtext: ""
+      },
+      {
+        newstype: 2,
+        importanttag: false,
+        istopbanner: false,
+        clickto: false,
+        link: "https://www.lc88drt.com/tournaments/site/40",
+        downloadbtn: false,
+        downloadlink: "",
+        mainbannerimg: "",
+        bannerimg:
+          "https://www.lc88drt.com/tournaments/site/Content/Images/fg/lucky_dragoon_logo.png",
+        name: "幸运之龙擂台赛",
+        time: "2018/05",
+        containtexts: "",
+        containtext: ""
+      },
+      {
+        newstype: 2,
+        importanttag: false,
+        istopbanner: false,
+        clickto: false,
+        link: "http://www.fishhuntergames.com/events/apr2018/",
+        downloadbtn: false,
+        downloadlink: "",
+        mainbannerimg: "",
+        bannerimg: "http://www.fishhuntergames.com/events/apr2018/img/bg.jpg",
+        name: "宝箱宝宝大迁徙",
+        time: "2018/04/23",
+        containtexts: "",
+        containtext:
+          "在打鱼过程中,宝箱宝宝不定时在游戏中出现。只需通过点击将其抓获，可获得丰富奖金。每次金额不确定，最高多达5000元。"
+      },
+      {
+        newstype: 2,
+        importanttag: false,
+        istopbanner: false,
+        clickto: false,
+        link: "http://xingaming.com/event_standalone.html",
+        downloadbtn: false,
+        downloadlink: "",
+        mainbannerimg: "",
+        bannerimg:
+          "http://xingaming.com/img/event-coinBattle/banner_1920x870_ZH.jpg",
+        name: "百万英雄金币王   通关翻倍天天赏",
+        time: "2018/04/18",
+        containtexts: "",
+        containtext: "金拉霸，猛龙传奇，金龙珠，XIN哥来了"
+      },
+      {
+        newstype: 2,
+        importanttag: false,
+        istopbanner: false,
+        clickto: false,
+        link: "http://www.xingaming.com/zh_event.html",
+        downloadbtn: false,
+        downloadlink: "",
+        mainbannerimg: "",
+        bannerimg:
+          "http://www.xingaming.com/img/event-coinBattle/banner_1920x870_ZH.jpg",
+        name: "XIN哥來了",
+        time: "2018/03/26",
+        containtexts: "",
+        containtext: ""
+      },
+      {
+        newstype: 2,
+        importanttag: false,
+        istopbanner: false,
+        clickto: false,
+        link: "http://www.fishhuntergames.com/events/march2018/",
+        downloadbtn: false,
+        downloadlink: "",
+        mainbannerimg: "",
+        bannerimg: "http://www.fishhuntergames.com/events/march2018/img/bg.jpg",
+        name: "礼金大派送",
+        time: "2018/03/20",
+        containtexts: "",
+        containtext: ""
+      },
+      /*
             {
                 newstype: 2,
                 importanttag: false,
@@ -996,96 +1084,119 @@ var vm = new Vue({
                 containtext: ''
             },
             */
-            {
-                newstype: 3,
-                importanttag: false,
-                istopbanner: false,
-                clickto: false,
-                link: "javascript: void(0)",
-                downloadbtn: false,
-                downloadlink: "",
-                mainbannerimg: "",
-                bannerimg: "",
-                name: "活动素材/轮播图",
-                time: "无资料",
-                containtexts: '',
-                containtext: '无资料'
-            }
-        ]
+      {
+        newstype: 3,
+        importanttag: false,
+        istopbanner: false,
+        clickto: false,
+        link: "javascript: void(0)",
+        downloadbtn: false,
+        downloadlink: "",
+        mainbannerimg: "",
+        bannerimg: "",
+        name: "活动素材/轮播图",
+        time: "无资料",
+        containtexts: "",
+        containtext: "无资料"
+      }
+    ]
+  },
+  watch: {
+    data: function(value) {
+      if (true) {
+        console.log(111);
+      } else {
+        console.log(222);
+      }
+    }
+  },
+  methods: {
+    newsnavlist: function(index) {
+      this.nowlistpage = index;
+      this.search = "";
+      $(".newsnavlist>div>li")
+        .eq(index)
+        .addClass("active")
+        .siblings()
+        .removeClass("active");
+      $("#newsPage01 .newsnavlist>div>li")
+        .eq(index)
+        .addClass("active")
+        .siblings()
+        .removeClass("active");
+      $("html")
+        .getNiceScroll()
+        .resize();
+      $("html")
+        .getNiceScroll()
+        .remove();
+      var agent = navigator.userAgent.toLowerCase();
+      if (
+        agent.match("android") ||
+        agent.match("iphone") ||
+        agent.match("ipad")
+      ) {
+      } else {
+        nice = $("html").niceScroll({
+          scrollspeed: 51,
+          mousescrollstep: 45,
+          cursorwidth: "5px",
+          cursorcolor: "#222",
+          cursorborder: "0px solid #fff"
+        });
+      }
     },
-    watch: {
-        data: function(value) {
-            if (true) {
-                console.log(111);
-            } else {
-                console.log(222);
-            }
-        }
+    clickindex: function(index) {
+      this.showpage = index;
+      if (index == this.showpage) {
+        return true;
+      } else {
+        return false;
+      }
     },
-    methods: {
-        newsnavlist: function(index) {
-            this.nowlistpage = index;
-            this.search = "";
-            $(".newsnavlist>div>li").eq(index).addClass("active").siblings().removeClass("active");
-            $("#newsPage01 .newsnavlist>div>li").eq(index).addClass("active").siblings().removeClass("active");
-            $("html").getNiceScroll().resize();
-            $("html").getNiceScroll().remove();
-            var agent = navigator.userAgent.toLowerCase();
-            if (agent.match("android") || agent.match("iphone") || agent.match("ipad")) {} else {
-                nice = $("html").niceScroll({ scrollspeed: 51, mousescrollstep: 45, cursorwidth: "5px", cursorcolor: "#222", cursorborder: "0px solid #fff" });
-            };
-        },
-        clickindex: function(index) {
-            this.showpage = index;
-            if (index == this.showpage) {
-                return true;
-            } else {
-                return false;
-            }
-        },
-        intopagevif: function(index) {
-            if (index == this.showpage) {
-                return true;
-            } else {
-                return false;
-            }
-        },
-        clicktoopen: function(index) {
-            if (this.newss[index].clickto) {
-                return "_self";
-            } else {
-                return "_blank";
-            }
-        }
+    intopagevif: function(index) {
+      if (index == this.showpage) {
+        return true;
+      } else {
+        return false;
+      }
     },
-    computed: {
-        bannerstyle_fn: function() {
-            bannerstyle = this.newss.length - this.newnews;
-            if (bannerstyle == 1) {
-                this.slickstyle = false;
-                return "bannerboxstyle_one";
-            } else if (bannerstyle == 2) {
-                this.slickstyle = false;
-                return "bannerboxstyle_two";
-            } else if (bannerstyle > 2) {
-                this.slickstyle = true;
-                return "bannerboxstyle_one";
-            }
-        },
-        /*
+    clicktoopen: function(index) {
+      if (this.newss[index].clickto) {
+        return "_self";
+      } else {
+        return "_blank";
+      }
+    }
+  },
+  computed: {
+    bannerstyle_fn: function() {
+      bannerstyle = this.newss.length - this.newnews;
+      if (bannerstyle == 1) {
+        this.slickstyle = false;
+        return "bannerboxstyle_one";
+      } else if (bannerstyle == 2) {
+        this.slickstyle = false;
+        return "bannerboxstyle_two";
+      } else if (bannerstyle > 2) {
+        this.slickstyle = true;
+        return "bannerboxstyle_one";
+      }
+    },
+    /*
         filterlist: function (newss){
             return this.newss.filter((news) => {
                 return news.name.match(this.search);
             });
         }
         */
-        filterlist: function(newss) {
-            var _this = this;
-            return this.newss.filter(function(news) {
-                var searchtxt = news.name + news.containtexts;
-                return searchtxt.match(_this.search);
-            });
-            /*
+    filterlist: function(newss) {
+      var _this = this;
+      return this.newss.filter(function(news) {
+        var searchtxt = news.name + news.containtexts;
+        return searchtxt.match(_this.search);
+      });
+      /*
             $(".alertinfbox").click(function () {
                 var alertboxw = $(window).width();
                 if (alertboxw > 1200) { alertboxw = 1200; }
@@ -1098,62 +1209,70 @@ var vm = new Vue({
                 });
             });
             */
-        },
-        /*
+    },
+    /*
          filterlist: function (newss) {
              return this.newss.filter(function (news) {
                  var searchtxt = news.name + news.containtexts;
                  return searchtxt.match(this.search);
              });
          }*/
-        initoutalertbox_fn0: function() {
-            var alertboxw = $(window).width();
-            if (alertboxw > 1200) { alertboxw = 1200; }
-            var $form = $("#alertbox");
-            $.colorbox({
-                //iframe: true,
-                inline: true,
-                href: $form,
-                width: alertboxw, //燈箱中間區塊的寬度
-            });
-        },
-        initoutalertbox_fn1: function() {
-            var alertboxw = $(window).width();
-            if (alertboxw > 1200) { alertboxw = 1200; }
-            var $form = $("#alertbox1");
-            $.colorbox({
-                //iframe: true,
-                inline: true,
-                href: $form,
-                width: alertboxw, //燈箱中間區塊的寬度
-            });
-        }
+    initoutalertbox_fn0: function() {
+      var alertboxw = $(window).width();
+      if (alertboxw > 1200) {
+        alertboxw = 1200;
+      }
+      var $form = $("#alertbox");
+      $.colorbox({
+        //iframe: true,
+        inline: true,
+        href: $form,
+        width: alertboxw //燈箱中間區塊的寬度
+      });
     },
-    mounted: function() {
-        //设置cookie
-        Vue.prototype.setCookie = function(c_name, value, expiredays) {
-            var exdate = new Date();
-            exdate.setDate(exdate.getDate() + expiredays);
-            document.cookie = c_name + "=" + escape(value) + (expiredays == null ? "" : ";expires=" + exdate.toGMTString());
-        };
-        //获取cookie、
-        function getCookie(name) {
-            var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
-            if (arr = document.cookie.match(reg))
-                return (arr[2]);
-            else
-                return null;
-        }
-        Vue.prototype.getCookie = getCookie;
-        //删除cookie
-        Vue.prototype.delCookie = function(name) {
-            var exp = new Date();
-            exp.setTime(exp.getTime() - 1);
-            var cval = getCookie(name);
-            if (cval != null) document.cookie = name + "=" + cval + ";expires=" + exp.toGMTString();
-        };
-        if (!this.outwindow) {
-            this.setCookie("cancelAlert", "1", 1);
-        }
+    initoutalertbox_fn1: function() {
+      var alertboxw = $(window).width();
+      if (alertboxw > 1200) {
+        alertboxw = 1200;
+      }
+      var $form = $("#alertbox1");
+      $.colorbox({
+        //iframe: true,
+        inline: true,
+        href: $form,
+        width: alertboxw //燈箱中間區塊的寬度
+      });
     }
+  },
+  mounted: function() {
+    //设置cookie
+    Vue.prototype.setCookie = function(c_name, value, expiredays) {
+      var exdate = new Date();
+      exdate.setDate(exdate.getDate() + expiredays);
+      document.cookie =
+        c_name +
+        "=" +
+        escape(value) +
+        (expiredays == null ? "" : ";expires=" + exdate.toGMTString());
+    };
+    //获取cookie、
+    function getCookie(name) {
+      var arr,
+        reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+      if ((arr = document.cookie.match(reg))) return arr[2];
+      else return null;
+    }
+    Vue.prototype.getCookie = getCookie;
+    //删除cookie
+    Vue.prototype.delCookie = function(name) {
+      var exp = new Date();
+      exp.setTime(exp.getTime() - 1);
+      var cval = getCookie(name);
+      if (cval != null)
+        document.cookie = name + "=" + cval + ";expires=" + exp.toGMTString();
+    };
+    if (!this.outwindow) {
+      this.setCookie("cancelAlert", "1", 1);
+    }
+  }
 });

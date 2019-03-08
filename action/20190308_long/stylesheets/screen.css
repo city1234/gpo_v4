@@ -1,0 +1,498 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, ../sass/reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 16, ../sass/reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 19, ../sass/reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../sass/reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 25, ../sass/reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 29, ../sass/reset.scss */
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+/* line 34, ../sass/reset.scss */
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 38, ../sass/reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*zindex*/
+/*linear-gradient*/
+/*specify*/
+/*keyframes*/
+/*Responsive*/
+/*radius*/
+/*boxshadow*/
+/*POS*/
+/*clearfix*/
+/*changebg*/
+/*gridbox*/
+/* line 37, ../sass/screen.scss */
+body {
+  font: normal 14px/20px "Microsoft Yahei";
+}
+
+/* line 149, ../sass/screen.scss */
+.rowbox {
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  -webkit-align-items: center;
+}
+
+/*
+*********useage*********
+@include POS(475px,75px);
+@include css3(transition,all 1s ease);
+@include css3(box-shadow,0px 0px 14px #ffffff);
+@include css3(border-radius,20px);
+border: 2px solid #6d4b00;
+left: calc(50% - 82.5px);
+@include linear-gradient(#db3542, #bc2741);
+@include range-width-in(0,0){}
+@include ellipsistext();
+@include linear-gradient($top, $bottom);
+
+.btn_face{
+    @include btn_style_face($color_main ,65px ,30px,$radius);
+    @include hover_light();
+}
+.btn_line{
+    @include btn_style_line($color_main ,65px ,30px,$radius);
+}
+.tablebox{
+    @include table_style();
+}
+
+
+@media screen and (min-width: 0px) and (max-width:640px) {}
+@media screen and (min-width: 641px) and (max-width:1200px) {}
+@media screen and (min-width: 1201px) and (max-width:2000px) {}
+
+*********animation*********
+@include css3(transition,all 1s ease);
+@include css3(animation,opacitylight 2s infinite linear);
+@include keyframes(opacitylight) {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+*/
+/* line 197, ../sass/screen.scss */
+body {
+  background: #fff;
+}
+
+/* line 200, ../sass/screen.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 204, ../sass/screen.scss */
+li {
+  list-style: none;
+}
+
+/* line 208, ../sass/screen.scss */
+select {
+  -webkit-box-shadow: 0px 0px 14px #ffffff;
+  -moz-box-shadow: 0px 0px 14px #ffffff;
+  -ms-box-shadow: 0px 0px 14px #ffffff;
+  -o-box-shadow: 0px 0px 14px #ffffff;
+  box-shadow: 0px 0px 14px #ffffff;
+  border: 0px;
+  line-height: 30px;
+  height: 30px;
+  padding: 0 7px;
+  /*很关键：将默认的select选择框样式清除*/
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  padding-right: 20px;
+  cursor: pointer;
+  min-width: 80px;
+}
+
+/* line 224, ../sass/screen.scss */
+input {
+  border: 1px solid #3e8ef0;
+  background: transparent;
+  line-height: 28px;
+  height: 28px;
+  padding: 0 10px;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  width: 145px;
+}
+
+/* line 234, ../sass/screen.scss */
+.wrapper {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* line 239, ../sass/screen.scss */
+.wrapper_in {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 246, ../sass/screen.scss */
+.gridbox li {
+  height: 100px;
+  float: left;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  width: 16%;
+  background: #000;
+}
+/* line 152, ../sass/mixin.scss */
+.gridbox li:nth-child(5n) {
+  margin-right: 0;
+}
+/* line 250, ../sass/screen.scss */
+.gridbox li img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 254, ../sass/screen.scss */
+  .mb_show {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 0) and (max-width: 767px) {
+  /* line 259, ../sass/screen.scss */
+  .pc_show {
+    display: none !important;
+  }
+}
+
+/* line 264, ../sass/screen.scss */
+.topbanner {
+  background: url(../images/topbanner.jpg) center center;
+  background-size: cover;
+  min-height: 1080px;
+  position: relative;
+}
+@media screen and (min-width: 0) and (max-width: 750px) {
+  /* line 264, ../sass/screen.scss */
+  .topbanner {
+    min-height: 550px;
+    background: url(../images/topbanner_mb.jpg) top center;
+    background-size: cover;
+  }
+}
+/* line 274, ../sass/screen.scss */
+.topbanner .title_effect {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: url("../images/gold.gif") top center;
+  background-size: cover;
+}
+
+/* line 283, ../sass/screen.scss */
+.sectitle {
+  text-align: center;
+}
+/* line 285, ../sass/screen.scss */
+.sectitle img {
+  width: 100%;
+  max-width: 435px;
+}
+
+/* line 290, ../sass/screen.scss */
+.sec_intro {
+  background: url(../images/bg_02.jpg) center center;
+  min-height: 1080px;
+}
+@media screen and (min-width: 0) and (max-width: 750px) {
+  /* line 290, ../sass/screen.scss */
+  .sec_intro {
+    min-height: 760px;
+    background: url(../images/bg_02_mb.jpg) top center;
+  }
+}
+@media screen and (min-width: 0) and (max-width: 768px) {
+  /* line 298, ../sass/screen.scss */
+  .sec_intro .wrapper_in {
+    padding: 5%;
+  }
+}
+/* line 302, ../sass/screen.scss */
+.sec_intro .iphone_pic {
+  width: 405px;
+  position: relative;
+  left: -5%;
+}
+/* line 306, ../sass/screen.scss */
+.sec_intro .iphone_pic .iphone_in {
+  position: absolute;
+  top: 13%;
+  left: calc(10% + 1px);
+}
+/* line 312, ../sass/screen.scss */
+.sec_intro .content {
+  flex-grow: 1;
+  max-width: 600px;
+  position: relative;
+}
+/* line 317, ../sass/screen.scss */
+.sec_intro .content:after, .sec_intro .content:before {
+  position: absolute;
+  content: url(../images/border.png);
+  left: -6%;
+}
+@media screen and (min-width: 0) and (max-width: 767px) {
+  /* line 317, ../sass/screen.scss */
+  .sec_intro .content:after, .sec_intro .content:before {
+    content: '';
+  }
+}
+/* line 325, ../sass/screen.scss */
+.sec_intro .content:after {
+  top: -10%;
+}
+/* line 329, ../sass/screen.scss */
+.sec_intro .content:before {
+  bottom: -10%;
+  -webkit-transform: scaley(-1);
+  -moz-transform: scaley(-1);
+  -ms-transform: scaley(-1);
+  -o-transform: scaley(-1);
+  transform: scaley(-1);
+}
+/* line 333, ../sass/screen.scss */
+.sec_intro .content .stitle {
+  color: #efe091;
+  font-size: 24px;
+  line-height: 40px;
+}
+/* line 338, ../sass/screen.scss */
+.sec_intro .content .list {
+  padding-top: 10px;
+}
+/* line 340, ../sass/screen.scss */
+.sec_intro .content .list li {
+  font-size: 16px;
+  color: #202020;
+  line-height: 25px;
+  position: relative;
+  padding-left: 50px;
+  margin-top: 40px;
+}
+/* line 347, ../sass/screen.scss */
+.sec_intro .content .list li:after {
+  position: absolute;
+  content: url(../images/cursor.png);
+  top: 0;
+  left: 0;
+}
+/* line 353, ../sass/screen.scss */
+.sec_intro .content .list li .txt {
+  font-size: 22px;
+  color: #fff;
+  line-height: 35px;
+}
+
+/* line 363, ../sass/screen.scss */
+.sec_spcal {
+  background: url(../images/bg_03.jpg) center center;
+  min-height: 1080px;
+}
+@media screen and (min-width: 0) and (max-width: 750px) {
+  /* line 363, ../sass/screen.scss */
+  .sec_spcal {
+    min-height: 590px;
+    background: url(../images/bg_03_mb.jpg) top center;
+  }
+}
+/* line 370, ../sass/screen.scss */
+.sec_spcal .wrapper_in {
+  max-width: 1280px;
+}
+/* line 380, ../sass/screen.scss */
+.sec_spcal .productlist .product_box {
+  background: #fff;
+  width: 22%;
+  margin: 5% 15px;
+  padding: 10px;
+  min-height: 400px;
+  -webkit-box-shadow: 4px 4px 16px rgba(83, 70, 67, 0.5);
+  -moz-box-shadow: 4px 4px 16px rgba(83, 70, 67, 0.5);
+  -ms-box-shadow: 4px 4px 16px rgba(83, 70, 67, 0.5);
+  -o-box-shadow: 4px 4px 16px rgba(83, 70, 67, 0.5);
+  box-shadow: 4px 4px 16px rgba(83, 70, 67, 0.5);
+}
+/* line 388, ../sass/screen.scss */
+.sec_spcal .productlist .product_box .product_pic img {
+  width: 100%;
+}
+/* line 392, ../sass/screen.scss */
+.sec_spcal .productlist .product_box .product_content {
+  text-align: center;
+  line-height: 25px;
+}
+/* line 395, ../sass/screen.scss */
+.sec_spcal .productlist .product_box .product_content .stitle {
+  font-size: 24px;
+  color: #ddc884;
+  margin-top: 15px;
+  line-height: 40px;
+}
+/* line 401, ../sass/screen.scss */
+.sec_spcal .productlist .product_box .product_content .txt {
+  color: #787878;
+  font-size: 16px;
+  margin-top: 5px;
+}
+@media screen and (min-width: 768px) {
+  /* line 379, ../sass/screen.scss */
+  .sec_spcal .productlist {
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+  }
+}
+@media screen and (min-width: 0) and (max-width: 767px) {
+  /* line 379, ../sass/screen.scss */
+  .sec_spcal .productlist {
+    width: 80%;
+    margin: 0 auto;
+  }
+  /* line 414, ../sass/screen.scss */
+  .sec_spcal .productlist .slick-slide {
+    margin: 10px 15px;
+    padding: 0px;
+    width: 80%;
+  }
+  /* line 419, ../sass/screen.scss */
+  .sec_spcal .productlist .product_box {
+    margin: -10px;
+    padding: 10px;
+  }
+  /* line 423, ../sass/screen.scss */
+  .sec_spcal .productlist .slick-arrow {
+    height: 68px;
+    width: 39px;
+    top: calc(50% - 34px);
+    z-index: 1;
+  }
+  /* line 428, ../sass/screen.scss */
+  .sec_spcal .productlist .slick-arrow:before {
+    content: url(../images/btn_left.png);
+  }
+  /* line 431, ../sass/screen.scss */
+  .sec_spcal .productlist .slick-next {
+    -webkit-transform: scalex(-1);
+    -moz-transform: scalex(-1);
+    -ms-transform: scalex(-1);
+    -o-transform: scalex(-1);
+    transform: scalex(-1);
+    top: calc(50% - 68px);
+  }
+}
+/* line 437, ../sass/screen.scss */
+.sec_spcal .downloadbtn {
+  margin-top: 80px;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  max-width: 340px;
+  margin: 80px auto 20px auto;
+  position: relative;
+}
+@media screen and (min-width: 0) and (max-width: 767px) {
+  /* line 437, ../sass/screen.scss */
+  .sec_spcal .downloadbtn {
+    margin-top: 20px;
+  }
+}
+/* line 448, ../sass/screen.scss */
+.sec_spcal .downloadbtn:after {
+  content: "";
+  position: absolute;
+  background: url(../images/btn_hover.png);
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+/* line 461, ../sass/screen.scss */
+.sec_spcal .downloadbtn:hover:after {
+  opacity: 1;
+}
+/* line 465, ../sass/screen.scss */
+.sec_spcal .downloadbtn img {
+  width: 100%;
+  max-width: 340px;
+}
+
+/* line 471, ../sass/screen.scss */
+img {
+  vertical-align: middle;
+}
