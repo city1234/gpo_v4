@@ -262,8 +262,7 @@ input{
     }
 }
 .topbanner{
-    background: url(../images/topbanner.jpg) center center;
-    background-size: cover;
+    background: url(../images/topbanner.jpg) center center no-repeat;
     min-height: 1080px;
     @include range-width-in(0,750px){
         min-height: 550px;
@@ -288,7 +287,7 @@ input{
     }
 }
 .sec_intro{
-    background: url(../images/bg_02.jpg) center center;
+    background: url(../images/bg_02.jpg) center center no-repeat;
     min-height: 1080px;
     @include range-width-in(0,750px){
         min-height: 760px;
@@ -361,7 +360,7 @@ input{
 }
 
 .sec_spcal{
-    background: url(../images/bg_03.jpg) center center;
+    background: url(../images/bg_03.jpg) center center no-repeat;
     min-height: 1080px;
     @include range-width-in(0,750px){
         min-height: 590px;

@@ -224,8 +224,7 @@ input {
 
 /* line 264, ../sass/screen.scss */
 .topbanner {
-  background: url(../images/topbanner.jpg) center center;
-  background-size: cover;
+  background: url(../images/topbanner.jpg) center center no-repeat;
   min-height: 1080px;
   position: relative;
 }
@@ -237,7 +236,7 @@ input {
     background-size: cover;
   }
 }
-/* line 274, ../sass/screen.scss */
+/* line 273, ../sass/screen.scss */
 .topbanner .title_effect {
   position: absolute;
   width: 100%;
@@ -247,69 +246,69 @@ input {
   background-size: cover;
 }
 
-/* line 283, ../sass/screen.scss */
+/* line 282, ../sass/screen.scss */
 .sectitle {
   text-align: center;
 }
-/* line 285, ../sass/screen.scss */
+/* line 284, ../sass/screen.scss */
 .sectitle img {
   width: 100%;
   max-width: 435px;
 }
 
-/* line 290, ../sass/screen.scss */
+/* line 289, ../sass/screen.scss */
 .sec_intro {
-  background: url(../images/bg_02.jpg) center center;
+  background: url(../images/bg_02.jpg) center center no-repeat;
   min-height: 1080px;
 }
 @media screen and (min-width: 0) and (max-width: 750px) {
-  /* line 290, ../sass/screen.scss */
+  /* line 289, ../sass/screen.scss */
   .sec_intro {
     min-height: 760px;
     background: url(../images/bg_02_mb.jpg) top center;
   }
 }
 @media screen and (min-width: 0) and (max-width: 768px) {
-  /* line 298, ../sass/screen.scss */
+  /* line 297, ../sass/screen.scss */
   .sec_intro .wrapper_in {
     padding: 5%;
   }
 }
-/* line 302, ../sass/screen.scss */
+/* line 301, ../sass/screen.scss */
 .sec_intro .iphone_pic {
   width: 405px;
   position: relative;
   left: -5%;
 }
-/* line 306, ../sass/screen.scss */
+/* line 305, ../sass/screen.scss */
 .sec_intro .iphone_pic .iphone_in {
   position: absolute;
   top: 13%;
   left: calc(10% + 1px);
 }
-/* line 312, ../sass/screen.scss */
+/* line 311, ../sass/screen.scss */
 .sec_intro .content {
   flex-grow: 1;
   max-width: 600px;
   position: relative;
 }
-/* line 317, ../sass/screen.scss */
+/* line 316, ../sass/screen.scss */
 .sec_intro .content:after, .sec_intro .content:before {
   position: absolute;
   content: url(../images/border.png);
   left: -6%;
 }
 @media screen and (min-width: 0) and (max-width: 767px) {
-  /* line 317, ../sass/screen.scss */
+  /* line 316, ../sass/screen.scss */
   .sec_intro .content:after, .sec_intro .content:before {
     content: '';
   }
 }
-/* line 325, ../sass/screen.scss */
+/* line 324, ../sass/screen.scss */
 .sec_intro .content:after {
   top: -10%;
 }
-/* line 329, ../sass/screen.scss */
+/* line 328, ../sass/screen.scss */
 .sec_intro .content:before {
   bottom: -10%;
   -webkit-transform: scaley(-1);
@@ -318,17 +317,17 @@ input {
   -o-transform: scaley(-1);
   transform: scaley(-1);
 }
-/* line 333, ../sass/screen.scss */
+/* line 332, ../sass/screen.scss */
 .sec_intro .content .stitle {
   color: #efe091;
   font-size: 24px;
   line-height: 40px;
 }
-/* line 338, ../sass/screen.scss */
+/* line 337, ../sass/screen.scss */
 .sec_intro .content .list {
   padding-top: 10px;
 }
-/* line 340, ../sass/screen.scss */
+/* line 339, ../sass/screen.scss */
 .sec_intro .content .list li {
   font-size: 16px;
   color: #202020;
@@ -337,37 +336,37 @@ input {
   padding-left: 50px;
   margin-top: 40px;
 }
-/* line 347, ../sass/screen.scss */
+/* line 346, ../sass/screen.scss */
 .sec_intro .content .list li:after {
   position: absolute;
   content: url(../images/cursor.png);
   top: 0;
   left: 0;
 }
-/* line 353, ../sass/screen.scss */
+/* line 352, ../sass/screen.scss */
 .sec_intro .content .list li .txt {
   font-size: 22px;
   color: #fff;
   line-height: 35px;
 }
 
-/* line 363, ../sass/screen.scss */
+/* line 362, ../sass/screen.scss */
 .sec_spcal {
-  background: url(../images/bg_03.jpg) center center;
+  background: url(../images/bg_03.jpg) center center no-repeat;
   min-height: 1080px;
 }
 @media screen and (min-width: 0) and (max-width: 750px) {
-  /* line 363, ../sass/screen.scss */
+  /* line 362, ../sass/screen.scss */
   .sec_spcal {
     min-height: 590px;
     background: url(../images/bg_03_mb.jpg) top center;
   }
 }
-/* line 370, ../sass/screen.scss */
+/* line 369, ../sass/screen.scss */
 .sec_spcal .wrapper_in {
   max-width: 1280px;
 }
-/* line 380, ../sass/screen.scss */
+/* line 379, ../sass/screen.scss */
 .sec_spcal .productlist .product_box {
   background: #fff;
   width: 22%;
@@ -381,7 +380,7 @@ input {
   box-shadow: 4px 4px 16px rgba(83, 70, 67, 0.5);
   position: relative;
 }
-/* line 388, ../sass/screen.scss */
+/* line 387, ../sass/screen.scss */
 .sec_spcal .productlist .product_box:after {
   position: absolute;
   width: 100%;
@@ -397,35 +396,35 @@ input {
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
-/* line 400, ../sass/screen.scss */
+/* line 399, ../sass/screen.scss */
 .sec_spcal .productlist .product_box:hover:after {
   border: 1px solid #efa044;
   opacity: 1;
 }
-/* line 406, ../sass/screen.scss */
+/* line 405, ../sass/screen.scss */
 .sec_spcal .productlist .product_box .product_pic img {
   width: 100%;
 }
-/* line 410, ../sass/screen.scss */
+/* line 409, ../sass/screen.scss */
 .sec_spcal .productlist .product_box .product_content {
   text-align: center;
   line-height: 25px;
 }
-/* line 413, ../sass/screen.scss */
+/* line 412, ../sass/screen.scss */
 .sec_spcal .productlist .product_box .product_content .stitle {
   font-size: 24px;
   color: #ddc884;
   margin-top: 15px;
   line-height: 40px;
 }
-/* line 419, ../sass/screen.scss */
+/* line 418, ../sass/screen.scss */
 .sec_spcal .productlist .product_box .product_content .txt {
   color: #787878;
   font-size: 16px;
   margin-top: 5px;
 }
 @media screen and (min-width: 768px) {
-  /* line 379, ../sass/screen.scss */
+  /* line 378, ../sass/screen.scss */
   .sec_spcal .productlist {
     display: -webkit-flex;
     display: flex;
@@ -434,34 +433,34 @@ input {
   }
 }
 @media screen and (min-width: 0) and (max-width: 767px) {
-  /* line 379, ../sass/screen.scss */
+  /* line 378, ../sass/screen.scss */
   .sec_spcal .productlist {
     width: 80%;
     margin: 0 auto;
   }
-  /* line 432, ../sass/screen.scss */
+  /* line 431, ../sass/screen.scss */
   .sec_spcal .productlist .slick-slide {
     margin: 10px 15px;
     padding: 0px;
     width: 80%;
   }
-  /* line 437, ../sass/screen.scss */
+  /* line 436, ../sass/screen.scss */
   .sec_spcal .productlist .product_box {
     margin: -10px;
     padding: 10px;
   }
-  /* line 441, ../sass/screen.scss */
+  /* line 440, ../sass/screen.scss */
   .sec_spcal .productlist .slick-arrow {
     height: 68px;
     width: 39px;
     top: calc(50% - 34px);
     z-index: 1;
   }
-  /* line 446, ../sass/screen.scss */
+  /* line 445, ../sass/screen.scss */
   .sec_spcal .productlist .slick-arrow:before {
     content: url(../images/btn_left.png);
   }
-  /* line 449, ../sass/screen.scss */
+  /* line 448, ../sass/screen.scss */
   .sec_spcal .productlist .slick-next {
     -webkit-transform: scalex(-1);
     -moz-transform: scalex(-1);
@@ -471,7 +470,7 @@ input {
     top: calc(50% - 68px);
   }
 }
-/* line 455, ../sass/screen.scss */
+/* line 454, ../sass/screen.scss */
 .sec_spcal .downloadbtn {
   margin-top: 80px;
   text-align: center;
@@ -482,12 +481,12 @@ input {
   position: relative;
 }
 @media screen and (min-width: 0) and (max-width: 767px) {
-  /* line 455, ../sass/screen.scss */
+  /* line 454, ../sass/screen.scss */
   .sec_spcal .downloadbtn {
     margin-top: 20px;
   }
 }
-/* line 466, ../sass/screen.scss */
+/* line 465, ../sass/screen.scss */
 .sec_spcal .downloadbtn:after {
   content: "";
   position: absolute;
@@ -504,17 +503,17 @@ input {
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
-/* line 479, ../sass/screen.scss */
+/* line 478, ../sass/screen.scss */
 .sec_spcal .downloadbtn:hover:after {
   opacity: 1;
 }
-/* line 483, ../sass/screen.scss */
+/* line 482, ../sass/screen.scss */
 .sec_spcal .downloadbtn img {
   width: 100%;
   max-width: 340px;
 }
 
-/* line 489, ../sass/screen.scss */
+/* line 488, ../sass/screen.scss */
 img {
   vertical-align: middle;
 }
