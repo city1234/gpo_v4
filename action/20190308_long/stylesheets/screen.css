@@ -458,9 +458,16 @@ input {
   }
   /* line 445, ../sass/screen.scss */
   .sec_spcal .productlist .slick-arrow:before {
-    content: url(../images/btn_left.png);
+    content: "";
+    background: url(../images/btn_left.png);
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
-  /* line 448, ../sass/screen.scss */
+  /* line 456, ../sass/screen.scss */
   .sec_spcal .productlist .slick-next {
     -webkit-transform: scalex(-1);
     -moz-transform: scalex(-1);
@@ -470,7 +477,7 @@ input {
     top: calc(50% - 68px);
   }
 }
-/* line 454, ../sass/screen.scss */
+/* line 462, ../sass/screen.scss */
 .sec_spcal .downloadbtn {
   margin-top: 80px;
   text-align: center;
@@ -481,12 +488,12 @@ input {
   position: relative;
 }
 @media screen and (min-width: 0) and (max-width: 767px) {
-  /* line 454, ../sass/screen.scss */
+  /* line 462, ../sass/screen.scss */
   .sec_spcal .downloadbtn {
     margin-top: 20px;
   }
 }
-/* line 465, ../sass/screen.scss */
+/* line 473, ../sass/screen.scss */
 .sec_spcal .downloadbtn:after {
   content: "";
   position: absolute;
@@ -503,17 +510,17 @@ input {
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
-/* line 478, ../sass/screen.scss */
+/* line 486, ../sass/screen.scss */
 .sec_spcal .downloadbtn:hover:after {
   opacity: 1;
 }
-/* line 482, ../sass/screen.scss */
+/* line 490, ../sass/screen.scss */
 .sec_spcal .downloadbtn img {
   width: 100%;
   max-width: 340px;
 }
 
-/* line 488, ../sass/screen.scss */
+/* line 496, ../sass/screen.scss */
 img {
   vertical-align: middle;
 }

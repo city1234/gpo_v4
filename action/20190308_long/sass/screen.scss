@@ -443,7 +443,15 @@ input{
                     top:calc(50% - 34px);
                     z-index: 1;
                 &:before{
-                    content:url(../images/btn_left.png);
+                    //content:url(../images/btn_left.png);
+                    content: "";
+                    background: url(../images/btn_left.png);
+                    width: 50%;
+                    height: 100%;
+                    background-size: cover;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
                 }
             }.slick-next{
                 @include css3(transform,scalex(-1));
