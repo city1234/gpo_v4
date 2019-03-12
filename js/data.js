@@ -423,6 +423,45 @@ var vm = new Vue({
         mainbannerimg: "",
         bannerimg: "",
         name: "即将上线",
+        time: "2019/03/09",
+        containtexts: "【1.2.8V1】版本功能说明",
+        containtext:
+          '\
+                <table>\
+                    <tr>\
+                        <td width="20%">标题</td>\
+                        <td>内容描述</td>\
+                    </tr >\
+                    <tr>\
+                        <td>【第三方】游戏平台</td>\
+                        <td class="txtleft">\
+                        1.	去掉已下架游戏平台，包含“旧MG电子，MG视讯，BB3D、OPUS视讯”。</br>\
+                        2.	新MG电子改名为MG电子，不区分3线和5线老虎机，统一显示老虎机。</br>\
+                        </td>\
+                    </tr>\
+                    <tr>\
+                        <td>【代理端】现金系统</td>\
+                        <td class="txtleft">\
+                        1．【账号管理_子账号】界面新增“出入款限额”功能，厅主可控制子账号权限，子账号在核对出入款时，只能操作分配的金额范围订单。</br>\
+                        2．【入款记录】和【订单号查询】界面新增”导出”功能,，方便统计数据。</br>\
+                        3．【出款记录】界面新增“操作日期和后台备注”两列，导出功能同步优化。</br>\
+                        4．【取款稽核查询】界面中新增【快速出款】线上出款记录，可区分快速出款状态。</br>\
+                        5．【支付平台设定_线上入款_订单号查询】页面名称优化，添加“商家代称”一列。</br>\
+                        6．【支付平台设定_线上入款_商家号列表】的第二方外链支持https协议，同时外链支付名称前缀统一添加“第二方”。\
+                        </td>\
+                    </tr>'
+      },
+      {
+        newstype: 1,
+        importanttag: true,
+        istopbanner: false,
+        clickto: true,
+        link: "javascript: void(0)",
+        downloadbtn: false,
+        downloadlink: "",
+        mainbannerimg: "",
+        bannerimg: "",
+        name: "即将上线",
         time: "2019/03/08",
         containtexts: "彩票2.0.4版本功能说明",
         containtext:
@@ -433,7 +472,7 @@ var vm = new Vue({
                         <td>内容描述</td>\
                     </tr >\
                     <tr>\
-                        <td>H5彩票新增长龙助手功能</td>\
+                        <td>H5彩票新增<a href="action/20190308_long/index.html" target="_blank">长龙助手</a>功能</td>\
                         <td class="txtleft">\
                         1、查看“大”‘小“”单“”双“玩法3期及以上的长龙</br>\
                         2、提供斩龙和顺龙投注方案，支持立即投注</br>\

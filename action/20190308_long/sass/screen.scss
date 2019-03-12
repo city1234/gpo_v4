@@ -277,6 +277,9 @@ input{
         top:0;
         background: url("../images/gold.gif") top center;
         background-size: cover;
+        @include range-width-in(0,750px){
+            background:none;
+        }
     }
 }
 .sectitle{

@@ -237,6 +237,7 @@ input {
   }
 }
 /* line 273, ../sass/screen.scss */
+
 .topbanner .title_effect {
   position: absolute;
   width: 100%;
@@ -245,7 +246,11 @@ input {
   background: url("../images/gold.gif") top center;
   background-size: cover;
 }
-
+@media screen and (min-width: 0) and (max-width: 750px) {
+  .topbanner .title_effect {
+    background: none;
+  }
+}
 /* line 282, ../sass/screen.scss */
 .sectitle {
   text-align: center;
