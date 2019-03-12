@@ -424,7 +424,7 @@ var vm = new Vue({
         bannerimg: "",
         name: "即将上线",
         time: "2019/03/09",
-        containtexts: "【1.2.8V1】版本功能说明",
+        containtexts: "1.2.8V1版本功能说明",
         containtext:
           '\
                 <table>\
