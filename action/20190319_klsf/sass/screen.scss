@@ -1,0 +1,528 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+//@import "compass/reset";
+@import "reset.scss";
+@import "mixin.scss";
+
+//UI definition
+//color
+$bg_main: #f4f9ff;
+$bg_sup: #edf4ff;
+$color_main: #3e8ef0;
+$color_sup: #0068d6;
+$color_add: #54a7ff;
+$colortxt_main: #323232;
+$colortxt_sup: #666666;
+$color_ignore: #9b9a9a;
+$color_alert: #f09e3e;
+$color_tip: #4a4a4a;
+$color_red: #f68622;
+$color_green: #26bd7b;
+
+//main-border-radius
+//@include css3(border-radius,$radius);
+$radius: 5px;
+
+//main-shadow
+$shadow: 0px 0px 14px #ffffff;
+@mixin shadow($shadow:$shadow){
+    @include css3(box-shadow,$shadow);
+}
+
+
+//font
+body{
+    font: normal 14px/20px "Microsoft Yahei";
+}
+@mixin bigtitle(){
+    font-size: 25px;
+    line-height: 50px;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+@mixin midtitle(){
+    font-size: 16px;
+    line-height: 25px;
+}
+@mixin txt(){
+    font-size: 14px;
+}
+@mixin txts(){
+    font-size: 12px;
+}
+
+//btn style
+@mixin btn_style_face($color ,$width ,$height ,$radius:0){
+    width: $width;
+    height: $height;
+    color: #fff;
+    background: $color;
+    line-height: $height;
+    text-align: center;
+    cursor: pointer;
+    vertical-align: middle;
+    padding: 0 5px;
+    @include txt();
+    @include css3(border-radius,$radius);
+}
+@mixin btn_style_line($color ,$width ,$height ,$radius:0){
+    width: $width;
+    height: $height;
+    border: 1px solid $color;
+    line-height: $height;
+    text-align: center;
+    cursor: pointer;
+    vertical-align: middle;
+    @include css3(transition,all .2s ease);
+    @include css3(border-radius,$radius);
+    &:hover{
+        background: $color;
+        color: #fff;
+        i{
+            color: #fff;
+        }
+    }
+}
+
+//hover active style
+@mixin hover_light(){
+    position: relative;
+    &:after{
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        content: "";
+        background: rgba(255, 255, 255,0);
+        @include css3(transition,all .2s ease);
+    }
+    &:hover{
+        //background: #59a4ff!important;
+        &:after{
+            background: rgba(255, 255, 255,.25);
+        }
+    }
+}
+
+
+//table style
+@mixin table_style(){
+    table{
+        margin: 0 auto;
+        border-collapse: separate;
+        border-spacing: 2px!important;
+        font-size: 16px;
+        line-height:1.5;
+        width: 100%;
+        tr{
+            &:first-child{
+                @include midtitle();
+                background: $color_main!important;
+                color: #fff;
+            }
+            &:nth-child(odd) {
+                background-color: rgba(190, 190, 190, 0.2);
+            }
+            span{
+                @include txts();
+                font-size: 23px;
+            }
+            td{
+                text-align: center;
+                padding: 5px;
+            }
+        }
+    }
+}
+
+//boxalign
+@mixin boxalign(){
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+}
+.rowbox{
+    @include boxalign();
+}
+
+/*
+*********useage*********
+@include POS(475px,75px);
+@include css3(transition,all 1s ease);
+@include css3(box-shadow,0px 0px 14px #ffffff);
+@include css3(border-radius,20px);
+border: 2px solid #6d4b00;
+left: calc(50% - 82.5px);
+@include linear-gradient(#db3542, #bc2741);
+@include range-width-in(0,0){}
+@include ellipsistext();
+@include linear-gradient($top, $bottom);
+
+.btn_face{
+    @include btn_style_face($color_main ,65px ,30px,$radius);
+    @include hover_light();
+}
+.btn_line{
+    @include btn_style_line($color_main ,65px ,30px,$radius);
+}
+.tablebox{
+    @include table_style();
+}
+
+
+@media screen and (min-width: 0px) and (max-width:640px) {}
+@media screen and (min-width: 641px) and (max-width:1200px) {}
+@media screen and (min-width: 1201px) and (max-width:2000px) {}
+
+*********animation*********
+@include css3(transition,all 1s ease);
+@include css3(animation,opacitylight 2s infinite linear);
+@include keyframes(opacitylight) {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+*/
+body{
+    background: url(../images/bg.jpg)top center;
+    @include range-width-in(0,750px){
+        background-size: 40%;
+    }
+}
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+//select style
+select{
+    @include shadow();
+    border: 0px;
+    line-height: 30px;
+    height: 30px;
+    padding: 0 7px;
+    /*很关键：将默认的select选择框样式清除*/
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    //background: #fff url("../images/select_arrow.png") no-repeat scroll right 5px center;
+    padding-right: 20px;
+    cursor: pointer;
+    min-width: 80px;
+}
+//input style
+input{
+    border: 1px solid $color_main;
+    background: rgba(0, 0, 0, 0);
+    line-height: 28px;
+    height: 28px;
+    padding: 0 10px;
+    @include css3(transition,all .2s ease);
+    width: 145px;
+}
+
+.wrapper{
+    width:100%;
+    height:auto;
+    margin:0 auto;
+    color:#adafb3;
+    font-size: 18px;
+}
+.wrapper_in{
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    @include range-width-in(0,750px){
+        padding: 0 5%;
+        width: calc(100% - 10%);
+        overflow: hidden;
+    }
+}
+.gridbox li{
+    height: 100px;
+    @include grid( 5, 5%);
+    background: #000;
+    img{
+        width: 100%;
+    }
+}
+.mb_show{
+    @include range-width-in(768px){
+        display: none!important;
+    }
+}
+.pc_show{
+    @include range-width-in(0,767px){
+        display: none!important;
+    }
+}
+.imgbg{
+    width: 100%;
+}
+.topbanner{
+    background: url(../images/topbanner.png) top center no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+    @include range-width-in(0,750px){
+        min-height: auto;
+        background: none;
+    }
+    position: relative;
+    .title_effect{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top:0;
+        //background: url("../images/video.mp4") top center;
+        background-size: cover;
+        @include range-width-in(0,750px){
+            background:none;
+        }
+    }
+    video{
+        display : block ;
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width : 100% ;
+        min-height : 100% ;
+        @include range-width-in(0,767px){
+            display: none;
+            visibility:hidden;
+        }
+    }
+}
+.sectitle{
+    text-align: center;
+    @include range-width-in(0,750px){
+        margin-bottom: -10%;
+    }
+    img{
+        width: 100%;
+        max-width: 650px;
+    }
+}
+img{
+    vertical-align: middle;
+}
+.sec_intro{
+    @include range-width-in(0,750px){
+        margin-top: -30%;
+    }
+    .content{
+        li{
+            @include boxalign();
+            line-height: 35px;
+            -webkit-align-items: flex-start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+            margin-bottom: 50px;
+            .txt{
+                width: 100%;
+                padding-left: 8px;
+                span{
+                    color:#ffa926;
+                    font-size: 24px;
+                }
+            }
+            .listtitle{
+                background: url(../images/listtitle.png)center no-repeat;
+                background-size: cover;
+                width: 35px;
+                height: 35px;
+                color: #31312f;
+                text-align: center;
+            }
+            @include range-width-in(0,750px){
+                margin-bottom: 20px;
+                line-height: 20px;
+                font-size: 14px;
+                .txt{
+                    span{
+                        font-size: 16px;
+                    }
+                }
+                .listtitle{
+                    font-size: 14px;
+                    line-height: 20px;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+}
+.sec_spcal{
+    position: relative;
+    .product_box{
+        @include boxalign();
+        -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        padding-top: 50px;
+        padding-bottom: 100px;
+        @include range-width-in(0,750px){
+            .productlist{
+                margin: 0 -5%;
+            }
+        }
+        .product_pic{
+            width: 48%;
+            @include range-width-in(0,750px){
+                width: 100%;
+                margin-left: -70%;
+            }
+            .pic_bg{
+                max-width: 450px;
+                position: relative;
+                &:after{
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    background: #1a1a1a;
+                    position: absolute;
+                    top:-15%;
+                    right: -45%;
+                    z-index: -2;
+                }
+                &:before{
+                    content: '';
+                    width: 30%;
+                    height: 140%;
+                    border: #4c4949 5px solid;
+                    position: absolute;
+                    top: calc(-1*(20% + 5px));
+                    right: -5%;
+                    z-index: -1;
+                }
+                img{
+                    position: relative;
+                    width: 100%;
+                    z-index: 1;
+                }
+            }
+        }
+        .product_content{
+            line-height: 50px;
+            width: 52%;
+            .stitle{
+                color:#e6e6e6;
+                font-size: 36px;
+                margin-bottom: 30px;
+                padding-top: 10px;
+            }
+            .txt{
+                color: #666;
+                font-size: 24px;
+                border-left: #282828 1px solid;
+                padding: 20px 0 30px 30px;
+            }
+            @include range-width-in(0,750px){
+                width: 70%;
+                line-height: 25px;
+                padding-left: 8%;
+                .stitle{
+                    margin-bottom: 15px;
+                    font-size: 18px;
+                }
+                .txt{
+                    font-size: 12px;
+                    padding: 10px 0 20px 20px;
+                }
+            }
+        }
+        &:nth-child(even){
+            -webkit-flex-direction: row-reverse;
+            -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+            .product_pic{
+                @include range-width-in(0,750px){
+                    width: 100%;
+                    margin-left: auto;
+                    margin-right: -60%;
+                }
+                .pic_bg{
+                    float: right;
+                    &:after{
+                        left: -45%;
+                    }
+                    &:before{
+                        left: -5%;
+                    }
+                }
+            }
+            .product_content{
+                text-align: right;
+                .txt{
+                    border-left: none;
+                    border-right: #282828 1px solid;
+                    padding: 20px 30px 0 30px;
+                }
+                @include range-width-in(0,750px){
+                    padding-right: 8%;
+                    padding-left: 0;
+                    .txt{
+                        font-size: 12px;
+                        padding: 10px 20px 0 20px;
+                    }
+                }
+            }
+        }
+    }
+    .downloadbtn{
+        margin-top: 80px;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        max-width: 340px;
+        margin: 80px auto 150px auto;
+        position: relative;
+        @include range-width-in(0,767px){
+            margin-top: 20px;
+        }
+        &:after{
+            content: "";
+            position: absolute;
+            background: url(../images/btn_hover.png);
+            background-size: contain;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            @include css3(transition,all .2s ease);
+        }
+        &:hover{
+            &:after{
+                opacity: 1;
+            }
+        } 
+        img{
+            width: 100%;
+            max-width: 340px;
+        }
+    }
+    .bottombg{
+        background: url(../images/bottombg.png) bottom center;
+        width: 100%;
+        min-height: 380px;
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+    }
+}

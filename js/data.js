@@ -49,9 +49,24 @@ var vm = new Vue({
                 containtext: '' //内容html
             },
             */
-      {
+        {
         newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
         importanttag: true, //产品专栏活动专栏头版,内容发布重点标签
+        istopbanner: true, //是否首页展示
+        clickto: false, //是否有内页跳窗公告
+        link: "action/20190319_klsf/index.html", //点击连结,下载檔案
+        downloadbtn: true, //是否有下载按钮
+        downloadlink: "loading/20190319_klsf.zip", //下载连结
+        mainbannerimg: "images/activebanner/20190319_klsf.jpg", //首页大图2500*1080
+        bannerimg: "images/activebanner/20190319_klsf_s.jpg", //公告内页小图1410*385
+        name: "东方十分系列彩票全新上线！", //公告名称(最好8个全形字以内),download活动素材/轮播图
+        time: "2019/03", //活动日期
+        containtexts: "",
+        containtext: "" //内容html
+      },
+      {
+        newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
+        importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
         istopbanner: true, //是否首页展示
         clickto: false, //是否有内页跳窗公告
         link: "action/20190308_long/index.html", //点击连结,下载檔案
@@ -112,7 +127,7 @@ var vm = new Vue({
       {
         newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
         importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
-        istopbanner: true, //是否首页展示
+        istopbanner: false, //是否首页展示
         clickto: false, //是否有内页跳窗公告
         link: "action/20181205_bjk3/index.html", //点击连结,下载檔案
         downloadbtn: true, //是否有下载按钮
