@@ -429,7 +429,7 @@ var vm = new Vue({
       // },
       {
         newstype: 1,
-        importanttag: true,
+        importanttag: false,
         istopbanner: false,
         clickto: true,
         link: "javascript: void(0)",
@@ -437,8 +437,8 @@ var vm = new Vue({
         downloadlink: "",
         mainbannerimg: "",
         bannerimg: "",
-        name: "即将上线",
-        time: "2019/03/09",
+        name: "已更新",
+        time: "2019/03/22",
         containtexts: "1.2.8V1版本功能说明",
         containtext:
           '\
@@ -468,7 +468,7 @@ var vm = new Vue({
       },
       {
         newstype: 1,
-        importanttag: true,
+        importanttag: false,
         istopbanner: false,
         clickto: true,
         link: "javascript: void(0)",
@@ -476,8 +476,8 @@ var vm = new Vue({
         downloadlink: "",
         mainbannerimg: "",
         bannerimg: "",
-        name: "即将上线",
-        time: "2019/03/08",
+        name: "已更新",
+        time: "2019/03/22",
         containtexts: "彩票2.0.4版本功能说明",
         containtext:
           '\
