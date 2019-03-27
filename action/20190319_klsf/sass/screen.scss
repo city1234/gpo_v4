@@ -431,6 +431,11 @@ img{
                 font-size: 24px;
                 border-left: #282828 1px solid;
                 padding: 20px 0 30px 30px;
+                .link{
+                    font-size: 28px;
+                    font-weight: bold;
+                    color:#ffa926;
+                }
             }
             @include range-width-in(0,750px){
                 width: 70%;

@@ -47,8 +47,8 @@ var vm = new Vue({
                 time: "2018/11", //活动日期
                 containtexts: '',
                 containtext: '' //内容html
-            },
-            */
+            },*/
+            
         {
         newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
         importanttag: true, //产品专栏活动专栏头版,内容发布重点标签
@@ -63,7 +63,7 @@ var vm = new Vue({
         time: "2019/03", //活动日期
         containtexts: "",
         containtext: "" //内容html
-      },
+      }, 
       {
         newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
         importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
@@ -429,6 +429,35 @@ var vm = new Vue({
       // },
       {
         newstype: 1,
+        importanttag: true,
+        istopbanner: false,
+        clickto: true,
+        link: "javascript: void(0)",
+        downloadbtn: false,
+        downloadlink: "",
+        mainbannerimg: "",
+        bannerimg: "",
+        name: "即将上线",
+        time: "2019/03/26",
+        containtexts: "彩票2.0.5版本功能说明",
+        containtext:
+          '\
+                <table>\
+                    <tr>\
+                        <td width="20%">标题</td>\
+                        <td>内容描述</td>\
+                    </tr >\
+                    <tr>\
+                        <td>新增彩种</td>\
+                        <td class="txtleft">\
+                        1.	新增十分赛车，东方游戏自主研发彩票游戏；</br>\
+                        2.	新增十分时时彩，东方游戏自主研发彩票游戏。</br>\
+                        </td>\
+                    </tr>\
+                </table>'
+      },
+      {
+        newstype: 1,
         importanttag: false,
         istopbanner: false,
         clickto: true,
@@ -464,7 +493,8 @@ var vm = new Vue({
                         5．【支付平台设定_线上入款_订单号查询】页面名称优化，添加“商家代称”一列。</br>\
                         6．【支付平台设定_线上入款_商家号列表】的第二方外链支持https协议，同时外链支付名称前缀统一添加“第二方”。\
                         </td>\
-                    </tr>'
+                    </tr>\
+                </table>'
       },
       {
         newstype: 1,
@@ -492,7 +522,8 @@ var vm = new Vue({
                         1、查看“大”‘小“”单“”双“玩法3期及以上的长龙</br>\
                         2、提供斩龙和顺龙投注方案，支持立即投注</br>\
                         </td>\
-                    </tr>'
+                    </tr>\
+                </table>'
       },
       {
         newstype: 1,
@@ -519,7 +550,8 @@ var vm = new Vue({
                         <td class="txtleft">\
                             新增彩种，五分赛车</br>\
                         </td>\
-                    </tr>'
+                    </tr>\
+                </table>'
       },
       {
         newstype: 1,
@@ -556,7 +588,8 @@ var vm = new Vue({
                             ●新增分页功能，优化后界面加载更快。</br>\
                             ●支持导出对应层级全部会员，同时支持导出选定会员。\
                         </td>\
-                    </tr>'
+                    </tr>\
+                </table>'
       },
       {
         newstype: 1,
@@ -597,7 +630,8 @@ var vm = new Vue({
                             4.支付跳转功能进行优化；<br / > \
                             5.修复部分已知问题;\
                         </td>\
-                    </tr>'
+                    </tr>\
+                </table>'
       },
       {
         newstype: 1,
@@ -637,7 +671,8 @@ var vm = new Vue({
                         <td class="txtleft">\
                             1.	主系统查看彩票规则页，补全和完善了彩票相关规则；<br / > \
                         </td>\
-                    </tr>'
+                    </tr>\
+                </table>'
       },
       {
         newstype: 1,
@@ -695,7 +730,8 @@ var vm = new Vue({
                             3.	融合会员报表功能，优化原有报表的页面排版显示；<br / > \
                             4.  上线后原【报表】变为【平台报表】，去除【会员报表】栏位，查询单会员投注明细数据需要在即时注单查询。<br/ > \
                         </td>\
-                    </tr>'
+                    </tr>\
+                </table>'
       },
       {
         newstype: 1,
@@ -744,7 +780,8 @@ var vm = new Vue({
                         <td class="txtleft">\
                             会员真实姓名长度可支持20位； \
                         </td>\
-                    </tr>'
+                    </tr>\
+                </table>'
       },
       {
         newstype: 1,
@@ -800,7 +837,8 @@ var vm = new Vue({
                     <tr>\
                         <td>后台IP名单开关控制</td>\
                         <td class="txtleft">针对厅主及子账号设置IP白名单，只能通过白名单才可进行登陆，确认厅主及子账号登陆的安全性</td>\
-                    </tr>'
+                    </tr>\
+                </table>'
       },
       {
         newstype: 1,
@@ -829,7 +867,8 @@ var vm = new Vue({
                     <tr>\
                         <td>香港六合彩撤单功能</td>\
                         <td class="txtleft">香港六合彩当期未封盘前注单会员可进行撤回</td>\
-                    </tr>'
+                    </tr>\
+                </table>'
       },
       {
         newstype: 1,

@@ -283,7 +283,7 @@ input {
 .sec_intro .iphone_pic {
   width: 405px;
   position: relative;
-  left: -5%;
+  left: 0%;
 }
 /* line 305, ../sass/screen.scss */
 .sec_intro .iphone_pic .iphone_in {
@@ -296,6 +296,15 @@ input {
   flex-grow: 1;
   max-width: 600px;
   position: relative;
+  left: 25px;
+}
+@media screen and (min-width: 0) and (max-width: 767px) {
+  .sec_intro .content {
+    flex-grow: 1;
+    max-width: 600px;
+    position: relative;
+    left: 0px;
+  }
 }
 /* line 316, ../sass/screen.scss */
 .sec_intro .content:after, .sec_intro .content:before {
@@ -427,6 +436,10 @@ input {
   color: #787878;
   font-size: 16px;
   margin-top: 5px;
+}
+.sec_spcal .productlist {
+  width: 1100px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
   /* line 378, ../sass/screen.scss */
