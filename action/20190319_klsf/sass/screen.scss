@@ -285,7 +285,7 @@ input{
     }
     .play{
         position: absolute;
-        top:50%;
+        top:55%;
         left: 50%;
         @include css3(transform,translateX(-50%));
         text-align: center;

@@ -260,7 +260,7 @@ input {
 /* line 286, ../sass/screen.scss */
 .topbanner .play {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
