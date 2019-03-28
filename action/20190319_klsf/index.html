@@ -9,12 +9,14 @@
     <script src="/js/html5shiv.js"></script>
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/screen.css"/>
     <link rel="stylesheet" href="stylesheets/icomoonstyle.css" />
     <link rel="stylesheet" href="stylesheets/vendor.css" />
     <link rel="stylesheet" href="stylesheets/slick.css" />
     <link rel="stylesheet" href="stylesheets/slick-theme.css" />
     <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="../../js/bootstrap.min.js "></script>
     <script src="js/jquery.nicescroll.js"></script>
     <script src="js/slick.js"></script>
     <script src="js/myjs.js"></script>
@@ -23,10 +25,32 @@
 <body>
     <section class="wrapper topbanner">
         <img class="mb_show imgbg" src="images/topbanner_mb.png" alt="">
+        <!--
         <video autoplay muted id = "bgvid" class="title_effect">
             <source  src ="images/video.mp4"  type ="video/mp4 ">
             <source  src ="images/video.webm"  type ="video/webm ">
         </video>
+        -->
+        <div id="videoStared" class="play" data-toggle="modal" data-target="#largeModal">
+            <img src="images/play.png">
+        </div>
+        <div id="largeModal" class="modal fade" role="dialog">
+            <div class="modal-lg modal-dialog" id="videoArea">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button id="closeVideo" type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="video-container">
+                            <video id="opVideo" width="100%" controls>
+                                <source  src ="images/video.mp4"  type ="video/mp4 ">
+                                <source  src ="images/video.webm"  type ="video/webm ">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <section class="wrapper sec_intro">
         <div class="wrapper_in">

@@ -69,6 +69,21 @@ var vm = new Vue({
         importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
         istopbanner: true, //是否首页展示
         clickto: false, //是否有内页跳窗公告
+        link: "action/20190327_ab/index.html", //点击连结,下载檔案
+        downloadbtn: true, //是否有下载按钮
+        downloadlink: "loading/20190327_ab.zip", //下载连结
+        mainbannerimg: "images/activebanner/20190327_ab.jpg", //首页大图2500*1080
+        bannerimg: "images/activebanner/20190327_ab_s.jpg", //公告内页小图1410*385
+        name: "诚信为本 成就卓越", //公告名称(最好8个全形字以内),download活动素材/轮播图
+        time: "2019/3", //活动日期
+        containtexts: "",
+        containtext: "" //内容html
+      },
+      {
+        newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
+        importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
+        istopbanner: true, //是否首页展示
+        clickto: false, //是否有内页跳窗公告
         link: "action/20190308_long/index.html", //点击连结,下载檔案
         downloadbtn: true, //是否有下载按钮
         downloadlink: "loading/20190308_long.zip", //下载连结
@@ -106,21 +121,6 @@ var vm = new Vue({
         bannerimg: "images/activebanner/20190114_kyqp_s.jpg", //公告内页小图1410*385
         name: "全球顶级竞技棋牌中心，开元棋牌！", //公告名称(最好8个全形字以内),download活动素材/轮播图
         time: "2019/01", //活动日期
-        containtexts: "",
-        containtext: "" //内容html
-      },
-      {
-        newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
-        importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
-        istopbanner: true, //是否首页展示
-        clickto: false, //是否有内页跳窗公告
-        link: "action/20181206_ssc/index.html", //点击连结,下载檔案
-        downloadbtn: true, //是否有下载按钮
-        downloadlink: "loading/20181206_ssc.zip", //下载连结
-        mainbannerimg: "images/activebanner/20181206_ssc.jpg", //首页大图2500*1080
-        bannerimg: "images/activebanner/20181206_ssc_s.jpg", //公告内页小图1410*385
-        name: "秒秒赛车，梦想更近一步！", //公告名称(最好8个全形字以内),download活动素材/轮播图
-        time: "2018/12", //活动日期
         containtexts: "",
         containtext: "" //内容html
       },
@@ -438,7 +438,7 @@ var vm = new Vue({
         mainbannerimg: "",
         bannerimg: "",
         name: "即将上线",
-        time: "2019/03/26",
+        time: "2019/03/27",
         containtexts: "彩票2.0.5版本功能说明",
         containtext:
           '\
@@ -452,6 +452,35 @@ var vm = new Vue({
                         <td class="txtleft">\
                         1.	新增十分赛车，东方游戏自主研发彩票游戏；</br>\
                         2.	新增十分时时彩，东方游戏自主研发彩票游戏。</br>\
+                        </td>\
+                    </tr>\
+                </table>'
+      },
+      {
+        newstype: 1,
+        importanttag: true,
+        istopbanner: false,
+        clickto: true,
+        link: "javascript: void(0)",
+        downloadbtn: false,
+        downloadlink: "",
+        mainbannerimg: "",
+        bannerimg: "",
+        name: "即将上线",
+        time: "2019/03/27",
+        containtexts: "1.2.8V2版本功能说明",
+        containtext:
+          '\
+                <table>\
+                    <tr>\
+                        <td width="20%">标题</td>\
+                        <td>内容描述</td>\
+                    </tr >\
+                    <tr>\
+                        <td>【第三方】游戏平台</td>\
+                        <td class="txtleft">\
+                        1.	<strong>【申博视讯】平台</strong>：新接入申博视讯平台，支持PC，H5，原生APP；</br>\
+                        2.	<strong>【<a href="action/20190327_ab/index.html" target="_blank">AB视讯</a>】平台</strong>：移动端接入AB视讯，支持H5，原生APP；</br>\
                         </td>\
                     </tr>\
                 </table>'

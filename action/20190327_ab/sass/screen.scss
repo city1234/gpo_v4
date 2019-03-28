@@ -278,65 +278,11 @@ input{
     background: url(../images/topbanner.png) top center no-repeat;
     min-height: 100vh;
     background-size: cover;
-    position: relative;
     @include range-width-in(0,750px){
         min-height: auto;
         background: none;
     }
-    .play{
-        position: absolute;
-        top:50%;
-        left: 50%;
-        @include css3(transform,translateX(-50%));
-        text-align: center;
-        cursor: pointer;
-        img{
-            position: relative;
-            z-index: 1;
-        }
-        &:after{
-            content: '';
-            position: absolute;
-            top:0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            @include css3(transition,all .2s ease);
-            @include css3(border-radius,50%);
-            background: rgba(255, 255, 255,.5);
-            z-index: 0;
-            @include css3(animation,wave 1s infinite ease);
-            @include css3(transform,scale(1.1));
-            @include keyframes(wave) {
-                0% {
-                    @include css3(transform,scale(1.1));
-                    opacity: 1;
-                }
-                50% {
-                    @include css3(transform,scale(1.5));
-                    opacity: 0;
-                }
-                90% {
-                    @include css3(transform,scale(1.1));
-                    opacity: 0;
-                }
-                100% {
-                    @include css3(transform,scale(1.1));
-                }
-            }
-        }
-        &:hover{
-            &:after{
-                @include css3(animation,wave .5s infinite ease);
-            }
-        }
-        @include range-width-in(1920px){
-            width: 5%;
-            img{
-                width: 100%;
-            }
-        }
-    }
+    position: relative;
     .title_effect{
         position: absolute;
         width: 100%;
@@ -355,10 +301,9 @@ input{
         left: 0;
         min-width : 100% ;
         min-height : 100% ;
-    }
-    @include range-width-in(0,767px){
-        .play{
-            display: none!important;
+        @include range-width-in(0,767px){
+            display: none;
+            visibility:hidden;
         }
     }
 }
@@ -504,9 +449,6 @@ img{
                     font-size: 12px;
                     padding: 10px 0 20px 20px;
                 }
-                .link{
-                    font-size: 14px;
-                }
             }
         }
         &:nth-child(even){
@@ -588,45 +530,4 @@ img{
         bottom: 0;
         z-index: -1;
     }
-}
-.modal-content{
-    background-color: rgba(0, 0, 0, 0.8)!important;
-}
-    
-.modal-header {
-    .close{
-        color: #fff!important;
-        opacity: .5;
-        transition: all 0.3s;
-        &:hover{
-            opacity: 1;
-        }
-    }
-        
-}
-    
-.modal-dialog{
-    width: auto;
-    max-width: 1280px;
-}
-.video-container{
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px;
-    height: 0;
-    overflow: hidden;
-}
-
-iframe,object,embed {
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-.modal-header{
-    border-bottom: 0;
-}
-.modal-content{
-    background-color: rgba(255,255,255,.8);
 }

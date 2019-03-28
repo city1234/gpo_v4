@@ -27,34 +27,8 @@ $(document).ready(function() {
         });
     });
     /*endlinkhashanimate*/
-    /*
     var aud = document.getElementById("bgvid");
     aud.onended = function() {
         $(this).fadeOut();
     };
-    */
-    /*player*/
-    var videoSrc = $("#largeModal iframe").attr("src");
-    $('#largeModal').on('show.bs.modal', function() {
-        $("#largeModal iframe").attr("src", videoSrc + "?autoplay=1");
-    }).on('hidden.bs.modal', function(e) {
-        $("#largeModal iframe").attr("src", null);
-    });
-
-    var myVideo = document.getElementById('opVideo');
-    $("#videoStared").click(function(){
-        if (myVideo.paused){
-            myVideo.play();
-        } 
-    });
-    $("#closeVideo").click(function(){
-        if (!myVideo.paused){
-            myVideo.pause();
-        }
-    });
-    $("#largeModal").not("#videoArea").click(function(){
-        if (!myVideo.paused){
-            myVideo.pause();
-        }
-    });
 });
