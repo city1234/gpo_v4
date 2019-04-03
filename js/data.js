@@ -459,7 +459,7 @@ var vm = new Vue({
           '\
                 <table>\
                     <tr>\
-                        <td width="20%">标题</td>\
+                        <td width="12%">标题</td>\
                         <td>内容描述</td>\
                     </tr >\
                     <tr>\
