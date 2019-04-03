@@ -69,13 +69,28 @@ var vm = new Vue({
         importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
         istopbanner: true, //是否首页展示
         clickto: false, //是否有内页跳窗公告
+        link: "action/20190328_sb/index.html", //点击连结,下载檔案
+        downloadbtn: true, //是否有下载按钮
+        downloadlink: "loading/20190328_sb.zip", //下载连结
+        mainbannerimg: "images/activebanner/20190328_sb.jpg", //首页大图2500*1080
+        bannerimg: "images/activebanner/20190328_sb_s.jpg", //公告内页小图1410*385
+        name: "最公正的平台，最激情的游戏体验", //公告名称(最好8个全形字以内),download活动素材/轮播图
+        time: "2019/03", //活动日期
+        containtexts: "",
+        containtext: "" //内容html
+      },
+      {
+        newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
+        importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
+        istopbanner: true, //是否首页展示
+        clickto: false, //是否有内页跳窗公告
         link: "action/20190327_ab/index.html", //点击连结,下载檔案
         downloadbtn: true, //是否有下载按钮
         downloadlink: "loading/20190327_ab.zip", //下载连结
         mainbannerimg: "images/activebanner/20190327_ab.jpg", //首页大图2500*1080
         bannerimg: "images/activebanner/20190327_ab_s.jpg", //公告内页小图1410*385
         name: "诚信为本 成就卓越", //公告名称(最好8个全形字以内),download活动素材/轮播图
-        time: "2019/3", //活动日期
+        time: "2019/03", //活动日期
         containtexts: "",
         containtext: "" //内容html
       },
@@ -438,7 +453,79 @@ var vm = new Vue({
         mainbannerimg: "",
         bannerimg: "",
         name: "即将上线",
-        time: "2019/03/27",
+        time: "2019/04/05",
+        containtexts: "1.2.9版本功能说明",
+        containtext:
+          '\
+                <table>\
+                    <tr>\
+                        <td width="20%">标题</td>\
+                        <td>内容描述</td>\
+                    </tr >\
+                    <tr>\
+                        <td>登录安全设置</td>\
+                        <td class="txtleft">\
+                        1、在【代理端_账号管理_登录安全设置】新增登录安全设置功能。</br>\
+                            <li style="list-style-type:lower-alpha;padding-left: 10px;">登录设置：可以设置“验证码”和“特殊登录验证”开启或关闭，但不能同时关闭，必须二选一。可以设置密码输错次数和不同问题。</li>\
+                            <li style="list-style-type:lower-alpha;padding-left: 10px;">问题设置：可以设置问题规则，在【登录设置】模块中可从10个问题中选择2个问题。特殊登录开启后，会员登录时需要进行问题验证。</li>\
+                        2、在【会员端_登录】会员进行登录时，根据【登录安全设置】模块中的设置对应显示验证码或者问题，问题错误6次后冻结24小时。登录密码输错6次后永久冻结。</br>\
+                        3、去掉【代理端_账号管理_基本信息】中的特殊登录验证，防刷设置以【登录安全设置】功能为准。\
+                        </td>\
+                    </tr>\
+                    <tr>\
+                        <td>批量解冻功能</td>\
+                        <td class="txtleft">\
+                        1、在【代理端_账号管理_会员】新增批量解冻功能和资金状态，支持查询。</br>\
+                            <li style="list-style-type:lower-alpha;padding-left: 10px;">批量解冻账号：会员账号冻结后，可以批量解冻会员账号状态，同时清空登录密码错误次数，登录异常次数大于0都可以通过解冻清空；</li>\
+                            <li style="list-style-type:lower-alpha;padding-left: 10px;">批量解冻资金：会员资金冻结后，可以批量解冻会员资金状态，同时清空取款密码错误次数；</li>\
+                            <li style="list-style-type:lower-alpha;padding-left: 10px;">资金状态：会员登录后取款密码输错3次后冻结会员资金状态和投注状态，资金状态冻结后不可以进行存取款，投注状态冻结后不可以进行投注。</li>\
+                            <li style="list-style-type:lower-alpha;padding-left: 10px;">进阶查询：列表中新增“资金状态和登录异常次数”两列，可以根据资金状态和登录异常次数进行查询对应数据。</li>\
+                        </td>\
+                    </tr>\
+                    <tr>\
+                        <td>密码强度识别</td>\
+                        <td class="txtleft">\
+                        1、新增弱密码功能：如果是弱密码过于简单则验证不通过，防止简易密码被攻击；</br>\
+                        2、新增密码强度识别功能：可以让会员了解自己密码安全级别，引导会员设置安全系数更强的密码，密码强度分别为“弱，中，强，极强”4个等级。</br>\
+                        </td>\
+                    </tr>\
+                    <tr>\
+                        <td>初始密码修改</td>\
+                        <td class="txtleft">\
+                        1、转盘时会员会统一设置初始密码，为了防止密码泄露，增加账号安全性，首次登录时必须修改初始密码，才可以做其他操作。</br>\
+                        </td>\
+                    </tr>\
+                    <tr>\
+                        <td>密码规则设置</td>\
+                        <td class="txtleft">\
+                        1、目前密码规则是6-12字母+数字两种组合，安全系数不够高，在【代理端_账号管理_注册会员_验证规则】中新增“密码规则设置”功能。 </br>\
+                        2、【代理端】可以设置大小写字母/字符/数字两种或三种及以上组合。【会员端】设置密码时必须符合代理端的密码规则。</br>\
+                        </td>\
+                    </tr>\
+                    <tr>\
+                        <td>功能优化</td>\
+                        <td class="txtleft">\
+                        1、【PC端】注册界面，用户名唯一性点提交按钮后再进行验证，防止黑客刷接口。</br>\
+                        2、【H5端】快速充值界面，名称进行优化，方便会员理解付款银行和收款银行。</br>\
+                        3、【代理端】账号管理界面，在会员信息界面新增“修改登录密码”功能，方便和取款密码一起设置，原编辑界面功能不变。</br>\
+                        4、【代理端】导出功能优化，导出的所有数据都显示在1个表格中，方便厅主核对数据。同时导出格式进行优化，根据内容显示列宽，方便厅主查看导出内容。</br>\
+                        5、【代理端_账号管理_注册会员_验证规则】中设置“验证码”规则，支持三种验证码模式切换。【会员端】登录时根据代理端的设置对应显示验证码。</br>\
+                        </td>\
+                    </tr>\
+                </table>'
+      },
+      {
+        newstype: 1,
+        importanttag: false,
+        istopbanner: false,
+        clickto: true,
+        link: "javascript: void(0)",
+        downloadbtn: false,
+        downloadlink: "",
+        mainbannerimg: "",
+        bannerimg: "",
+        name: "已更新",
+        time: "2019/03/29",
         containtexts: "彩票2.0.5版本功能说明",
         containtext:
           '\
@@ -458,7 +545,7 @@ var vm = new Vue({
       },
       {
         newstype: 1,
-        importanttag: true,
+        importanttag: false,
         istopbanner: false,
         clickto: true,
         link: "javascript: void(0)",
@@ -466,8 +553,8 @@ var vm = new Vue({
         downloadlink: "",
         mainbannerimg: "",
         bannerimg: "",
-        name: "即将上线",
-        time: "2019/03/27",
+        name: "已更新",
+        time: "2019/03/28",
         containtexts: "1.2.8V2版本功能说明",
         containtext:
           '\
@@ -479,7 +566,7 @@ var vm = new Vue({
                     <tr>\
                         <td>【第三方】游戏平台</td>\
                         <td class="txtleft">\
-                        1.	<strong>【申博视讯】平台</strong>：新接入申博视讯平台，支持PC，H5，原生APP；</br>\
+                        1.	<strong>【<a href="action/20190328_sb/index.html" target="_blank">申博视讯</a>】平台</strong>：新接入申博视讯平台，支持PC，H5，原生APP；</br>\
                         2.	<strong>【<a href="action/20190327_ab/index.html" target="_blank">AB视讯</a>】平台</strong>：移动端接入AB视讯，支持H5，原生APP；</br>\
                         </td>\
                     </tr>\
