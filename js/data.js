@@ -453,7 +453,7 @@ var vm = new Vue({
         mainbannerimg: "",
         bannerimg: "",
         name: "即将上线",
-        time: "2019/04/05",
+        time: "2019/04/03",
         containtexts: "1.2.9版本功能说明",
         containtext:
           '\
@@ -465,7 +465,7 @@ var vm = new Vue({
                     <tr>\
                         <td>登录安全设置</td>\
                         <td class="txtleft">\
-                        1、后台新增登录安全设置功能。</br>\
+                            1、后台新增登录安全设置功能。</br>\
                             <li style="list-style-type:lower-alpha;padding-left: 10px;">登录设置：可以设置“验证码”和“特殊登录验证”。</li>\
                             <li style="list-style-type:lower-alpha;padding-left: 10px;">问题设置：可以设置问题规则，会员登录时需要进行问题验证。</li>\
                         </td>\
