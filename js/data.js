@@ -470,6 +470,12 @@ var vm = new Vue({
                         3、新增十分快3，东方游戏自主研发彩票游戏；</br>\
                     </td>\
                 </tr>\
+                <tr>\
+                    <td>长龙助手优化</td>\
+                    <td class="txtleft">\
+                        增加由用户开启、关闭长龙助手浮窗的功能。</br>\
+                    </td>\
+                </tr>\
             </table>\
         '
       },
@@ -584,7 +590,7 @@ var vm = new Vue({
         mainbannerimg: "",
         bannerimg: "",
         name: "已更新",
-        time: "2019/04/03",
+        time: "2019/04/02",
         containtexts: "彩票2.0.5v1版本功能说明",
         containtext:
           '\
@@ -594,9 +600,9 @@ var vm = new Vue({
                         <td>内容描述</td>\
                     </tr >\
                     <tr>\
-                        <td>长龙助手优化</td>\
+                        <td>彩种更新</td>\
                         <td class="txtleft">\
-                        增加由用户开启与关闭长龙助手浮窗功能。</br>\
+                        重庆时时彩改版欢乐生肖。</br>\
                         </td>\
                     </tr>\
                 </table>'
