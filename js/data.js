@@ -453,8 +453,76 @@ var vm = new Vue({
         mainbannerimg: "",
         bannerimg: "",
         name: "即将上线",
+        time: "2019/04/09",
+        containtexts: "彩票2.0.5v2版本功能说明",
+        containtext:
+          '\
+            <table>\
+                <tr>\
+                    <td width="20%">标题</td>\
+                    <td>内容描述</td>\
+                </tr >\
+                <tr>\
+                    <td>新增彩种</td>\
+                    <td class="txtleft">\
+                        1、新增十分六合彩，东方游戏自主研发彩票游戏；</br>\
+                        2、新增十分11选5，东方游戏自主研发彩票游戏；</br>\
+                        3、新增十分快3，东方游戏自主研发彩票游戏；</br>\
+                    </td>\
+                </tr>\
+            </table>\
+        '
+      },
+      {
+        newstype: 1,
+        importanttag: true,
+        istopbanner: false,
+        clickto: true,
+        link: "javascript: void(0)",
+        downloadbtn: false,
+        downloadlink: "",
+        mainbannerimg: "",
+        bannerimg: "",
+        name: "即将上线",
+        time: "2019/04/09",
+        containtexts: "原生APP6.0.0.3版本功能说明",
+        containtext:
+          '\
+                <table>\
+                    <tr>\
+                        <td width="20%">标题</td>\
+                        <td>内容描述</td>\
+                    </tr >\
+                    <tr>\
+                        <td>新增悬浮按钮功能</td>\
+                        <td class="txtleft">\
+                        在第三方页面，以及彩票和体育首页增加悬浮按钮，悬浮按钮展开有返回主页和刷新功能\
+                        </td>\
+                    </tr>\
+                    <tr>\
+                        <td>BUG及优化</td>\
+                        <td class="txtleft">\
+                        1.新MG电子改名为MG电子；</br>\
+                        2.提示文案和界面优化；</br>\
+                        3.去掉登录时对密码的限制；</br>\
+                        4.修复部分已知问题；</br>\
+                        </td>\
+                    </tr>\
+                </table>'
+      },
+      {
+        newstype: 1,
+        importanttag: true,
+        istopbanner: false,
+        clickto: true,
+        link: "javascript: void(0)",
+        downloadbtn: false,
+        downloadlink: "",
+        mainbannerimg: "",
+        bannerimg: "",
+        name: "即将上线",
         time: "2019/04/03",
-        containtexts: "1.2.9版本功能说明",
+        containtexts: "主系统1.2.9版本功能说明",
         containtext:
           '\
                 <table>\
@@ -501,6 +569,34 @@ var vm = new Vue({
                         2、后台账号管理界面，在会员信息界面新增“修改登录密码”功能。</br>\
                         3、导出功能优化，导出的所有数据都显示在一个表格中，同时优化导出格式。</br>\
                         4、后台可设置“验证码”，支持三种验证码模式切换。</br>\
+                        </td>\
+                    </tr>\
+                </table>'
+      },
+    {
+        newstype: 1,
+        importanttag: false,
+        istopbanner: false,
+        clickto: true,
+        link: "javascript: void(0)",
+        downloadbtn: false,
+        downloadlink: "",
+        mainbannerimg: "",
+        bannerimg: "",
+        name: "已更新",
+        time: "2019/04/09",
+        containtexts: "彩票2.0.5v1版本功能说明",
+        containtext:
+          '\
+                <table>\
+                    <tr>\
+                        <td width="20%">标题</td>\
+                        <td>内容描述</td>\
+                    </tr >\
+                    <tr>\
+                        <td>长龙助手优化</td>\
+                        <td class="txtleft">\
+                        增加由用户开启与关闭长龙助手浮窗功能。</br>\
                         </td>\
                     </tr>\
                 </table>'
@@ -1172,6 +1268,7 @@ var vm = new Vue({
                     <br/>为了符合网络推广资格，参赛游戏必须在突出的大厅位置展示。\
                     <br/>PP保留随时修改，暂停或取消促销的权利。</div>'
       },
+      /*
       {
         newstype: 2,
         importanttag: false,
@@ -1188,6 +1285,7 @@ var vm = new Vue({
         containtexts: "",
         containtext: ""
       },
+      */
       {
         newstype: 2,
         importanttag: false,
