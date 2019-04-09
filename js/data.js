@@ -584,7 +584,7 @@ var vm = new Vue({
         mainbannerimg: "",
         bannerimg: "",
         name: "已更新",
-        time: "2019/04/09",
+        time: "2019/04/03",
         containtexts: "彩票2.0.5v1版本功能说明",
         containtext:
           '\
