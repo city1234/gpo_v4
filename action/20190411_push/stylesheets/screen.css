@@ -397,7 +397,6 @@ img {
 .secbackground {
   background: url(../images/bg.jpg) top center no-repeat;
   background-size: 1920px 100%;
-  margin-bottom: -5%;
 }
 
 /* line 344, ../sass/screen.scss */
@@ -661,13 +660,14 @@ img {
 /* line 444, ../sass/screen.scss */
 .sec_qa .qalist {
   margin-top: 5%;
+  overflow: hidden;
 }
-/* line 446, ../sass/screen.scss */
+/* line 447, ../sass/screen.scss */
 .sec_qa .qalist ul {
   margin-bottom: 30px;
   cursor: pointer;
 }
-/* line 450, ../sass/screen.scss */
+/* line 451, ../sass/screen.scss */
 .sec_qa .qalist .qline {
   background: #ffebaa;
   background: -webkit-linear-gradient(legacy-direction(90deg), #ffebaa, rgba(255, 235, 170, 0.1));
@@ -682,7 +682,7 @@ img {
   color: #e5110a;
   font-weight: 500;
 }
-/* line 459, ../sass/screen.scss */
+/* line 460, ../sass/screen.scss */
 .sec_qa .qalist .aline {
   padding: 30px;
   padding-bottom: 0;
@@ -690,7 +690,7 @@ img {
   font-weight: 100;
 }
 
-/* line 468, ../sass/screen.scss */
+/* line 469, ../sass/screen.scss */
 .bottombg {
   background: url(../images/bottom_bg.jpg) bottom center no-repeat;
   width: 100%;
@@ -699,17 +699,17 @@ img {
   margin-top: -2px;
 }
 @media screen and (min-width: 0) and (max-width: 767px) {
-  /* line 468, ../sass/screen.scss */
+  /* line 469, ../sass/screen.scss */
   .bottombg {
     min-height: auto;
     padding-top: 0;
   }
 }
-/* line 479, ../sass/screen.scss */
+/* line 480, ../sass/screen.scss */
 .bottombg .bottombg_mb img {
   width: 100%;
 }
-/* line 481, ../sass/screen.scss */
+/* line 482, ../sass/screen.scss */
 .bottombg .downloadbtn {
   text-align: center;
   cursor: pointer;
@@ -719,12 +719,12 @@ img {
   position: relative;
 }
 @media screen and (min-width: 0) and (max-width: 767px) {
-  /* line 481, ../sass/screen.scss */
+  /* line 482, ../sass/screen.scss */
   .bottombg .downloadbtn {
     margin-top: 20px;
   }
 }
-/* line 491, ../sass/screen.scss */
+/* line 492, ../sass/screen.scss */
 .bottombg .downloadbtn:after {
   content: "";
   position: absolute;
@@ -741,39 +741,39 @@ img {
   -o-transition: all 1s ease;
   transition: all 1s ease;
 }
-/* line 504, ../sass/screen.scss */
+/* line 505, ../sass/screen.scss */
 .bottombg .downloadbtn:hover:after {
   opacity: 1;
 }
-/* line 508, ../sass/screen.scss */
+/* line 509, ../sass/screen.scss */
 .bottombg .downloadbtn img {
   width: 100%;
   max-width: 340px;
 }
 
-/* line 514, ../sass/screen.scss */
+/* line 515, ../sass/screen.scss */
 .modal-content {
   background-color: rgba(0, 0, 0, 0.8) !important;
 }
 
-/* line 519, ../sass/screen.scss */
+/* line 520, ../sass/screen.scss */
 .modal-header .close {
   color: #fff !important;
   opacity: .5;
   transition: all 0.3s;
 }
-/* line 523, ../sass/screen.scss */
+/* line 524, ../sass/screen.scss */
 .modal-header .close:hover {
   opacity: 1;
 }
 
-/* line 530, ../sass/screen.scss */
+/* line 531, ../sass/screen.scss */
 .modal-dialog {
   width: auto;
   max-width: 1280px;
 }
 
-/* line 534, ../sass/screen.scss */
+/* line 535, ../sass/screen.scss */
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -782,7 +782,7 @@ img {
   overflow: hidden;
 }
 
-/* line 542, ../sass/screen.scss */
+/* line 543, ../sass/screen.scss */
 iframe, object, embed {
   position: absolute;
   top: 0;
@@ -791,12 +791,12 @@ iframe, object, embed {
   height: 100%;
 }
 
-/* line 549, ../sass/screen.scss */
+/* line 550, ../sass/screen.scss */
 .modal-header {
   border-bottom: 0;
 }
 
-/* line 552, ../sass/screen.scss */
+/* line 553, ../sass/screen.scss */
 .modal-content {
   background-color: rgba(255, 255, 255, 0.8);
 }

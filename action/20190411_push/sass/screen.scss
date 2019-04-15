@@ -339,7 +339,7 @@ img{
 .secbackground{
     background: url(../images/bg.jpg) top center no-repeat;
     background-size: 1920px 100%;
-    margin-bottom: -5%;
+    //margin-bottom: -5%;
 }
 .sec_intro{
     min-height: 100vh;
@@ -443,6 +443,7 @@ img{
     position: relative;
     .qalist{
         margin-top: 5%;
+        overflow: hidden;
         ul{
             margin-bottom: 30px;
             cursor: pointer;
