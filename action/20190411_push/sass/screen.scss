@@ -353,12 +353,16 @@ img{
         }
         .textbox{
             line-height: 30px;
+            width: 44%;
             li{
                 margin-bottom: 50px;
             }
+            @include range-width-in(0,1024px){
+                width: 100%;
+            }
         }
         .tubebox{
-            width: 85%;
+            width: 56%;
             cursor: pointer;
             position: relative;
             @include range-width-in(0,1024px){
