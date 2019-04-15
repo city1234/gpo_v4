@@ -441,7 +441,15 @@ img {
 .sec_intro .content .tubebox img {
   width: 100%;
 }
-/* line 371, ../sass/screen.scss */
+/* line 373, ../sass/screen.scss */
+.sec_intro .content .tubebox:hover .playbtn:after {
+  -webkit-animation: wave 0.5s infinite ease;
+  -moz-animation: wave 0.5s infinite ease;
+  -ms-animation: wave 0.5s infinite ease;
+  -o-animation: wave 0.5s infinite ease;
+  animation: wave 0.5s infinite ease;
+}
+/* line 378, ../sass/screen.scss */
 .sec_intro .content .tubebox .playbtn {
   position: absolute;
   top: 50%;
@@ -456,13 +464,13 @@ img {
   max-width: 120px;
   width: 20%;
 }
-/* line 380, ../sass/screen.scss */
+/* line 387, ../sass/screen.scss */
 .sec_intro .content .tubebox .playbtn img {
   position: relative;
   z-index: 1;
   width: 100%;
 }
-/* line 385, ../sass/screen.scss */
+/* line 392, ../sass/screen.scss */
 .sec_intro .content .tubebox .playbtn:after {
   content: '';
   position: absolute;
@@ -625,49 +633,41 @@ img {
     transform: scale(1.1);
   }
 }
-/* line 417, ../sass/screen.scss */
-.sec_intro .content .tubebox .playbtn:hover:after {
-  -webkit-animation: wave 0.5s infinite ease;
-  -moz-animation: wave 0.5s infinite ease;
-  -ms-animation: wave 0.5s infinite ease;
-  -o-animation: wave 0.5s infinite ease;
-  animation: wave 0.5s infinite ease;
-}
-/* line 424, ../sass/screen.scss */
+/* line 426, ../sass/screen.scss */
 .sec_intro .pageball {
   position: absolute;
 }
 @media screen and (min-width: 0) and (max-width: 750px) {
-  /* line 424, ../sass/screen.scss */
+  /* line 426, ../sass/screen.scss */
   .sec_intro .pageball {
     display: none;
   }
 }
-/* line 430, ../sass/screen.scss */
+/* line 432, ../sass/screen.scss */
 .sec_intro .rightball {
   right: 0;
   top: 10%;
 }
-/* line 434, ../sass/screen.scss */
+/* line 436, ../sass/screen.scss */
 .sec_intro .leftball {
   left: 0;
   bottom: 10%;
 }
 
-/* line 440, ../sass/screen.scss */
+/* line 442, ../sass/screen.scss */
 .sec_qa {
   position: relative;
 }
-/* line 442, ../sass/screen.scss */
+/* line 444, ../sass/screen.scss */
 .sec_qa .qalist {
   margin-top: 5%;
 }
-/* line 444, ../sass/screen.scss */
+/* line 446, ../sass/screen.scss */
 .sec_qa .qalist ul {
   margin-bottom: 30px;
   cursor: pointer;
 }
-/* line 448, ../sass/screen.scss */
+/* line 450, ../sass/screen.scss */
 .sec_qa .qalist .qline {
   background: #ffebaa;
   background: -webkit-linear-gradient(legacy-direction(90deg), #ffebaa, rgba(255, 235, 170, 0.1));
@@ -682,7 +682,7 @@ img {
   color: #e5110a;
   font-weight: 500;
 }
-/* line 457, ../sass/screen.scss */
+/* line 459, ../sass/screen.scss */
 .sec_qa .qalist .aline {
   padding: 30px;
   padding-bottom: 0;
@@ -690,7 +690,7 @@ img {
   font-weight: 100;
 }
 
-/* line 466, ../sass/screen.scss */
+/* line 468, ../sass/screen.scss */
 .bottombg {
   background: url(../images/bottom_bg.jpg) bottom center no-repeat;
   width: 100%;
@@ -699,17 +699,17 @@ img {
   margin-top: -2px;
 }
 @media screen and (min-width: 0) and (max-width: 767px) {
-  /* line 466, ../sass/screen.scss */
+  /* line 468, ../sass/screen.scss */
   .bottombg {
     min-height: auto;
     padding-top: 0;
   }
 }
-/* line 477, ../sass/screen.scss */
+/* line 479, ../sass/screen.scss */
 .bottombg .bottombg_mb img {
   width: 100%;
 }
-/* line 479, ../sass/screen.scss */
+/* line 481, ../sass/screen.scss */
 .bottombg .downloadbtn {
   text-align: center;
   cursor: pointer;
@@ -719,12 +719,12 @@ img {
   position: relative;
 }
 @media screen and (min-width: 0) and (max-width: 767px) {
-  /* line 479, ../sass/screen.scss */
+  /* line 481, ../sass/screen.scss */
   .bottombg .downloadbtn {
     margin-top: 20px;
   }
 }
-/* line 489, ../sass/screen.scss */
+/* line 491, ../sass/screen.scss */
 .bottombg .downloadbtn:after {
   content: "";
   position: absolute;
@@ -741,39 +741,39 @@ img {
   -o-transition: all 1s ease;
   transition: all 1s ease;
 }
-/* line 502, ../sass/screen.scss */
+/* line 504, ../sass/screen.scss */
 .bottombg .downloadbtn:hover:after {
   opacity: 1;
 }
-/* line 506, ../sass/screen.scss */
+/* line 508, ../sass/screen.scss */
 .bottombg .downloadbtn img {
   width: 100%;
   max-width: 340px;
 }
 
-/* line 512, ../sass/screen.scss */
+/* line 514, ../sass/screen.scss */
 .modal-content {
   background-color: rgba(0, 0, 0, 0.8) !important;
 }
 
-/* line 517, ../sass/screen.scss */
+/* line 519, ../sass/screen.scss */
 .modal-header .close {
   color: #fff !important;
   opacity: .5;
   transition: all 0.3s;
 }
-/* line 521, ../sass/screen.scss */
+/* line 523, ../sass/screen.scss */
 .modal-header .close:hover {
   opacity: 1;
 }
 
-/* line 528, ../sass/screen.scss */
+/* line 530, ../sass/screen.scss */
 .modal-dialog {
   width: auto;
   max-width: 1280px;
 }
 
-/* line 532, ../sass/screen.scss */
+/* line 534, ../sass/screen.scss */
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -782,7 +782,7 @@ img {
   overflow: hidden;
 }
 
-/* line 540, ../sass/screen.scss */
+/* line 542, ../sass/screen.scss */
 iframe, object, embed {
   position: absolute;
   top: 0;
@@ -791,12 +791,12 @@ iframe, object, embed {
   height: 100%;
 }
 
-/* line 547, ../sass/screen.scss */
+/* line 549, ../sass/screen.scss */
 .modal-header {
   border-bottom: 0;
 }
 
-/* line 550, ../sass/screen.scss */
+/* line 552, ../sass/screen.scss */
 .modal-content {
   background-color: rgba(255, 255, 255, 0.8);
 }
