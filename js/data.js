@@ -48,10 +48,24 @@ var vm = new Vue({
                 containtexts: '',
                 containtext: '' //内容html
             },*/
-            
+        {
+            newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
+            importanttag: true, //产品专栏活动专栏头版,内容发布重点标签
+            istopbanner: true, //是否首页展示
+            clickto: false, //是否有内页跳窗公告
+            link: "action/20190411_push/index.html", //点击连结,下载檔案
+            downloadbtn: true, //是否有下载按钮
+            downloadlink: "loading/20190411_push.zip", //下载连结
+            mainbannerimg: "images/activebanner/20190411_push.jpg", //首页大图2500*1080
+            bannerimg: "images/activebanner/20190411_push_s.jpg", //公告内页小图1410*385
+            name: "全新会员推广模式！", //公告名称(最好8个全形字以内),download活动素材/轮播图
+            time: "2019/04", //活动日期
+            containtexts: "",
+            containtext: "" //内容html
+        }, 
         {
         newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
-        importanttag: true, //产品专栏活动专栏头版,内容发布重点标签
+        importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
         istopbanner: true, //是否首页展示
         clickto: false, //是否有内页跳窗公告
         link: "action/20190319_klsf/index.html", //点击连结,下载檔案
@@ -112,7 +126,7 @@ var vm = new Vue({
       {
         newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
         importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
-        istopbanner: true, //是否首页展示
+        istopbanner: false, //是否首页展示
         clickto: false, //是否有内页跳窗公告
         link: "action/20190221_fivescore/index.html", //点击连结,下载檔案
         downloadbtn: true, //是否有下载按钮
@@ -127,7 +141,7 @@ var vm = new Vue({
       {
         newstype: 0, //资讯子分页类型 product>0,content>1,event>2,download>3
         importanttag: false, //产品专栏活动专栏头版,内容发布重点标签
-        istopbanner: true, //是否首页展示
+        istopbanner: false, //是否首页展示
         clickto: false, //是否有内页跳窗公告
         link: "action/20190114_kyqp/index.html", //点击连结,下载檔案
         downloadbtn: true, //是否有下载按钮
@@ -442,6 +456,7 @@ var vm = new Vue({
       //     containtexts: "无资料",
       //     containtext: "无资料"
       // },
+      
       {
         newstype: 1,
         importanttag: true,
@@ -453,13 +468,55 @@ var vm = new Vue({
         mainbannerimg: "",
         bannerimg: "",
         name: "即将上线",
+        time: "2019/04/19",
+        containtexts: "GPO-G1.3.0版本功能说明",
+        containtext:
+          '\
+            <table>\
+                <tr>\
+                    <td width="20%">标题</td> \
+                    <td>内容描述</td>\
+                </tr >\
+                <tr>\
+                    <td>推广会员管理-会员端</td>\
+                    <td class="txtleft">\
+                        1.增加推广会员-团队管理模块（只有推广会员才会有的模块，普通会员没有该模块的展示）。</br>\
+                        2.推广会员可发展自己的下级，自身可从下级的投注、损益、充值中得到收益。</br>\
+                        3.推广会员可创建属于自己的推广链接，通过链接或者二维码的形式进行推广。</br>\
+                        4.推广会员在前端可通过报表数据查看下级以及自身的数据和收益情况。</br>\
+                    </td>\
+                </tr>\
+                <tr>\
+                    <td>推广会员管理-代理后台</td>\
+                    <td class="txtleft">\
+                    1.厅主可新增一级推广会员，也可将普通会员升级为一级推广会员。</br>\
+                    2.厅主可在后台修改会员的返点，修改之后会员的返点以及推广链接返点都会被同步更新。</br>\
+                    3.厅主可在后台查看会员生成的推广链接。</br>\
+                    4.厅主可对推广会员进行返佣/冲销/导出返佣数据等操作。</br>\
+                    5.厅主可在后台查看推广会员报表的数据，并可对其进行导出操作。</br>\
+                    </td>\
+                </tr>\
+            </table>\
+        '
+      },
+      {
+        newstype: 1,
+        importanttag: false,
+        istopbanner: false,
+        clickto: true,
+        link: "javascript: void(0)",
+        downloadbtn: false,
+        downloadlink: "",
+        mainbannerimg: "",
+        bannerimg: "",
+        name: "已更新",
         time: "2019/04/09",
         containtexts: "彩票2.0.5v2版本功能说明",
         containtext:
           '\
             <table>\
                 <tr>\
-                    <td width="20%">标题</td>\
+                    <td width="20%">标题</td> \
                     <td>内容描述</td>\
                 </tr >\
                 <tr>\
@@ -481,7 +538,7 @@ var vm = new Vue({
       },
       {
         newstype: 1,
-        importanttag: true,
+        importanttag: false,
         istopbanner: false,
         clickto: true,
         link: "javascript: void(0)",
@@ -489,7 +546,7 @@ var vm = new Vue({
         downloadlink: "",
         mainbannerimg: "",
         bannerimg: "",
-        name: "即将上线",
+        name: "已更新",
         time: "2019/04/09",
         containtexts: "原生APP6.0.0.3版本功能说明",
         containtext:
@@ -518,7 +575,7 @@ var vm = new Vue({
       },
       {
         newstype: 1,
-        importanttag: true,
+        importanttag: false,
         istopbanner: false,
         clickto: true,
         link: "javascript: void(0)",
@@ -526,7 +583,7 @@ var vm = new Vue({
         downloadlink: "",
         mainbannerimg: "",
         bannerimg: "",
-        name: "即将上线",
+        name: "已更新",
         time: "2019/04/03",
         containtexts: "主系统1.2.9版本功能说明",
         containtext:
