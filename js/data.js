@@ -469,7 +469,7 @@ var vm = new Vue({
         bannerimg: "",
         name: "即将上线",
         time: "2019/04/19",
-        containtexts: "GPO-G1.3.0版本功能说明",
+        containtexts: "主系统1.3.0版本功能说明",
         containtext:
           '\
             <table>\
