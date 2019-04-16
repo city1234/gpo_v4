@@ -469,7 +469,7 @@ var vm = new Vue({
         bannerimg: "",
         name: "即将上线",
         time: "2019/04/19",
-        containtexts: "主系统1.3.0版本功能说明",
+        containtexts: "1.3.0版本功能说明",
         containtext:
           '\
             <table>\
@@ -510,7 +510,7 @@ var vm = new Vue({
         mainbannerimg: "",
         bannerimg: "",
         name: "已更新",
-        time: "2019/04/09",
+        time: "2019/04/12",
         containtexts: "彩票2.0.5v2版本功能说明",
         containtext:
           '\
@@ -547,7 +547,7 @@ var vm = new Vue({
         mainbannerimg: "",
         bannerimg: "",
         name: "已更新",
-        time: "2019/04/09",
+        time: "2019/04/10",
         containtexts: "原生APP6.0.0.3版本功能说明",
         containtext:
           '\
@@ -584,8 +584,8 @@ var vm = new Vue({
         mainbannerimg: "",
         bannerimg: "",
         name: "已更新",
-        time: "2019/04/03",
-        containtexts: "主系统1.2.9版本功能说明",
+        time: "2019/04/10",
+        containtexts: "1.2.9版本功能说明",
         containtext:
           '\
                 <table>\
